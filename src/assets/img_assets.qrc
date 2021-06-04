@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>nota.svg</file>
+        <file>document-edit.svg</file>
+    </qresource>
+</RCC>
