@@ -5,8 +5,6 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.2 as Maui
 
-import org.maui.nota 1.0 as Nota
-
 Maui.SettingsDialog
 {
     id: control

@@ -1,5 +1,5 @@
-#ifndef NOTA_H
-#define NOTA_H
+#ifndef STRIKE_H
+#define STRIKE_H
 
 #include <QFileInfo>
 #include <QObject>
@@ -8,21 +8,21 @@
 
 #include <MauiKit/FileBrowsing/fmstatic.h>
 
-class Nota : public QObject
+class Strike : public QObject
 {
     Q_OBJECT
 
 public:
-    static Nota *instance()
+    static Strike *instance()
     {
-        static Nota nota;
-        return &nota;
+        static Strike strike;
+        return &strike;
     }
 
-    Nota(const Nota &) = delete;
-    Nota &operator=(const Nota &) = delete;
-    Nota(Nota &&) = delete;
-    Nota &operator=(Nota &&) = delete;
+    Strike(const Strike &) = delete;
+    Strike &operator=(const Strike &) = delete;
+    Strike(Strike &&) = delete;
+    Strike &operator=(Strike &&) = delete;
 
 public slots:
     void requestFiles(const QStringList &urls)
@@ -42,15 +42,6 @@ public slots:
         emit this->openFiles(res);
     }
 
-    bool supportsEmbededTerminal()
-    {
-#ifdef EMBEDDED_TERMINAL
-        return true;
-#else
-        return false;
-#endif
-    }
-
     bool run(const QString &process, const QStringList &params = {})
     {
         auto m_process = new QProcess;
@@ -66,10 +57,10 @@ signals:
     void openFiles(QStringList urls);
 
 private:
-    explicit Nota(QObject *parent = nullptr)
+    explicit Strike(QObject *parent = nullptr)
         : QObject(parent)
     {
     }
 };
 
-#endif // NOTA_H
+#endif // STRIKE_H

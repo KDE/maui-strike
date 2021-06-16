@@ -9,8 +9,6 @@ import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 import org.mauikit.texteditor 1.0 as TE
 
-import org.maui.nota 1.0 as Nota
-
 import QtQuick.Window 2.0
 
 Maui.Page
@@ -143,7 +141,7 @@ Maui.Page
             {
                 text: i18n("Terminal")
                 icon.name: "dialog-scripts"
-                visible: settings.supportTerminal && Nota.Nota.supportsEmbededTerminal()
+                visible: settings.supportTerminal
                 onTriggered: currentTab.toggleTerminal()
                 checkable: true
                 checked: currentTab ? currentTab.terminalVisible : false

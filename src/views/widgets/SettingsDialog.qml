@@ -7,8 +7,6 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.texteditor 1.0 as TE
 
-import org.maui.nota 1.0 as Nota
-
 Maui.SettingsDialog
 {
     Maui.SettingsSection
@@ -43,7 +41,6 @@ Maui.SettingsDialog
 
         Maui.SettingTemplate
         {
-            enabled: Nota.Nota.supportsEmbededTerminal()
             label1.text: i18n("Embedded Terminal")
             label2.text: i18n("Enabled an embedded terminal")
 

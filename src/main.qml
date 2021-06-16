@@ -7,7 +7,7 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 
-import org.maui.nota 1.0 as Nota
+import org.slike.strike 1.0 as Strike
 
 import "views"
 import "views/editor"
@@ -20,8 +20,6 @@ Maui.ApplicationWindow
 
     altHeader: Kirigami.Settings.isMobile
     headBar.visible: !focusMode
-
-    readonly property var views : ({editor: 0, recent: 1, documents: 2})
 
     property alias currentTab : editorView.currentTab
     property alias currentEditor: editorView.currentEditor
@@ -73,7 +71,7 @@ Maui.ApplicationWindow
                 dialog.open()
             }
         }
-       ,
+        ,
 
         Action
         {
@@ -115,6 +113,7 @@ Maui.ApplicationWindow
         id: _newDocumentMenu
     }
 
+    headBar.forceCenterMiddleContent: false
     headBar.leftContent: ToolButton
     {
         visible: settings.enableSidebar
@@ -137,10 +136,15 @@ Maui.ApplicationWindow
         icon.name: "list-add"
         onClicked:
         {
-            _swipeView.currentIndex = views.editor
             _newDocumentMenu.open()
 
         }
+    }
+
+    headBar.middleContent: Widgets.BuildBar
+    {
+        Layout.fillWidth: true
+        Layout.maximumWidth: 500
     }
 
     Loader
@@ -221,63 +225,28 @@ Maui.ApplicationWindow
             {
                 var m_urls = drop.urls.join(",")
                 _dropArea.urls = m_urls.split(",")
-                Nota.Nota.requestFiles( _dropArea.urls )
+                Strike.Strike.requestFiles( _dropArea.urls )
             }
         }
     }
 
     Component.onCompleted:
     {
-        if(Maui.Handy.isAndroid)
-        {
-            Maui.Android.statusbarColor(headBar.Kirigami.Theme.backgroundColor, false)
-            Maui.Android.navBarColor(headBar.visible ? headBar.Kirigami.Theme.backgroundColor : Kirigami.Theme.backgroundColor, false)
-        }
-
         if(settings.defaultBlankFile)
         {
             editorView.openTab("")
         }
     }
 
-    Nota.History { id: _historyList }
-
-    Maui.Page
+    EditorView
     {
+        id: editorView
         anchors.fill: parent
-        spacing: 0
-
-        flickable: _swipeView.currentItem.item ? _swipeView.currentItem.item.flickable : null
-        floatingFooter: true
-        headBar.visible: false
-
-        Maui.AppViews
-        {
-            id: _swipeView
-            anchors.fill: parent
-            currentIndex: !root.currentEditor ? views.recent : views.editor
-
-            EditorView
-            {
-                id: editorView
-                Maui.AppView.iconName: "document-edit"
-                Maui.AppView.title: i18n("Editor")
-            }
-
-            Maui.AppViewLoader
-            {
-                Maui.AppView.iconName: "view-media-recent"
-                Maui.AppView.title: i18n("Recent")
-                visible: !focusMode
-
-                RecentView {}
-            }
-        }
     }
 
     Connections
     {
-        target: Nota.Nota
+        target: Strike.Strike
         function onOpenFiles(urls)
         {
             for(var i in urls)

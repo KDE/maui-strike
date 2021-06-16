@@ -7,8 +7,6 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 
-import org.maui.nota 1.0 as Nota
-
 Item
 {
     id: control
@@ -85,7 +83,7 @@ Item
         {
             id: terminalLoader
             asynchronous: true
-            active: settings.supportTerminal && Nota.Nota.supportsEmbededTerminal()
+            active: settings.supportTerminal
             visible: active && control.terminalVisible
             SplitView.fillWidth: true
             SplitView.preferredHeight: 200

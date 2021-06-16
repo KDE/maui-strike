@@ -3,26 +3,16 @@
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QDate>
+#include <QApplication>
 
 #include <KI18n/KLocalizedString>
-
-#include "../nota_version.h"
-
-#ifdef Q_OS_ANDROID
-#include <QGuiApplication>
-#include <MauiKit/Core/mauiandroid.h>
-#else
-#include <QApplication>
-#endif
-
 #include <MauiKit/Core/mauiapp.h>
 
-#include "nota.h"
+#include "../strike_version.h"
 
-// Models
-#include "models/historymodel.h"
+#include "strike.h"
 
-#define NOTA_URI "org.maui.nota"
+#define STRIKE_URI "org.slike.strike"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -40,20 +30,20 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 #endif
 
     app.setOrganizationName(QStringLiteral("Maui"));
-    app.setWindowIcon(QIcon(":/img/nota.svg"));
+    app.setWindowIcon(QIcon(":/img/strike.svg"));
 
-    MauiApp::instance()->setIconName("qrc:/img/nota.svg");
+    MauiApp::instance()->setIconName("qrc:/img/strike.svg");
 
-    KLocalizedString::setApplicationDomain("nota");
+    KLocalizedString::setApplicationDomain("slike");
 
-    KAboutData about(QStringLiteral("nota"), i18n("Nota"), NOTA_VERSION_STRING, i18n("Browse, create and edit text files."), KAboutLicense::LGPL_V3,i18n("© 2019-%1 Nitrux Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    KAboutData about(QStringLiteral("strike"), "Strike", STRIKE_VERSION_STRING, i18n("Build and run code."), KAboutLicense::LGPL_V3,i18n("© 2019-%1 Slike Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.addAuthor(i18n("Anupam Basak"), i18n("Developer"), QStringLiteral("anupam.basak27@gmail.com"));
-    about.setHomepage("https://mauikit.org");
-    about.setProductName("maui/nota");
-    about.setBugAddress("https://invent.kde.org/maui/nota/-/issues");
-    about.setOrganizationDomain(NOTA_URI);
+    about.setHomepage("https://slike.org");
+    about.setProductName("slike/strike");
+    about.setBugAddress("https://invent.kde.org/maui/strike/-/issues");
+    about.setOrganizationDomain(STRIKE_URI);
     about.setProgramLogo(app.windowIcon());
 
     KAboutData::setApplicationData(about);
@@ -76,12 +66,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
             QCoreApplication::exit(-1);
 
         if (!args.isEmpty())
-            Nota::instance()->requestFiles(args);
+            Strike::instance()->requestFiles(args);
     },
     Qt::QueuedConnection);
 
-    qmlRegisterSingletonInstance<Nota>(NOTA_URI, 1, 0, "Nota", Nota::instance());
-    qmlRegisterType<HistoryModel>(NOTA_URI, 1, 0, "History");
+    qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Nota", Strike::instance());
 
     engine.load(url);
 
