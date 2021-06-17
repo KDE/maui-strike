@@ -13,5 +13,6 @@
         <file>views/widgets/ItemMenu.qml</file>
         <file>views/widgets/BuildBar.qml</file>
         <file>views/widgets/OutputPanel.qml</file>
+        <file>views/widgets/ProjectConfigDialog.qml</file>
     </qresource>
 </RCC>

@@ -104,25 +104,6 @@ property alias outputPanel :_outputPanel
         }
     ]
 
-
-    headBar.middleContent: Maui.ToolActions
-    {
-        currentIndex : _outputPanel.currentIndex
-        Action
-        {
-            icon.name: "dialog-scripts"
-            checked:  _outputPanel.currentIndex === 0
-            onTriggered: _outputPanel.currentIndex = 0
-        }
-
-        Action
-        {
-            icon.name: "love"
-            checked:  _outputPanel.currentIndex === 1
-            onTriggered: _outputPanel.currentIndex = 1
-        }
-    }
-
     headBar.rightContent:[
 
         ToolButton
@@ -177,7 +158,7 @@ property alias outputPanel :_outputPanel
     SplitView
     {
         anchors.fill: parent
-        spacing: 0
+        spacing: -1
         orientation: Qt.Vertical
 
         onCurrentItemChanged:
@@ -249,9 +230,13 @@ property alias outputPanel :_outputPanel
 
        handle: Kirigami.ShadowedRectangle
        {
+           Kirigami.Theme.inherit: false
+           Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+           Kirigami.Theme.backgroundColor: "#2c2c2c"
+
            implicitWidth: 22
-           implicitHeight: 22
-           color: "#2c2c2c"
+           implicitHeight: Maui.Style.toolBarHeight
+           color: Kirigami.Theme.backgroundColor
 
            corners
            {
@@ -261,15 +246,24 @@ property alias outputPanel :_outputPanel
                bottomRightRadius: 0
            }
 
-           Rectangle
-           {
-               anchors.centerIn: parent
-               height: 8
-               width: 48
-               color: SplitHandle.pressed || SplitHandle.hovered ? Kirigami.Theme.highlightColor : Qt.lighter(parent)
+           Maui.ToolActions
+               {
+                   anchors.centerIn: parent
+                   currentIndex : _outputPanel.currentIndex
+                   Action
+                   {
+                       icon.name: "dialog-scripts"
+                       checked:  _outputPanel.currentIndex === 0
+                       onTriggered: _outputPanel.currentIndex = 0
+                   }
 
-               radius: 12
-           }
+                   Action
+                   {
+                       icon.name: "love"
+                       checked:  _outputPanel.currentIndex === 1
+                       onTriggered: _outputPanel.currentIndex = 1
+                   }
+               }
        }
     }
 

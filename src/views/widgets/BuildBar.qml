@@ -68,6 +68,7 @@ Rectangle
             label2.text: _projectManager.process.processRunning ? _projectManager.process.infoLabel :  _projectManager.projectPath
             imageSource: _projectManager.projectLogo
             imageSizeHint: Maui.Style.iconSizes.medium
+            iconVisible: root.isWide
         }
 
         ToolButton
