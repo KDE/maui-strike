@@ -1,7 +1,9 @@
 #include "projectmanager.h"
 #include "processmanager.h"
+#include "cmakeprojectmanager.h"
 
 #include <QDebug>
+#include <QDir>
 
 #include <MauiKit/FileBrowsing/fmstatic.h>
 
@@ -11,8 +13,9 @@ ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
     connect(this, &ProjectManager::projectUrlChanged, [this](QUrl url)
     {
         m_process->setProjectUrl(url);
+        CMake::FileApi::writeClientQueryFile(m_process->buildDir().toLocalFile());
 
-        m_projectTitle = "Nota";
+        m_projectTitle = QDir(m_process->rootDir().toLocalFile()).dirName();
         emit this->projectTitleChanged(m_projectTitle);
 
         m_projectPath = FMStatic::fileDir(url).toLocalFile();

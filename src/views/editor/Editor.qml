@@ -29,15 +29,12 @@ Maui.SplitViewItem
         body.font.pointSize: settings.font.pointSize
         document.backgroundColor: settings.backgroundColor
         Kirigami.Theme.backgroundColor: settings.backgroundColor
-        showSyntaxHighlightingLanguages: settings.showSyntaxHighlightingLanguages
         document.theme: settings.theme
-        document.enableSyntaxHighlighting: settings.enableSyntaxHighlighting
         document.autoSave: settings.autoSave
         document.tabSpace: ((settings.tabSpace+1) * body.font.pointSize) / 2
-
-        onFileUrlChanged: syncTerminal(_editor.fileUrl)
-
-        footBar.visible: showSyntaxHighlightingLanguages
+        document.enableSyntaxHighlighting: true
+        footBar.visible: false
+        onFileUrlChanged: editorView.outputPanel.syncTerminal(_editor.fileUrl)
 
         Keys.enabled: true
         Keys.onPressed:

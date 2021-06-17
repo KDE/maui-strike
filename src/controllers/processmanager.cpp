@@ -12,7 +12,6 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
   ,m_buildProcess(new QProcess(this))
   ,m_runProcess(new QProcess(this))
 {
-
     // Configure Process
     connect(m_configureProcess, &QProcess::readyReadStandardOutput,[this]()
     {
@@ -23,6 +22,9 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
     connect(m_configureProcess, &QProcess::started,[this]()
     {
         qWarning() << "Configure step started" ;
+        m_infoLabel = "Configuring project...";
+        emit infoLabelChanged(m_infoLabel);
+
         m_configureRunning = true;
         emit configureRunningChanged(m_configureRunning);
 
@@ -33,6 +35,9 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
     connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
     {
         qWarning() << "Configure step finished" << exitCode;
+
+        m_infoLabel = QString("Configuring finished with %1").arg(QString::number(exitCode));
+        emit infoLabelChanged(m_infoLabel);
 
         m_configureRunning = false;
         emit configureRunningChanged(m_configureRunning);
@@ -52,6 +57,9 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
     connect(m_buildProcess, &QProcess::started,[this]()
     {
         qWarning() << "Build step started" ;
+        m_infoLabel = "Building project...";
+        emit infoLabelChanged(m_infoLabel);
+
         m_buildRunning = true;
         emit this->buildRunningChanged(m_buildRunning);
 
@@ -61,7 +69,10 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
 
     connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
     {
-        qWarning() << "Configure step finished" << exitCode;
+        qWarning() << "Building step finished" << exitCode;
+
+        m_infoLabel = QString("Building finished with %1").arg(QString::number(exitCode));
+        emit infoLabelChanged(m_infoLabel);
 
         m_buildRunning = false;
         emit buildRunningChanged(m_buildRunning);
@@ -81,7 +92,11 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
 
     connect(m_runProcess, &QProcess::started,[this]()
     {
-        qWarning() << "Configure step started" ;
+        qWarning() << "Running step started" ;
+
+        m_infoLabel = "Running binary...";
+        emit infoLabelChanged(m_infoLabel);
+
         m_binaryRunning = true;
         emit binaryRunningChanged(m_binaryRunning);
 
@@ -89,9 +104,19 @@ ProcessManager::ProcessManager(QObject *parent) : QObject(parent)
         emit this->processRunningChanged(m_processRunning);
     });
 
+    connect(m_runProcess, &QProcess::errorOccurred,[this](QProcess::ProcessError error)
+    {
+        qWarning() << "Running binary error << " << error;
+        emit outputLine(m_runProcess->errorString());
+    });
+
+
     connect(m_runProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
     {
-        qWarning() << "Configure step finished" << exitCode;
+        qWarning() << "Running step finished" << exitCode;
+
+        m_infoLabel = QString("Binary exited with %1").arg(QString::number(exitCode));
+        emit infoLabelChanged(m_infoLabel);
 
         m_binaryRunning = false;
         emit this->binaryRunningChanged(m_binaryRunning);
@@ -106,6 +131,10 @@ void ProcessManager::setProjectUrl(const QUrl &url)
 {
     m_projectUrl = url;
     m_rootDir = FMStatic::fileDir(m_projectUrl);
+    m_buildDir = QUrl(m_rootDir.toString()+"/build");
+
+    m_infoLabel = m_rootDir.toLocalFile();
+    emit infoLabelChanged(m_infoLabel);
 
     if(m_projectUrl.isEmpty() || !m_projectUrl.isValid() || !FMH::fileExists(m_projectUrl))
     {
@@ -113,30 +142,19 @@ void ProcessManager::setProjectUrl(const QUrl &url)
         return;
     }
 
-    const auto workingDir = FMStatic::fileDir(m_projectUrl).toLocalFile() +"/build";
-
-    qDebug() << "Setting up working directory"<< workingDir;
-
-    QDir dir(workingDir);
-    if(!dir.exists())
-    {
-        if(! dir.mkpath("."))
-        {
-            qWarning() << "Build directory could not be created at << " << workingDir;
-            return;
-        }
-    }
-
-    this->setWorkingDir(workingDir);
-    this->m_enabled = true;
-    emit this->enabledChanged(m_enabled);
     configure();
 }
 
-QString ProcessManager::workingDir() const
+QUrl ProcessManager::buildDir() const
 {
-    return m_workingDir;
+return m_buildDir;
 }
+
+QUrl ProcessManager::rootDir() const
+{
+    return m_rootDir;
+}
+
 
 QStringList ProcessManager::args() const
 {
@@ -180,7 +198,8 @@ bool ProcessManager::enabled() const
 
 void ProcessManager::build()
 {
-    connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this](int exitCode, QProcess::ExitStatus exitStatus)
+    QMetaObject::Connection * const connection = new QMetaObject::Connection;
+    *connection = connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, connection](int exitCode, QProcess::ExitStatus exitStatus)
     {
         qDebug() << "Configure step finished";
 
@@ -195,6 +214,8 @@ void ProcessManager::build()
             qWarning() << "Build step can not continue.";
         }
 
+        QObject::disconnect(*connection);
+        delete connection;
     },  Qt::ConnectionType::UniqueConnection);
 
     configure();
@@ -203,12 +224,12 @@ void ProcessManager::build()
 void ProcessManager::configure()
 {
     configureStep();
-
 }
 
 void ProcessManager::run()
 {
-    connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this](int exitCode, QProcess::ExitStatus exitStatus)
+    QMetaObject::Connection * const connection = new QMetaObject::Connection;
+    *connection = connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, connection](int exitCode, QProcess::ExitStatus exitStatus)
     {
         qDebug() << "Build step finished";
 
@@ -221,6 +242,9 @@ void ProcessManager::run()
             qWarning() << "Build step failed " << exitCode << exitStatus;
             qWarning() << "Run step can not continue.";
         }
+
+        QObject::disconnect(*connection);
+        delete connection;
 
     }, Qt::ConnectionType::UniqueConnection);
 
@@ -240,15 +264,6 @@ void ProcessManager::stopConfigure()
 void ProcessManager::stopRun()
 {
     m_runProcess->terminate();
-}
-
-void ProcessManager::setWorkingDir(QString workingDir)
-{
-    if (m_workingDir == workingDir)
-        return;
-
-    m_workingDir = workingDir;
-    emit workingDirChanged(m_workingDir);
 }
 
 void ProcessManager::setArgs(QStringList args)
@@ -280,16 +295,34 @@ void ProcessManager::setInstallPrefix(QString installPrefix)
 
 void ProcessManager::buildStep()
 {
-    m_buildProcess->setWorkingDirectory(m_workingDir);
+    m_buildProcess->setWorkingDirectory(m_buildDir.toLocalFile());
     m_buildProcess->start("make", QStringList());
 }
 
 void ProcessManager::configureStep()
 {
-    const QStringList args = {m_rootDir.toLocalFile(), QString("-DCMAKE_INSTALL_PREFIX=%1").arg(m_installPrefix)};
-    m_configureProcess->setWorkingDirectory(m_workingDir);
+    const auto workingDir = m_buildDir.toLocalFile();
 
-    qDebug() << "Running cmake << " << CMAKE_PROGRAM << args << m_args << m_workingDir << m_configureProcess->workingDirectory();
+    qDebug() << "Setting up working directory"<< workingDir;
+
+    QDir dir(workingDir);
+    if(!dir.exists())
+    {
+        if(! dir.mkpath("."))
+        {
+            qWarning() << "Build directory could not be created at << " << workingDir;
+            return;
+        }
+    }
+
+    this->m_enabled = true;
+    emit this->enabledChanged(m_enabled);
+
+    const QStringList args = {m_rootDir.toLocalFile(), QString("-DCMAKE_INSTALL_PREFIX=%1").arg(m_installPrefix)};
+
+    m_configureProcess->setWorkingDirectory(workingDir);
+
+    qDebug() << "Running cmake << " << CMAKE_PROGRAM << args << m_args << m_configureProcess->workingDirectory();
 
     m_configureProcess->start(CMAKE_PROGRAM, QStringList() << args << m_args);
 
@@ -298,6 +331,6 @@ void ProcessManager::configureStep()
 
 void ProcessManager::runStep()
 {
-    m_runProcess->setWorkingDirectory(m_workingDir+"/bin");
-    m_runProcess->start("nota", QStringList());
+    m_runProcess->setWorkingDirectory(m_buildDir.toLocalFile()+"/bin");
+    m_runProcess->start("./nota", QStringList());
 }

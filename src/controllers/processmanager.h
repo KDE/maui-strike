@@ -8,7 +8,6 @@ class QProcess;
 class ProcessManager : public QObject
 {
     Q_OBJECT
-    Q_PROPERTY(QString workingDir READ workingDir WRITE setWorkingDir NOTIFY workingDirChanged)
 
     Q_PROPERTY(QStringList args READ args WRITE setArgs NOTIFY argsChanged)
     Q_PROPERTY(QStringList envVar READ envVar WRITE setEnvVar NOTIFY envVarChanged)
@@ -20,6 +19,7 @@ class ProcessManager : public QObject
     Q_PROPERTY(bool binaryRunning READ binaryRunning NOTIFY binaryRunningChanged FINAL)
 
     Q_PROPERTY(QString installPrefix READ installPrefix WRITE setInstallPrefix NOTIFY installPrefixChanged)
+    Q_PROPERTY(QString infoLabel READ infoLabel NOTIFY infoLabelChanged)
 
     Q_PROPERTY(bool enabled READ enabled NOTIFY enabledChanged FINAL)
 
@@ -28,7 +28,8 @@ public:
 
     void setProjectUrl(QUrl const&);
 
-    QString workingDir() const;
+    QUrl buildDir() const;
+    QUrl rootDir() const;
 
     QStringList args() const;
 
@@ -46,6 +47,11 @@ public:
 
     bool enabled() const;
 
+    QString infoLabel() const
+    {
+        return m_infoLabel;
+    }
+
 public slots:
     void build();
     void configure();
@@ -54,8 +60,6 @@ public slots:
     void stopBuild();
     void stopConfigure();
     void stopRun();
-
-    void setWorkingDir(QString workingDir);
 
     void setArgs(QStringList args);
 
@@ -69,8 +73,8 @@ private:
     QProcess *m_buildProcess;
     QProcess *m_runProcess;
 
-    QString m_workingDir;
     QUrl m_rootDir;
+    QUrl m_buildDir;
     QUrl m_projectUrl;
 
     QStringList m_args;
@@ -93,8 +97,9 @@ private:
 
     bool m_enabled {false};
 
-signals:
+    QString m_infoLabel;
 
+signals:
     void workingDirChanged(QString workingDir);
     void argsChanged(QStringList args);
     void envVarChanged(QStringList envVar);
@@ -106,6 +111,7 @@ signals:
     void buildRunningChanged(bool buildRunning);
     void binaryRunningChanged(bool binaryRunning);
     void enabledChanged(bool enabled);
+    void infoLabelChanged(QString infoLabel);
 };
 
 #endif // PROCESSMANAGER_H

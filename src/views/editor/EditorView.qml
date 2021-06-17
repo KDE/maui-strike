@@ -3,13 +3,15 @@ import QtQml 2.14
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
+import org.kde.kirigami 2.14 as Kirigami
 
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 import org.mauikit.texteditor 1.0 as TE
 
 import QtQuick.Window 2.0
+
+import "../widgets"
 
 Maui.Page
 {
@@ -20,16 +22,27 @@ Maui.Page
     property alias currentTab : _editorListView.currentItem
     readonly property TE.TextEditor currentEditor: currentTab ? currentTab.currentItem.editor : null
     property alias listView: _editorListView
-    property alias plugin: _pluginLayout
     property alias model : _editorListView.contentModel
     property alias tabView : _editorListView
 
+property alias outputPanel :_outputPanel
     altHeader: false
-    autoHideHeader: root.focusMode
     headBar.visible: _editorListView.count > 0
 
-    title: currentTab.title
-    showTitle: root.isWide
+    headBar.farLeftContent: ToolButton
+    {
+        visible: settings.enableSidebar
+        icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
+        onClicked: _drawer.toggle()
+
+        checked: _drawer.visible
+
+        ToolTip.delay: 1000
+        ToolTip.timeout: 5000
+        ToolTip.visible: hovered
+        ToolTip.text: i18n("Toogle SideBar")
+    }
+
 
     headBar.leftContent: [
 
@@ -92,6 +105,24 @@ Maui.Page
     ]
 
 
+    headBar.middleContent: Maui.ToolActions
+    {
+        currentIndex : _outputPanel.currentIndex
+        Action
+        {
+            icon.name: "dialog-scripts"
+            checked:  _outputPanel.currentIndex === 0
+            onTriggered: _outputPanel.currentIndex = 0
+        }
+
+        Action
+        {
+            icon.name: "love"
+            checked:  _outputPanel.currentIndex === 1
+            onTriggered: _outputPanel.currentIndex = 1
+        }
+    }
+
     headBar.rightContent:[
 
         ToolButton
@@ -102,6 +133,24 @@ Maui.Page
                 currentEditor.showFindBar = !currentEditor.showFindBar
             }
             checked: currentEditor.showFindBar
+        },
+
+        ToolButton
+        {
+            visible: settings.supportSplit
+            icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+            checked: root.currentTab && root.currentTab.count === 2
+            checkable: true
+            onClicked:
+            {
+                if(root.currentTab.count === 2)
+                {
+                    root.currentTab.pop()
+                    return
+                }//close the inactive split
+
+                root.currentTab.split("")
+            }
         },
 
         Maui.ToolButtonMenu
@@ -122,68 +171,52 @@ Maui.Page
                 text: i18n("Save as...")
                 onTriggered: saveFile("", control.currentEditor)
             }
-        },
-
-        Maui.ToolButtonMenu
-        {
-            icon.name: "overflow-menu"
-
-            MenuItem
-            {
-                icon.name: checked ? "view-readermode-active" : "view-readermode"
-                text: i18n("Focus Mode")
-                checked: root.focusMode
-                checkable: true
-                onTriggered: root.focusMode = !root.focusMode
-            }
-
-            MenuItem
-            {
-                text: i18n("Terminal")
-                icon.name: "dialog-scripts"
-                visible: settings.supportTerminal
-                onTriggered: currentTab.toggleTerminal()
-                checkable: true
-                checked: currentTab ? currentTab.terminalVisible : false
-            }
-
-            MenuItem
-            {
-                visible: settings.supportSplit
-                text: root.currentTab.orientation === Qt.Horizontal ? i18n("Split Horizontally") : i18n("Split Vertically")
-                icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                checked: root.currentTab && root.currentTab.count === 2
-                checkable: true
-                onTriggered:
-                {
-                    if(root.currentTab.count === 2)
-                    {
-                        root.currentTab.pop()
-                        return
-                    }//close the inactive split
-
-                    root.currentTab.split("")
-                }
-            }
         }
     ]
 
-    ColumnLayout
+    SplitView
     {
-        id: _pluginLayout
         anchors.fill: parent
         spacing: 0
+        orientation: Qt.Vertical
+
+        onCurrentItemChanged:
+        {
+            _outputPanel.syncTerminal(currentEditor.fileUrl)
+        }
 
         Maui.TabView
         {
             id: _editorListView
-            Layout.fillWidth: true
-            Layout.fillHeight: true
+            SplitView.fillWidth: true
+            SplitView.fillHeight: true
 
             holder.emoji: "qrc:/img/draw-calligraphic.svg"
 
             holder.title: i18n("Missing Project")
-            holder.body: i18n("You can create or open a new project.")
+            holder.body: i18n("Create or open a new project.")
+
+            holder.actions: Action
+            {
+                    icon.name: "folder-open"
+                    text: i18n("Open Project")
+
+
+                onTriggered:
+                {
+
+                    _dialogLoader.sourceComponent = _fileDialogComponent
+                    dialog.mode = dialog.modes.OPEN
+        //            dialog.singleSelection = true
+                    dialog.settings.filters = ["*.txt"]
+                    dialog.callback =  function (urls)
+                    {
+                        _projectManager.projectUrl = urls[0]
+                    }
+                    dialog.open()
+                    control.close()
+                }
+            }
 
             onNewTabClicked: control.openTab("")
             onCloseTabClicked:
@@ -203,13 +236,50 @@ Maui.Page
                     closeTab(index)
             }
         }
+
+       OutputPanel
+       {
+           id: _outputPanel
+           visible: _editorListView.count > 0
+           SplitView.fillWidth: true
+           SplitView.preferredHeight: 200
+           SplitView.maximumHeight: parent.height * 0.5
+           SplitView.minimumHeight : Maui.Style.space.big
+       }
+
+       handle: Kirigami.ShadowedRectangle
+       {
+           implicitWidth: 22
+           implicitHeight: 22
+           color: "#2c2c2c"
+
+           corners
+           {
+               topLeftRadius: 10
+               topRightRadius: 10
+               bottomLeftRadius: 0
+               bottomRightRadius: 0
+           }
+
+           Rectangle
+           {
+               anchors.centerIn: parent
+               height: 8
+               width: 48
+               color: SplitHandle.pressed || SplitHandle.hovered ? Kirigami.Theme.highlightColor : Qt.lighter(parent)
+
+               radius: 12
+           }
+       }
     }
+
 
     Component
     {
         id: _editorLayoutComponent
         EditorLayout {}
     }
+
 
     function unsavedTabSplits(index) //which split indexes are unsaved
     {

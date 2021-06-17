@@ -20,13 +20,10 @@ Maui.ApplicationWindow
     title: currentEditor ? currentTab.title : ""
 
     altHeader: Kirigami.Settings.isMobile
-    headBar.visible: !focusMode
 
     property alias currentTab : editorView.currentTab
     property alias currentEditor: editorView.currentEditor
     property alias dialog : _dialogLoader.item
-
-    property bool focusMode : false
 
     readonly property font defaultFont:
     {
@@ -45,10 +42,7 @@ Maui.ApplicationWindow
         property bool enableSidebar : false
         property bool showLineNumbers : true
         property bool autoSave : true
-        property bool enableSyntaxHighlighting : true
-        property bool showSyntaxHighlightingLanguages: false
         property bool supportSplit :true
-        property bool supportTerminal : true
         property double tabSpace: 8
         property string theme : ""
         property color backgroundColor : root.Kirigami.Theme.backgroundColor
@@ -68,18 +62,12 @@ Maui.ApplicationWindow
         }
     }
 
-    Connections
+
+    onCurrentEditorChanged:
     {
-        target: _projectManager.process
-
-        function onOutputLine(output)
-        {
-            console.log("OUTPUT LINE", output)
-            _outputArea.append(output)
-        }
+        syncSidebar(currentEditor.fileUrl)
+        editorView.outputPanel.syncTerminal(currentEditor.fileUrl)
     }
-
-    onCurrentEditorChanged: syncSidebar(currentEditor.fileUrl)
 
     mainMenu: [
 
@@ -92,14 +80,6 @@ Maui.ApplicationWindow
                 _dialogLoader.sourceComponent = _settingsDialogComponent
                 dialog.open()
             }
-        }
-        ,
-
-        Action
-        {
-            text: i18n("Plugins")
-            icon.name: "system-run"
-            onTriggered: _plugingsDialog.open()
         }
     ]
 
@@ -125,38 +105,14 @@ Maui.ApplicationWindow
         close.accepted = true
     }
 
-    Widgets.PluginsDialog
-    {
-        id: _plugingsDialog
-    }
-
     NewFileDialog
     {
         id: _newDocumentMenu
     }
 
     headBar.forceCenterMiddleContent: false
-    headBar.leftContent: ToolButton
-    {
-        visible: settings.enableSidebar
-        icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
-        onClicked: _drawer.toggle()
 
-        checked: _drawer.visible
-
-        ToolTip.delay: 1000
-        ToolTip.timeout: 5000
-        ToolTip.visible: hovered
-        ToolTip.text: i18n("Toogle SideBar")
-    }
-
-    headBar.rightContent: [ToolButton
-        {
-            id: _outputButton
-            icon.name: "dialog-messages"
-            checkable: true
-            checked : _outputDrawer.visible
-        },
+    headBar.rightContent: [
 
         ToolButton
         {
@@ -167,44 +123,13 @@ Maui.ApplicationWindow
             }
         }
     ]
-    Component
-    {
-        id: _buildBarComponent
 
-        Widgets.BuildBar
-        {
-            implicitWidth: 0
-        }
-    }
-
-    headBar.middleContent: Loader
+    headBar.middleContent: Widgets.BuildBar
     {
-        id: _buildBar1Loader
-        visible: active
-        active: root.width > Kirigami.Units.gridUnit * 40
-        sourceComponent: _buildBarComponent
         Layout.fillWidth: true
         Layout.maximumWidth: 500
         Layout.minimumWidth: 0
     }
-
-    page.headerColumn: Maui.ToolBar
-    {
-        visible: !_buildBar1Loader.active && root.headBar.visible
-
-        width: parent.width
-        position: ToolBar.Header
-        middleContent: Loader
-        {
-            visible: active
-            active: !_buildBar1Loader.active
-            sourceComponent: _buildBarComponent
-            Layout.fillWidth: true
-            Layout.maximumWidth: 500
-        }
-    }
-
-
 
     Loader
     {
@@ -293,60 +218,8 @@ Maui.ApplicationWindow
     {
         id: editorView
         anchors.fill: parent
-        anchors.bottomMargin: _outputDrawer.modal ? 0 : (_outputDrawer.visible ? _outputDrawer.height : 0)
-        transform: Translate {
-            y: _outputDrawer.modal ? (0 - (_outputDrawer.position * (_outputDrawer.height))) : 0
-        }
     }
 
-    Drawer
-    {
-        id: _outputDrawer
-        modal: !root.isWide
-        interactive: modal
-
-        onModalChanged:
-        {
-            visible = !modal && _outputButton.checked
-        }
-
-        visible: _outputButton.checked
-        edge: Qt.BottomEdge
-        height: Math.min(200, parent.height * 0.3)
-        width: parent.width
-
-        Binding on visible {
-            value: _outputButton.checked
-            restoreMode: Binding.RestoreBindingOrValue
-        }
-
-        ScrollView
-        {
-            id: _scrollView
-            anchors.fill: parent
-            contentWidth: avaliableWidth
-
-            Flickable
-            {
-                id: _flickable
-                interactive: Kirigami.Settings.hasTransientTouchInput
-                boundsBehavior: Flickable.StopAtBounds
-                boundsMovement :Flickable.StopAtBounds
-
-                TextArea.flickable:   TextArea
-                {
-                    id: _outputArea
-                    anchors.fill: parent
-                    color: "violet"
-                    readOnly: true
-                    background: Rectangle
-                    {
-                        color:  "#333"
-                    }
-                }
-            }
-        }
-    }
 
     Connections
     {

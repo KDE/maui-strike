@@ -39,10 +39,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     KLocalizedString::setApplicationDomain("slike");
 
-    KAboutData about(QStringLiteral("strike"), "Strike", STRIKE_VERSION_STRING, i18n("Build and run code."), KAboutLicense::LGPL_V3,i18n("© 2019-%1 Slike Development Team", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    KAboutData about(QStringLiteral("strike"), "Strike", STRIKE_VERSION_STRING, i18n("Build and run code."), KAboutLicense::LGPL_V3,i18n("© 2019-%1 Camilo Higuita", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
     about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
-    about.addAuthor(i18n("Anupam Basak"), i18n("Developer"), QStringLiteral("anupam.basak27@gmail.com"));
     about.setHomepage("https://slike.org");
     about.setProductName("slike/strike");
     about.setBugAddress("https://invent.kde.org/maui/strike/-/issues");

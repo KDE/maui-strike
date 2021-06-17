@@ -5,7 +5,6 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.7 as Kirigami
 
 import org.mauikit.controls 1.3 as Maui
-import org.mauikit.filebrowsing 1.3 as FB
 
 Item
 {
@@ -28,8 +27,6 @@ Item
     Maui.TabViewInfo.tabToolTipText:  currentItem.fileUrl
 
     readonly property alias editor : _splitView.currentItem
-    readonly property alias terminal : terminalLoader.item
-    property bool terminalVisible : false
 
     Keys.enabled: true
     Keys.onPressed:
@@ -53,55 +50,25 @@ Item
         }
 
 
-        if(event.key === Qt.Key_F4)
-        {
-            control.terminalVisible = !control.terminalVisible
-        }
+//        if(event.key === Qt.Key_F4)
+//        {
+//            terminalVisible = !terminalVisible
+//        }
     }
-
 
     Maui.SplitView
     {
+        id: _splitView
+
         anchors.fill: parent
-        orientation: Qt.Vertical
 
-        Maui.SplitView
-        {
-            id: _splitView
+        orientation : width >= 600 ? Qt.Horizontal : Qt.Vertical
 
-            SplitView.fillHeight: true
-            SplitView.fillWidth: true
+        onCurrentItemChanged: syncTerminal(control.editor.fileUrl)
 
-            orientation : width >= 600 ? Qt.Horizontal : Qt.Vertical
-
-            onCurrentItemChanged: syncTerminal(control.editor.fileUrl)
-
-            Component.onCompleted: split(control.path)
-        }
-
-        Loader
-        {
-            id: terminalLoader
-            asynchronous: true
-            active: settings.supportTerminal
-            visible: active && control.terminalVisible
-            SplitView.fillWidth: true
-            SplitView.preferredHeight: 200
-            SplitView.maximumHeight: parent.height * 0.5
-            SplitView.minimumHeight : 100
-            source: "../Terminal.qml"
-            onLoaded: syncTerminal(control.currentEditor.fileUrl)
-
-            Behavior on SplitView.preferredHeight
-            {
-                NumberAnimation
-                {
-                    duration: Kirigami.Units.longDuration
-                    easing.type: Easing.InQuad
-                }
-            }
-        }
+        Component.onCompleted: split(control.path)
     }
+
 
     Component
     {
@@ -110,16 +77,7 @@ Item
         Editor {}
     }
 
-    function syncTerminal(path)
-    {
-        if(control.terminal && control.terminal.visible && FB.FM.fileExists(path))
-            control.terminal.session.sendText("cd '" + String(FB.FM.fileDir(path)).replace("file://", "") + "'\n")
-    }
 
-    function toggleTerminal()
-    {
-        control.terminalVisible = !control.terminalVisible
-    }
 
     function split(path)
     {

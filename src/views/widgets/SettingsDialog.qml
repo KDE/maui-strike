@@ -56,41 +56,20 @@ Maui.SettingsDialog
                 onToggled: settings.showLineNumbers = !settings.showLineNumbers
             }
         }
-
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Syntax Highlighting Languages")
-            label2.text: i18n("Display available languages")
-
-            Switch
-            {
-                checkable: true
-                checked: settings.showSyntaxHighlightingLanguages
-                onToggled: settings.showSyntaxHighlightingLanguages = !settings.showSyntaxHighlightingLanguages
-            }
-        }
-
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Syntax Highlighting")
-            label2.text: i18n("Enable syntax highlighting for supported languages")
-            Switch
-            {
-                checkable: true
-                checked: settings.enableSyntaxHighlighting
-                onToggled: settings.enableSyntaxHighlighting = !settings.enableSyntaxHighlighting
-            }
-        }
     }
+
+
 
     Maui.SettingsSection
     {
-        title: i18n("Fonts")
-        description: i18n("Configure the global editor font family and size")
+        title: i18n("Style")
+        description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
+        visible: settings.enableSyntaxHighlighting
+
 
         Maui.SettingTemplate
         {
-            label1.text:  i18n("Family")
+            label1.text:  i18n("Font Family")
 
             ComboBox
             {
@@ -103,7 +82,7 @@ Maui.SettingsDialog
 
         Maui.SettingTemplate
         {
-            label1.text:  i18n("Size")
+            label1.text:  i18n("Font Size")
 
             SpinBox
             {
@@ -115,7 +94,7 @@ Maui.SettingsDialog
 
         Maui.SettingTemplate
         {
-            label1.text:  i18n("Tab Space")
+            label1.text:  i18n("Tab Spacing")
 
             SpinBox
             {
@@ -124,13 +103,6 @@ Maui.SettingsDialog
                 onValueChanged: settings.tabSpace = value
             }
         }
-    }
-
-    Maui.SettingsSection
-    {
-        title: i18n("Style")
-        description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
-        visible: settings.enableSyntaxHighlighting
 
         Maui.SettingTemplate
         {
