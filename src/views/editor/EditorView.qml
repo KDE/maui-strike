@@ -180,10 +180,10 @@ Maui.Page
             Layout.fillWidth: true
             Layout.fillHeight: true
 
-            holder.emoji: "qrc:/img/document-edit.svg"
+            holder.emoji: "qrc:/img/draw-calligraphic.svg"
 
-            holder.title: i18n("Create a new document")
-            holder.body: i18n("You can create or open a new document.")
+            holder.title: i18n("Missing Project")
+            holder.body: i18n("You can create or open a new project.")
 
             onNewTabClicked: control.openTab("")
             onCloseTabClicked:
@@ -254,7 +254,6 @@ Maui.Page
 
     function openTab(path)
     {
-        _swipeView.currentIndex = views.editor
         const index = fileIndex(path)
 
         if(index[0] >= 0)

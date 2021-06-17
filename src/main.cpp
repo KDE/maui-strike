@@ -14,6 +14,9 @@
 
 #define STRIKE_URI "org.slike.strike"
 
+#include "controllers/projectmanager.h"
+#include "controllers/processmanager.h"
+
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
     QCoreApplication::setAttribute(Qt::AA_EnableHighDpiScaling);
@@ -70,8 +73,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     },
     Qt::QueuedConnection);
 
-    qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Nota", Strike::instance());
-
+    qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
+    qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "ProjectManager");
+    qmlRegisterAnonymousType<ProcessManager>(STRIKE_URI, 1);
     engine.load(url);
 
     return app.exec();

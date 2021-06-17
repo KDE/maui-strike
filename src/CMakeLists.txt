@@ -1,10 +1,18 @@
 set(strike_SRCS
     main.cpp
     models/historymodel.cpp
+    models/cmakeprojectmodel.cpp
+    controllers/cmakeprojectmanager.cpp
+    controllers/projectmanager.cpp
+    controllers/processmanager.cpp
     )
 
 set(strike_HDRS
     models/historymodel.h
+    models/cmakeprojectmodel.h
+    controllers/cmakeprojectmanager.h
+    controllers/projectmanager.h
+    controllers/processmanager.h
     strike.h
     )
 

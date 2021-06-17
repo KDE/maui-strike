@@ -25,32 +25,6 @@ Maui.SettingsDialog
                 onToggled: settings.enableSidebar = !settings.enableSidebar
             }
         }
-
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Open with Blank File")
-            label2.text: i18n("Creates a blank file by default")
-
-            Switch
-            {
-                checkable: true
-                checked: settings.defaultBlankFile
-                onToggled: settings.defaultBlankFile = !settings.defaultBlankFile
-            }
-        }
-
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Embedded Terminal")
-            label2.text: i18n("Enabled an embedded terminal")
-
-            Switch
-            {
-                checkable: true
-                checked: settings.supportTerminal
-                onToggled: settings.supportTerminal = !settings.supportTerminal
-            }
-        }
     }
 
     Maui.SettingsSection

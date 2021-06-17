@@ -2,6 +2,8 @@
     <qresource prefix="/img">
         <file>document-edit.svg</file>
         <file>strike.svg</file>
+        <file>help-feedback.svg</file>
+        <file>draw-calligraphic.svg</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

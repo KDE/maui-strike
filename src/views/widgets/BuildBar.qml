@@ -13,36 +13,21 @@ Rectangle
     readonly property color m_color : Qt.tint(root.Kirigami.Theme.textColor, Qt.rgba(root.Kirigami.Theme.backgroundColor.r, root.Kirigami.Theme.backgroundColor.g, root.Kirigami.Theme.backgroundColor.b, 0.6))
 
     radius: Maui.Style.radiusV
-    color : Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3)
-
+    color : enabled ? Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3) : "transparent"
+    border.color: enabled ? "transparent" : Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3)
+enabled: _projectManager.process.enabled
     ProgressBar
     {
         id: _progressBar
-        anchors.fill: parent
-        from : 0
-        to : 1
+        width: parent.width
+        anchors.bottom: parent.bottom
+        indeterminate: true
+        visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
+
 //        value: _browserView.currentBrowser.loadProgress
 //        visible: _browserView.currentBrowser.loading
 
-        background: Rectangle {
-                implicitWidth: 200
-                implicitHeight: 6
-                color: "transparent"
-                radius: control.radius
-            }
 
-            contentItem: Item {
-                implicitWidth: 200
-                implicitHeight: 4
-
-                Rectangle {
-                    width: _progressBar.visualPosition * parent.width
-                    height: parent.height
-                    radius: control.radius
-                    color: control.Kirigami.Theme.highlightColor
-                    opacity: 0.3
-                }
-            }
     }
 
     RowLayout
@@ -52,24 +37,40 @@ Rectangle
         ToolButton
         {
             icon.name: "run-build"
+            enabled: !_projectManager.process.processRunning
+            onClicked:
+            {
+                _projectManager.process.build()
+            }
         }
 
         Maui.ListItemTemplate
         {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            label1.text:  "Project Name"
+            label1.text:  _projectManager.projectTitle
             label1.horizontalAlignment: Qt.AlignHCenter
             label2.horizontalAlignment: Qt.AlignHCenter
             label2.font.pointSize: Maui.Style.fontSizes.small
-            label2.text:  "Current project file URL"
-            imageSource:  "vvave"
+            label2.text:  _projectManager.projectPath
+            imageSource: _projectManager.projectLogo
             imageSizeHint: Maui.Style.iconSizes.medium
         }
 
         ToolButton
         {
-            icon.name: "media-playback-start"
+            enabled: !_projectManager.process.buildRunning
+            icon.name: _projectManager.process.binaryRunning ? "media-playback-stop" : "media-playback-start"
+            onClicked:
+            {
+                if( _projectManager.process.binaryRunning)
+                {
+                     _projectManager.process.stopRun()
+                }else
+                {
+                     _projectManager.process.run()
+                }
+            }
         }
     }
 }
