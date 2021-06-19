@@ -64,6 +64,7 @@ SwipeView
                 color: "violet"
                 readOnly: true
                 font.family: "Monospace"
+                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 background: Rectangle
                 {
                     color:  Kirigami.Theme.backgroundColor

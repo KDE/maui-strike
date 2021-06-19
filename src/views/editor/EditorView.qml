@@ -158,17 +158,14 @@ property alias outputPanel :_outputPanel
     SplitView
     {
         anchors.fill: parent
-        spacing: -1
+        spacing: 0
         orientation: Qt.Vertical
 
-        onCurrentItemChanged:
-        {
-            _outputPanel.syncTerminal(currentEditor.fileUrl)
-        }
 
         Maui.TabView
         {
             id: _editorListView
+
             SplitView.fillWidth: true
             SplitView.fillHeight: true
 
