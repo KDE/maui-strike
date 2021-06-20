@@ -14,7 +14,6 @@ Maui.AbstractSideBar
     collapsible: true
     dragMargin: Maui.Style.space.big
 
-    //    visible: (_swipeView.currentIndex === views.editor) && settings.enableSidebar
     enabled: settings.enableSidebar
 
     property alias browser : browserView
@@ -30,30 +29,22 @@ Maui.AbstractSideBar
         anchors.fill: parent
 
         headBar.visible: true
-        footBar.middleContent: ComboBox
-        {
-            Layout.fillWidth: true
-            z : _drawer.z + 9999
-            model: Maui.BaseModel
-            {
-                list: FB.PlacesList
-                {
-                    groups: [
-                        FB.FMList.PLACES_PATH,
-                        FB.FMList.DRIVES_PATH]
-                }
-            }
 
-            textRole: "label"
-            onActivated:
-            {
-                currentIndex = index
-                browserView.openFolder(model.get(index).path)
-            }
-        }
+headBar.middleContent: Maui.ToolActions
+{
+    Action
+    {
+        text: "Project"
+        icon.name: "project-development"
+    }
 
-
-        headBar.leftContent: Maui.ToolActions
+    Action
+    {
+        text: "Browser"
+        icon.name: "folder"
+    }
+}
+        footBar.leftContent: Maui.ToolActions
         {
             expanded: true
             autoExclusive: false
@@ -82,7 +73,7 @@ Maui.AbstractSideBar
             }
         }
 
-        headBar.rightContent: [
+        footBar.rightContent: [
 
             ToolButton
             {

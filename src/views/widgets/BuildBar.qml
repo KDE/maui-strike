@@ -3,7 +3,6 @@ import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.2 as Maui
-import QtQuick.Controls.Material.impl 2.12
 
 Item
 {
@@ -13,34 +12,59 @@ Item
     //    implicitWidth: 500
     //    readonly property color m_color : Qt.tint(root.Kirigami.Theme.textColor, Qt.rgba(root.Kirigami.Theme.backgroundColor.r, root.Kirigami.Theme.backgroundColor.g, root.Kirigami.Theme.backgroundColor.b, 0.6))
 
+
     //    radius: Maui.Style.radiusV
     //    color : enabled ? Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3) : "transparent"
     //    border.color: enabled ? "transparent" : Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3)
+
     enabled: _projectManager.process.enabled
+
     ProgressBar
     {
-        id: _progressBar
-        anchors.fill: parent
-        indeterminate: true
+        id: _progress
+        width: parent.width
+        anchors.centerIn: parent
         visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
-        contentItem: ProgressBarImpl {
-            implicitHeight: 4
+        indeterminate: true
 
-            scale: 1
-            color: "violet"
-            opacity: 0.3
-            progress: _progressBar.position
-            indeterminate: _progressBar.visible && _progressBar.indeterminate
+        contentItem: Item {
+            x: _progress.leftPadding
+            y: _progress.topPadding
+            width: _progress.availableWidth
+            height: _progress.availableHeight
+
+            scale: _progress.mirrored ? -1 : 1
+
+            Repeater {
+                model: 2
+
+                Rectangle {
+                    property real offset: 0
+
+                    x: (_progress.indeterminate ? offset * parent.width : 0)
+                    y: (parent.height - height) / 2
+                    width: offset * (parent.width - x)
+                    height: 4
+
+                    color: "violet"
+
+                    SequentialAnimation on offset {
+                        loops: Animation.Infinite
+                        running: _progress.indeterminate && _progress.visible
+                        PauseAnimation { duration: index ? 520 : 0 }
+                        NumberAnimation {
+                            easing.type: Easing.OutCubic
+                            duration: 1240
+                            from: 0
+                            to: 1
+                        }
+                        PauseAnimation { duration: index ? 0 : 520 }
+                    }
+                }
+            }
         }
 
-
-        background: Rectangle {
-            implicitWidth: 200
-            implicitHeight: 4
-            y: (_progressBar.height - height) / 2
-            height: 4
-            color: "transparent"
-        }
+        background: null
     }
 
     RowLayout
