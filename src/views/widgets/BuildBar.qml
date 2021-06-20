@@ -19,53 +19,6 @@ Item
 
     enabled: _projectManager.process.enabled
 
-    ProgressBar
-    {
-        id: _progress
-        width: parent.width
-        anchors.centerIn: parent
-        visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
-        indeterminate: true
-
-        contentItem: Item {
-            x: _progress.leftPadding
-            y: _progress.topPadding
-            width: _progress.availableWidth
-            height: _progress.availableHeight
-
-            scale: _progress.mirrored ? -1 : 1
-
-            Repeater {
-                model: 2
-
-                Rectangle {
-                    property real offset: 0
-
-                    x: (_progress.indeterminate ? offset * parent.width : 0)
-                    y: (parent.height - height) / 2
-                    width: offset * (parent.width - x)
-                    height: 4
-
-                    color: "violet"
-
-                    SequentialAnimation on offset {
-                        loops: Animation.Infinite
-                        running: _progress.indeterminate && _progress.visible
-                        PauseAnimation { duration: index ? 520 : 0 }
-                        NumberAnimation {
-                            easing.type: Easing.OutCubic
-                            duration: 1240
-                            from: 0
-                            to: 1
-                        }
-                        PauseAnimation { duration: index ? 0 : 520 }
-                    }
-                }
-            }
-        }
-
-        background: null
-    }
 
     RowLayout
     {
@@ -125,6 +78,55 @@ Item
                 imageSource: _projectManager.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
+            }
+
+
+            ProgressBar
+            {
+                id: _progress
+                width: parent.width
+                anchors.centerIn: parent
+                visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
+                indeterminate: true
+
+                contentItem: Item {
+                    x: _progress.leftPadding
+                    y: _progress.topPadding
+                    width: _progress.availableWidth
+                    height: _progress.availableHeight
+
+                    scale: _progress.mirrored ? -1 : 1
+
+                    Repeater {
+                        model: 2
+
+                        Rectangle {
+                            property real offset: 0
+
+                            x: (_progress.indeterminate ? offset * parent.width : 0)
+                            y: (parent.height - height) / 2
+                            width: offset * (parent.width - x)
+                            height: 4
+
+                            color: "violet"
+
+                            SequentialAnimation on offset {
+                                loops: Animation.Infinite
+                                running: _progress.indeterminate && _progress.visible
+                                PauseAnimation { duration: index ? 520 : 0 }
+                                NumberAnimation {
+                                    easing.type: Easing.OutCubic
+                                    duration: 1240
+                                    from: 0
+                                    to: 1
+                                }
+                                PauseAnimation { duration: index ? 0 : 520 }
+                            }
+                        }
+                    }
+                }
+
+                background: null
             }
         }
 
