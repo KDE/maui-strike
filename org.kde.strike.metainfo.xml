@@ -7,120 +7,24 @@ SPDX-License-Identifier: CC0-1.0
   <id>org.kde.nota</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
-  <name>Nota</name>
-  <name xml:lang="ca">Nota</name>
-  <name xml:lang="ca-valencia">Nota</name>
-  <name xml:lang="cs">Nota</name>
-  <name xml:lang="de">Nota</name>
-  <name xml:lang="es">Nota</name>
-  <name xml:lang="fi">Nota</name>
-  <name xml:lang="ia">Nota</name>
-  <name xml:lang="it">Nota</name>
-  <name xml:lang="ko">Nota</name>
-  <name xml:lang="nl">Nota</name>
-  <name xml:lang="pl">Nota</name>
-  <name xml:lang="pt">Nota</name>
-  <name xml:lang="pt-BR">Nota</name>
-  <name xml:lang="sk">Nota</name>
-  <name xml:lang="sl">Nota</name>
-  <name xml:lang="sv">Nota</name>
-  <name xml:lang="uk">Нота</name>
-  <name xml:lang="x-test">xxNotaxx</name>
-  <summary>Browse, create and edit text files</summary>
-  <summary xml:lang="ca">Navegueu, creeu, i editeu fitxers de text</summary>
-  <summary xml:lang="ca-valencia">Navegueu, creeu, i editeu fitxers de text</summary>
-  <summary xml:lang="cs">Prohlížejte, vytvářejte a upravujte textové soubory</summary>
-  <summary xml:lang="de">Textdaten durchsehen, erstellen und bearbeiten</summary>
-  <summary xml:lang="es">Navegue, cree y edite archivos de texto</summary>
-  <summary xml:lang="fi">Selaa, luo ja muokkaa tekstitiedostoja</summary>
-  <summary xml:lang="ia">Naviga, crea e modifica files de texto</summary>
-  <summary xml:lang="it">Sfoglia, crea e modifica file di testo</summary>
-  <summary xml:lang="ko">텍스트 파일 탐색, 생성, 편집</summary>
-  <summary xml:lang="nl">Tekstbestanden, er in bladeren, aanmaken en bewerken</summary>
-  <summary xml:lang="pt">Navegue, crie e edite ficheiros de texto</summary>
-  <summary xml:lang="pt-BR">Navegar, criar e editar arquivos de texto</summary>
-  <summary xml:lang="sl">Brskajte, ustvarjajte in urejajte besedilne datoteke</summary>
-  <summary xml:lang="sv">Bläddra bland, skapa och redigera textfiler</summary>
-  <summary xml:lang="uk">Перегляд, створення та редагування текстових файлів</summary>
-  <summary xml:lang="x-test">xxBrowse, create and edit text filesxx</summary>
+  <name>Strike</name>
+  <summary>Simple and convergent IDE</summary>
   <description>
-    <p>Nota is a simple text editor for desktop and mobile computers.</p>
-    <p xml:lang="ca">El Nota és un editor senzill de text per a ordinadors d'escriptori i mòbils.</p>
-    <p xml:lang="ca-valencia">El Nota és un editor senzill de text per a ordinadors d'escriptori i mòbils.</p>
-    <p xml:lang="cs">Nota je jednoduchý editor textu pro pracovní a mobilní počítače.</p>
-    <p xml:lang="de">Nota ist ein einfacher Texteditor für die Arbeitsfläche und Mobilgeräte.</p>
-    <p xml:lang="es">Nota es un editor simple de texto para móviles y el escritorio.</p>
-    <p xml:lang="fi">Nota on yksinkertainen tekstimuokkain työpöytä- ja mobiilitietokoneille.</p>
-    <p xml:lang="ia">Nota es un simple editor de texto per computatores mobile e de scriptorio</p>
-    <p xml:lang="it">Nota è un semplice editor di testo per computer desktop e portatili.</p>
-    <p xml:lang="ko">Nota는 데스크톱과 모바일용 간단한 텍스트 편집기입니다.</p>
-    <p xml:lang="nl">Nota is een eenvoudige tekstverwerker voor bureaublad en mobiele computers.</p>
-    <p xml:lang="pl">Nota jest prostym edytorem tekstu dla urządzeń na biurko i przenośnych.</p>
-    <p xml:lang="pt">O Nota é um editor de texto simples para computadores e dispositivos móveis.</p>
-    <p xml:lang="pt-BR">O Nota é um editor de texto simples para a área de trabalho e celulares.</p>
-    <p xml:lang="sk">Nota je jednoduchý editor pre desktopové a mobilné počítače.</p>
-    <p xml:lang="sl">Nota je enostaven urejevalnik besedil za namizne in prenosne računalnike.</p>
-    <p xml:lang="sv">Nota är en enkel texteditor för skrivbords- och bärbara datorer.</p>
-    <p xml:lang="uk">Нота — простий текстовий редактор для робочих станцій та мобільних комп'ютерів.</p>
-    <p xml:lang="x-test">xxNota is a simple text editor for desktop and mobile computers.xx</p>
+    <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
   </description>
   <url type="homepage">https://mauikit.org/</url>
-  <url type="bugtracker">https://invent.kde.org/maui/nota/-/issues</url>
+  <url type="bugtracker">https://invent.kde.org/maui/strike/-/issues</url>
   <url type="donation">https://kde.org/community/donations</url>
   <screenshots>
     <screenshot type="default">
-      <caption>Nota</caption>
-      <caption xml:lang="ca">Nota</caption>
-      <caption xml:lang="ca-valencia">Nota</caption>
-      <caption xml:lang="cs">Nota</caption>
-      <caption xml:lang="de">Nota</caption>
-      <caption xml:lang="es">Nota</caption>
-      <caption xml:lang="fi">Nota</caption>
-      <caption xml:lang="ia">Nota</caption>
-      <caption xml:lang="it">Nota</caption>
-      <caption xml:lang="ko">Nota</caption>
-      <caption xml:lang="nl">Nota</caption>
-      <caption xml:lang="pl">Nota</caption>
-      <caption xml:lang="pt">Nota</caption>
-      <caption xml:lang="pt-BR">Nota</caption>
-      <caption xml:lang="sk">Nota</caption>
-      <caption xml:lang="sl">Nota</caption>
-      <caption xml:lang="sv">Nota</caption>
-      <caption xml:lang="uk">Нота</caption>
-      <caption xml:lang="x-test">xxNotaxx</caption>
+      <caption>Strike</caption>     
       <image type="source" width="2464" height="1929">
         https://cdn.kde.org/screenshots/nota/nota.png
       </image>
-    </screenshot>
-    <screenshot type="default">
-      <caption>Nota, find dialog</caption>
-      <caption xml:lang="ca">Nota, diàleg de cerca</caption>
-      <caption xml:lang="ca-valencia">Nota, diàleg de cerca</caption>
-      <caption xml:lang="de">Notas Suchdialog</caption>
-      <caption xml:lang="es">Nota, encontrar diálogo</caption>
-      <caption xml:lang="fi">Nota, etsi-ikkuna</caption>
-      <caption xml:lang="ia">Nota, dialogo de trovar</caption>
-      <caption xml:lang="it">Nota, finestra Trova</caption>
-      <caption xml:lang="ko">Nota 찾기 대화 상자</caption>
-      <caption xml:lang="nl">Nota, dialoog voor zoeken</caption>
-      <caption xml:lang="pt">Nota - janela de pesquisa</caption>
-      <caption xml:lang="pt-BR">Nota, janela Encontrar</caption>
-      <caption xml:lang="sl">Nota, najdi dialog</caption>
-      <caption xml:lang="sv">Nota, sökdialogruta</caption>
-      <caption xml:lang="uk">Нота, діалогове вікно пошуку</caption>
-      <caption xml:lang="x-test">xxNota, find dialogxx</caption>
-      <image type="source" width="3285" height="2052">
-        https://cdn.kde.org/screenshots/nota/nota-tabs-find-dialog.png
-      </image>
-    </screenshot>
-    <screenshot type="default">
-      <image type="source" width="1947" height="1375">
-        https://cdn.kde.org/screenshots/nota/nota-stable.png
-      </image>
-    </screenshot>
+    </screenshot>   
   </screenshots>
   <provides>
-    <binary>nota</binary>
+    <binary>strike</binary>
   </provides>
   <recommends>
     <control>pointing</control>

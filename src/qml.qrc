@@ -1,16 +1,12 @@
 <RCC>
     <qresource prefix="/">
         <file>main.qml</file>
-        <file>views/DocumentsView.qml</file>
-        <file>views/RecentView.qml</file>
-        <file>views/widgets/DocsBrowser.qml</file>
         <file>views/widgets/SettingsDialog.qml</file>
         <file>views/PlacesSidebar.qml</file>
         <file>views/editor/NewFileDialog.qml</file>
         <file>views/editor/EditorView.qml</file>
         <file>views/editor/Editor.qml</file>
         <file>views/editor/EditorLayout.qml</file>
-        <file>views/widgets/ItemMenu.qml</file>
         <file>views/widgets/BuildBar.qml</file>
         <file>views/widgets/OutputPanel.qml</file>
         <file>views/widgets/ProjectConfigDialog.qml</file>

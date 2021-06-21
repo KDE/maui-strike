@@ -5,6 +5,7 @@
 #include <QUrl>
 
 class ProcessManager;
+class CMakeProjectManager;
 class ProjectManager : public QObject
 {
     Q_OBJECT
@@ -34,6 +35,7 @@ private:
     QUrl m_projectUrl;
 
     ProcessManager *m_process;
+    CMakeProjectManager *m_projectManager;
 
     QString m_projectTitle {"Strike"};
 

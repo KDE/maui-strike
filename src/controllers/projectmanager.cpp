@@ -9,6 +9,7 @@
 
 ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
   , m_process(new ProcessManager(this))
+  , m_projectManager(new CMakeProjectManager(this))
 {
     connect(this, &ProjectManager::projectUrlChanged, [this](QUrl url)
     {

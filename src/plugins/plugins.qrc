@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/plugins">
-        <file>ToDos.qml</file>
-        <file>QMLLive.qml</file>
-        <file>Dicto.qml</file>
-        <file>ActionBar.qml</file>
-    </qresource>
-</RCC>

@@ -5,6 +5,9 @@ set(strike_SRCS
     controllers/cmakeprojectmanager.cpp
     controllers/projectmanager.cpp
     controllers/processmanager.cpp
+    controllers/cmaketarget.cpp
+    controllers/cmakeapi.cpp
+    controllers/cmakeproject.cpp
     )
 
 set(strike_HDRS
@@ -13,12 +16,14 @@ set(strike_HDRS
     controllers/cmakeprojectmanager.h
     controllers/projectmanager.h
     controllers/processmanager.h
+    controllers/cmaketarget.h
+    controllers/cmakeapi.h
+    controllers/cmakeproject.h
     strike.h
     )
 
 set(strike_ASSETS
     qml.qrc
-    plugins/plugins.qrc
     assets/img_assets.qrc
     )
 
@@ -34,4 +39,3 @@ target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONF
 target_link_libraries(${PROJECT_NAME} MauiKit MauiKit::FileBrowsing Qt5::Sql Qt5::Quick Qt5::Qml Qt5::Svg KF5::CoreAddons KF5::I18n KF5::SyntaxHighlighting)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})
-install(FILES assets/strike.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
