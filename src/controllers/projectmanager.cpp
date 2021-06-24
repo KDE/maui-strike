@@ -1,7 +1,7 @@
 #include "projectmanager.h"
 #include "processmanager.h"
 #include "cmakeprojectmanager.h"
-
+#include "cmakeapi.h"
 #include <QDebug>
 #include <QDir>
 

@@ -4,7 +4,6 @@
 #include <QObject>
 #include <QVector>
 
-typedef QVector<CMakeTarget> Targets;
 
 class CMakeTarget : public QObject
 {
