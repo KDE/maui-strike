@@ -27,9 +27,11 @@ Item
 
         MouseArea
         {
+            id: _buildButton
             Layout.fillHeight: true
             Layout.preferredWidth: height * 1.5
-
+            opacity: enabled ? 1 : 0.4
+            hoverEnabled: true
             enabled: !_projectManager.process.processRunning
             onClicked:
             {
@@ -40,6 +42,7 @@ Item
             {
                 anchors.fill: parent
                 color: Qt.lighter(Kirigami.Theme.backgroundColor)
+
                 corners
                 {
                     topLeftRadius: Maui.Style.radiusV
@@ -51,10 +54,9 @@ Item
                 Kirigami.Icon
                 {
                     anchors.centerIn: parent
-
                     source: "run-build"
 
-                    color: parent.hovered ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
+                    color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
                     width: Maui.Style.iconSizes.small
                     height: width
                 }
@@ -132,8 +134,11 @@ Item
 
         MouseArea
         {
+            id: _runButton
             Layout.fillHeight: true
             Layout.preferredWidth: height * 1.5
+            opacity: enabled ? 1 : 0.4
+            hoverEnabled: true
 
             enabled: !_projectManager.process.buildRunning
             onClicked:
@@ -163,7 +168,7 @@ Item
                 {
                     anchors.centerIn: parent
                     source: _projectManager.process.binaryRunning ? "media-playback-stop" : "media-playback-start"
-                    color: parent.hovered ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
+                    color: _runButton.containsMouse || _runButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
                     width: Maui.Style.iconSizes.small
                     height: width
                 }

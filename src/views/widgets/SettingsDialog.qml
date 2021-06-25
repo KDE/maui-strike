@@ -7,26 +7,10 @@ import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.texteditor 1.0 as TE
 
+import org.slike.strike 1.0 as Strike
+
 Maui.SettingsDialog
 {
-    Maui.SettingsSection
-    {
-        title: i18n("General")
-        description: i18n("Configure the app UI, behaviour and plugins.")
-        Maui.SettingTemplate
-        {
-            label1.text: i18n("Places Sidebar")
-            label2.text: i18n("Browse your file system from the sidebar")
-
-            Switch
-            {
-                checkable: true
-                checked: settings.enableSidebar
-                onToggled: settings.enableSidebar = !settings.enableSidebar
-            }
-        }
-    }
-
     Maui.SettingsSection
     {
         title: i18n("Editor")
@@ -58,8 +42,6 @@ Maui.SettingsDialog
         }
     }
 
-
-
     Maui.SettingsSection
     {
         title: i18n("Style")
@@ -74,7 +56,7 @@ Maui.SettingsDialog
             ComboBox
             {
                 Layout.fillWidth: true
-                model: Qt.fontFamilies()
+                model: Strike.Fonts.monospaceFamilies
                 Component.onCompleted: currentIndex = find(settings.font.family, Qt.MatchExactly)
                 onActivated: settings.font.family = currentText
             }

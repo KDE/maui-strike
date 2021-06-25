@@ -27,7 +27,7 @@ Maui.ApplicationWindow
 
     readonly property font defaultFont:
     {
-        family: "Noto Sans Mono"
+        family: "Monospace"
         pointSize: Maui.Style.fontSizes.default
     }
 
@@ -39,7 +39,6 @@ Maui.ApplicationWindow
         id: settings
         category: "General"
 
-        property bool enableSidebar : false
         property bool showLineNumbers : true
         property bool autoSave : true
         property bool supportSplit :true
@@ -220,7 +219,6 @@ Maui.ApplicationWindow
         anchors.fill: parent
     }
 
-
     Connections
     {
         target: Strike.Strike
@@ -233,7 +231,7 @@ Maui.ApplicationWindow
 
     function syncSidebar(path)
     {
-        if(path && FB.FM.fileExists(path) && settings.enableSidebar)
+        if(path && FB.FM.fileExists(path))
         {
             _drawer.browser.openFolder(FB.FM.fileDir(path))
         }

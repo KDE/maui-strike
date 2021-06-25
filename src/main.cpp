@@ -1,21 +1,22 @@
+#include <QApplication>
 #include <QCommandLineParser>
-#include <QIcon>
+#include <QDate>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
-#include <QDate>
-#include <QApplication>
+#include <QIcon>
 
 #include <KI18n/KLocalizedString>
+
 #include <MauiKit/Core/mauiapp.h>
 
-#include "../strike_version.h"
+#include "controllers/processmanager.h"
+#include "controllers/projectmanager.h"
+#include "models/fonts.h"
 
+#include "../strike_version.h"
 #include "strike.h"
 
 #define STRIKE_URI "org.slike.strike"
-
-#include "controllers/projectmanager.h"
-#include "controllers/processmanager.h"
 
 Q_DECL_EXPORT int main(int argc, char *argv[])
 {
@@ -75,6 +76,13 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
     qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "ProjectManager");
     qmlRegisterAnonymousType<ProcessManager>(STRIKE_URI, 1);
+
+    qmlRegisterSingletonType<Fonts>(STRIKE_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
+      Q_UNUSED(engine)
+      Q_UNUSED(scriptEngine)
+      return new Fonts;
+    });
+
     engine.load(url);
 
     return app.exec();
