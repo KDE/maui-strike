@@ -1,6 +1,5 @@
 set(strike_SRCS
     main.cpp
-    models/historymodel.cpp
     models/fonts.cpp
     models/cmakeprojectmodel.cpp
     controllers/cmakeprojectmanager.cpp
@@ -14,7 +13,6 @@ set(strike_SRCS
     )
 
 set(strike_HDRS
-    models/historymodel.h
     models/fonts.h
     models/cmakeprojectmodel.h
     controllers/cmakeprojectmanager.h
