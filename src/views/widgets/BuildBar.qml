@@ -25,7 +25,7 @@ Item
         anchors.fill: parent
         spacing: 2
 
-        MouseArea
+        AbstractButton
         {
             id: _buildButton
             Layout.fillHeight: true
@@ -38,9 +38,8 @@ Item
                 _projectManager.process.build()
             }
 
-            Kirigami.ShadowedRectangle
+           background: Kirigami.ShadowedRectangle
             {
-                anchors.fill: parent
                 color: Qt.lighter(Kirigami.Theme.backgroundColor)
 
                 corners
@@ -50,6 +49,7 @@ Item
                     bottomLeftRadius: Maui.Style.radiusV
                     bottomRightRadius: 0
                 }
+            }
 
                 Kirigami.Icon
                 {
@@ -61,7 +61,7 @@ Item
                     height: width
                 }
             }
-        }
+
 
         Rectangle
         {
@@ -132,7 +132,7 @@ Item
             }
         }
 
-        MouseArea
+        AbstractButton
         {
             id: _runButton
             Layout.fillHeight: true
@@ -152,9 +152,8 @@ Item
                 }
             }
 
-            Kirigami.ShadowedRectangle
+            background: Kirigami.ShadowedRectangle
             {
-                anchors.fill: parent
                 color: Qt.lighter(Kirigami.Theme.backgroundColor)
                 corners
                 {
@@ -163,6 +162,7 @@ Item
                     bottomLeftRadius: 0
                     bottomRightRadius: Maui.Style.radiusV
                 }
+            }
 
                 Kirigami.Icon
                 {
@@ -172,7 +172,7 @@ Item
                     width: Maui.Style.iconSizes.small
                     height: width
                 }
-            }
+
         }
     }
 }

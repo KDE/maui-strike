@@ -69,8 +69,8 @@ Maui.ApplicationWindow
         editorView.outputPanel.syncTerminal(currentEditor.fileUrl)
     }
 
-    mainMenu: [
-
+    headBar.leftContent: Maui.ToolButtonMenu
+    {
         MenuItem
         {
             text: i18n("Settings")
@@ -80,7 +80,7 @@ Maui.ApplicationWindow
                 _dialogLoader.sourceComponent = _settingsDialogComponent
                 dialog.open()
             }
-        },
+        }
 
         MenuItem
         {
@@ -88,7 +88,7 @@ Maui.ApplicationWindow
             icon.name: "documentinfo"
             onTriggered: root.about()
         }
-    ]
+    }
 
     onClosing:
     {
