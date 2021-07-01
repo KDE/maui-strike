@@ -71,6 +71,8 @@ Maui.ApplicationWindow
 
     headBar.leftContent: Maui.ToolButtonMenu
     {
+        icon.name: "application-menu"
+
         MenuItem
         {
             text: i18n("Settings")
