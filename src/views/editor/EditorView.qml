@@ -13,7 +13,7 @@ import QtQuick.Window 2.0
 
 import "../widgets"
 
-Maui.Page
+Item
 {
     id: control
 
@@ -25,135 +25,8 @@ Maui.Page
     property alias model : _editorListView.contentModel
     property alias tabView : _editorListView
 
-property alias outputPanel :_outputPanel
-    altHeader: false
-    headBar.visible: _editorListView.count > 0
+    property alias outputPanel :_outputPanel
 
-    headBar.farLeftContent: ToolButton
-    {
-        visible: settings.enableSidebar
-        icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
-        onClicked: _drawer.toggle()
-
-        checked: _drawer.visible
-
-        ToolTip.delay: 1000
-        ToolTip.timeout: 5000
-        ToolTip.visible: hovered
-        ToolTip.text: i18n("Toogle SideBar")
-    }
-
-
-    headBar.leftContent: [
-
-        Maui.ToolActions
-        {
-            expanded: true
-            autoExclusive: false
-            checkable: false
-
-            Action
-            {
-                icon.name: "edit-undo"
-                enabled: currentEditor.body.canUndo
-                onTriggered: currentEditor.body.undo()
-            }
-
-            Action
-            {
-                icon.name: "edit-redo"
-                enabled: currentEditor.body.canRedo
-                onTriggered: currentEditor.body.redo()
-            }
-        },
-
-        Maui.ToolActions
-        {
-            visible: (currentEditor.document.isRich || currentEditor.body.textFormat === Text.RichText) && !currentEditor.body.readOnly
-            expanded: true
-            autoExclusive: false
-            checkable: false
-
-            Action
-            {
-                icon.name: "format-text-bold"
-                checked: currentEditor.document.bold
-                onTriggered: currentEditor.document.bold = !currentEditor.document.bold
-            }
-
-            Action
-            {
-                icon.name: "format-text-italic"
-                checked: currentEditor.document.italic
-                onTriggered: currentEditor.document.italic = !currentEditor.document.italic
-            }
-
-            Action
-            {
-                icon.name: "format-text-underline"
-                checked: currentEditor.document.underline
-                onTriggered: currentEditor.document.underline = !currentEditor.document.underline
-            }
-
-            Action
-            {
-                icon.name: "format-text-uppercase"
-                checked: currentEditor.document.uppercase
-                onTriggered: currentEditor.document.uppercase = !currentEditor.document.uppercase
-            }
-        }
-    ]
-
-    headBar.rightContent:[
-
-        ToolButton
-        {
-            icon.name: "edit-find"
-            onClicked:
-            {
-                currentEditor.showFindBar = !currentEditor.showFindBar
-            }
-            checked: currentEditor.showFindBar
-        },
-
-        ToolButton
-        {
-            visible: settings.supportSplit
-            icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-            checked: root.currentTab && root.currentTab.count === 2
-            checkable: true
-            onClicked:
-            {
-                if(root.currentTab.count === 2)
-                {
-                    root.currentTab.pop()
-                    return
-                }//close the inactive split
-
-                root.currentTab.split("")
-            }
-        },
-
-        Maui.ToolButtonMenu
-        {
-            icon.name: "document-save"
-
-            MenuItem
-            {
-                text: i18n("Save")
-                icon.name: "document-save"
-                enabled: currentEditor ? currentEditor.document.modified : false
-                onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
-            }
-
-            MenuItem
-            {
-                icon.name: "document-save-as"
-                text: i18n("Save as...")
-                onTriggered: saveFile("", control.currentEditor)
-            }
-        }
-    ]
 
     SplitView
     {
@@ -176,8 +49,8 @@ property alias outputPanel :_outputPanel
 
             holder.actions: Action
             {
-                    icon.name: "folder-open"
-                    text: i18n("Open Project")
+                icon.name: "folder-open"
+                text: i18n("Open Project")
 
 
                 onTriggered:
@@ -185,7 +58,7 @@ property alias outputPanel :_outputPanel
 
                     _dialogLoader.sourceComponent = _fileDialogComponent
                     dialog.mode = dialog.modes.OPEN
-        //            dialog.singleSelection = true
+                    //            dialog.singleSelection = true
                     dialog.settings.filters = ["*.txt"]
                     dialog.callback =  function (urls)
                     {
@@ -215,53 +88,99 @@ property alias outputPanel :_outputPanel
             }
         }
 
-       OutputPanel
-       {
-           id: _outputPanel
-           visible: _editorListView.count > 0
-           SplitView.fillWidth: true
-           SplitView.preferredHeight: 200
-           SplitView.maximumHeight: parent.height * 0.5
-           SplitView.minimumHeight : Maui.Style.space.big
-       }
+        OutputPanel
+        {
+            id: _outputPanel
+            visible: _editorListView.count > 0
+            SplitView.fillWidth: true
+            SplitView.preferredHeight: 200
+            SplitView.maximumHeight: parent.height * 0.5
+            SplitView.minimumHeight : Maui.Style.space.big
+        }
 
-       handle: Kirigami.ShadowedRectangle
-       {
-           Kirigami.Theme.inherit: false
-           Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
-           Kirigami.Theme.backgroundColor: "#2c2c2c"
+        handle: Kirigami.ShadowedRectangle
+        {
+            Kirigami.Theme.inherit: false
+            Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
+            Kirigami.Theme.backgroundColor: "#2c2c2c"
 
-           implicitWidth: 22
-           implicitHeight: Maui.Style.toolBarHeight
-           color: Kirigami.Theme.backgroundColor
+            implicitWidth: 22
+            implicitHeight: Maui.Style.toolBarHeight
+            color: Kirigami.Theme.backgroundColor
 
-           corners
-           {
-               topLeftRadius: 10
-               topRightRadius: 10
-               bottomLeftRadius: 0
-               bottomRightRadius: 0
-           }
+            corners
+            {
+                topLeftRadius: 10
+                topRightRadius: 10
+                bottomLeftRadius: 0
+                bottomRightRadius: 0
+            }
 
-           Maui.ToolActions
-               {
-                   anchors.centerIn: parent
-                   currentIndex : _outputPanel.currentIndex
-                   Action
-                   {
-                       icon.name: "dialog-scripts"
-                       checked:  _outputPanel.currentIndex === 0
-                       onTriggered: _outputPanel.currentIndex = 0
-                   }
+            RowLayout
+            {
+                anchors.fill: parent
+                anchors.leftMargin:  Maui.Style.space.medium
+                anchors.rightMargin:  Maui.Style.space.medium
 
-                   Action
-                   {
-                       icon.name: "love"
-                       checked:  _outputPanel.currentIndex === 1
-                       onTriggered: _outputPanel.currentIndex = 1
-                   }
-               }
-       }
+                ToolButton
+                {
+                    Layout.minimumWidth: implicitWidth
+                    Layout.alignment: Qt.AlignLeft
+                    visible: settings.enableSidebar
+                    icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
+                    onClicked: _drawer.toggle()
+
+                    checked: _drawer.visible
+
+                    ToolTip.delay: 1000
+                    ToolTip.timeout: 5000
+                    ToolTip.visible: hovered
+                    ToolTip.text: i18n("Toogle SideBar")
+                }
+
+                Maui.ToolActions
+                {
+                    Layout.minimumWidth: implicitWidth
+                    Layout.alignment: Qt.AlignCenter
+
+                    currentIndex : _outputPanel.currentIndex
+                    Action
+                    {
+                        icon.name: "dialog-scripts"
+                        checked:  _outputPanel.currentIndex === 0
+                        onTriggered: _outputPanel.currentIndex = 0
+                    }
+
+                    Action
+                    {
+                        icon.name: "love"
+                        checked:  _outputPanel.currentIndex === 1
+                        onTriggered: _outputPanel.currentIndex = 1
+                    }
+                }
+
+                ToolButton
+                {
+                    Layout.minimumWidth: implicitWidth
+                    Layout.alignment: Qt.AlignRight
+
+                    visible: settings.supportSplit
+                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                    checked: root.currentTab && root.currentTab.count === 2
+                    checkable: true
+                    onClicked:
+                    {
+                        if(root.currentTab.count === 2)
+                        {
+                            root.currentTab.pop()
+                            return
+                        }//close the inactive split
+
+                        root.currentTab.split("")
+                    }
+                }
+            }
+        }
     }
 
 

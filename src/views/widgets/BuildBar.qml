@@ -1,8 +1,9 @@
 import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
+
 import org.kde.kirigami 2.14 as Kirigami
-import org.mauikit.controls 1.2 as Maui
+import org.mauikit.controls 1.3 as Maui
 
 Item
 {
@@ -63,15 +64,20 @@ Item
             }
 
 
-        Rectangle
+        AbstractButton
         {
             Layout.fillWidth: true
             Layout.fillHeight: true
-            color: Qt.lighter(Kirigami.Theme.backgroundColor)
 
-            Maui.ListItemTemplate
+            background: Rectangle
             {
-                anchors.fill: parent
+                color: Qt.lighter(Kirigami.Theme.backgroundColor)
+                border.width: 1
+                border.color: _docMenu.visible ? Kirigami.Theme.highlightColor : color
+            }
+
+            contentItem: Maui.ListItemTemplate
+            {
                 label1.text:  _projectManager.projectTitle
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
@@ -80,8 +86,121 @@ Item
                 imageSource: _projectManager.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
+
+                Kirigami.Icon
+                {
+                    source: "go-down"
+                    implicitHeight: Maui.Style.iconSizes.small
+                    implicitWidth: implicitHeight
+                }
             }
 
+            onClicked: _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
+
+            Maui.ContextualMenu
+            {
+                id: _docMenu
+
+                MenuItem
+                {
+                    icon.name: "edit-undo"
+                    text: i18n("Undo")
+                    enabled: currentEditor.body.canUndo
+                    onTriggered: currentEditor.body.undo()
+                }
+
+                MenuItem
+                {
+                    icon.name: "edit-redo"
+                    text: i18n("Redo")
+                    enabled: currentEditor.body.canRedo
+                    onTriggered: currentEditor.body.redo()
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("Save")
+                    icon.name: "document-save"
+                    enabled: currentEditor ? currentEditor.document.modified : false
+                    onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
+                }
+
+                MenuItem
+                {
+                    icon.name: "document-save-as"
+                    text: i18n("Save as...")
+                    onTriggered: saveFile("", control.currentEditor)
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    icon.name: "edit-find"
+                    text: i18n("Find and Replace")
+                    checkable: true
+
+                    onTriggered:
+                    {
+                        currentEditor.showFindBar = !currentEditor.showFindBar
+                    }
+                    checked: currentEditor.showFindBar
+                }
+
+                MenuItem
+                {
+                    icon.name: "document-edit"
+                    text: i18n("Line/Word Counter")
+                    checkable: true
+
+                    onTriggered:
+                    {
+                        currentEditor.showLineCount = checked
+                    }
+
+                    checked: currentEditor.showLineCount
+                }
+
+                MenuSeparator {}
+
+                MenuItem
+                {
+                    text: i18n("Share")
+                    icon.name: "document-share"
+                    onTriggered: Maui.Platform.shareFiles([currentEditor.fileUrl])
+
+                }
+
+                MenuItem
+                {
+                    text: i18n("Open with")
+                    icon.name: "document-open"
+                }
+
+                MenuItem
+                {
+                    visible: !Maui.Handy.isAndroid
+                    text: i18n("Show in folder")
+                    icon.name: "folder-open"
+                    onTriggered:
+                    {
+                        FB.FM.openLocation([currentEditor.fileUrl])
+                    }
+                }
+
+                MenuItem
+                {
+                    text: i18n("Info")
+                    icon.name: "documentinfo"
+                    onTriggered:
+                    {
+            //            getFileInfo(control.model.get(index).url)
+                    }
+                }
+
+            }
 
             ProgressBar
             {
