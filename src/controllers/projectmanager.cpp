@@ -1,33 +1,44 @@
 #include "projectmanager.h"
-#include "processmanager.h"
-#include "cmakeprojectmanager.h"
-#include "cmakeapi.h"
+
 #include <QDebug>
 #include <QDir>
 
 #include <MauiKit/FileBrowsing/fmstatic.h>
 
+#include "cmakeprojectmanager.h"
+#include "cmakeapi.h"
+
+#include "projectpreferences.h"
+
 ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
-  , m_process(new ProcessManager(this))
   , m_projectManager(new CMakeProjectManager(this))
+  , m_preferences(new ProjectPreferences(this))
 {
     connect(this, &ProjectManager::projectUrlChanged, [this](QUrl url)
     {
-        m_process->setProjectUrl(url);
-        CMake::FileApi::writeClientQueryFile(m_process->buildDir().toLocalFile());
-
-        m_projectTitle = QDir(m_process->rootDir().toLocalFile()).dirName();
-        emit this->projectTitleChanged(m_projectTitle);
-
-        m_projectPath = FMStatic::fileDir(url).toLocalFile();
-        emit this->projectPathChanged(m_projectPath);
-
-        if(FMStatic::fileExists(QUrl::fromLocalFile(m_projectPath +"/logo.png")))
+        //check cmake file actually exists
+        if(!FMStatic::fileExists(m_projectUrl))
         {
-            m_projectLogo = m_projectPath +"/logo.png";
-            emit this->projectLogoChanged(m_projectLogo);
+            qWarning() << "CMake main file doesn't exists. Can not procced";
+            return;
         }
 
+        //from cmake file determine the source directory
+        m_projectPath = FMStatic::fileDir(url);
+        emit this->projectPathChanged(m_projectPath);
+
+        //by default set the build directory as ./build
+        m_preferences->setBuildDir(m_projectPath.toString()+"/build");
+
+        //start the initial configuration of the project, like parsing and creating the needed files
+        m_projectManager->init();
+
+        //maybe try to load a logo form the source directory
+        if(FMStatic::fileExists(QUrl::fromLocalFile(m_projectPath.toString() +"/logo.png")))
+        {
+            m_projectLogo = m_projectPath.toString() +"/logo.png";
+            emit this->projectLogoChanged(m_projectLogo);
+        }
     });
 }
 
@@ -36,17 +47,17 @@ QUrl ProjectManager::projectUrl() const
     return m_projectUrl;
 }
 
-QString ProjectManager::projectTitle() const
+ProjectPreferences *ProjectManager::preferences() const
 {
-    return m_projectTitle;
+    return m_preferences;
 }
 
-ProcessManager *ProjectManager::processManager() const
+CMakeProjectManager *ProjectManager::manager() const
 {
-    return m_process;
+    return m_projectManager;
 }
 
-QString ProjectManager::projectPath() const
+QUrl ProjectManager::projectPath() const
 {
     return m_projectPath;
 }

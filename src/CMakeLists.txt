@@ -1,7 +1,8 @@
 set(strike_SRCS
     main.cpp
+    strike.h
     models/fonts.cpp
-    models/cmakeprojectmodel.cpp
+    models/cmakeprojectsmodel.cpp
     controllers/cmakeprojectmanager.cpp
     controllers/projectmanager.cpp
     controllers/processmanager.cpp
@@ -9,22 +10,10 @@ set(strike_SRCS
     controllers/cmakeapi.cpp
     controllers/cmakeproject.cpp
     controllers/process.cpp
-    controllers/configureprocess.cpp
+    controllers/projectpreferences.cpp
+    controllers/processes/configureprocess.cpp
     )
 
-set(strike_HDRS
-    models/fonts.h
-    models/cmakeprojectmodel.h
-    controllers/cmakeprojectmanager.h
-    controllers/projectmanager.h
-    controllers/processmanager.h
-    controllers/cmaketarget.h
-    controllers/cmakeapi.h
-    controllers/cmakeproject.h
-    controllers/process.h
-    controllers/configureprocess.h
-    strike.h
-    )
 
 set(strike_ASSETS
     qml.qrc
@@ -33,7 +22,6 @@ set(strike_ASSETS
 
 add_executable(${PROJECT_NAME}
     ${strike_SRCS}
-    ${strike_HDRS}
     ${strike_ASSETS})
 
 target_link_libraries(${PROJECT_NAME} KF5::ConfigCore KF5::KIOCore KF5::KIOFileWidgets KF5::KIONTLM KF5::KIOWidgets)

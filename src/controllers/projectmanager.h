@@ -4,49 +4,48 @@
 #include <QObject>
 #include <QUrl>
 
-class ProcessManager;
 class CMakeProjectManager;
+
+class ProjectPreferences;
 class ProjectManager : public QObject
 {
     Q_OBJECT
+    // The root cmake file url
     Q_PROPERTY(QUrl projectUrl READ projectUrl WRITE setProjectUrl NOTIFY projectUrlChanged)
-    Q_PROPERTY(QString projectTitle READ projectTitle NOTIFY projectTitleChanged FINAL)
-    Q_PROPERTY(QString projectPath READ projectPath NOTIFY projectPathChanged FINAL)
+
+    //The root dir where the cmake file lives
+    Q_PROPERTY(QUrl projectPath READ projectPath NOTIFY projectPathChanged FINAL)
     Q_PROPERTY(QString projectLogo READ projectLogo NOTIFY projectLogoChanged FINAL)
-    Q_PROPERTY(ProcessManager * process READ processManager CONSTANT FINAL)
+
+    Q_PROPERTY(ProjectPreferences * preferences READ preferences CONSTANT FINAL)
+    Q_PROPERTY(CMakeProjectManager * manager READ manager CONSTANT FINAL)
 
 public:
     explicit ProjectManager(QObject *parent = nullptr);
 
-    QUrl projectUrl() const;
-
-    QString projectTitle() const;
-
-    ProcessManager * processManager() const;
-
-    QString projectPath() const;
-
     QString projectLogo() const;
+    QUrl projectUrl() const;
+    QUrl projectPath() const;
+
+    ProjectPreferences * preferences() const;
+
+    CMakeProjectManager * manager() const;
 
 public slots:
     void setProjectUrl(QUrl projectUrl);
 
 private:
-    QUrl m_projectUrl;
-
-    ProcessManager *m_process;
     CMakeProjectManager *m_projectManager;
 
-    QString m_projectTitle {"Strike"};
-
-    QString m_projectPath;
-
     QString m_projectLogo {"qrc:/img/strike.svg"};
+    QUrl m_projectUrl;
+    QUrl m_projectPath;
+
+    ProjectPreferences *m_preferences;
 
 signals:
     void projectUrlChanged(QUrl projectUrl);
-    void projectTitleChanged(QString projectTitle);
-    void projectPathChanged(QString projectPath);
+    void projectPathChanged(QUrl projectPath);
     void projectLogoChanged(QString projectLogo);
 };
 

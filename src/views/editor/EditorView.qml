@@ -62,7 +62,7 @@ Item
                     dialog.settings.filters = ["*.txt"]
                     dialog.callback =  function (urls)
                     {
-                        _projectManager.projectUrl = urls[0]
+                        _project.projectUrl = urls[0]
                     }
                     dialog.open()
                     control.close()

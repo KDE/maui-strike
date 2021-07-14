@@ -20,16 +20,73 @@
 
 #pragma once
 
+#include <QObject>
+#include <QHash>
+
 class QJsonObject;
 class QString;
 class QUrl;
 
-struct CMakeProjectData;
-
-namespace KDevelop
+struct CMakeFile
 {
-class Path;
-}
+    QList<QUrl> includes;
+    QList<QUrl> frameworkDirectories;
+    QString compileFlags;
+    QString language;
+    QHash<QString, QString> defines;
+
+    void addDefine(const QString& define);
+
+    bool isEmpty() const
+    {
+        return includes.isEmpty() && frameworkDirectories.isEmpty()
+            && compileFlags.isEmpty() && defines.isEmpty();
+    }
+};
+Q_DECLARE_TYPEINFO(CMakeFile, Q_MOVABLE_TYPE);
+
+struct CMakeFilesCompilationData
+{
+    QHash<QUrl, CMakeFile> files;
+    bool isValid = false;
+    /// lookup table to quickly find a file path for a given folder path
+    /// this greatly speeds up fallback searching for information on untracked files
+    /// based on their folder path
+    QHash<QUrl, QUrl> fileForFolder;
+    void rebuildFileForFolderMapping();
+};
+
+struct CMakeTarget
+{
+    Q_GADGET
+public:
+    enum Type { Library, Executable, Custom };
+    Q_ENUM(Type)
+
+    static Type typeToEnum(const QString& target);
+
+    Type type;
+    QString name;
+    QList<QUrl> artifacts;
+    QList<QUrl> sources;
+    // see https://cmake.org/cmake/help/latest/prop_tgt/FOLDER.html
+    QString folder;
+};
+Q_DECLARE_TYPEINFO(CMakeTarget, Q_MOVABLE_TYPE);
+
+struct CMakeProjectData
+{
+    QString name;
+    CMakeFilesCompilationData compilationData;
+    QHash<QUrl, QVector<CMakeTarget>> targets;
+    struct CMakeFileFlags
+    {
+        bool isGenerated = false;
+        bool isExternal = false;
+        bool isCMake = false;
+    };
+    QHash<QUrl, CMakeFileFlags> cmakeFiles;
+};
 
 /// see: https://cmake.org/cmake/help/latest/manual/cmake-file-api.7.html
 namespace CMake {

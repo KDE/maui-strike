@@ -23,6 +23,9 @@ Maui.ApplicationWindow
 
     altHeader: Kirigami.Settings.isMobile
 
+    property alias project : _project
+    property alias manager : _project.manager
+
     property alias currentTab : editorView.currentTab
     property alias currentEditor: editorView.currentEditor
     property alias dialog : _dialogLoader.item
@@ -52,10 +55,10 @@ Maui.ApplicationWindow
         property font font : defaultFont
     }
 
-    Strike.ProjectManager
+    Strike.Project
     {
-        id: _projectManager
-        process.installPrefix: "/usr"
+        id: _project
+        preferences.installPrefix: "/usr"
 
         onProjectUrlChanged:
         {

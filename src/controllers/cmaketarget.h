@@ -1,3 +1,4 @@
+
 #ifndef CMAKETARGET_H
 #define CMAKETARGET_H
 
@@ -5,11 +6,11 @@
 #include <QVector>
 
 
-class CMakeTarget : public QObject
+class CMakeTargetProject : public QObject
 {
     Q_OBJECT
 public:
-    explicit CMakeTarget(QObject *parent = nullptr);
+    explicit CMakeTargetProject(QObject *parent = nullptr);
 
 signals:
 

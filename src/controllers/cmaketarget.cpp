@@ -1,6 +1,6 @@
 #include "cmaketarget.h"
 
-CMakeTarget::CMakeTarget(QObject *parent) : QObject(parent)
+CMakeTargetProject::CMakeTargetProject(QObject *parent) : QObject(parent)
 {
 
 }

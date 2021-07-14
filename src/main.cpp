@@ -9,8 +9,11 @@
 
 #include <MauiKit/Core/mauiapp.h>
 
-#include "controllers/processmanager.h"
+//#include "controllers/processmanager.h"
 #include "controllers/projectmanager.h"
+#include "controllers/cmakeproject.h"
+#include "controllers/cmakeprojectmanager.h"
+#include "controllers/projectpreferences.h"
 #include "models/fonts.h"
 
 #include "../strike_version.h"
@@ -74,8 +77,9 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Qt::QueuedConnection);
 
     qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
-    qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "ProjectManager");
-    qmlRegisterAnonymousType<ProcessManager>(STRIKE_URI, 1);
+    qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "Project");
+    qmlRegisterAnonymousType<ProjectPreferences>(STRIKE_URI, 1);
+    qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained form StrikeProjec.");
 
     qmlRegisterSingletonType<Fonts>(STRIKE_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
       Q_UNUSED(engine)

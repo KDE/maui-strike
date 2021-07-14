@@ -5,21 +5,15 @@ import QtQuick.Layouts 1.3
 import org.kde.kirigami 2.14 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 
+import org.slike.strike 1.0 as Strike
+
 Item
 {
     id: control
 
     implicitHeight: Maui.Style.rowHeight
-    //    implicitWidth: 500
-    //    readonly property color m_color : Qt.tint(root.Kirigami.Theme.textColor, Qt.rgba(root.Kirigami.Theme.backgroundColor.r, root.Kirigami.Theme.backgroundColor.g, root.Kirigami.Theme.backgroundColor.b, 0.6))
 
-
-    //    radius: Maui.Style.radiusV
-    //    color : enabled ? Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3) : "transparent"
-    //    border.color: enabled ? "transparent" : Qt.rgba(m_color.r, m_color.g, m_color.b, 0.3)
-
-    enabled: _projectManager.process.enabled
-
+    enabled: _project.manager.status === Strike.Manager.Ready
 
     RowLayout
     {
@@ -36,7 +30,7 @@ Item
             enabled: !_projectManager.process.processRunning
             onClicked:
             {
-                _projectManager.process.build()
+//                _project.process.build()
             }
 
            background: Kirigami.ShadowedRectangle
@@ -78,12 +72,12 @@ Item
 
             contentItem: Maui.ListItemTemplate
             {
-                label1.text:  _projectManager.projectTitle
+                label1.text:  _project.projectTitle
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
                 label2.font.pointSize: Maui.Style.fontSizes.small
-                label2.text: _projectManager.process.processRunning ? _projectManager.process.infoLabel :  _projectManager.projectPath
-                imageSource: _projectManager.projectLogo
+                label2.text: _projectManager.process.processRunning ? _projectManager.process.infoLabel :  _project.projectPath
+                imageSource: _project.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
 
@@ -199,7 +193,6 @@ Item
             //            getFileInfo(control.model.get(index).url)
                     }
                 }
-
             }
 
             ProgressBar
