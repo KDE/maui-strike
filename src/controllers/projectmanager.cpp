@@ -14,7 +14,7 @@ ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
   , m_projectManager(new CMakeProjectManager(this))
   , m_preferences(new ProjectPreferences(this))
 {
-    connect(this, &ProjectManager::projectUrlChanged, [this](QUrl url)
+    connect(this, &ProjectManager::projectUrlChanged, [this](QUrl)
     {
         //check cmake file actually exists
         if(!FMStatic::fileExists(m_projectUrl))
@@ -24,17 +24,16 @@ ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
         }
 
         //from cmake file determine the source directory
-        m_projectPath = FMStatic::fileDir(url);
+        m_projectPath = FMStatic::fileDir(m_projectUrl);
         emit this->projectPathChanged(m_projectPath);
 
         //by default set the build directory as ./build
         m_preferences->setBuildDir(m_projectPath.toString()+"/build");
 
-        //start the initial configuration of the project, like parsing and creating the needed files
-        m_projectManager->init();
-
         //maybe try to load a logo form the source directory
-        if(FMStatic::fileExists(QUrl::fromLocalFile(m_projectPath.toString() +"/logo.png")))
+        qDebug() << "Project Logo" << m_projectPath.toString() +"/logo.png" << FMStatic::fileExists(QUrl(m_projectPath.toString() +"/logo.png"));
+
+        if(FMStatic::fileExists(QUrl(m_projectPath.toString() +"/logo.png")))
         {
             m_projectLogo = m_projectPath.toString() +"/logo.png";
             emit this->projectLogoChanged(m_projectLogo);
@@ -76,4 +75,12 @@ void ProjectManager::setProjectUrl(QUrl projectUrl)
 
     m_projectUrl = projectUrl;
     emit projectUrlChanged(m_projectUrl);
+}
+
+void ProjectManager::configure()
+{
+    //when starting to configure take into account all the preferences
+
+    //start the initial configuration of the project, like parsing and creating the needed files
+    m_projectManager->init();
 }

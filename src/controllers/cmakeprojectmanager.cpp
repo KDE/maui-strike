@@ -7,6 +7,9 @@
 #include <MauiKit/FileBrowsing/fmstatic.h>
 
 #include "cmakeapi.h"
+#include "cmakedata.h"
+
+#include "controllers/cmakeproject.h"
 #include "controllers/processes/configureprocess.h"
 #include "controllers/projectmanager.h"
 #include "controllers/projectpreferences.h"
@@ -14,8 +17,9 @@
 #include "models/cmakeprojectsmodel.h"
 
 CMakeProjectManager::CMakeProjectManager(ProjectManager *parent) : QObject(parent)
+  ,m_projectsModel(new CMakeProjectsModel(this))
   ,m_configureProcess(new ConfigureProcess(parent, this))
-  ,m_project(parent)
+  ,m_project(parent) //root project
 {
     connect(m_configureProcess, &ConfigureProcess::readyReadStandardOutput, [this](){
         emit this->outputLine(m_configureProcess->readAllStandardOutput());
@@ -89,9 +93,18 @@ void CMakeProjectManager::initBuildDir()
 
 void CMakeProjectManager::readIndexReply()
 {
-    auto indexResponse = CMake::FileApi::findReplyIndexFile(m_project->preferences()->buildDir().toLocalFile());
+    const auto sourceDir = m_project->projectPath().toLocalFile();
+    const auto buildDir = m_project->preferences()->buildDir().toLocalFile();
 
+    auto indexResponse = CMake::FileApi::findReplyIndexFile(buildDir);
+
+    qDebug() << sourceDir << buildDir;
     qDebug() << indexResponse.keys();
+
+    auto projects = CMake::FileApi::parseReplyIndexFile(indexResponse,sourceDir, buildDir);
+
+    m_projectsModel->setData(projects); //parent each project to the model
+
 }
 
 void CMakeProjectManager::setStatus(const CMakeProjectManager::Status &status)

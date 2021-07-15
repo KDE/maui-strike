@@ -13,7 +13,7 @@ import QtQuick.Window 2.0
 
 import "../widgets"
 
-Item
+Maui.Page
 {
     id: control
 

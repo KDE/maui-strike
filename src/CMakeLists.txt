@@ -1,19 +1,23 @@
 set(strike_SRCS
     main.cpp
     strike.h
+    controllers/cmakedata.cpp
+    controllers/cmakeapi.cpp
     models/fonts.cpp
     models/cmakeprojectsmodel.cpp
-    controllers/cmakeprojectmanager.cpp
+    models/cmaketargetsmodel.cpp
+    models/sourcesmodel.cpp
+
+    controllers/cmakeproject.cpp
+    controllers/cmakeprojecttarget.cpp
     controllers/projectmanager.cpp
     controllers/processmanager.cpp
-    controllers/cmaketarget.cpp
-    controllers/cmakeapi.cpp
     controllers/cmakeproject.cpp
     controllers/process.cpp
     controllers/projectpreferences.cpp
     controllers/processes/configureprocess.cpp
+    controllers/cmakeprojectmanager.cpp
     )
-
 
 set(strike_ASSETS
     qml.qrc

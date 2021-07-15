@@ -20,7 +20,7 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentEditor ? currentTab.title : ""
-
+    headBar.visible:false
     altHeader: Kirigami.Settings.isMobile
 
     property alias project : _project
@@ -38,6 +38,11 @@ Maui.ApplicationWindow
 
     //Global editor props
     property alias appSettings: settings
+
+    Strike.CMakeProject
+    {
+        id: _cmakeProject
+    }
 
     Settings
     {
@@ -62,6 +67,7 @@ Maui.ApplicationWindow
 
         onProjectUrlChanged:
         {
+            _initialConfigDialog.open()
             editorView.openTab(projectUrl)
         }
     }
@@ -70,29 +76,6 @@ Maui.ApplicationWindow
     {
         syncSidebar(currentEditor.fileUrl)
         editorView.outputPanel.syncTerminal(currentEditor.fileUrl)
-    }
-
-    headBar.leftContent: Maui.ToolButtonMenu
-    {
-        icon.name: "application-menu"
-
-        MenuItem
-        {
-            text: i18n("Settings")
-            icon.name: "settings-configure"
-            onTriggered:
-            {
-                _dialogLoader.sourceComponent = _settingsDialogComponent
-                dialog.open()
-            }
-        }
-
-        MenuItem
-        {
-            text: i18n("About")
-            icon.name: "documentinfo"
-            onTriggered: root.about()
-        }
     }
 
     onClosing:
@@ -122,25 +105,14 @@ Maui.ApplicationWindow
         id: _newDocumentMenu
     }
 
-    headBar.forceCenterMiddleContent: false
-
-    headBar.rightContent: [
-
-        ToolButton
-        {
-            icon.name: "list-add"
-            onClicked:
-            {
-                _newDocumentMenu.open()
-            }
-        }
-    ]
-
-    headBar.middleContent: Widgets.BuildBar
+    Widgets.ProjectConfigDialog
     {
-        Layout.fillWidth: true
-        Layout.maximumWidth: 500
-        Layout.minimumWidth: 0
+        id: _initialConfigDialog
+
+        maxHeight: 400
+        maxWidth: 350
+        hint: 1
+
     }
 
     Loader
@@ -230,6 +202,28 @@ Maui.ApplicationWindow
     {
         id: editorView
         anchors.fill: parent
+
+        headBar.forceCenterMiddleContent: false
+
+        headBar.rightContent: [
+
+            ToolButton
+            {
+                icon.name: "list-add"
+                onClicked:
+                {
+                    _newDocumentMenu.open()
+                }
+            }
+        ]
+
+        headBar.middleContent: Widgets.BuildBar
+        {
+            Layout.fillWidth: true
+            Layout.maximumWidth: 500
+            Layout.minimumWidth: 0
+        }
+
     }
 
     Connections

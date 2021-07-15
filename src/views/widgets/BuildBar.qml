@@ -30,10 +30,10 @@ Item
             enabled: !_projectManager.process.processRunning
             onClicked:
             {
-//                _project.process.build()
+                //                _project.process.build()
             }
 
-           background: Kirigami.ShadowedRectangle
+            background: Kirigami.ShadowedRectangle
             {
                 color: Qt.lighter(Kirigami.Theme.backgroundColor)
 
@@ -46,16 +46,16 @@ Item
                 }
             }
 
-                Kirigami.Icon
-                {
-                    anchors.centerIn: parent
-                    source: "run-build"
+            Kirigami.Icon
+            {
+                anchors.centerIn: parent
+                source: "run-build"
 
-                    color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
-                    width: Maui.Style.iconSizes.small
-                    height: width
-                }
+                color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
+                width: Maui.Style.iconSizes.small
+                height: width
             }
+        }
 
 
         AbstractButton
@@ -70,13 +70,15 @@ Item
                 border.color: _docMenu.visible ? Kirigami.Theme.highlightColor : color
             }
 
+            onClicked : _projectMenu.open()
+
             contentItem: Maui.ListItemTemplate
             {
-                label1.text:  _project.projectTitle
+                label1.text: _cmakeProject.title
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
                 label2.font.pointSize: Maui.Style.fontSizes.small
-                label2.text: _projectManager.process.processRunning ? _projectManager.process.infoLabel :  _project.projectPath
+                label2.text: _project.projectPath
                 imageSource: _project.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
@@ -89,7 +91,144 @@ Item
                 }
             }
 
+            Maui.Popup
+            {
+
+                id: _projectMenu
+                maxHeight: 200
+                maxWidth:  parent.width
+
+                ColumnLayout
+                {
+                    anchors.fill: parent
+
+                    Maui.ListBrowser
+                    {
+                        id: _projectsListView
+                        Layout.fillWidth: true
+                        model: _project.manager.projectsModel
+
+                        delegate: Maui.ListBrowserDelegate
+                        {
+                            width: ListView.view.width
+                            iconSource: "alienarena"
+                            label1.text: model.title
+                            onClicked:
+                            {
+                                _projectsListView.currentIndex = index
+                                _cmakeProject.data = model.data
+                            }
+                        }
+                    }
+
+                    Maui.LabelDelegate
+                    {
+                        Layout.fillWidth: true
+                        label: i18n("Targets")
+                        isSection: true
+                    }
+
+                    Maui.ListBrowser
+                    {
+                        id: _targetsListView
+                        Layout.fillWidth: true
+                        Layout.fillHeight: true
+                        model: _cmakeProject.targetsModel
+
+                        delegate: Maui.ListBrowserDelegate
+                        {
+                            width: ListView.view.width
+                            iconSource: "run-build"
+                            label1.text: model.name
+                            label2.text: model.type
+
+                            onClicked:
+                            {
+                                _targetsListView.currentIndex = index
+                                _cmakeProject.target.setData(model.target)
+                            }
+                        }
+                    }
+                }
+            }
+
+            ProgressBar
+            {
+                id: _progress
+                width: parent.width
+                anchors.centerIn: parent
+                visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
+                indeterminate: true
+
+                contentItem: Item {
+                    x: _progress.leftPadding
+                    y: _progress.topPadding
+                    width: _progress.availableWidth
+                    height: _progress.availableHeight
+
+                    scale: _progress.mirrored ? -1 : 1
+
+                    Repeater {
+                        model: 2
+
+                        Rectangle {
+                            property real offset: 0
+
+                            x: (_progress.indeterminate ? offset * parent.width : 0)
+                            y: (parent.height - height) / 2
+                            width: offset * (parent.width - x)
+                            height: 4
+
+                            color: "violet"
+
+                            SequentialAnimation on offset {
+                                loops: Animation.Infinite
+                                running: _progress.indeterminate && _progress.visible
+                                PauseAnimation { duration: index ? 520 : 0 }
+                                NumberAnimation {
+                                    easing.type: Easing.OutCubic
+                                    duration: 1240
+                                    from: 0
+                                    to: 1
+                                }
+                                PauseAnimation { duration: index ? 0 : 520 }
+                            }
+                        }
+                    }
+                }
+
+                background: null
+            }
+        }
+
+        AbstractButton
+        {
+            id: _menuButton
+            Layout.fillHeight: true
+            Layout.preferredWidth: height * 1.5
+            opacity: enabled ? 1 : 0.4
+            hoverEnabled: true
             onClicked: _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
+
+            background: Kirigami.ShadowedRectangle
+            {
+                color: Qt.lighter(Kirigami.Theme.backgroundColor)
+                corners
+                {
+                    topLeftRadius: 0
+                    topRightRadius: Maui.Style.radiusV
+                    bottomLeftRadius: 0
+                    bottomRightRadius: Maui.Style.radiusV
+                }
+            }
+
+            Kirigami.Icon
+            {
+                anchors.centerIn: parent
+                source: "overflow-menu"
+                width: Maui.Style.iconSizes.small
+                height: width
+            }
 
             Maui.ContextualMenu
             {
@@ -190,100 +329,31 @@ Item
                     icon.name: "documentinfo"
                     onTriggered:
                     {
-            //            getFileInfo(control.model.get(index).url)
-                    }
-                }
-            }
-
-            ProgressBar
-            {
-                id: _progress
-                width: parent.width
-                anchors.centerIn: parent
-                visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
-                indeterminate: true
-
-                contentItem: Item {
-                    x: _progress.leftPadding
-                    y: _progress.topPadding
-                    width: _progress.availableWidth
-                    height: _progress.availableHeight
-
-                    scale: _progress.mirrored ? -1 : 1
-
-                    Repeater {
-                        model: 2
-
-                        Rectangle {
-                            property real offset: 0
-
-                            x: (_progress.indeterminate ? offset * parent.width : 0)
-                            y: (parent.height - height) / 2
-                            width: offset * (parent.width - x)
-                            height: 4
-
-                            color: "violet"
-
-                            SequentialAnimation on offset {
-                                loops: Animation.Infinite
-                                running: _progress.indeterminate && _progress.visible
-                                PauseAnimation { duration: index ? 520 : 0 }
-                                NumberAnimation {
-                                    easing.type: Easing.OutCubic
-                                    duration: 1240
-                                    from: 0
-                                    to: 1
-                                }
-                                PauseAnimation { duration: index ? 0 : 520 }
-                            }
-                        }
+                        //            getFileInfo(control.model.get(index).url)
                     }
                 }
 
-                background: null
-            }
-        }
+                MenuSeparator {}
 
-        AbstractButton
-        {
-            id: _runButton
-            Layout.fillHeight: true
-            Layout.preferredWidth: height * 1.5
-            opacity: enabled ? 1 : 0.4
-            hoverEnabled: true
+                MenuItem
+                {
+                    text: i18n("Settings")
+                    icon.name: "settings-configure"
+                    onTriggered:
+                    {
+                        _dialogLoader.sourceComponent = _settingsDialogComponent
+                        dialog.open()
+                    }
+                }
 
-            enabled: !_projectManager.process.buildRunning
-            onClicked:
-            {
-                if( _projectManager.process.binaryRunning)
+                MenuItem
                 {
-                    _projectManager.process.stopRun()
-                }else
-                {
-                    _projectManager.process.run()
+                    text: i18n("About")
+                    icon.name: "documentinfo"
+                    onTriggered: root.about()
                 }
             }
 
-            background: Kirigami.ShadowedRectangle
-            {
-                color: Qt.lighter(Kirigami.Theme.backgroundColor)
-                corners
-                {
-                    topLeftRadius: 0
-                    topRightRadius: Maui.Style.radiusV
-                    bottomLeftRadius: 0
-                    bottomRightRadius: Maui.Style.radiusV
-                }
-            }
-
-                Kirigami.Icon
-                {
-                    anchors.centerIn: parent
-                    source: _projectManager.process.binaryRunning ? "media-playback-stop" : "media-playback-start"
-                    color: _runButton.containsMouse || _runButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
-                    width: Maui.Style.iconSizes.small
-                    height: width
-                }
 
         }
     }

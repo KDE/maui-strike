@@ -19,11 +19,9 @@
 */
 
 #include "cmakeapi.h"
-#include "cmakeprojectmanager.h"
+#include "cmakedata.h"
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
 #include <QDebug>
-
 #include <QDir>
 #include <QFile>
 #include <QFileInfo>
@@ -35,7 +33,7 @@
 namespace {
 QUrl toCanonical(const QUrl& path)
 {
-    QFileInfo info(path.toLocalFile());
+    QFileInfo info(path.toString());
     if (!info.exists())
         return path;
     const auto canonical = info.canonicalFilePath();
@@ -68,58 +66,21 @@ bool isStrikeClientResponse(const QJsonObject& indexObject)
 }
 }
 
-void CMakeFile::addDefine(const QString& define)
+namespace CMake
 {
-    if (define.isEmpty())
-        return;
-    const int eqIdx = define.indexOf(QLatin1Char('='));
-    if (eqIdx < 0) {
-        defines[define] = QString();
-    } else {
-        defines[define.left(eqIdx)] = define.mid(eqIdx + 1);
+namespace FileApi
+{
+
+static QUrl resolvedUrl(const QUrl &base, const QString &relative)
+{
+    if(QUrl(relative).isRelative())
+    {
+        return QUrl(base.toString() + "/" + relative).adjusted(QUrl::NormalizePathSegments);
+    }else
+    {
+        return QUrl(relative);
     }
 }
-
-void CMakeFilesCompilationData::rebuildFileForFolderMapping()
-{
-    fileForFolder.clear();
-    // iterate over files and add all direct folders
-    for (auto it = files.constBegin(), end = files.constEnd(); it != end; ++it) {
-        const auto file = it.key();
-        const auto folder = FMStatic::fileDir(file);
-        if (fileForFolder.contains(folder))
-            continue;
-        fileForFolder.insert(folder, it.key());
-    }
-    // now also add the parents of these folders
-    const auto copy = fileForFolder;
-    for (auto it = copy.begin(), end = copy.end(); it != end; ++it) {
-        auto folder = it.key();
-        while (folder.hasParent()) {
-            folder = FMStatic::parentDir(folder);
-            if (fileForFolder.contains(folder)) {
-                break;
-            }
-            fileForFolder.insert(folder, it.key());
-        }
-    }
-}
-
-CMakeTarget::Type CMakeTarget::typeToEnum(const QString& value)
-{
-    static const QHash<QString, CMakeTarget::Type> s_types = {
-        {QStringLiteral("EXECUTABLE"), CMakeTarget::Executable},
-        {QStringLiteral("STATIC_LIBRARY"), CMakeTarget::Library},
-        {QStringLiteral("MODULE_LIBRARY"), CMakeTarget::Library},
-        {QStringLiteral("SHARED_LIBRARY"), CMakeTarget::Library},
-        {QStringLiteral("OBJECT_LIBRARY"), CMakeTarget::Library},
-        {QStringLiteral("INTERFACE_LIBRARY"), CMakeTarget::Library}
-    };
-    return s_types.value(value, CMakeTarget::Custom);
-}
-
-namespace CMake {
-namespace FileApi {
 
 void writeClientQueryFile(const QString& buildDirectory)
 {
@@ -171,7 +132,7 @@ static CMakeTarget parseTarget(const QJsonObject& target, QUrl& sourcePathIntern
     for (const auto& jsonArtifact : target.value(QLatin1String("artifacts")).toArray())
     {
         const auto artifact = jsonArtifact.toObject();
-        const auto buildPath = buildPathInterner.internPath(artifact.value(QLatin1String("path")).toString());
+        const auto buildPath = resolvedUrl(buildPathInterner, artifact.value(QLatin1String("path")).toString());
 
         if (buildPath.isValid())
         {
@@ -182,36 +143,43 @@ static CMakeTarget parseTarget(const QJsonObject& target, QUrl& sourcePathIntern
     for (const auto& jsonSource : target.value(QLatin1String("sources")).toArray())
     {
         const auto source = jsonSource.toObject();
-        const auto sourcePath = sourcePathInterner.internPath(source.value(QLatin1String("path")).toString());
-        if (sourcePath.isValid()) {
+        const auto sourcePath = resolvedUrl(sourcePathInterner, source.value(QLatin1String("path")).toString());
+
+        if (sourcePath.isValid())
+        {
             ret.sources.append(sourcePath);
         }
     }
 
     QVector<CMakeFile> compileGroups;
-    for (const auto& jsonCompileGroup : target.value(QLatin1String("compileGroups")).toArray()) {
+    for (const auto& jsonCompileGroup : target.value(QLatin1String("compileGroups")).toArray())
+    {
         CMakeFile cmakeFile;
         const auto compileGroup = jsonCompileGroup.toObject();
 
         cmakeFile.language = compileGroup.value(QLatin1String("language")).toString();
 
-        for (const auto& jsonFragment : compileGroup.value(QLatin1String("compileCommandFragments")).toArray()) {
+        for (const auto& jsonFragment : compileGroup.value(QLatin1String("compileCommandFragments")).toArray())
+        {
             const auto fragment = jsonFragment.toObject();
             cmakeFile.compileFlags += fragment.value(QLatin1String("fragment")).toString();
             cmakeFile.compileFlags += QLatin1Char(' ');
         }
-        cmakeFile.compileFlags = stringInterner.internString(cmakeFile.compileFlags);
+        //        cmakeFile.compileFlags = stringInterner.internString(cmakeFile.compileFlags);
 
-        for (const auto& jsonDefine : compileGroup.value(QLatin1String("defines")).toArray()) {
+        for (const auto& jsonDefine : compileGroup.value(QLatin1String("defines")).toArray())
+        {
             const auto define = jsonDefine.toObject();
             cmakeFile.addDefine(define.value(QLatin1String("define")).toString());
         }
-//        cmakeFile.defines = MakeFileResolver::extractDefinesFromCompileFlags(cmakeFile.compileFlags, stringInterner, cmakeFile.defines);
+        //        cmakeFile.defines = MakeFileResolver::extractDefinesFromCompileFlags(cmakeFile.compileFlags, stringInterner, cmakeFile.defines);
 
-        for (const auto& jsonInclude : compileGroup.value(QLatin1String("includes")).toArray()) {
+        for (const auto& jsonInclude : compileGroup.value(QLatin1String("includes")).toArray())
+        {
             const auto include = jsonInclude.toObject();
-            const auto path = sourcePathInterner.internPath(include.value(QLatin1String("path")).toString());
-            if (path.isValid()) {
+            const auto path = resolvedUrl(sourcePathInterner, include.value(QLatin1String("path")).toString());
+            if (path.isValid())
+            {
                 cmakeFile.includes.append(path);
             }
         }
@@ -219,15 +187,26 @@ static CMakeTarget parseTarget(const QJsonObject& target, QUrl& sourcePathIntern
         compileGroups.append(cmakeFile);
     }
 
-    for (const auto& jsonSource : target.value(QLatin1String("sources")).toArray()) {
+    for (const auto& jsonSource : target.value(QLatin1String("sources")).toArray())
+    {
         const auto source = jsonSource.toObject();
         const auto compileGroupIndex = source.value(QLatin1String("compileGroupIndex")).toInt(-1);
-        if (compileGroupIndex < 0 || compileGroupIndex > compileGroups.size()) {
+
+        const auto sourceGroupIndex = source.value(QLatin1String("sourceGroupIndex")).toInt(-1);
+        const auto sourceGroups = target.value(QLatin1String("sourceGroups")).toArray();
+        auto group = sourceGroups.at(sourceGroupIndex).toObject();
+
+        if (compileGroupIndex < 0 || compileGroupIndex > compileGroups.size())
+        {
             continue;
         }
-        const auto compileGroup = compileGroups.value(compileGroupIndex);
-        const auto path = sourcePathInterner.internPath(source.value(QLatin1String("path")).toString());
-        if (path.isValid()) {
+
+        auto compileGroup = compileGroups[compileGroupIndex];
+        const auto path =  resolvedUrl(sourcePathInterner, source.value(QLatin1String("path")).toString());
+        if (path.isValid())
+        {
+            compileGroup.group = group.value(QLatin1String("name")).toString();
+            compilationData.files[toCanonical(path)] = compileGroup;
             compilationData.files[toCanonical(path)] = compileGroup;
         }
     }
@@ -245,10 +224,11 @@ static QVector<CMakeProjectData> parseCodeModel(const QJsonObject& codeModel, co
 
     for(const auto &projectsValues : projects)
     {
+        qDebug() << "Parsing projects";
         CMakeProjectData projectRes;
         const auto project = projectsValues.toObject();
 
-        projectRes.name = project.value(QLatin1String("directoryIndexes")).toString();
+        projectRes.name = project.value(QLatin1String("name")).toString();
 
         if (!project.contains(QLatin1String("directoryIndexes")))
         {
@@ -268,8 +248,11 @@ static QVector<CMakeProjectData> parseCodeModel(const QJsonObject& codeModel, co
                 continue;
             }
 
-            const auto dirSourcePath = QUrl(sourcePathInterner).resolved(directory.value(QLatin1String("source")).toString());
-            auto& dirTargets = ret.targets[dirSourcePath];
+            const auto dirSourcePath = resolvedUrl(sourcePathInterner, directory.value(QLatin1String("source")).toString());
+
+            qDebug() << "MEH" << dirSourcePath << sourcePathInterner;
+
+            auto& dirTargets = projectRes.targets[dirSourcePath];
 
             for (const auto& targetIndex : directory.value(QLatin1String("targetIndexes")).toArray())
             {
@@ -280,7 +263,7 @@ static QVector<CMakeProjectData> parseCodeModel(const QJsonObject& codeModel, co
                 }
 
                 const auto targetFile = jsonTarget.value(QLatin1String("jsonFile")).toString();
-                const auto target = parseTarget(parseFile(replyDir.absoluteFilePath(targetFile)), sourcePathInterner, buildPathInterner, projectRes.compilationData); //<+++ voy aca
+                const auto target = parseTarget(parseFile(replyDir.absoluteFilePath(targetFile)), sourcePathInterner, buildPathInterner, projectRes.compilationData);
 
                 if (target.name.isEmpty())
                 {
@@ -306,9 +289,9 @@ static QVector<CMakeProjectData> parseCodeModel(const QJsonObject& codeModel, co
 }
 
 static QHash<QUrl, CMakeProjectData::CMakeFileFlags> parseCMakeFiles(const QJsonObject& cmakeFiles,
-                                                                     QUrl& sourcePathInterner)
+                                                                     QUrl&)
 {
-    QHash<Path, CMakeProjectData::CMakeFileFlags> ret;
+    QHash<QUrl, CMakeProjectData::CMakeFileFlags> ret;
     for (const auto& jsonInput : cmakeFiles.value(QLatin1String("inputs")).toArray()) {
         const auto input = jsonInput.toObject();
         const auto path = QUrl(input.value(QLatin1String("path")).toString());
@@ -321,41 +304,50 @@ static QHash<QUrl, CMakeProjectData::CMakeFileFlags> parseCMakeFiles(const QJson
     return ret;
 }
 
-CMakeProjectData parseReplyIndexFile(const QJsonObject& replyIndex,
-                                     const QUrl &sourceDirectory,
-                                     const QUrl &buildDirectory)
+QVector<CMakeProjectData> parseReplyIndexFile(const QJsonObject& replyIndex, const QUrl &sourceDirectory, const QUrl &buildDirectory)
 {
     const auto reply = replyIndex.value(QLatin1String("reply")).toObject();
     const auto clientKDevelop = reply.value(QLatin1String("client-strike")).toObject();
     const auto query = clientKDevelop.value(QLatin1String("query.json")).toObject();
     const auto responses = query.value(QLatin1String("responses")).toArray();
-    const auto replyDir = toReplyDir(buildDirectory.toLocalFile());
+    const auto replyDir = toReplyDir(buildDirectory.toString());
 
     QUrl sourcePathInterner(toCanonical(sourceDirectory));
     QUrl buildPathInterner(buildDirectory);
 
-    CMakeProjectData codeModel;
-    QHash<Path, CMakeProjectData::CMakeFileFlags> cmakeFiles;
+    qDebug() << "Canonical << " << sourcePathInterner << buildPathInterner;
 
-    for (const auto& responseValue : responses) {
+    QVector<CMakeProjectData> projects;
+    QHash<QUrl, CMakeProjectData::CMakeFileFlags> cmakeFiles;
+
+    for (const auto& responseValue : responses)
+    {
         const auto response = responseValue.toObject();
         const auto kind = response.value(QLatin1String("kind"));
         const auto jsonFile = response.value(QLatin1String("jsonFile")).toString();
         const auto jsonFilePath = replyDir.absoluteFilePath(jsonFile);
-        if (kind == QLatin1String("codemodel")) {
-            codeModel = parseCodeModel(parseFile(jsonFilePath), replyDir, sourcePathInterner, buildPathInterner);
-        } else if (kind == QLatin1String("cmakeFiles")) {
+
+        if (kind == QLatin1String("codemodel"))
+        {
+            qDebug() << "Parsing code model";
+            projects = parseCodeModel(parseFile(jsonFilePath), replyDir, sourcePathInterner, buildPathInterner);
+        } else if (kind == QLatin1String("cmakeFiles"))
+        {
             cmakeFiles = parseCMakeFiles(parseFile(jsonFilePath), sourcePathInterner);
         }
     }
 
-    if (!codeModel.compilationData.isValid) {
-        qWarning() << "failed to find code model in reply index" << sourceDirectory << buildDirectory << replyIndex;
-        return {};
+    for(auto &project : projects)
+    {
+        if (!project.compilationData.isValid)
+        {
+            qWarning() << "failed to find code model in reply index" << sourceDirectory << buildDirectory << replyIndex;
+            return {};
+        }
+        project.cmakeFiles = cmakeFiles;
     }
 
-    codeModel.cmakeFiles = cmakeFiles;
-    return codeModel;
+    return projects;
 }
 }
 }

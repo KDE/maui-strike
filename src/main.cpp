@@ -12,9 +12,14 @@
 //#include "controllers/processmanager.h"
 #include "controllers/projectmanager.h"
 #include "controllers/cmakeproject.h"
+#include "controllers/cmakeprojecttarget.h"
+
 #include "controllers/cmakeprojectmanager.h"
 #include "controllers/projectpreferences.h"
 #include "models/fonts.h"
+#include "models/cmakeprojectsmodel.h"
+#include "models/cmaketargetsmodel.h"
+#include "models/sourcesmodel.h"
 
 #include "../strike_version.h"
 #include "strike.h"
@@ -77,8 +82,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     Qt::QueuedConnection);
 
     qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
-    qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "Project");
+    qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "Project"); //entry point for the project
+    qmlRegisterType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject");
+
     qmlRegisterAnonymousType<ProjectPreferences>(STRIKE_URI, 1);
+    qmlRegisterAnonymousType<CMakeProjectsModel>(STRIKE_URI, 1);
+    qmlRegisterAnonymousType<CMakeProjectTarget>(STRIKE_URI, 1);
+    qmlRegisterAnonymousType<CMakeTargetsModel>(STRIKE_URI, 1);
+    qmlRegisterAnonymousType<SourcesModel>(STRIKE_URI, 1);
+
     qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained form StrikeProjec.");
 
     qmlRegisterSingletonType<Fonts>(STRIKE_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {

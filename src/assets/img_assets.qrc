@@ -4,6 +4,7 @@
         <file>strike.svg</file>
         <file>help-feedback.svg</file>
         <file>draw-calligraphic.svg</file>
+        <file>illustration_configure.png</file>
     </qresource>
     <qresource prefix="/"/>
 </RCC>

@@ -4,14 +4,15 @@
 
 CMakeProjectsModel::CMakeProjectsModel(QObject *parent) : QAbstractListModel(parent)
 {
+    qRegisterMetaType<CMakeProjectData>("CMakeProjectData");
 
 }
 
-void CMakeProjectsModel::insertProject(CMakeProject *project)
+void CMakeProjectsModel::setData(const QVector<CMakeProjectData> &data)
 {
-    emit this->beginInsertRows(QModelIndex(), rowCount(QModelIndex()), rowCount(QModelIndex()));
-    this->m_projects.append(project);
-    emit this->endInsertRows();
+    this->beginResetModel();
+    m_data = data;
+    this->endResetModel();
 }
 
 int CMakeProjectsModel::rowCount(const QModelIndex &parent) const
@@ -21,7 +22,7 @@ int CMakeProjectsModel::rowCount(const QModelIndex &parent) const
         return 0;
     }
 
-    return this->m_projects.size();
+    return m_data.size();
 }
 
 QVariant CMakeProjectsModel::data(const QModelIndex &index, int role) const
@@ -29,17 +30,17 @@ QVariant CMakeProjectsModel::data(const QModelIndex &index, int role) const
     if (!index.isValid())
         return QVariant();
 
-    auto value = this->m_projects.at(index.row());
+    auto value = m_data.at(index.row());
 
     switch(role)
     {
-    case Roles::Title : return QVariant(value->title());
-    case Roles::Project : return QVariant::fromValue(value);
+    case Roles::Title : return QVariant(value.name);
+    case Roles::Data : return QVariant::fromValue(value);
     default: return QVariant();
     }
 }
 
 QHash<int, QByteArray> CMakeProjectsModel::roleNames() const
 {
-    return QHash<int, QByteArray> {{Roles::Title, "title"}, {Roles::Project, "project"}};
+    return QHash<int, QByteArray> {{Roles::Title, "title"}, {Roles::Data, "data"}};
 }

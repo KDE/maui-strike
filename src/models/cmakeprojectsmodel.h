@@ -5,32 +5,32 @@
 #include <QObject>
 #include <QVector>
 
+#include "controllers/cmakedata.h"
+
 class CMakeProject;
 class CMakeProjectsModel : public QAbstractListModel
 {
     Q_OBJECT
 
 public:
-    typedef  QVector<CMakeProject*> CMakeProjects;
     enum Roles
     {
         Title,
-        Project
+        Data
     };
 
     explicit CMakeProjectsModel(QObject *parent = nullptr);
-    void insertProject(CMakeProject * project);
+    void setData(const QVector<CMakeProjectData> &data);
 
     int rowCount(const QModelIndex &parent) const override final;
     QVariant data(const QModelIndex &index, int role) const override final;
     QHash<int, QByteArray> roleNames() const override final;
 
-
 private:
-    CMakeProjects m_projects;
+    QVector<CMakeProjectData> m_data;
 
 signals:
-
+    void currentProjectIndexChanged(int currentProjectIndex);
 };
 
 #endif // CMAKEPROJECTMODEL_H

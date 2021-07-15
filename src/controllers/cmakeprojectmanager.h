@@ -46,7 +46,6 @@ private:
 
     ProjectManager * m_project;
 
-    QHash<QString, CMakeProject*> m_projects;
     Status m_status = Status::None;
 
     void initServer();

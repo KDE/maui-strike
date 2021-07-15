@@ -33,6 +33,7 @@ public:
 
 public slots:
     void setProjectUrl(QUrl projectUrl);
+    void configure();
 
 private:
     CMakeProjectManager *m_projectManager;
