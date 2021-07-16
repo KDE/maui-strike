@@ -4,48 +4,82 @@
 #include <QDebug>
 
 #include "cmakeproject.h"
-#include <MauiKit/FileBrowsing/fmstatic.h>
 
-const QString CMAKE_PROGRAM = "cmake";
+#include "processes/configureprocess.h"
+#include "cmakeprojectmanager.h"
+#include "cmakeprojectmanager.h"
+#include "projectpreferences.h"
+#include "projectmanager.h"
+#include "cmakeprojecttarget.h"
+
+#include <MauiKit/FileBrowsing/fmstatic.h>
 
 ProcessManager::ProcessManager(CMakeProject *project) : QObject(project)
 ,m_project(project)
-,m_configureProcess(new QProcess(this))
+,m_configureProcess(new ConfigureProcess(project->manager ()))
 ,m_buildProcess(new QProcess(this))
-,m_runProcess(new QProcess(this))
+,m_deployProcess(new QProcess())
 {
+
+      m_deployProcess->setReadChannel(QProcess::StandardOutput);
+      m_deployProcess->setProcessChannelMode (QProcess:: ForwardedChannels);
   // Configure Process
   connect(m_configureProcess, &QProcess::readyReadStandardOutput,[this]()
   {
       //        qWarning() << "Configure output" << m_configureProcess->readAllStandardOutput();
-      emit outputLine(m_configureProcess->readAllStandardOutput());
+      emit this->outputLine(m_configureProcess->readAllStandardOutput());
     });
+
+  connect(m_configureProcess, &QProcess::readyReadStandardError, [this](){
+      emit this->outputLine(m_buildProcess->readAllStandardError());
+  });
 
   connect(m_configureProcess, &QProcess::started,[this]()
   {
       qWarning() << "Configure step started" ;
       m_infoLabel = "Configuring project...";
-      emit infoLabelChanged(m_infoLabel);
+      emit this->infoLabelChanged(m_infoLabel);
 
-      m_configureRunning = true;
-      emit configureRunningChanged(m_configureRunning);
+      m_configureStatus = Status::Running;
+      emit this->configureStatusChanged(m_configureStatus);
 
       m_processRunning = true;
       emit this->processRunningChanged(m_processRunning);
     });
 
-  connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
+  connect(m_configureProcess, &QProcess::errorOccurred,[this](QProcess::ProcessError error)
+  {
+    qWarning() << "Building error << " << error;
+    m_configureStatus = Status::Error;
+    emit this->configureStatusChanged (m_configureStatus);
+
+    emit this->outputLine(m_configureProcess->errorString());
+  });
+
+  connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus status)
   {
       qWarning() << "Configure step finished" << exitCode;
 
-      m_infoLabel = QString("Configuring finished with %1").arg(QString::number(exitCode));
-      emit infoLabelChanged(m_infoLabel);
+      if(status == QProcess::CrashExit)
+        {
+          m_infoLabel = QString("Error Configuring project:  %1").arg(m_configureProcess->errorString ());
 
-      m_configureRunning = false;
-      emit configureRunningChanged(m_configureRunning);
+          m_configureStatus = Status::Error;
 
-      m_processRunning = false;
+          m_processRunning = false;
+
+        }else
+        {
+          m_infoLabel = QString("Configuring finished with %1").arg(QString::number(exitCode));
+
+          m_configureStatus = exitCode == 0 ? Status::Finished : Status::Error;
+
+          m_processRunning = false;
+        }
+
+      emit this->configureStatusChanged(m_configureStatus);
       emit this->processRunningChanged(m_processRunning);
+      emit this->infoLabelChanged(m_infoLabel);
 
     });
 
@@ -53,119 +87,128 @@ ProcessManager::ProcessManager(CMakeProject *project) : QObject(project)
   connect(m_buildProcess, &QProcess::readyReadStandardOutput,[this]()
   {
       //        qWarning() << "Build output" << m_buildProcess->readAllStandardOutput();
-      emit outputLine(m_buildProcess->readAllStandardOutput());
+      emit this->outputLine(m_buildProcess->readAllStandardOutput());
     });
+
+
+
+  connect(m_buildProcess, &QProcess::readyReadStandardError, [this](){
+      emit this->outputLine(m_buildProcess->readAllStandardError());
+  });
 
   connect(m_buildProcess, &QProcess::started,[this]()
   {
       qWarning() << "Build step started" ;
       m_infoLabel = "Building project...";
-      emit infoLabelChanged(m_infoLabel);
+      emit this->infoLabelChanged(m_infoLabel);
 
-      m_buildRunning = true;
-      emit this->buildRunningChanged(m_buildRunning);
+      m_buildStatus = Status::Running;
+      emit this->buildStatusChanged(m_buildStatus);
 
       m_processRunning = true;
       emit this->processRunningChanged(m_processRunning);
     });
 
-  connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
+  connect(m_buildProcess, &QProcess::errorOccurred,[this](QProcess::ProcessError error)
   {
-      qWarning() << "Building step finished" << exitCode;
+    qWarning() << "Building error << " << error;
+    m_buildStatus = Status::Error;
+    emit this->buildStatusChanged (m_buildStatus);
 
-      m_infoLabel = QString("Building finished with %1").arg(QString::number(exitCode));
-      emit infoLabelChanged(m_infoLabel);
+    emit this->outputLine(m_buildProcess->errorString());
+  });
 
-      m_buildRunning = false;
-      emit buildRunningChanged(m_buildRunning);
+  connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus status)
+  {
+      if(status == QProcess::CrashExit)
+        {
+          m_infoLabel = QString("Error Bulding project:  %1").arg(m_buildProcess->errorString ());
 
-      m_processRunning = false;
+          m_buildStatus = Status::Error;
+
+          m_processRunning = false;
+
+        }else
+        {
+          m_infoLabel = QString("Building finished with %1").arg(QString::number(exitCode));
+
+          m_buildStatus = exitCode == 0 ? Status::Finished : Status::Error;
+
+          m_processRunning = false;
+        }
+
+      emit this->buildStatusChanged (m_configureStatus);
       emit this->processRunningChanged(m_processRunning);
+      emit this->infoLabelChanged(m_infoLabel);
 
     });
 
   // Run Process
-  connect(m_runProcess, &QProcess::readyReadStandardOutput,[this]()
+  connect(m_deployProcess, &QProcess::readyReadStandardOutput,[this]()
   {
-      //        qWarning() << "Run output" << m_runProcess->readAllStandardOutput();
-      emit outputLine(m_runProcess->readAllStandardOutput());
+      //        qWarning() << "Run output" << m_deployProcess->readAllStandardOutput();
+      emit this->outputLine(m_deployProcess->readAll());
 
     });
 
-  connect(m_runProcess, &QProcess::started,[this]()
+  connect(m_deployProcess, &QProcess::readyReadStandardError, [this](){
+      emit this->outputLine(m_deployProcess->readAllStandardError());
+  });
+
+  connect(m_deployProcess, &QProcess::started,[this]()
   {
       qWarning() << "Running step started" ;
 
       m_infoLabel = "Running binary...";
-      emit infoLabelChanged(m_infoLabel);
+      emit this->infoLabelChanged(m_infoLabel);
 
-      m_binaryRunning = true;
-      emit binaryRunningChanged(m_binaryRunning);
+      m_deployStatus = Status::Running;
+      emit this->deployStatusChanged(m_deployStatus);
 
       m_processRunning = true;
       emit this->processRunningChanged(m_processRunning);
     });
 
-  connect(m_runProcess, &QProcess::errorOccurred,[this](QProcess::ProcessError error)
+  connect(m_deployProcess, &QProcess::errorOccurred,[this](QProcess::ProcessError error)
   {
     qWarning() << "Running binary error << " << error;
-    emit outputLine(m_runProcess->errorString());
+    m_deployStatus = Status::Error;
+    emit this->deployStatusChanged (m_deployStatus);
+
+    emit this->outputLine(m_deployProcess->errorString());
   });
 
 
-  connect(m_runProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus)
+  connect(m_deployProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus status)
   {
       qWarning() << "Running step finished" << exitCode;
+      if(status == QProcess::CrashExit)
+        {
+          m_infoLabel = QString("Error Deploying project:  %1").arg(m_deployProcess->errorString ());
 
-      m_infoLabel = QString("Binary exited with %1").arg(QString::number(exitCode));
-      emit infoLabelChanged(m_infoLabel);
+          m_deployStatus = Status::Error;
 
-      m_binaryRunning = false;
-      emit this->binaryRunningChanged(m_binaryRunning);
+          m_processRunning = false;
 
-      m_processRunning = false;
+        }else
+        {
+          m_infoLabel = QString("Deploying finished with %1").arg(QString::number(exitCode));
+
+          m_deployStatus = exitCode == 0 ? Status::Finished : Status::Error;
+
+          m_processRunning = false;
+        }
+
+      emit this->deployStatusChanged (m_deployStatus);
       emit this->processRunningChanged(m_processRunning);
-
+      emit this->infoLabelChanged(m_infoLabel);
     });
 }
 
-void ProcessManager::setProjectUrl(const QUrl &url)
+ProcessManager::~ProcessManager()
 {
-  m_projectUrl = url;
-  m_rootDir = FMStatic::fileDir(m_projectUrl);
-  m_buildDir = QUrl(m_rootDir.toString()+"/build");
-
-  m_infoLabel = m_rootDir.toLocalFile();
-  emit infoLabelChanged(m_infoLabel);
-
-  if(m_projectUrl.isEmpty() || !m_projectUrl.isValid() || !FMH::fileExists(m_projectUrl))
-    {
-      qWarning() << "CMake Project file URL has not been set, is not valid or does not exists << " << m_projectUrl;
-      return;
-    }
-
-  configure();
-}
-
-QUrl ProcessManager::buildDir() const
-{
-  return m_buildDir;
-}
-
-QUrl ProcessManager::rootDir() const
-{
-  return m_rootDir;
-}
-
-
-QStringList ProcessManager::args() const
-{
-  return m_args;
-}
-
-QStringList ProcessManager::envVar() const
-{
-  return m_envVar;
+  stopDeploy ();
+  m_deployProcess->deleteLater ();
 }
 
 bool ProcessManager::processRunning() const
@@ -173,29 +216,29 @@ bool ProcessManager::processRunning() const
   return m_processRunning;
 }
 
-QString ProcessManager::installPrefix() const
+ProcessManager::Status ProcessManager::configureStatus() const
 {
-  return m_installPrefix;
+  return m_configureStatus;
 }
 
-bool ProcessManager::configureRunning() const
+ProcessManager::Status ProcessManager::buildStatus() const
 {
-  return m_configureRunning;
+  return m_buildStatus;
 }
 
-bool ProcessManager::buildRunning() const
+ProcessManager::Status ProcessManager::deployStatus() const
 {
-  return m_buildRunning;
-}
-
-bool ProcessManager::binaryRunning() const
-{
-  return m_binaryRunning;
+  return m_deployStatus;
 }
 
 bool ProcessManager::enabled() const
 {
   return m_enabled;
+}
+
+QString ProcessManager::infoLabel() const
+{
+  return m_infoLabel;
 }
 
 void ProcessManager::build()
@@ -228,7 +271,7 @@ void ProcessManager::configure()
   configureStep();
 }
 
-void ProcessManager::run()
+void ProcessManager::deploy()
 {
   QMetaObject::Connection * const connection = new QMetaObject::Connection;
   *connection = connect(m_buildProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), this, [this, connection](int exitCode, QProcess::ExitStatus exitStatus)
@@ -238,7 +281,7 @@ void ProcessManager::run()
       if(exitStatus == QProcess::NormalExit)
         {
           qDebug() << "Build step sucessfull, now run will start";
-          runStep();
+          deployStep();
         }else
         {
           qWarning() << "Build step failed " << exitCode << exitStatus;
@@ -256,83 +299,39 @@ void ProcessManager::run()
 void ProcessManager::stopBuild()
 {
   m_buildProcess->terminate();
+  m_buildProcess->waitForFinished ();
 }
 
 void ProcessManager::stopConfigure()
 {
   m_configureProcess->terminate();
+  m_configureProcess->waitForFinished ();
 }
 
-void ProcessManager::stopRun()
+void ProcessManager::stopDeploy()
 {
-  m_runProcess->terminate();
-}
-
-void ProcessManager::setArgs(QStringList args)
-{
-  if (m_args == args)
-    return;
-
-  m_args = args;
-  emit argsChanged(m_args);
-}
-
-void ProcessManager::setEnvVar(QStringList envVar)
-{
-  if (m_envVar == envVar)
-    return;
-
-  m_envVar = envVar;
-  emit envVarChanged(m_envVar);
-}
-
-void ProcessManager::setInstallPrefix(QString installPrefix)
-{
-  if (m_installPrefix == installPrefix)
-    return;
-
-  m_installPrefix = installPrefix;
-  emit installPrefixChanged(m_installPrefix);
+  m_deployProcess->terminate();
+  m_deployProcess->waitForFinished ();
 }
 
 void ProcessManager::buildStep()
 {
-  m_buildProcess->setWorkingDirectory(m_buildDir.toLocalFile());
+  m_buildProcess->setWorkingDirectory(m_project->manager ()->root ()->preferences ()->buildDir ().toLocalFile());
   m_buildProcess->start("make", QStringList());
 }
 
 void ProcessManager::configureStep()
 {
-  const auto workingDir = m_buildDir.toLocalFile();
-
-  qDebug() << "Setting up working directory"<< workingDir;
-
-  QDir dir(workingDir);
-  if(!dir.exists())
-    {
-      if(! dir.mkpath("."))
-        {
-          qWarning() << "Build directory could not be created at << " << workingDir;
-          return;
-        }
-    }
+  m_configureProcess->prepare ();
 
   this->m_enabled = true;
   emit this->enabledChanged(m_enabled);
 
-  const QStringList args = {m_rootDir.toLocalFile(), QString("-DCMAKE_INSTALL_PREFIX=%1").arg(m_installPrefix)};
-
-  m_configureProcess->setWorkingDirectory(workingDir);
-
-  qDebug() << "Running cmake << " << CMAKE_PROGRAM << args << m_args << m_configureProcess->workingDirectory();
-
-  m_configureProcess->start(CMAKE_PROGRAM, QStringList() << args << m_args);
-
-  qDebug() << "Running configure" << m_configureProcess->errorString();
+  m_configureProcess->start ();
 }
 
-void ProcessManager::runStep()
+void ProcessManager::deployStep()
 {
-  m_runProcess->setWorkingDirectory(m_buildDir.toLocalFile()+"/bin");
-  m_runProcess->start("./nota", QStringList());
+ qDebug() << "Execute:" <<  m_project->target ()->artifacts ().first ().toString ();
+  m_deployProcess->start(m_project->target ()->artifacts ().first ().toString (), QStringList());
 }

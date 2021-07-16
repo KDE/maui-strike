@@ -13,41 +13,42 @@
 #include "controllers/processes/configureprocess.h"
 #include "controllers/projectmanager.h"
 #include "controllers/projectpreferences.h"
+#include "processmanager.h"
 
 #include "models/cmakeprojectsmodel.h"
 
 CMakeProjectManager::CMakeProjectManager(ProjectManager *parent) : QObject(parent)
 ,m_projectsModel(new CMakeProjectsModel(this))
-,m_configureProcess(new ConfigureProcess(parent, this))
 ,m_project(new CMakeProject(this))
+,m_process(new ProcessManager(m_project))
 ,m_root(parent) //root project
 {
-  connect(m_configureProcess, &ConfigureProcess::readyReadStandardOutput, [this](){
-      emit this->outputLine(m_configureProcess->readAllStandardOutput());
-    });
-
-  connect(m_configureProcess, &ConfigureProcess::started, [this]()
-  {
-      this->setStatus(Status::Loading);
-    });
-
-  connect(m_configureProcess, QOverload<int, QProcess::ExitStatus>::of(&QProcess::finished), [this](int exitCode, QProcess::ExitStatus status)
-  {
-      if(status == QProcess::CrashExit)
-        {
-          this->setStatus(Status::Error);
-        }else
-        {
-          this->setStatus( exitCode == 0 ? Status::Ready : Status::Error);
-        }
-    });
-
   connect(this, &CMakeProjectManager::statusChanged, [this](Status status)
   {
     if(status == Status::Ready)
       {
         this->readIndexReply();
       }
+  });
+
+  connect(m_process, &ProcessManager::configureStatusChanged, [this](ProcessManager::Status status)
+  {
+    switch(status)
+      {
+      case ProcessManager::Status::Running:
+        this->setStatus(Status::Loading);
+        break;
+      case ProcessManager::Status::Finished:
+        this->setStatus(Status::Ready);
+        break;
+      case ProcessManager::Status::Error:
+        this->setStatus(Status::Error);
+        break;
+      default:
+        this->setStatus(Status::Error);
+        break;
+      }
+
   });
 }
 
@@ -61,6 +62,11 @@ void CMakeProjectManager::init()
 CMakeProjectsModel *CMakeProjectManager::projectsModel() const
 {
   return m_projectsModel;
+}
+
+ProcessManager *CMakeProjectManager::process() const
+{
+  return m_process;
 }
 
 CMakeProject *CMakeProjectManager::project() const
@@ -85,8 +91,7 @@ void CMakeProjectManager::initServer()
 
 void CMakeProjectManager::initConfigure()
 {
-  m_configureProcess->prepare();
-  m_configureProcess->start();
+  m_process->configure ();
 }
 
 void CMakeProjectManager::initBuildDir()

@@ -9,7 +9,7 @@
 
 #include <MauiKit/Core/mauiapp.h>
 
-//#include "controllers/processmanager.h"
+#include "controllers/processmanager.h"
 #include "controllers/projectmanager.h"
 #include "controllers/cmakeproject.h"
 #include "controllers/cmakeprojecttarget.h"
@@ -89,6 +89,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterAnonymousType<CMakeProjectTarget>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<CMakeTargetsModel>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<SourcesModel>(STRIKE_URI, 1);
+    qmlRegisterUncreatableType<ProcessManager>(STRIKE_URI, 1, 0, "Process", "For the enums. To use it get it from the manager");
 
     qmlRegisterUncreatableType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject", "Get the pointer from CMakeProjectManager");
 

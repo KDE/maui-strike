@@ -4,16 +4,16 @@
 #include <QProcess>
 #include <QUrl>
 
-class ProjectManager;
+class CMakeProjectManager;
 class ConfigureProcess : public QProcess
 {
     Q_OBJECT
 public:
-    ConfigureProcess(ProjectManager *project, QObject *parent = nullptr);
+    ConfigureProcess(CMakeProjectManager *parent = nullptr);
     void prepare();
 
 private:
-    ProjectManager *m_project;
+    CMakeProjectManager *m_project;
     void makeDir();
 };
 

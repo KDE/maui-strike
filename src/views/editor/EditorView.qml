@@ -116,53 +116,24 @@ Maui.Page
                 bottomRightRadius: 0
             }
 
-            RowLayout
+            Maui.ToolActions
             {
-                anchors.fill: parent
+                anchors.centerIn: parent
                 anchors.leftMargin:  Maui.Style.space.medium
                 anchors.rightMargin:  Maui.Style.space.medium
-
-
-                Maui.ToolActions
+                currentIndex : _outputPanel.currentIndex
+                Action
                 {
-                    Layout.minimumWidth: implicitWidth
-                    Layout.alignment: Qt.AlignCenter
-
-                    currentIndex : _outputPanel.currentIndex
-                    Action
-                    {
-                        icon.name: "dialog-scripts"
-                        checked:  _outputPanel.currentIndex === 0
-                        onTriggered: _outputPanel.currentIndex = 0
-                    }
-
-                    Action
-                    {
-                        icon.name: "love"
-                        checked:  _outputPanel.currentIndex === 1
-                        onTriggered: _outputPanel.currentIndex = 1
-                    }
+                    icon.name: "dialog-scripts"
+                    checked:  _outputPanel.currentIndex === 0
+                    onTriggered: _outputPanel.currentIndex = 0
                 }
 
-                ToolButton
+                Action
                 {
-                    Layout.minimumWidth: implicitWidth
-                    Layout.alignment: Qt.AlignRight
-
-                    visible: settings.supportSplit
-                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                    checked: root.currentTab && root.currentTab.count === 2
-                    checkable: true
-                    onClicked:
-                    {
-                        if(root.currentTab.count === 2)
-                        {
-                            root.currentTab.pop()
-                            return
-                        }//close the inactive split
-
-                        root.currentTab.split("")
-                    }
+                    icon.name: "love"
+                    checked:  _outputPanel.currentIndex === 1
+                    onTriggered: _outputPanel.currentIndex = 1
                 }
             }
         }

@@ -19,7 +19,7 @@ SwipeView
 
     Connections
     {
-        target: _projectManager.process
+        target: _project.manager.process
 
         function onOutputLine(output)
         {

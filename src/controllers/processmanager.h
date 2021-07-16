@@ -6,112 +6,86 @@
 
 class QProcess;
 class CMakeProject;
+
+class ConfigureProcess;
 class ProcessManager : public QObject
 {
     Q_OBJECT
 
-    Q_PROPERTY(QStringList args READ args WRITE setArgs NOTIFY argsChanged)
-    Q_PROPERTY(QStringList envVar READ envVar WRITE setEnvVar NOTIFY envVarChanged)
-
     Q_PROPERTY(bool processRunning READ processRunning NOTIFY processRunningChanged FINAL)
 
-    Q_PROPERTY(bool configureRunning READ configureRunning NOTIFY configureRunningChanged FINAL)
-    Q_PROPERTY(bool buildRunning READ buildRunning NOTIFY buildRunningChanged FINAL)
-    Q_PROPERTY(bool binaryRunning READ binaryRunning NOTIFY binaryRunningChanged FINAL)
+    Q_PROPERTY(Status configureStatus READ configureStatus NOTIFY configureStatusChanged FINAL)
+    Q_PROPERTY(Status buildStatus READ buildStatus NOTIFY buildStatusChanged FINAL)
+    Q_PROPERTY(Status deployStatus READ deployStatus NOTIFY deployStatusChanged FINAL)
 
-    Q_PROPERTY(QString installPrefix READ installPrefix WRITE setInstallPrefix NOTIFY installPrefixChanged)
     Q_PROPERTY(QString infoLabel READ infoLabel NOTIFY infoLabelChanged)
 
     Q_PROPERTY(bool enabled READ enabled NOTIFY enabledChanged FINAL)
 
 public:
+  enum Status
+  {
+      Running,
+      Finished,
+      Error,
+      None
+  };Q_ENUM(Status)
+
     explicit ProcessManager(CMakeProject *project);
-
-    void setProjectUrl(QUrl const&);
-
-    QUrl buildDir() const;
-    QUrl rootDir() const;
-
-    QStringList args() const;
-
-    QStringList envVar() const;
+  ~ProcessManager();
 
     bool processRunning() const;
 
-    QString installPrefix() const;
+    Status configureStatus() const;
 
-    bool configureRunning() const;
+    Status buildStatus() const;
 
-    bool buildRunning() const;
-
-    bool binaryRunning() const;
+    Status  deployStatus() const;
 
     bool enabled() const;
 
-    QString infoLabel() const
-    {
-        return m_infoLabel;
-    }
+    QString infoLabel() const;
 
 public slots:
     void build();
     void configure();
-    void run();
+    void deploy();
 
     void stopBuild();
     void stopConfigure();
-    void stopRun();
-
-    void setArgs(QStringList args);
-
-    void setEnvVar(QStringList envVar);
-
-    void setInstallPrefix(QString installPrefix);
-
+    void stopDeploy();
 
 private:
     CMakeProject *m_project;
-    QProcess *m_configureProcess;
+    ConfigureProcess *m_configureProcess;
     QProcess *m_buildProcess;
-    QProcess *m_runProcess;
-
-    QUrl m_rootDir;
-    QUrl m_buildDir;
-    QUrl m_projectUrl;
-
-    QStringList m_args;
-
-    QStringList m_envVar;
+    QProcess *m_deployProcess;
 
     bool m_processRunning {false};
 
-    QString m_installPrefix;
-
     void buildStep();
     void configureStep();
-    void runStep();
+    void deployStep();
 
-    bool m_configureRunning {false};
+    Status m_configureStatus {Status::None};
 
-    bool m_buildRunning {false};
+    Status m_buildStatus {Status::None};
 
-    bool m_binaryRunning {false};
+    Status m_deployStatus {Status::None};
 
     bool m_enabled {false};
 
     QString m_infoLabel;
 
 signals:
-    void workingDirChanged(QString workingDir);
-    void argsChanged(QStringList args);
-    void envVarChanged(QStringList envVar);
-    void processRunningChanged(bool running);
-    void installPrefixChanged(QString installPrefix);
+   void processRunningChanged(bool running);
 
     void outputLine(QString output);
-    void configureRunningChanged(bool configureRunning);
-    void buildRunningChanged(bool buildRunning);
-    void binaryRunningChanged(bool binaryRunning);
+
+    void configureStatusChanged(Status configureStatus);
+    void buildStatusChanged(Status buildStatus);
+    void deployStatusChanged(Status binaryStatus);
+
     void enabledChanged(bool enabled);
     void infoLabelChanged(QString infoLabel);
 };

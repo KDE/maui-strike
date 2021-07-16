@@ -12,6 +12,9 @@ class ProjectPreferences : public QObject
     Q_PROPERTY(QString installPrefix READ installPrefix WRITE setInstallPrefix NOTIFY installPrefixChanged)
     Q_PROPERTY(QUrl buildDir READ buildDir WRITE setBuildDir NOTIFY buildDirChanged)
 
+//  Q_PROPERTY(QStringList args READ args WRITE setArgs NOTIFY argsChanged)
+//  Q_PROPERTY(QStringList envVar READ envVar WRITE setEnvVar NOTIFY envVarChanged)
+
 public:
     explicit ProjectPreferences(QObject *parent = nullptr);
 
@@ -19,7 +22,7 @@ public:
     QString cmakeProgram() const;
     QString installPrefix() const;
 
-public slots:    
+public slots:
     void setBuildDir(QUrl buildDir);
     void setCmakeProgram(QString cmakeProgram);
     void setInstallPrefix(QString installPrefix);

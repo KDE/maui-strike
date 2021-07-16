@@ -4,9 +4,10 @@
 #include <QDebug>
 
 #include "controllers/projectmanager.h"
+#include "controllers/cmakeprojectmanager.h"
 #include "controllers/projectpreferences.h"
 
-ConfigureProcess::ConfigureProcess(ProjectManager * project, QObject *parent) : QProcess(parent)
+ConfigureProcess::ConfigureProcess(CMakeProjectManager * project) : QProcess(project)
   , m_project(project)
 {
 }
@@ -14,17 +15,17 @@ ConfigureProcess::ConfigureProcess(ProjectManager * project, QObject *parent) : 
 void ConfigureProcess::prepare()
 {
     //set the cmake program
-    this->setProgram(m_project->preferences()->cmakeProgram());
+    this->setProgram(m_project->root()->preferences()->cmakeProgram());
 
     //set the working directory aka where the build will happen
-    this->setWorkingDirectory(m_project->preferences()->buildDir().toLocalFile());
+    this->setWorkingDirectory(m_project->root()->preferences()->buildDir().toLocalFile());
 
     //double check the build directory exists anf if not then make it
     this->makeDir();
 
     //set the needed args for configuring
     //TODO add in Preferences an option to set more configure args
-    const QStringList args = {m_project->projectPath().toLocalFile(), QString("-DCMAKE_INSTALL_PREFIX=%1").arg(m_project->preferences()->installPrefix())};
+    const QStringList args = {m_project->root()->projectPath().toLocalFile(), QString("-DCMAKE_INSTALL_PREFIX=%1 -DCMAKE_BUILD_TYPE=Debug").arg(m_project->root()->preferences()->installPrefix())};
 
     this->setArguments(args);
 

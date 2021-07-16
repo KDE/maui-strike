@@ -13,7 +13,7 @@ Item
 
     implicitHeight: Maui.Style.rowHeight
 
-    enabled: _project.manager.status === Strike.Manager.Ready
+//    enabled: _project.manager.status === Strike.Manager.Ready
 
     RowLayout
     {
@@ -27,8 +27,20 @@ Item
             Layout.preferredWidth: height * 1.5
             opacity: enabled ? 1 : 0.4
             hoverEnabled: true
-//            enabled: !_cmakeProject.process.processRunning
-            onClicked: _execMenu.show(0, height + Maui.Style.space.medium)
+//            enabled: !manager.process.processRunning
+            onClicked:
+            {
+                if(manager.process.processRunning)
+                {
+                  if(manager.process.deployStatus === Strike.Process.Running)
+                  {
+                      manager.process.stopDeploy()
+                  }
+                }else
+                {
+                     _execMenu.show(0, height + Maui.Style.space.medium)
+                }
+            }
 
             background: Kirigami.ShadowedRectangle
             {
@@ -46,7 +58,7 @@ Item
             Kirigami.Icon
             {
                 anchors.centerIn: parent
-                source: "run-build"
+                source: manager.process.processRunning ? "media-playback-stop" : "run-build"
 
                 color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
                 width: Maui.Style.iconSizes.small
@@ -61,21 +73,21 @@ Item
                 {
                     text:i18n("Configure")
                     icon.name: "run-build-configure"
-                    onTriggered: {}
+                    onTriggered: manager.process.configure()
                 }
 
                 MenuItem
                 {
                     text:i18n("Build")
                     icon.name: "run-build"
-                    onTriggered: {}
+                    onTriggered: manager.process.build()
                 }
 
                 MenuItem
                 {
                     text:i18n("Run")
                     icon.name: "media-playback-start"
-                    onTriggered: {}
+                    onTriggered: manager.process.deploy()
                 }
 
                 MenuItem
@@ -104,11 +116,11 @@ Item
 
             contentItem: Maui.ListItemTemplate
             {
-                label1.text: _cmakeProject.title
+                label1.text: _cmakeProject.title || root.title
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
                 label2.font.pointSize: Maui.Style.fontSizes.small
-                label2.text: _project.projectPath
+                label2.text: manager.process.infoLabel || _project.projectPath
                 imageSource: _project.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
@@ -187,7 +199,7 @@ Item
                 id: _progress
                 width: parent.width
                 anchors.centerIn: parent
-                visible: _cmakeProject.process.configureRunning || _cmakeProject.process.buildRunning
+                visible: manager.process.processRunning
                 indeterminate: true
 
                 contentItem: Item {
@@ -278,6 +290,25 @@ Item
                     text: i18n("Redo")
                     enabled: currentEditor.body.canRedo
                     onTriggered: currentEditor.body.redo()
+                }
+
+                MenuItem
+                {
+                    text: i18n("Split")
+                    visible: settings.supportSplit
+                    icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                    checked: root.currentTab && root.currentTab.count === 2
+                    checkable: true
+                    onTriggered:
+                    {
+                        if(root.currentTab.count === 2)
+                        {
+                            root.currentTab.pop()
+                            return
+                        }//close the inactive split
+
+                        root.currentTab.split("")
+                    }
                 }
 
                 MenuSeparator {}

@@ -5,7 +5,6 @@
 #include "projectpreferences.h"
 #include "cmakeprojectmanager.h"
 #include "projectmanager.h"
-#include "processmanager.h"
 
 #include <QDebug>
 
@@ -13,7 +12,6 @@ CMakeProject::CMakeProject(CMakeProjectManager *manager) : QObject(manager)
 ,m_targetsModel(new CMakeTargetsModel{this})
 ,m_target(new CMakeProjectTarget(this))
 ,m_manager(manager)
-,m_process(new ProcessManager(this))
 {
 
 
@@ -39,6 +37,11 @@ CMakeProjectTarget *CMakeProject::target() const
   return m_target;
 }
 
+CMakeProjectManager *CMakeProject::manager() const
+{
+  return m_manager;
+}
+
 void CMakeProject::setData(CMakeProjectData data)
 {
   qDebug() << "Setting the cmake project data" << data.name;
@@ -56,7 +59,3 @@ void CMakeProject::setData(CMakeProjectData data)
   emit dataChanged(m_data);
 }
 
-ProcessManager *CMakeProject::process() const
-{
-  return m_process;
-}

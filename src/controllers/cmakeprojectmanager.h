@@ -4,11 +4,10 @@
 #include <QHash>
 #include <QObject>
 
-class ConfigureProcess;
-
 class CMakeProject;
 class CMakeProjectsModel;
 class ProjectManager;
+class ProcessManager;
 
 /**
  * @brief The CMakeProjectManager class
@@ -25,6 +24,7 @@ class CMakeProjectManager : public QObject
     Q_PROPERTY(Status status READ status NOTIFY statusChanged FINAL)
 
   Q_PROPERTY(CMakeProject *project READ project CONSTANT FINAL)
+  Q_PROPERTY(ProcessManager *process READ process CONSTANT FINAL)
 
 public:
     enum Status
@@ -42,13 +42,14 @@ public:
     CMakeProjectsModel * projectsModel() const;
     CMakeProject *project() const;
     ProjectManager *root();
+    ProcessManager *process() const;
 
     Status status() const;
 
 private:
     CMakeProjectsModel * m_projectsModel;
-    ConfigureProcess *m_configureProcess;
     CMakeProject * m_project;
+    ProcessManager *m_process;
     ProjectManager * m_root;
 
     Status m_status = Status::None;
