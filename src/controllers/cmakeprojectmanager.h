@@ -18,11 +18,13 @@ class ProjectManager;
  */
 class CMakeProjectManager : public QObject
 {
-    Q_OBJECT   
+    Q_OBJECT
 
     //The projects model
     Q_PROPERTY(CMakeProjectsModel * projectsModel READ projectsModel CONSTANT FINAL)
     Q_PROPERTY(Status status READ status NOTIFY statusChanged FINAL)
+
+  Q_PROPERTY(CMakeProject *project READ project CONSTANT FINAL)
 
 public:
     enum Status
@@ -38,13 +40,16 @@ public:
     void init();
 
     CMakeProjectsModel * projectsModel() const;
+    CMakeProject *project() const;
+    ProjectManager *root();
+
     Status status() const;
 
 private:
     CMakeProjectsModel * m_projectsModel;
     ConfigureProcess *m_configureProcess;
-
-    ProjectManager * m_project;
+    CMakeProject * m_project;
+    ProjectManager * m_root;
 
     Status m_status = Status::None;
 

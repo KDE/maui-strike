@@ -29,10 +29,10 @@ SourcesModel *CMakeProjectTarget::sources() const
     return m_sources;
 }
 
-void CMakeProjectTarget::setData(CMakeTarget data)
+void CMakeProjectTarget::setData(CMakeTarget data, const QUrl &source)
 {
     qDebug() << "Setting target data" << data.name;
     m_data = data;
-    m_sources->setData(m_data.sources);
+    m_sources->setData(m_data.sources, source);
     emit this->dataChanged();
 }

@@ -83,13 +83,14 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
     qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "Project"); //entry point for the project
-    qmlRegisterType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject");
 
     qmlRegisterAnonymousType<ProjectPreferences>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<CMakeProjectsModel>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<CMakeProjectTarget>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<CMakeTargetsModel>(STRIKE_URI, 1);
     qmlRegisterAnonymousType<SourcesModel>(STRIKE_URI, 1);
+
+    qmlRegisterUncreatableType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject", "Get the pointer from CMakeProjectManager");
 
     qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained form StrikeProjec.");
 

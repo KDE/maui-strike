@@ -24,16 +24,18 @@ Maui.AbstractSideBar
 
     Maui.Page
     {
-        id: _stackView
         anchors.fill: parent
         headBar.visible: true
+        clip: true
 
-        StackView
+        SwipeView
         {
+            id: _swipeView
+            currentIndex: _browserViews.currentIndex
             anchors.fill: parent
-            initialItem: Maui.Page
+            Maui.Page
             {
-                headBar.background: null
+                headBar.visible: false
                 title: _cmakeProject.target.name
 
                 Maui.ListBrowser
@@ -42,9 +44,16 @@ Maui.AbstractSideBar
                     model: Maui.BaseModel
                     {
                         list: _cmakeProject.target.sources
-                        sort: "place"
-
+                        sort: "source"
+                        sortOrder: Qt.AscendingOrder
+                        recursiveFilteringEnabled: true
+                        sortCaseSensitivity: Qt.CaseInsensitive
+                        filterCaseSensitivity: Qt.CaseInsensitive
                     }
+
+                    holder.visible: count === 0
+                    holder.title: i18n("Project Sources")
+                    holder.body: i18n("Source files will be listed in here.")
 
                     flickable.section.criteria: ViewSection.FullString
                     flickable.section.property: "place"
@@ -56,15 +65,18 @@ Maui.AbstractSideBar
                         isSection: true
                     }
 
-
                     delegate: Maui.ListBrowserDelegate
                     {
                         width: ListView.view.width
                         label1.text: model.label
-                        label2.text: model.place
                         iconSource: model.icon
                         iconSizeHint: Maui.Style.iconSizes.small
-                        tooltipText: model.place
+                        tooltipText: model.source
+
+                        onClicked:
+                        {
+                            editorView.openTab(model.url)
+                        }
                     }
                 }
             }
@@ -72,7 +84,6 @@ Maui.AbstractSideBar
 
             Maui.Page
             {
-                visible: StackView.status === StackView.Active
                 footBar.leftContent: Maui.ToolActions
                 {
                     expanded: true
@@ -196,8 +207,7 @@ Maui.AbstractSideBar
                     currentPath: FB.FM.homePath()
                     settings.viewType : FB.FMList.LIST_VIEW
                     settings.filterType: FB.FMList.TEXT
-                    headBar.rightLayout.visible: false
-                    headBar.rightLayout.width: 0
+                    headBar.visible: false
                     floatingFooter: false
 
                     onItemClicked:
@@ -236,11 +246,16 @@ Maui.AbstractSideBar
 
         headBar.middleContent: Maui.ToolActions
         {
-            currentIndex: _stackView.depth-1
+            id: _browserViews
+            currentIndex: _swipeView.currentIndex
+            autoExclusive: true
+            expanded: true
+
             Action
             {
                 text: "Project"
                 icon.name: "project-development"
+
             }
 
             Action

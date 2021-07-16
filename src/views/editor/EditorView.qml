@@ -122,21 +122,6 @@ Maui.Page
                 anchors.leftMargin:  Maui.Style.space.medium
                 anchors.rightMargin:  Maui.Style.space.medium
 
-                ToolButton
-                {
-                    Layout.minimumWidth: implicitWidth
-                    Layout.alignment: Qt.AlignLeft
-                    visible: settings.enableSidebar
-                    icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
-                    onClicked: _drawer.toggle()
-
-                    checked: _drawer.visible
-
-                    ToolTip.delay: 1000
-                    ToolTip.timeout: 5000
-                    ToolTip.visible: hovered
-                    ToolTip.text: i18n("Toogle SideBar")
-                }
 
                 Maui.ToolActions
                 {

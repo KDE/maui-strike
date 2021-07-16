@@ -39,10 +39,7 @@ Maui.ApplicationWindow
     //Global editor props
     property alias appSettings: settings
 
-    Strike.CMakeProject
-    {
-        id: _cmakeProject
-    }
+    property Strike.CMakeProject _cmakeProject : _project.manager.project
 
     Settings
     {
@@ -109,6 +106,7 @@ Maui.ApplicationWindow
     {
         id: _initialConfigDialog
 
+        filling: !root.isWide
         maxHeight: 400
         maxWidth: 350
         hint: 1
@@ -204,6 +202,22 @@ Maui.ApplicationWindow
         anchors.fill: parent
 
         headBar.forceCenterMiddleContent: false
+
+        headBar.farLeftContent: ToolButton
+        {
+            Layout.minimumWidth: implicitWidth
+            Layout.alignment: Qt.AlignLeft
+            visible: settings.enableSidebar
+            icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
+            onClicked: _drawer.toggle()
+
+            checked: _drawer.visible
+
+            ToolTip.delay: 1000
+            ToolTip.timeout: 5000
+            ToolTip.visible: hovered
+            ToolTip.text: i18n("Toogle SideBar")
+        }
 
         headBar.rightContent: [
 

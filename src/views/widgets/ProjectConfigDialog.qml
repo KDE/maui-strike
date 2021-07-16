@@ -48,6 +48,7 @@ Maui.Dialog
         id: _stackView
         Layout.fillHeight: true
         Layout.fillWidth: true
+        Layout.margins: Maui.Style.space.big
 
         initialItem: Item
         {
@@ -132,6 +133,12 @@ Maui.Dialog
                         Layout.fillWidth: true
                         Layout.preferredHeight: 120
 
+                        BusyIndicator
+                        {
+                            anchors.centerIn: parent
+                            running: _project.manager.status === Strike.Manager.Loading
+                        }
+
                         Maui.ListBrowser
                         {
                             id: _projectsListView
@@ -143,7 +150,7 @@ Maui.Dialog
                             delegate: Maui.GridBrowserDelegate
                             {
                                 isCurrentItem: ListView.isCurrentItem
-                                checked: isCurrentItem
+                                checked: _cmakeProject.title === model.title
                                 anchors.verticalCenter: parent.verticalCenter
                                 width: 64
                                 height: 80
@@ -168,8 +175,7 @@ Maui.Dialog
         switch(index)
         {
         case 1: return i18n("Configure")
-        case 2: return i18n("Continue")
-        case 3: return i18n("Finish")
+        case 2: return i18n("Finish")
         }
     }
 }

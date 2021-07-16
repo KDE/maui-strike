@@ -5,6 +5,7 @@
 #include <QUrl>
 
 class QProcess;
+class CMakeProject;
 class ProcessManager : public QObject
 {
     Q_OBJECT
@@ -24,7 +25,7 @@ class ProcessManager : public QObject
     Q_PROPERTY(bool enabled READ enabled NOTIFY enabledChanged FINAL)
 
 public:
-    explicit ProcessManager(QObject *parent = nullptr);
+    explicit ProcessManager(CMakeProject *project);
 
     void setProjectUrl(QUrl const&);
 
@@ -69,6 +70,7 @@ public slots:
 
 
 private:
+    CMakeProject *m_project;
     QProcess *m_configureProcess;
     QProcess *m_buildProcess;
     QProcess *m_runProcess;

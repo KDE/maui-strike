@@ -11,7 +11,7 @@ class SourcesModel : public MauiList
 public:
     SourcesModel(QObject *parent =nullptr);
 
-    void setData(const QList<QUrl> &data);
+    void setData(const QList<QUrl> &data, const QUrl &baseUrl);
     const FMH::MODEL_LIST &items() const override final;
 
 private:

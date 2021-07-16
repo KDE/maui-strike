@@ -22,7 +22,7 @@ public:
     SourcesModel *sources() const;
 
 public slots:
-    void setData(CMakeTarget data);
+    void setData(CMakeTarget data, const QUrl &source);
 
 private:
     CMakeTarget m_data;

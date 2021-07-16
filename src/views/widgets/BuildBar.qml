@@ -27,11 +27,8 @@ Item
             Layout.preferredWidth: height * 1.5
             opacity: enabled ? 1 : 0.4
             hoverEnabled: true
-            enabled: !_projectManager.process.processRunning
-            onClicked:
-            {
-                //                _project.process.build()
-            }
+//            enabled: !_cmakeProject.process.processRunning
+            onClicked: _execMenu.show(0, height + Maui.Style.space.medium)
 
             background: Kirigami.ShadowedRectangle
             {
@@ -54,6 +51,39 @@ Item
                 color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
                 width: Maui.Style.iconSizes.small
                 height: width
+            }
+
+            Maui.ContextualMenu
+            {
+                id:  _execMenu
+
+                MenuItem
+                {
+                    text:i18n("Configure")
+                    icon.name: "run-build-configure"
+                    onTriggered: {}
+                }
+
+                MenuItem
+                {
+                    text:i18n("Build")
+                    icon.name: "run-build"
+                    onTriggered: {}
+                }
+
+                MenuItem
+                {
+                    text:i18n("Run")
+                    icon.name: "media-playback-start"
+                    onTriggered: {}
+                }
+
+                MenuItem
+                {
+                    text:i18n("Install")
+                    icon.name: "run-install"
+                    onTriggered: {}
+                }
             }
         }
 
@@ -157,7 +187,7 @@ Item
                 id: _progress
                 width: parent.width
                 anchors.centerIn: parent
-                visible: _projectManager.process.configureRunning || _projectManager.process.buildRunning
+                visible: _cmakeProject.process.configureRunning || _cmakeProject.process.buildRunning
                 indeterminate: true
 
                 contentItem: Item {

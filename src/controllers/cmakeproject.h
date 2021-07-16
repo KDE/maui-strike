@@ -5,7 +5,9 @@
 #include "cmakedata.h"
 
 class CMakeProjectTarget;
+class CMakeProjectManager;
 class CMakeTargetsModel;
+class ProcessManager;
 class CMakeProject : public QObject
 {
     Q_OBJECT
@@ -19,12 +21,16 @@ class CMakeProject : public QObject
 
     Q_PROPERTY(CMakeProjectTarget *target READ target CONSTANT FINAL)
 
+    Q_PROPERTY(ProcessManager *process READ process CONSTANT FINAL)
+
 public:
-    explicit CMakeProject(QObject *parent = nullptr);
+    explicit CMakeProject(CMakeProjectManager *manager = nullptr);
     QString title() const;
     CMakeTargetsModel * targetsModel() const;
     CMakeProjectData data() const;
     CMakeProjectTarget *target() const;
+
+    ProcessManager *process() const;
 
 public slots:
     void setData(CMakeProjectData data);
@@ -33,6 +39,9 @@ private:
     CMakeTargetsModel *m_targetsModel;
     CMakeProjectData m_data;
     CMakeProjectTarget *m_target;
+    CMakeProjectManager *m_manager;
+
+    ProcessManager *m_process;
 
 signals:
     void dataChanged(CMakeProjectData data);
