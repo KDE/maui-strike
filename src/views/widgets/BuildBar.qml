@@ -14,6 +14,65 @@ Item
     implicitHeight: Maui.Style.rowHeight
 
 //    enabled: _project.manager.status === Strike.Manager.Ready
+    Maui.Popup
+    {
+        id: _projectMenu
+        maxHeight: 200
+        maxWidth:  parent.width
+
+        ColumnLayout
+        {
+            anchors.fill: parent
+
+            Maui.ListBrowser
+            {
+                id: _projectsListView
+                Layout.fillWidth: true
+                model: _project.manager.projectsModel
+
+                delegate: Maui.ListBrowserDelegate
+                {
+                    width: ListView.view.width
+                    iconSource: "alienarena"
+                    label1.text: model.title
+                    onClicked:
+                    {
+                        _projectsListView.currentIndex = index
+                        _cmakeProject.data = model.data
+                    }
+                }
+            }
+
+            Maui.LabelDelegate
+            {
+                Layout.fillWidth: true
+                label: i18n("Targets")
+                isSection: true
+            }
+
+            Maui.ListBrowser
+            {
+                id: _targetsListView
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+                model: _cmakeProject.targetsModel
+
+                delegate: Maui.ListBrowserDelegate
+                {
+                    width: ListView.view.width
+                    iconSource: "run-build"
+                    label1.text: model.name
+                    label2.text: model.type
+
+                    onClicked:
+                    {
+                        _targetsListView.currentIndex = index
+                        _cmakeProject.target.setData(model.target)
+                    }
+                }
+            }
+        }
+    }
 
     RowLayout
     {
@@ -105,14 +164,22 @@ Item
             Layout.fillWidth: true
             Layout.fillHeight: true
 
-            background: Rectangle
+            background: Kirigami.ShadowedRectangle
             {
                 color: Qt.lighter(Kirigami.Theme.backgroundColor)
                 border.width: 1
                 border.color: _docMenu.visible ? Kirigami.Theme.highlightColor : color
+
+                corners
+                {
+                    topLeftRadius: 0
+                    topRightRadius: Maui.Style.radiusV
+                    bottomLeftRadius: 0
+                    bottomRightRadius: Maui.Style.radiusV
+                }
             }
 
-            onClicked : _projectMenu.open()
+            onClicked: _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
 
             contentItem: Maui.ListItemTemplate
             {
@@ -133,66 +200,6 @@ Item
                 }
             }
 
-            Maui.Popup
-            {
-
-                id: _projectMenu
-                maxHeight: 200
-                maxWidth:  parent.width
-
-                ColumnLayout
-                {
-                    anchors.fill: parent
-
-                    Maui.ListBrowser
-                    {
-                        id: _projectsListView
-                        Layout.fillWidth: true
-                        model: _project.manager.projectsModel
-
-                        delegate: Maui.ListBrowserDelegate
-                        {
-                            width: ListView.view.width
-                            iconSource: "alienarena"
-                            label1.text: model.title
-                            onClicked:
-                            {
-                                _projectsListView.currentIndex = index
-                                _cmakeProject.data = model.data
-                            }
-                        }
-                    }
-
-                    Maui.LabelDelegate
-                    {
-                        Layout.fillWidth: true
-                        label: i18n("Targets")
-                        isSection: true
-                    }
-
-                    Maui.ListBrowser
-                    {
-                        id: _targetsListView
-                        Layout.fillWidth: true
-                        Layout.fillHeight: true
-                        model: _cmakeProject.targetsModel
-
-                        delegate: Maui.ListBrowserDelegate
-                        {
-                            width: ListView.view.width
-                            iconSource: "run-build"
-                            label1.text: model.name
-                            label2.text: model.type
-
-                            onClicked:
-                            {
-                                _targetsListView.currentIndex = index
-                                _cmakeProject.target.setData(model.target)
-                            }
-                        }
-                    }
-                }
-            }
 
             ProgressBar
             {
@@ -241,36 +248,7 @@ Item
 
                 background: null
             }
-        }
 
-        AbstractButton
-        {
-            id: _menuButton
-            Layout.fillHeight: true
-            Layout.preferredWidth: height * 1.5
-            opacity: enabled ? 1 : 0.4
-            hoverEnabled: true
-            onClicked: _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
-
-            background: Kirigami.ShadowedRectangle
-            {
-                color: Qt.lighter(Kirigami.Theme.backgroundColor)
-                corners
-                {
-                    topLeftRadius: 0
-                    topRightRadius: Maui.Style.radiusV
-                    bottomLeftRadius: 0
-                    bottomRightRadius: Maui.Style.radiusV
-                }
-            }
-
-            Kirigami.Icon
-            {
-                anchors.centerIn: parent
-                source: "overflow-menu"
-                width: Maui.Style.iconSizes.small
-                height: width
-            }
 
             Maui.ContextualMenu
             {
@@ -414,8 +392,6 @@ Item
                     onTriggered: root.about()
                 }
             }
-
-
         }
     }
 }
