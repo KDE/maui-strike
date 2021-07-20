@@ -53,7 +53,7 @@ Maui.SettingsDialog
         {
             label1.text:  i18n("Font Family")
 
-            ComboBox
+            Maui.ComboBox
             {
                 Layout.fillWidth: true
                 model: Strike.Fonts.monospaceFamilies
@@ -91,7 +91,7 @@ Maui.SettingsDialog
             label1.text:  i18n("Theme")
             label2.text: i18n("Editor color scheme style")
 
-            ComboBox
+            Maui.ComboBox
             {
                 model:  _dummyDocumentHandler.getThemes()
                 Component.onCompleted: currentIndex = find(settings.theme, Qt.MatchExactly)
