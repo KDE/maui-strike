@@ -4,7 +4,7 @@ SPDX-FileCopyrightText: 2021 Carl Schwan <carlschwan@kde.org>
 SPDX-License-Identifier: CC0-1.0
 -->
 <component type="desktop">
-  <id>org.kde.nota</id>
+  <id>org.kde.strike</id>
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Strike</name>
@@ -17,11 +17,11 @@ SPDX-License-Identifier: CC0-1.0
   <url type="donation">https://kde.org/community/donations</url>
   <screenshots>
     <screenshot type="default">
-      <caption>Strike</caption>     
+      <caption>Strike</caption>
       <image type="source" width="2464" height="1929">
         https://cdn.kde.org/screenshots/nota/nota.png
       </image>
-    </screenshot>   
+    </screenshot>
   </screenshots>
   <provides>
     <binary>strike</binary>
