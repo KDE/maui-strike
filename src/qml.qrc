@@ -10,5 +10,7 @@
         <file>views/widgets/BuildBar.qml</file>
         <file>views/widgets/OutputPanel.qml</file>
         <file>views/widgets/ProjectConfigDialog.qml</file>
+        <file>views/widgets/GitPanel.qml</file>
+        <file>views/widgets/BuildOutputPanel.qml</file>
     </qresource>
 </RCC>

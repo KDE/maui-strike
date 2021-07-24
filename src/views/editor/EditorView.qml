@@ -27,13 +27,28 @@ Maui.Page
 
     property alias outputPanel :_outputPanel
 
+    Component
+    {
+        id: _gitCloneDialogComponent
+
+        Maui.NewDialog
+        {
+            title: i18n("Clone")
+            message: i18n("Enter the project Git URL")
+            textEntry.placeholderText: "git@invent.kde.org:maui/mauikit.git"
+            template.iconSource: "git"
+            template.iconSizeHint: Maui.Style.iconSizes.huge
+            template.iconVisible: true
+            acceptButton.text: i18n("Clone")
+        }
+    }
+
 
     SplitView
     {
         anchors.fill: parent
         spacing: 0
         orientation: Qt.Vertical
-
 
         Maui.TabView
         {
@@ -47,27 +62,40 @@ Maui.Page
             holder.title: i18n("Missing Project")
             holder.body: i18n("Create or open a new project.")
 
-            holder.actions: Action
-            {
-                icon.name: "folder-open"
-                text: i18n("Open Project")
-
-
-                onTriggered:
+            holder.actions: [
+                Action
                 {
+                    icon.name: "folder-open"
+                    text: i18n("Open Project")
 
-                    _dialogLoader.sourceComponent = _fileDialogComponent
-                    dialog.mode = dialog.modes.OPEN
-                    //            dialog.singleSelection = true
-                    dialog.settings.filters = ["*.txt"]
-                    dialog.callback =  function (urls)
+                    onTriggered:
                     {
-                        _project.projectUrl = urls[0]
+
+                        _dialogLoader.sourceComponent = _fileDialogComponent
+                        dialog.mode = dialog.modes.OPEN
+                        //            dialog.singleSelection = true
+                        dialog.settings.filters = ["*.txt"]
+                        dialog.callback =  function (urls)
+                        {
+                            _project.projectUrl = urls[0]
+                        }
+                        dialog.open()
+                        control.close()
                     }
-                    dialog.open()
-                    control.close()
+                },
+
+                Action
+                {
+                    icon.name: "vcs-merge-request"
+                    text: i18n("Clone Project")
+
+                    onTriggered:
+                    {
+                        _dialogLoader.sourceComponent = _gitCloneDialogComponent
+                        dialog.open()
+                    }
                 }
-            }
+            ]
 
             onNewTabClicked: control.openTab("")
             onCloseTabClicked:
@@ -134,6 +162,13 @@ Maui.Page
                     icon.name: "love"
                     checked:  _outputPanel.currentIndex === 1
                     onTriggered: _outputPanel.currentIndex = 1
+                }
+
+                Action
+                {
+                    icon.name: "git"
+                    checked:  _outputPanel.currentIndex === 2
+                    onTriggered: _outputPanel.currentIndex = 2
                 }
             }
         }

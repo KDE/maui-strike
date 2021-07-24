@@ -24,7 +24,7 @@ SwipeView
         function onOutputLine(output)
         {
             console.log("OUTPUT LINE", output)
-            _outputArea.append(output)
+            _buildOutputPanel.outputArea.append(output)
         }
 
         function onProcessRunningChanged(running)
@@ -35,42 +35,21 @@ SwipeView
             }
         }
     }
+
     Maui.Terminal
     {
         id: _terminal
         kterminal.colorScheme: "DarkPastels"
     }
 
-    ScrollView
+    BuildOutputPanel
     {
-        Kirigami.Theme.inherit: false
-        Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
-        Kirigami.Theme.backgroundColor: "#2c2c2c"
+        id: _buildOutputPanel
+    }
 
-        contentWidth: availableWidth
-        ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
-
-        Flickable
-        {
-            id: _flickable
-            interactive: Kirigami.Settings.hasTransientTouchInput
-            boundsBehavior: Flickable.StopAtBounds
-            boundsMovement :Flickable.StopAtBounds
-
-            TextArea.flickable:   TextArea
-            {
-                id: _outputArea
-                width: parent.width
-                color: "violet"
-                readOnly: true
-                font.family: "Monospace"
-                wrapMode: Text.WrapAtWordBoundaryOrAnywhere
-                background: Rectangle
-                {
-                    color:  Kirigami.Theme.backgroundColor
-                }
-            }
-        }
+    GitPanel
+    {
+        id: _gitPanel
     }
 
     function goTerminal()

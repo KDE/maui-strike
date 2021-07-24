@@ -17,6 +17,8 @@ set(strike_SRCS
     controllers/projectpreferences.cpp
     controllers/processes/configureprocess.cpp
     controllers/cmakeprojectmanager.cpp
+    controllers/git/gitprocess.cpp
+    controllers/git/cloneprocess.cpp
     )
 
 set(strike_ASSETS
