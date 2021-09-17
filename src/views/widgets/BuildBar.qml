@@ -200,7 +200,6 @@ Item
                 }
             }
 
-
             ProgressBar
             {
                 id: _progress
@@ -249,26 +248,46 @@ Item
                 background: null
             }
 
-
             Maui.ContextualMenu
             {
                 id: _docMenu
 
-                MenuItem
+                Maui.MenuItemActionRow
                 {
-                    icon.name: "edit-undo"
-                    text: i18n("Undo")
-                    enabled: currentEditor.body.canUndo
-                    onTriggered: currentEditor.body.undo()
+                    Action
+                    {
+                        icon.name: "edit-undo"
+//                        text: i18n("Undo")
+                        enabled: currentEditor.body.canUndo
+                        onTriggered: currentEditor.body.undo()
+                    }
+
+                    Action
+                    {
+                        icon.name: "edit-redo"
+//                        text: i18n("Redo")
+                        enabled: currentEditor.body.canRedo
+                        onTriggered: currentEditor.body.redo()
+                    }
+
+
+                    Action
+                    {
+//                        text: i18n("Save")
+                        icon.name: "document-save"
+                        enabled: currentEditor ? currentEditor.document.modified : false
+                        onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
+                    }
+
+                    Action
+                    {
+                        icon.name: "document-save-as"
+//                        text: i18n("Save as...")
+                        onTriggered: saveFile("", control.currentEditor)
+                    }
                 }
 
-                MenuItem
-                {
-                    icon.name: "edit-redo"
-                    text: i18n("Redo")
-                    enabled: currentEditor.body.canRedo
-                    onTriggered: currentEditor.body.redo()
-                }
+                MenuSeparator {}
 
                 MenuItem
                 {
@@ -287,23 +306,6 @@ Item
 
                         root.currentTab.split("")
                     }
-                }
-
-                MenuSeparator {}
-
-                MenuItem
-                {
-                    text: i18n("Save")
-                    icon.name: "document-save"
-                    enabled: currentEditor ? currentEditor.document.modified : false
-                    onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
-                }
-
-                MenuItem
-                {
-                    icon.name: "document-save-as"
-                    text: i18n("Save as...")
-                    onTriggered: saveFile("", control.currentEditor)
                 }
 
                 MenuSeparator {}
@@ -337,38 +339,34 @@ Item
 
                 MenuSeparator {}
 
-                MenuItem
+                Maui.MenuItemActionRow
                 {
-                    text: i18n("Share")
-                    icon.name: "document-share"
-                    onTriggered: Maui.Platform.shareFiles([currentEditor.fileUrl])
-
-                }
-
-                MenuItem
-                {
-                    text: i18n("Open with")
-                    icon.name: "document-open"
-                }
-
-                MenuItem
-                {
-                    visible: !Maui.Handy.isAndroid
-                    text: i18n("Show in folder")
-                    icon.name: "folder-open"
-                    onTriggered:
+                    Action
                     {
-                        FB.FM.openLocation([currentEditor.fileUrl])
+//                        text: i18n("Share")
+                        icon.name: "document-share"
+                        onTriggered: Maui.Platform.shareFiles([currentEditor.fileUrl])
+
                     }
-                }
 
-                MenuItem
-                {
-                    text: i18n("Info")
-                    icon.name: "documentinfo"
-                    onTriggered:
+                    Action
                     {
-                        //            getFileInfo(control.model.get(index).url)
+//                        text: i18n("Show in folder")
+                        icon.name: "folder-open"
+                        onTriggered:
+                        {
+                            FB.FM.openLocation([currentEditor.fileUrl])
+                        }
+                    }
+
+                    Action
+                    {
+//                        text: i18n("Info")
+                        icon.name: "documentinfo"
+                        onTriggered:
+                        {
+                            //            getFileInfo(control.model.get(index).url)
+                        }
                     }
                 }
 

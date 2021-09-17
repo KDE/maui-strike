@@ -1,7 +1,5 @@
 import QtQuick 2.14
-import QtQml 2.14
 import QtQuick.Controls 2.13
-import QtQuick.Layouts 1.3
 
 import org.kde.kirigami 2.14 as Kirigami
 
@@ -42,7 +40,6 @@ Maui.Page
             acceptButton.text: i18n("Clone")
         }
     }
-
 
     SplitView
     {

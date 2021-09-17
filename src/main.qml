@@ -22,6 +22,7 @@ Maui.ApplicationWindow
     title: currentEditor ? currentTab.title : ""
     headBar.visible:false
     altHeader: Kirigami.Settings.isMobile
+    page.showCSDControls: true
 
     property alias project : _project
     property alias manager : _project.manager

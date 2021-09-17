@@ -31,6 +31,27 @@ Maui.AbstractSideBar
 
         clip: true
 
+        headBar.middleContent: Maui.ToolActions
+        {
+            id: _browserViews
+            currentIndex: _swipeView.currentIndex
+            autoExclusive: true
+            expanded: true
+
+            Action
+            {
+                text: "Project"
+                icon.name: "project-development"
+
+            }
+
+            Action
+            {
+                text: "Browser"
+                icon.name: "folder"
+            }
+        }
+
         SwipeView
         {
             id: _swipeView
@@ -94,6 +115,7 @@ Maui.AbstractSideBar
                 headBar.background: null
                 footBar.background: null
                 background: null
+                headBar.visible: false
 
                 footBar.leftContent: Maui.ToolActions
                 {
@@ -220,12 +242,12 @@ Maui.AbstractSideBar
                     settings.filterType: FB.FMList.TEXT
                     headBar.visible: false
                     floatingFooter: false
-browser.background: null
-background: Rectangle
-{
-    color: Kirigami.Theme.backgroundColor
-    opacity: 0.5
-}
+                    browser.background: null
+                    background: Rectangle
+                    {
+                        color: Kirigami.Theme.backgroundColor
+                        opacity: 0.5
+                    }
                     onItemClicked:
                     {
                         var item = currentFMModel.get(index)
@@ -260,25 +282,5 @@ background: Rectangle
             }
         }
 
-        headBar.middleContent: Maui.ToolActions
-        {
-            id: _browserViews
-            currentIndex: _swipeView.currentIndex
-            autoExclusive: true
-            expanded: true
-
-            Action
-            {
-                text: "Project"
-                icon.name: "project-development"
-
-            }
-
-            Action
-            {
-                text: "Browser"
-                icon.name: "folder"
-            }
-        }
     }
 }
