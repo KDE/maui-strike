@@ -26,6 +26,9 @@ Maui.AbstractSideBar
     {
         anchors.fill: parent
         headBar.visible: true
+        headBar.background: null
+        background: null
+
         clip: true
 
         SwipeView
@@ -33,9 +36,13 @@ Maui.AbstractSideBar
             id: _swipeView
             currentIndex: _browserViews.currentIndex
             anchors.fill: parent
+
             Maui.Page
             {
                 headBar.visible: false
+                headBar.background: null
+                background: null
+
                 title: _cmakeProject.target.name
 
                 Maui.ListBrowser
@@ -84,6 +91,10 @@ Maui.AbstractSideBar
 
             Maui.Page
             {
+                headBar.background: null
+                footBar.background: null
+                background: null
+
                 footBar.leftContent: Maui.ToolActions
                 {
                     expanded: true
@@ -209,7 +220,12 @@ Maui.AbstractSideBar
                     settings.filterType: FB.FMList.TEXT
                     headBar.visible: false
                     floatingFooter: false
-
+browser.background: null
+background: Rectangle
+{
+    color: Kirigami.Theme.backgroundColor
+    opacity: 0.5
+}
                     onItemClicked:
                     {
                         var item = currentFMModel.get(index)

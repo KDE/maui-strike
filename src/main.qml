@@ -41,6 +41,14 @@ Maui.ApplicationWindow
 
     property Strike.CMakeProject _cmakeProject : _project.manager.project
 
+    Maui.WindowBlur
+    {
+        view: root
+        geometry: Qt.rect(root.x, root.y, root.width, root.height)
+        windowRadius: root.background.radius
+        enabled: !Kirigami.Settings.isMobile
+    }
+
     Settings
     {
         id: settings
@@ -200,6 +208,7 @@ Maui.ApplicationWindow
     {
         id: editorView
         anchors.fill: parent
+        showCSDControls: true
 
         headBar.forceCenterMiddleContent: false
 
