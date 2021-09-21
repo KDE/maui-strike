@@ -3,15 +3,33 @@
         "Authors": [
             {
                 "Email": "mattr@kde.org",
-                "Name": "Matt Rogers"
+                "Name": "Matt Rogers",
+                "Name[ca]": "Matt Rogers",
+                "Name[es]": "Matt Rogers",
+                "Name[nl]": "Matt Rogers",
+                "Name[sv]": "Matt Rogers",
+                "Name[uk]": "Matt Rogers",
+                "Name[x-test]": "xxMatt Rogersxx"
             }
         ],
         "Category": "Project Management",
         "Description": "Allows KDevelop to manage CMake-based projects",
+        "Description[ca]": "Permet que el KDevelop gestioni projectes basats en CMake",
+        "Description[es]": "Permite a KDevelop la gestión de proyectos basados en CMake",
+        "Description[nl]": "Staat KDevelop toe om op CMake gebaseerde projecten te beheren",
+        "Description[sv]": "Låter KDevelop hantera CMake-baserade projekt",
+        "Description[uk]": "Надає змогу KDevelop керувати заснованими на CMake проєктами",
+        "Description[x-test]": "xxAllows KDevelop to manage CMake-based projectsxx",
         "Icon": "cmake",
         "Id": "KDevCMakeManager",
         "License": "GPL",
-        "Name": "CMake Project Manager"
+        "Name": "CMake Project Manager",
+        "Name[ca]": "Gestor de projectes CMake",
+        "Name[es]": "Gestor de proyectos de CMake",
+        "Name[nl]": "CMake-projectbeheerder",
+        "Name[sv]": "CMake projekthanterare",
+        "Name[uk]": "Керування проєктами CMake",
+        "Name[x-test]": "xxCMake Project Managerxx"
     },
     "X-KDevelop-Category": "Project",
     "X-KDevelop-IRequired": [

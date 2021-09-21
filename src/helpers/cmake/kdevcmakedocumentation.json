@@ -3,15 +3,33 @@
         "Authors": [
             {
                 "Email": "aleixpol@kde.org",
-                "Name": "Aleix Pol"
+                "Name": "Aleix Pol",
+                "Name[ca]": "Aleix Pol",
+                "Name[es]": "Aleix Pol",
+                "Name[nl]": "Aleix Pol",
+                "Name[sv]": "Aleix Pol",
+                "Name[uk]": "Aleix Pol",
+                "Name[x-test]": "xxAleix Polxx"
             }
         ],
         "Category": "Documentation",
         "Description": "Allows KDevelop to provide CMake documentation",
+        "Description[ca]": "Permet al KDevelop proporcionar documentació de CMake",
+        "Description[es]": "Permite a KDevelop proporcionar la documentación de CMake",
+        "Description[nl]": "Staat KDevelop toe om CMake-documentatie te leveren",
+        "Description[sv]": "Låter KDevelop tillhandahålla CMake-dokumentation",
+        "Description[uk]": "Надає змогу KDevelop показувати документацію CMake",
+        "Description[x-test]": "xxAllows KDevelop to provide CMake documentationxx",
         "Icon": "cmake",
         "Id": "KDevCMakeDocumentation",
         "License": "GPL",
-        "Name": "CMake Documentation"
+        "Name": "CMake Documentation",
+        "Name[ca]": "Documentació del CMake",
+        "Name[es]": "Documentación de CMake",
+        "Name[nl]": "CMake-documentatie",
+        "Name[sv]": "CMake-dokumentation",
+        "Name[uk]": "Документація до CMake",
+        "Name[x-test]": "xxCMake Documentationxx"
     },
     "X-KDevelop-Category": "Global",
     "X-KDevelop-Interfaces": [
