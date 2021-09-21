@@ -8,9 +8,27 @@ SPDX-License-Identifier: CC0-1.0
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Strike</name>
+  <name xml:lang="ca">Strike</name>
+  <name xml:lang="es">Strike</name>
+  <name xml:lang="nl">Strike</name>
+  <name xml:lang="sv">Strike</name>
+  <name xml:lang="uk">Strike</name>
+  <name xml:lang="x-test">xxStrikexx</name>
   <summary>Simple and convergent IDE</summary>
+  <summary xml:lang="ca">IDE convergent i senzill</summary>
+  <summary xml:lang="es">IDE sencillo y convergente</summary>
+  <summary xml:lang="nl">Eenvoudige en convergente IDE</summary>
+  <summary xml:lang="sv">Enkel och konvergent integrerad utvecklingsmiljö</summary>
+  <summary xml:lang="uk">Просте і цілеспрямоване комплексне середовище розробки</summary>
+  <summary xml:lang="x-test">xxSimple and convergent IDExx</summary>
   <description>
     <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
+    <p xml:lang="ca">L'Strike és un IDE senzill i covergent que funciona a l'escriptori Linux desktop i als ordinadors mòbils.</p>
+    <p xml:lang="es">Strike es un IDE sencillo y convergente que funciona en el escritorio Linux y en computadoras móviles.</p>
+    <p xml:lang="nl">Strike is een eenvoudige en covergente IDE die werkt op Linux bureaubladen en mobiele computers.</p>
+    <p xml:lang="sv">Strike är en enkel och konvergent integrerad utvecklingsmiljö som både fungerar på Linux-skrivbord och mobila enheter.</p>
+    <p xml:lang="uk">Strike — просте і цілеспрямоване комплексне середовище розробки, яке працює на робочих станціях Linux та мобільних комп'ютерах.</p>
+    <p xml:lang="x-test">xxStrike is a simple and covergent IDE that works on Linux desktop and mobile computers.xx</p>
   </description>
   <url type="homepage">https://mauikit.org/</url>
   <url type="bugtracker">https://invent.kde.org/maui/strike/-/issues</url>
@@ -18,6 +36,12 @@ SPDX-License-Identifier: CC0-1.0
   <screenshots>
     <screenshot type="default">
       <caption>Strike</caption>
+      <caption xml:lang="ca">Strike</caption>
+      <caption xml:lang="es">Strike</caption>
+      <caption xml:lang="nl">Strike</caption>
+      <caption xml:lang="sv">Strike</caption>
+      <caption xml:lang="uk">Strike</caption>
+      <caption xml:lang="x-test">xxStrikexx</caption>
       <image type="source" width="2464" height="1929">
         https://cdn.kde.org/screenshots/nota/nota.png
       </image>
