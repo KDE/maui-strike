@@ -1,9 +1,0 @@
-File=cmakebuilderconfig.kcfg
-ClassName=CMakeBuilderSettings
-Singleton=true
-Mutators=true
-SetUserTexts=true
-ItemAccessors=true
-
-IncludeFiles=cmakecommonexport.h
-Visibility=KDEVCMAKECOMMON_EXPORT
