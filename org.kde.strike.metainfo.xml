@@ -9,23 +9,34 @@ SPDX-License-Identifier: CC0-1.0
   <project_license>LGPL-3.0</project_license>
   <name>Strike</name>
   <name xml:lang="ca">Strike</name>
+  <name xml:lang="ca-valencia">Strike</name>
   <name xml:lang="es">Strike</name>
+  <name xml:lang="fr">Strike</name>
   <name xml:lang="nl">Strike</name>
+  <name xml:lang="sk">Strike</name>
+  <name xml:lang="sl">Strike</name>
   <name xml:lang="sv">Strike</name>
   <name xml:lang="uk">Strike</name>
   <name xml:lang="x-test">xxStrikexx</name>
   <summary>Simple and convergent IDE</summary>
   <summary xml:lang="ca">IDE convergent i senzill</summary>
+  <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
   <summary xml:lang="es">IDE sencillo y convergente</summary>
+  <summary xml:lang="fr">Un environnement de développement simple et convergent</summary>
   <summary xml:lang="nl">Eenvoudige en convergente IDE</summary>
+  <summary xml:lang="sk">Jednoduché a konvergentné IDE</summary>
+  <summary xml:lang="sl">Enostavno in konvergentno interaktivno razvojno okolje</summary>
   <summary xml:lang="sv">Enkel och konvergent integrerad utvecklingsmiljö</summary>
   <summary xml:lang="uk">Просте і цілеспрямоване комплексне середовище розробки</summary>
   <summary xml:lang="x-test">xxSimple and convergent IDExx</summary>
   <description>
     <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="ca">L'Strike és un IDE senzill i covergent que funciona a l'escriptori Linux desktop i als ordinadors mòbils.</p>
+    <p xml:lang="ca-valencia">L'Strike és un IDE senzill i covergent que funciona a l'escriptori Linux desktop i als ordinadors mòbils.</p>
     <p xml:lang="es">Strike es un IDE sencillo y convergente que funciona en el escritorio Linux y en computadoras móviles.</p>
+    <p xml:lang="fr">Strike est un environnement de développement simple et convergent, fonctionnant sur les ordinateurs de bureau et mobiles sous Linux.</p>
     <p xml:lang="nl">Strike is een eenvoudige en covergente IDE die werkt op Linux bureaubladen en mobiele computers.</p>
+    <p xml:lang="sl">Strike je enostavno in konvergentno interaktivno razvojno okolje, ki deluje na Linuxu in prenosnih računalnikih.</p>
     <p xml:lang="sv">Strike är en enkel och konvergent integrerad utvecklingsmiljö som både fungerar på Linux-skrivbord och mobila enheter.</p>
     <p xml:lang="uk">Strike — просте і цілеспрямоване комплексне середовище розробки, яке працює на робочих станціях Linux та мобільних комп'ютерах.</p>
     <p xml:lang="x-test">xxStrike is a simple and covergent IDE that works on Linux desktop and mobile computers.xx</p>
@@ -37,8 +48,12 @@ SPDX-License-Identifier: CC0-1.0
     <screenshot type="default">
       <caption>Strike</caption>
       <caption xml:lang="ca">Strike</caption>
+      <caption xml:lang="ca-valencia">Strike</caption>
       <caption xml:lang="es">Strike</caption>
+      <caption xml:lang="fr">Strike</caption>
       <caption xml:lang="nl">Strike</caption>
+      <caption xml:lang="sk">Strike</caption>
+      <caption xml:lang="sl">Strike</caption>
       <caption xml:lang="sv">Strike</caption>
       <caption xml:lang="uk">Strike</caption>
       <caption xml:lang="x-test">xxStrikexx</caption>
