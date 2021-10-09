@@ -2,6 +2,7 @@
 Name=Strike
 Name[ca]=Strike
 Name[ca@valencia]=Strike
+Name[cs]=Strike
 Name[es]=Strike
 Name[fr]=Strike
 Name[nl]=Strike
@@ -29,6 +30,7 @@ Categories=Qt;KDE;Development;IDE;
 GenericName=Simple IDE
 GenericName[ca]=IDE senzill
 GenericName[ca@valencia]=IDE senzill
+GenericName[cs]=Jednoduché IDE
 GenericName[es]=IDE sencillo
 GenericName[fr]=Un environnement de développement simple
 GenericName[nl]=Eenvoudige IDE
