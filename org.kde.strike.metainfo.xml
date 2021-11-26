@@ -14,6 +14,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="de">Strike</name>
   <name xml:lang="en-GB">Strike</name>
   <name xml:lang="es">Strike</name>
+  <name xml:lang="fi">Strike</name>
   <name xml:lang="fr">Strike</name>
   <name xml:lang="ko">Strike</name>
   <name xml:lang="nl">Strike</name>
@@ -29,6 +30,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
   <summary xml:lang="en-GB">Simple and convergent IDE</summary>
   <summary xml:lang="es">IDE sencillo y convergente</summary>
+  <summary xml:lang="fi">Yksinkertainen ja mukautuva kehityskäyttöliittymä</summary>
   <summary xml:lang="fr">Un environnement de développement simple et convergent</summary>
   <summary xml:lang="ko">간단한 올인원 IDE</summary>
   <summary xml:lang="nl">Eenvoudige en convergente IDE</summary>
@@ -45,6 +47,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ca-valencia">L'Strike és un IDE senzill i convergent que funciona a l'escriptori Linux i als ordinadors mòbils.</p>
     <p xml:lang="en-GB">Strike is a simple and convergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="es">Strike es un IDE sencillo y convergente que funciona en el escritorio Linux y en computadoras móviles.</p>
+    <p xml:lang="fi">Strike on yksinkertainen ja mukautuva kehityskäyttöliittymä (IDE) Linux-työpöydälle ja mobiilitietokoneille.</p>
     <p xml:lang="fr">Strike est un environnement de développement simple et convergent, fonctionnant sur les ordinateurs de bureau et mobiles sous Linux.</p>
     <p xml:lang="ko">Strike는 데스크톱과 모바일용 간단하고 강력한 올인원 IDE입니다.</p>
     <p xml:lang="nl">Strike is een eenvoudige en covergente IDE die werkt op Linux bureaubladen en mobiele computers.</p>
@@ -67,6 +70,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="de">Strike</caption>
       <caption xml:lang="en-GB">Strike</caption>
       <caption xml:lang="es">Strike</caption>
+      <caption xml:lang="fi">Strike</caption>
       <caption xml:lang="fr">Strike</caption>
       <caption xml:lang="ko">Strike</caption>
       <caption xml:lang="nl">Strike</caption>
