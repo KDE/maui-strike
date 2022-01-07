@@ -11,28 +11,19 @@ Maui.Dialog
     title: i18n("New file")
     maxWidth: 350
 
-    page.padding: 0
-    spacing: 0
     persistent: false
     defaultButtons: false
     rejectButton.visible : false
     acceptButton.visible: false
 
-    Maui.AlternateListItem
+    Maui.ListBrowserDelegate
     {
         Layout.fillWidth: true
-        hoverEnabled: true
-        implicitHeight: 80
-
-        Maui.ListItemTemplate
-        {
-            anchors.fill: parent
-            headerSizeHint: iconSizeHint + Maui.Style.space.big
-            iconSizeHint: Maui.Style.iconSizes.big
-            iconSource: "applications-development"
-            label1.text: i18n("Create New Project")
-            label2.text: i18n("Open a existing project")
-        }
+//        template.headerSizeHint: iconSizeHint + Maui.Style.space.big
+        iconSizeHint: Maui.Style.iconSizes.big
+        iconSource: "applications-development"
+        label1.text: i18n("Create New Project")
+        label2.text: i18n("Open a existing project")
 
         onClicked:
         {
@@ -41,21 +32,13 @@ Maui.Dialog
         }
     }
 
-    Maui.AlternateListItem
+    Maui.ListBrowserDelegate
     {
         Layout.fillWidth: true
-        hoverEnabled: true
-        implicitHeight: 80
-
-        Maui.ListItemTemplate
-        {
-            anchors.fill: parent
-            headerSizeHint: iconSizeHint + Maui.Style.space.big
-            iconSizeHint: Maui.Style.iconSizes.big
-            iconSource: "folder-open"
-            label1.text: i18n("Open Project")
-            label2.text: i18n("Open a existing project")
-        }
+        iconSizeHint: Maui.Style.iconSizes.big
+        iconSource: "folder-open"
+        label1.text: i18n("Open Project")
+        label2.text: i18n("Open a existing project")
 
         onClicked:
         {
@@ -73,21 +56,13 @@ Maui.Dialog
         }
     }
 
-    Maui.AlternateListItem
+    Maui.ListBrowserDelegate
     {
         Layout.fillWidth: true
-        hoverEnabled: true
-        implicitHeight: 80
-
-        Maui.ListItemTemplate
-        {
-            anchors.fill: parent
-            headerSizeHint: iconSizeHint + Maui.Style.space.big
-            iconSizeHint: Maui.Style.iconSizes.big
-            iconSource: "quickopen-file"
-            label1.text: i18n("Open File")
-            label2.text: i18n("Open one or multiple files")
-        }
+        iconSizeHint: Maui.Style.iconSizes.big
+        iconSource: "quickopen-file"
+        label1.text: i18n("Open File")
+        label2.text: i18n("Open one or multiple files")
 
         onClicked:
         {
@@ -96,22 +71,13 @@ Maui.Dialog
         }
     }
 
-    Maui.AlternateListItem
+    Maui.ListBrowserDelegate
     {
         Layout.fillWidth: true
-        implicitHeight: 80
-        hoverEnabled: true
-        lastOne: true
-
-        Maui.ListItemTemplate
-        {
-            anchors.fill: parent
-            headerSizeHint: iconSizeHint + Maui.Style.space.big
-            iconSizeHint: Maui.Style.iconSizes.big
-            iconSource: "text-enriched"
-            label1.text: i18n("New Template Source File")
-            label2.text: i18n("With support for basic text format editing")
-        }
+        iconSizeHint: Maui.Style.iconSizes.big
+        iconSource: "text-enriched"
+        label1.text: i18n("New Template Source File")
+        label2.text: i18n("With support for basic text format editing")
 
         onClicked:
         {
