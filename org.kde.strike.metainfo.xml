@@ -25,6 +25,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="sk">Strike</name>
   <name xml:lang="sl">Strike</name>
   <name xml:lang="sv">Strike</name>
+  <name xml:lang="tr">Strike</name>
   <name xml:lang="uk">Strike</name>
   <name xml:lang="x-test">xxStrikexx</name>
   <name xml:lang="zh-CN">Strike</name>
@@ -44,6 +45,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="sk">Jednoduché a konvergentné IDE</summary>
   <summary xml:lang="sl">Enostavno in konvergentno interaktivno razvojno okolje</summary>
   <summary xml:lang="sv">Enkel och konvergent integrerad utvecklingsmiljö</summary>
+  <summary xml:lang="tr">Yalın ve yakınsak bir tümleşik geliştirme ortamı</summary>
   <summary xml:lang="uk">Просте і цілеспрямоване комплексне середовище розробки</summary>
   <summary xml:lang="x-test">xxSimple and convergent IDExx</summary>
   <summary xml:lang="zh-CN">简易桌面与移动平台通用 IDE</summary>
@@ -63,6 +65,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="pt-BR">Strike é uma IDE simples e convergente que funciona em áreas de trabalho Linux e computadores móveis.</p>
     <p xml:lang="sl">Strike je enostavno in konvergentno interaktivno razvojno okolje, ki deluje na Linuxu in prenosnih računalnikih.</p>
     <p xml:lang="sv">Strike är en enkel och konvergent integrerad utvecklingsmiljö som både fungerar på Linux-skrivbord och mobila enheter.</p>
+    <p xml:lang="tr">Strike, Linux masaüstlerinde ve taşınabilir bilgisayarlarda çalışan yalın ve yakınsak bir tümleşik geliştirme ortamıdır.</p>
     <p xml:lang="uk">Strike — просте і цілеспрямоване комплексне середовище розробки, яке працює на робочих станціях Linux та мобільних комп'ютерах.</p>
     <p xml:lang="x-test">xxStrike is a simple and covergent IDE that works on Linux desktop and mobile computers.xx</p>
     <p xml:lang="zh-CN">Strike 是一款同时支持 Linux 桌面环境与移动环境的简易通用 。</p>
@@ -90,6 +93,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="sk">Strike</caption>
       <caption xml:lang="sl">Strike</caption>
       <caption xml:lang="sv">Strike</caption>
+      <caption xml:lang="tr">Strike</caption>
       <caption xml:lang="uk">Strike</caption>
       <caption xml:lang="x-test">xxStrikexx</caption>
       <caption xml:lang="zh-CN">Strike</caption>
