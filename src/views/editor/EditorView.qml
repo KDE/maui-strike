@@ -41,7 +41,7 @@ Maui.Page
         }
     }
 
-    SplitView
+    Maui.SplitView
     {
         anchors.fill: parent
         spacing: 0

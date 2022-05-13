@@ -34,6 +34,7 @@ Maui.AbstractSideBar
         headBar.middleContent: Maui.ToolActions
         {
             id: _browserViews
+            Layout.alignment: Qt.AlignCenter
             currentIndex: _swipeView.currentIndex
             autoExclusive: true
             expanded: true

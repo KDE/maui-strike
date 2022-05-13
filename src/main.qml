@@ -244,6 +244,7 @@ Maui.ApplicationWindow
         headBar.middleContent: Widgets.BuildBar
         {
             Layout.fillWidth: true
+            Layout.alignment: Qt.AlignCenter
             Layout.maximumWidth: 500
             Layout.minimumWidth: 0
         }
