@@ -6,7 +6,6 @@ import QtQuick.Layouts 1.3
 
 import Qt.labs.settings 1.0
 
-import org.kde.kirigami 2.7 as Kirigami
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 
@@ -21,7 +20,7 @@ Maui.ApplicationWindow
     id: root
     title: currentEditor ? currentTab.title : ""
     headBar.visible:false
-    altHeader: Kirigami.Settings.isMobile
+    altHeader: Maui.Handy.isMobile
     page.showCSDControls: true
 
     property alias project : _project
@@ -47,7 +46,7 @@ Maui.ApplicationWindow
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
         windowRadius: root.background.radius
-        enabled: !Kirigami.Settings.isMobile
+        enabled: !Maui.Handy.isMobile
     }
 
     Settings
@@ -60,8 +59,8 @@ Maui.ApplicationWindow
         property bool supportSplit :true
         property double tabSpace: 8
         property string theme : ""
-        property color backgroundColor : root.Kirigami.Theme.backgroundColor
-        property color textColor : root.Kirigami.Theme.textColor
+        property color backgroundColor : root.Maui.Theme.backgroundColor
+        property color textColor : root.Maui.Theme.textColor
 
         property font font : defaultFont
     }

@@ -2,8 +2,6 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
-
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.texteditor 1.0 as TE
 
@@ -28,7 +26,7 @@ Maui.SplitViewItem
         body.font.family: settings.font.family
         body.font.pointSize: settings.font.pointSize
         document.backgroundColor: settings.backgroundColor
-        Kirigami.Theme.backgroundColor: settings.backgroundColor
+        Maui.Theme.backgroundColor: settings.backgroundColor
         document.theme: settings.theme
         document.autoSave: settings.autoSave
         document.tabSpace: ((settings.tabSpace+1) * body.font.pointSize) / 2

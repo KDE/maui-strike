@@ -2,18 +2,18 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
 
-import org.mauikit.controls 1.2 as Maui
+import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 
 Maui.AbstractSideBar
 {
-    preferredWidth: Kirigami.Units.gridUnit * 16
+    preferredWidth: Maui.Style.units.gridUnit * 16
     collapsed: !isWide
     collapsible: true
     dragMargin: Maui.Style.space.big
-
+    Maui.Theme.colorSet: Maui.Theme.View
+      Maui.Theme.inherit: false
     property alias browser : browserView
 
     onVisibleChanged:
@@ -43,7 +43,6 @@ Maui.AbstractSideBar
             {
                 text: "Project"
                 icon.name: "project-development"
-
             }
 
             Action
@@ -58,7 +57,7 @@ Maui.AbstractSideBar
             id: _swipeView
             currentIndex: _browserViews.currentIndex
             anchors.fill: parent
-
+//background: null
             Maui.Page
             {
                 headBar.visible: false
@@ -246,7 +245,7 @@ Maui.AbstractSideBar
                     browser.background: null
                     background: Rectangle
                     {
-                        color: Kirigami.Theme.backgroundColor
+                        color: Maui.Theme.backgroundColor
                         opacity: 0.5
                     }
                     onItemClicked:

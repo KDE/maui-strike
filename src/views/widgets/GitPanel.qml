@@ -48,9 +48,9 @@ Maui.Page
     ScrollView
     {
         anchors.fill: parent
-        Kirigami.Theme.inherit: false
-        Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
-        Kirigami.Theme.backgroundColor: "#2c2c2c"
+        Maui.Theme.inherit: false
+        Maui.Theme.colorSet: Maui.Theme.Complementary
+        Maui.Theme.backgroundColor: "#2c2c2c"
 
         contentWidth: availableWidth
         ScrollBar.horizontal.policy: ScrollBar.AlwaysOff
@@ -71,7 +71,7 @@ Maui.Page
                 wrapMode: Text.WrapAtWordBoundaryOrAnywhere
                 background: Rectangle
                 {
-                    color:  Kirigami.Theme.backgroundColor
+                    color:  Maui.Theme.backgroundColor
                 }
             }
         }

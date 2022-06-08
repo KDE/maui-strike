@@ -82,6 +82,9 @@ Item
         AbstractButton
         {
             id: _buildButton
+            Maui.Theme.colorSet: Maui.Theme.Button
+            Maui.Theme.inherit: false
+
             Layout.fillHeight: true
             Layout.preferredWidth: height * 1.5
             opacity: enabled ? 1 : 0.4
@@ -103,8 +106,7 @@ Item
 
             background: Kirigami.ShadowedRectangle
             {
-                color: Qt.lighter(Kirigami.Theme.backgroundColor)
-
+                color: Maui.Theme.backgroundColor
                 corners
                 {
                     topLeftRadius: Maui.Style.radiusV
@@ -119,7 +121,7 @@ Item
                 anchors.centerIn: parent
                 source: manager.process.processRunning ? "media-playback-stop" : "run-build"
 
-                color: _buildButton.containsMouse || _buildButton.containsPress ? control.Kirigami.Theme.highlightColor : control.Kirigami.Theme.textColor
+                color: _buildButton.containsMouse || _buildButton.containsPress ? control.Maui.Theme.highlightColor : control.Maui.Theme.textColor
                 width: Maui.Style.iconSizes.small
                 height: width
             }
@@ -163,13 +165,14 @@ Item
         {
             Layout.fillWidth: true
             Layout.fillHeight: true
-
+            Maui.Theme.colorSet: Maui.Theme.Button
+            Maui.Theme.inherit: false
+padding: Maui.Style.space.small
             background: Kirigami.ShadowedRectangle
             {
-                color: Qt.lighter(Kirigami.Theme.backgroundColor)
+                color: Maui.Theme.backgroundColor
                 border.width: 1
-                border.color: _docMenu.visible ? Kirigami.Theme.highlightColor : color
-
+                border.color: _docMenu.visible ? Maui.Theme.highlightColor : color
                 corners
                 {
                     topLeftRadius: 0
@@ -195,6 +198,7 @@ Item
                 Kirigami.Icon
                 {
                     source: "go-down"
+                    color: Maui.Theme.textColor
                     implicitHeight: Maui.Style.iconSizes.small
                     implicitWidth: implicitHeight
                 }

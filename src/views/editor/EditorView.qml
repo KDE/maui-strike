@@ -125,13 +125,13 @@ Maui.Page
 
         handle: Kirigami.ShadowedRectangle
         {
-            Kirigami.Theme.inherit: false
-            Kirigami.Theme.colorSet: Kirigami.Theme.Complementary
-            Kirigami.Theme.backgroundColor: "#2c2c2c"
+            Maui.Theme.inherit: false
+            Maui.Theme.colorSet: Maui.Theme.Complementary
+            Maui.Theme.backgroundColor: "#2c2c2c"
 
             implicitWidth: 22
             implicitHeight: Maui.Style.toolBarHeight
-            color: Kirigami.Theme.backgroundColor
+            color: Maui.Theme.backgroundColor
 
             corners
             {

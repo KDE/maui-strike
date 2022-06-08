@@ -2,8 +2,6 @@ import QtQuick 2.13
 import QtQuick.Controls 2.13
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
-
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.texteditor 1.0 as TE
 
@@ -128,7 +126,7 @@ Maui.SettingsDialog
                     case "#fafafa": textColor = "#333"; break;
                     case "#fff3e6": textColor = Qt.darker(color, 2); break;
                     case "#4c425b": textColor = Qt.lighter(color, 2.5); break;
-                    default: textColor = Kirigami.Theme.textColor;
+                    default: textColor = Maui.Theme.textColor;
                     }
 
                     switchBackgroundColor(color, textColor)
