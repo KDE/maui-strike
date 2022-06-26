@@ -19,9 +19,6 @@ Maui.ApplicationWindow
 {
     id: root
     title: currentEditor ? currentTab.title : ""
-    headBar.visible:false
-    altHeader: Maui.Handy.isMobile
-    page.showCSDControls: true
 
     property alias project : _project
     property alias manager : _project.manager
@@ -45,7 +42,7 @@ Maui.ApplicationWindow
     {
         view: root
         geometry: Qt.rect(root.x, root.y, root.width, root.height)
-        windowRadius: root.background.radius
+        windowRadius: Maui.Style.radiusV
         enabled: !Maui.Handy.isMobile
     }
 
@@ -183,71 +180,90 @@ Maui.ApplicationWindow
         }
     }
 
-    sideBar: PlacesSidebar
+    Maui.SideBarView
     {
-        id : _drawer
-    }
+        id: _sideBarView
 
-    DropArea
-    {
-        id: _dropArea
-        property var urls : []
-        anchors.fill: parent
-        onDropped:
+        sideBar.preferredWidth: Maui.Style.units.gridUnit*16
+        sideBar.minimumWidth: Maui.Style.units.gridUnit*14
+
+        Connections
         {
-            if(drop.urls)
+            target: _sideBarView.sideBar
+            function onVisibleChanged()
             {
-                var m_urls = drop.urls.join(",")
-                _dropArea.urls = m_urls.split(",")
-                Strike.Strike.requestFiles( _dropArea.urls )
+                if(currentEditor)
+                    syncSidebar(currentEditor.fileUrl)
             }
         }
-    }
 
-    EditorView
-    {
-        id: editorView
-        anchors.fill: parent
-        showCSDControls: true
-
-        headBar.forceCenterMiddleContent: false
-
-        headBar.farLeftContent: ToolButton
+        sideBarContent: PlacesSidebar
         {
-            Layout.minimumWidth: implicitWidth
-            Layout.alignment: Qt.AlignLeft
-            visible: settings.enableSidebar
-            icon.name: _drawer.visible ? "sidebar-collapse" : "sidebar-expand"
-            onClicked: _drawer.toggle()
-
-            checked: _drawer.visible
-
-            ToolTip.delay: 1000
-            ToolTip.timeout: 5000
-            ToolTip.visible: hovered
-            ToolTip.text: i18n("Toogle SideBar")
+            id : _drawer
+            anchors.fill: parent
         }
 
-        headBar.rightContent: [
-
-            ToolButton
+        DropArea
+        {
+            id: _dropArea
+            property var urls : []
+            anchors.fill: parent
+            onDropped:
             {
-                icon.name: "list-add"
-                onClicked:
+                if(drop.urls)
                 {
-                    _newDocumentMenu.open()
+                    var m_urls = drop.urls.join(",")
+                    _dropArea.urls = m_urls.split(",")
+                    Strike.Strike.requestFiles( _dropArea.urls )
                 }
             }
-        ]
-
-        headBar.middleContent: Widgets.BuildBar
-        {
-            Layout.fillWidth: true
-            Layout.alignment: Qt.AlignCenter
-            Layout.maximumWidth: 500
-            Layout.minimumWidth: 0
         }
 
+        EditorView
+        {
+            id: editorView
+            anchors.fill: parent
+            showCSDControls: true
+
+            headBar.forceCenterMiddleContent: false
+
+            headBar.farLeftContent: ToolButton
+            {
+                Layout.minimumWidth: implicitWidth
+                Layout.alignment: Qt.AlignLeft
+                visible: settings.enableSidebar
+                icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
+                onClicked: _sideBarView.sideBar.toggle()
+
+                checked: _sideBarView.sideBar.visible
+
+                ToolTip.delay: 1000
+                ToolTip.timeout: 5000
+                ToolTip.visible: hovered
+                ToolTip.text: i18n("Toogle SideBar")
+            }
+
+            headBar.rightContent: [
+
+                ToolButton
+                {
+                    icon.name: "list-add"
+                    onClicked:
+                    {
+                        _newDocumentMenu.open()
+                    }
+                }
+            ]
+
+            headBar.middleContent: Widgets.BuildBar
+            {
+                Layout.fillWidth: true
+                Layout.alignment: Qt.AlignCenter
+                Layout.maximumWidth: 500
+                Layout.minimumWidth: 0
+            }
+
+        }
     }
 
     Connections

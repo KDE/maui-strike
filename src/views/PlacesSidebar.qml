@@ -2,285 +2,270 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
 
-Maui.AbstractSideBar
+Maui.Page
 {
-    preferredWidth: Maui.Style.units.gridUnit * 16
-    collapsed: !isWide
-    collapsible: true
-    dragMargin: Maui.Style.space.big
-    Maui.Theme.colorSet: Maui.Theme.View
-      Maui.Theme.inherit: false
+    anchors.fill: parent
+    headBar.visible: true
+    headBar.background: null
+    background: null
+
+    clip: true
+
     property alias browser : browserView
 
-    onVisibleChanged:
+    headBar.middleContent: Maui.ToolActions
     {
-        if(currentEditor)
-            syncSidebar(currentEditor.fileUrl)
+        id: _browserViews
+        Layout.alignment: Qt.AlignCenter
+        currentIndex: _swipeView.currentIndex
+        autoExclusive: true
+        expanded: true
+
+        Action
+        {
+            text: "Project"
+            icon.name: "project-development"
+        }
+
+        Action
+        {
+            text: "Browser"
+            icon.name: "folder"
+        }
     }
 
-    Maui.Page
+    SwipeView
     {
+        id: _swipeView
+        currentIndex: _browserViews.currentIndex
         anchors.fill: parent
-        headBar.visible: true
-        headBar.background: null
-        background: null
-
-        clip: true
-
-        headBar.middleContent: Maui.ToolActions
+        //background: null
+        Maui.Page
         {
-            id: _browserViews
-            Layout.alignment: Qt.AlignCenter
-            currentIndex: _swipeView.currentIndex
-            autoExclusive: true
-            expanded: true
+            headBar.visible: false
+            headBar.background: null
+            background: null
 
-            Action
-            {
-                text: "Project"
-                icon.name: "project-development"
-            }
+            title: _cmakeProject.target.name
 
-            Action
+            Maui.ListBrowser
             {
-                text: "Browser"
-                icon.name: "folder"
+                anchors.fill: parent
+                model: Maui.BaseModel
+                {
+                    list: _cmakeProject.target.sources
+                    sort: "source"
+                    sortOrder: Qt.AscendingOrder
+                    recursiveFilteringEnabled: true
+                    sortCaseSensitivity: Qt.CaseInsensitive
+                    filterCaseSensitivity: Qt.CaseInsensitive
+                }
+
+                holder.visible: count === 0
+                holder.title: i18n("Project Sources")
+                holder.body: i18n("Source files will be listed in here.")
+
+                flickable.section.criteria: ViewSection.FullString
+                flickable.section.property: "place"
+                flickable.section.delegate: Maui.LabelDelegate
+                {
+                    width: ListView.view.width
+                    height: Maui.Style.rowHeight
+                    label: section
+                    isSection: true
+                }
+
+                delegate: Maui.ListBrowserDelegate
+                {
+                    width: ListView.view.width
+                    label1.text: model.label
+                    iconSource: model.icon
+                    iconSizeHint: Maui.Style.iconSizes.small
+                    tooltipText: model.source
+
+                    onClicked:
+                    {
+                        editorView.openTab(model.url)
+                    }
+                }
             }
         }
 
-        SwipeView
+
+        Maui.Page
         {
-            id: _swipeView
-            currentIndex: _browserViews.currentIndex
-            anchors.fill: parent
-//background: null
-            Maui.Page
+            headBar.background: null
+            footBar.background: null
+            background: null
+            headBar.visible: false
+
+            footBar.leftContent: Maui.ToolActions
             {
-                headBar.visible: false
-                headBar.background: null
-                background: null
+                expanded: true
+                autoExclusive: false
+                checkable: false
 
-                title: _cmakeProject.target.name
-
-                Maui.ListBrowser
+                Action
                 {
-                    anchors.fill: parent
-                    model: Maui.BaseModel
+                    text: i18n("Previous")
+                    icon.name: "go-previous"
+                    onTriggered : browserView.goBack()
+                }
+
+                Action
+                {
+                    text: i18n("Up")
+                    icon.name: "go-up"
+                    onTriggered : browserView.goUp()
+                }
+
+
+                Action
+                {
+                    text: i18n("Next")
+                    icon.name: "go-next"
+                    onTriggered: browserView.goNext()
+                }
+            }
+
+            footBar.rightContent: [
+
+                ToolButton
+                {
+                    icon.name: "edit-find"
+                    checked: browserView.headBar.visible
+                    onClicked:
                     {
-                        list: _cmakeProject.target.sources
-                        sort: "source"
-                        sortOrder: Qt.AscendingOrder
-                        recursiveFilteringEnabled: true
-                        sortCaseSensitivity: Qt.CaseInsensitive
-                        filterCaseSensitivity: Qt.CaseInsensitive
+                        browserView.headBar.visible = !browserView.headBar.visible
+                    }
+                },
+
+                Maui.ToolButtonMenu
+                {
+                    icon.name: "view-sort"
+
+                    MenuItem
+                    {
+                        text: i18n("Show Folders First")
+                        checked: browserView.settings.foldersFirst
+                        checkable: true
+                        onTriggered: browserView.settings.foldersFirst = !browserView.settings.foldersFirst
                     }
 
-                    holder.visible: count === 0
-                    holder.title: i18n("Project Sources")
-                    holder.body: i18n("Source files will be listed in here.")
+                    MenuSeparator {}
 
-                    flickable.section.criteria: ViewSection.FullString
-                    flickable.section.property: "place"
-                    flickable.section.delegate: Maui.LabelDelegate
+                    MenuItem
                     {
-                        width: ListView.view.width
-                        height: Maui.Style.rowHeight
-                        label: section
-                        isSection: true
+                        text: i18n("Type")
+                        checked: browserView.settings.sortBy === FB.FMList.MIME
+                        checkable: true
+                        onTriggered: browserView.settings.sortBy = FB.FMList.MIME
+                        autoExclusive: true
                     }
 
-                    delegate: Maui.ListBrowserDelegate
+                    MenuItem
                     {
-                        width: ListView.view.width
-                        label1.text: model.label
-                        iconSource: model.icon
-                        iconSizeHint: Maui.Style.iconSizes.small
-                        tooltipText: model.source
+                        text: i18n("Date")
+                        checked:browserView.settings.sortBy === FB.FMList.DATE
+                        checkable: true
+                        onTriggered: browserView.settings.sortBy = FB.FMList.DATE
+                        autoExclusive: true
+                    }
 
-                        onClicked:
+                    MenuItem
+                    {
+                        text: i18n("Modified")
+                        checkable: true
+                        checked: browserView.settings.sortBy === FB.FMList.MODIFIED
+                        onTriggered: browserView.settings.sortBy = FB.FMList.MODIFIED
+                        autoExclusive: true
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Size")
+                        checkable: true
+                        checked: browserView.settings.sortBy === FB.FMList.SIZE
+                        onTriggered: browserView.settings.sortBy = FB.FMList.SIZE
+                        autoExclusive: true
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("Name")
+                        checkable: true
+                        checked: browserView.settings.sortBy === FB.FMList.LABEL
+                        onTriggered: browserView.settings.sortBy = FB.FMList.LABEL
+                        autoExclusive: true
+                    }
+
+                    MenuSeparator{}
+
+                    MenuItem
+                    {
+                        id: groupAction
+                        text: i18n("Group")
+                        checkable: true
+                        checked: browserView.settings.group
+                        onTriggered:
                         {
-                            editorView.openTab(model.url)
+                            browserView.settings.group = !browserView.settings.group
+                        }
+                    }
+                }
+            ]
+
+            FB.FileBrowser
+            {
+                id: browserView
+                anchors.fill: parent
+                currentPath: FB.FM.homePath()
+                settings.viewType : FB.FMList.LIST_VIEW
+                settings.filterType: FB.FMList.TEXT
+                headBar.visible: false
+                floatingFooter: false
+                browser.background: null
+                background: Rectangle
+                {
+                    color: Maui.Theme.backgroundColor
+                    opacity: 0.5
+                }
+                onItemClicked:
+                {
+                    var item = currentFMModel.get(index)
+                    if(Maui.Handy.singleClick)
+                    {
+                        if(item.isdir == "true")
+                        {
+                            openFolder(item.path)
+                        }else
+                        {
+                            editorView.openTab(item.path)
+                        }
+                    }
+                }
+
+                onItemDoubleClicked:
+                {
+                    var item = currentFMModel.get(index)
+                    if(!Maui.Handy.singleClick)
+                    {
+                        if(item.isdir == "true")
+                        {
+                            openFolder(item.path)
+                        }else
+                        {
+                            editorView.openTab(item.path)
                         }
                     }
                 }
             }
 
-
-            Maui.Page
-            {
-                headBar.background: null
-                footBar.background: null
-                background: null
-                headBar.visible: false
-
-                footBar.leftContent: Maui.ToolActions
-                {
-                    expanded: true
-                    autoExclusive: false
-                    checkable: false
-
-                    Action
-                    {
-                        text: i18n("Previous")
-                        icon.name: "go-previous"
-                        onTriggered : browserView.goBack()
-                    }
-
-                    Action
-                    {
-                        text: i18n("Up")
-                        icon.name: "go-up"
-                        onTriggered : browserView.goUp()
-                    }
-
-
-                    Action
-                    {
-                        text: i18n("Next")
-                        icon.name: "go-next"
-                        onTriggered: browserView.goNext()
-                    }
-                }
-
-                footBar.rightContent: [
-
-                    ToolButton
-                    {
-                        icon.name: "edit-find"
-                        checked: browserView.headBar.visible
-                        onClicked:
-                        {
-                            browserView.headBar.visible = !browserView.headBar.visible
-                        }
-                    },
-
-                    Maui.ToolButtonMenu
-                    {
-                        icon.name: "view-sort"
-
-                        MenuItem
-                        {
-                            text: i18n("Show Folders First")
-                            checked: browserView.settings.foldersFirst
-                            checkable: true
-                            onTriggered: browserView.settings.foldersFirst = !browserView.settings.foldersFirst
-                        }
-
-                        MenuSeparator {}
-
-                        MenuItem
-                        {
-                            text: i18n("Type")
-                            checked: browserView.settings.sortBy === FB.FMList.MIME
-                            checkable: true
-                            onTriggered: browserView.settings.sortBy = FB.FMList.MIME
-                            autoExclusive: true
-                        }
-
-                        MenuItem
-                        {
-                            text: i18n("Date")
-                            checked:browserView.settings.sortBy === FB.FMList.DATE
-                            checkable: true
-                            onTriggered: browserView.settings.sortBy = FB.FMList.DATE
-                            autoExclusive: true
-                        }
-
-                        MenuItem
-                        {
-                            text: i18n("Modified")
-                            checkable: true
-                            checked: browserView.settings.sortBy === FB.FMList.MODIFIED
-                            onTriggered: browserView.settings.sortBy = FB.FMList.MODIFIED
-                            autoExclusive: true
-                        }
-
-                        MenuItem
-                        {
-                            text: i18n("Size")
-                            checkable: true
-                            checked: browserView.settings.sortBy === FB.FMList.SIZE
-                            onTriggered: browserView.settings.sortBy = FB.FMList.SIZE
-                            autoExclusive: true
-                        }
-
-                        MenuItem
-                        {
-                            text: i18n("Name")
-                            checkable: true
-                            checked: browserView.settings.sortBy === FB.FMList.LABEL
-                            onTriggered: browserView.settings.sortBy = FB.FMList.LABEL
-                            autoExclusive: true
-                        }
-
-                        MenuSeparator{}
-
-                        MenuItem
-                        {
-                            id: groupAction
-                            text: i18n("Group")
-                            checkable: true
-                            checked: browserView.settings.group
-                            onTriggered:
-                            {
-                                browserView.settings.group = !browserView.settings.group
-                            }
-                        }
-                    }
-                ]
-
-                FB.FileBrowser
-                {
-                    id: browserView
-                    anchors.fill: parent
-                    currentPath: FB.FM.homePath()
-                    settings.viewType : FB.FMList.LIST_VIEW
-                    settings.filterType: FB.FMList.TEXT
-                    headBar.visible: false
-                    floatingFooter: false
-                    browser.background: null
-                    background: Rectangle
-                    {
-                        color: Maui.Theme.backgroundColor
-                        opacity: 0.5
-                    }
-                    onItemClicked:
-                    {
-                        var item = currentFMModel.get(index)
-                        if(Maui.Handy.singleClick)
-                        {
-                            if(item.isdir == "true")
-                            {
-                                openFolder(item.path)
-                            }else
-                            {
-                                editorView.openTab(item.path)
-                            }
-                        }
-                    }
-
-                    onItemDoubleClicked:
-                    {
-                        var item = currentFMModel.get(index)
-                        if(!Maui.Handy.singleClick)
-                        {
-                            if(item.isdir == "true")
-                            {
-                                openFolder(item.path)
-                            }else
-                            {
-                                editorView.openTab(item.path)
-                            }
-                        }
-                    }
-                }
-
-            }
         }
-
     }
+
 }
+
