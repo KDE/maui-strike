@@ -20,7 +20,6 @@ Maui.SplitViewItem
         id: _editor
         anchors.fill: parent
 
-        headBar.visible: false
         showLineNumbers: settings.showLineNumbers
         body.color: settings.textColor
         body.font.family: settings.font.family
@@ -31,7 +30,6 @@ Maui.SplitViewItem
         document.autoSave: settings.autoSave
         document.tabSpace: ((settings.tabSpace+1) * body.font.pointSize) / 2
         document.enableSyntaxHighlighting: true
-        footBar.visible: false
         onFileUrlChanged: editorView.outputPanel.syncTerminal(_editor.fileUrl)
 
         Keys.enabled: true
