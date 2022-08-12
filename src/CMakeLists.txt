@@ -22,12 +22,18 @@ set(strike_SRCS
     )
 
 set(strike_ASSETS
-    qml.qrc
     assets/img_assets.qrc
     )
 
+if(QUICK_COMPILER)
+    qtquick_compiler_add_resources(strike_QML_QRC qml.qrc)
+else()
+    qt5_add_resources(strike_QML_QRC qml.qrc)
+endif()
+
 add_executable(${PROJECT_NAME}
     ${strike_SRCS}
+    ${strike_QML_QRC}
     ${strike_ASSETS})
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)

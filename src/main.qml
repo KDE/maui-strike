@@ -58,7 +58,7 @@ Maui.ApplicationWindow
         property string theme : ""
         property color backgroundColor : root.Maui.Theme.backgroundColor
         property color textColor : root.Maui.Theme.textColor
-
+        property bool enableSidebar: true
         property font font : defaultFont
     }
 
@@ -115,7 +115,6 @@ Maui.ApplicationWindow
         maxHeight: 400
         maxWidth: 350
         hint: 1
-
     }
 
     Loader
@@ -186,6 +185,7 @@ Maui.ApplicationWindow
 
         sideBar.preferredWidth: Maui.Style.units.gridUnit*16
         sideBar.minimumWidth: Maui.Style.units.gridUnit*14
+        sideBar.enabled: editorView.count > 0 &&  settings.enableSidebar
 
         Connections
         {
@@ -229,9 +229,9 @@ Maui.ApplicationWindow
 
             headBar.farLeftContent: ToolButton
             {
+                visible: _sideBarView.sideBar.enabled
                 Layout.minimumWidth: implicitWidth
                 Layout.alignment: Qt.AlignLeft
-                visible: settings.enableSidebar
                 icon.name: _sideBarView.sideBar.visible ? "sidebar-collapse" : "sidebar-expand"
                 onClicked: _sideBarView.sideBar.toggle()
 

@@ -36,7 +36,7 @@ Maui.Dialog
     {
         Layout.fillWidth: true
         iconSizeHint: Maui.Style.iconSizes.big
-        iconSource: "folder-open"
+        iconSource: "folder"
         label1.text: i18n("Open Project")
         label2.text: i18n("Open a existing project")
 
@@ -60,7 +60,7 @@ Maui.Dialog
     {
         Layout.fillWidth: true
         iconSizeHint: Maui.Style.iconSizes.big
-        iconSource: "quickopen-file"
+        iconSource: "text-plain"
         label1.text: i18n("Open File")
         label2.text: i18n("Open one or multiple files")
 
