@@ -183,6 +183,8 @@ Maui.ApplicationWindow
     {
         id: _sideBarView
 
+        anchors.fill: parent
+
         sideBar.preferredWidth: Maui.Style.units.gridUnit*16
         sideBar.minimumWidth: Maui.Style.units.gridUnit*14
         sideBar.enabled: editorView.count > 0 &&  settings.enableSidebar
