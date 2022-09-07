@@ -14,6 +14,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="de">Strike</name>
   <name xml:lang="en-GB">Strike</name>
   <name xml:lang="es">Strike</name>
+  <name xml:lang="eu">Strike</name>
   <name xml:lang="fi">Strike</name>
   <name xml:lang="fr">Strike</name>
   <name xml:lang="it">Strike</name>
@@ -34,6 +35,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
   <summary xml:lang="en-GB">Simple and convergent IDE</summary>
   <summary xml:lang="es">IDE sencillo y convergente</summary>
+  <summary xml:lang="eu">IDE sinple eta konbergentea</summary>
   <summary xml:lang="fi">Yksinkertainen ja mukautuva kehityskäyttöliittymä</summary>
   <summary xml:lang="fr">Un environnement de développement simple et convergent</summary>
   <summary xml:lang="it">IDE semplice e convergente</summary>
@@ -55,6 +57,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ca-valencia">L'Strike és un IDE senzill i convergent que funciona en l'escriptori Linux i en els ordinadors mòbils.</p>
     <p xml:lang="en-GB">Strike is a simple and convergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="es">Strike es un IDE sencillo y convergente que funciona en el escritorio Linux y en computadoras móviles.</p>
+    <p xml:lang="eu">Strike, Linux mahaigainean eta ordenagailu mugikorretan ibiltzen den IDE sinple eta konbergente bat da.</p>
     <p xml:lang="fi">Strike on yksinkertainen ja mukautuva kehityskäyttöliittymä (IDE) Linux-työpöydälle ja mobiilitietokoneille.</p>
     <p xml:lang="fr">Strike est un environnement de développement simple et convergent, fonctionnant sur les ordinateurs de bureau et mobiles sous Linux.</p>
     <p xml:lang="it">Strike è un IDE semplice e convergente che funziona nei desktop Linux e nei computer portatili.</p>
@@ -82,6 +85,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="de">Strike</caption>
       <caption xml:lang="en-GB">Strike</caption>
       <caption xml:lang="es">Strike</caption>
+      <caption xml:lang="eu">Strike</caption>
       <caption xml:lang="fi">Strike</caption>
       <caption xml:lang="fr">Strike</caption>
       <caption xml:lang="it">Strike</caption>
