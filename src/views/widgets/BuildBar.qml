@@ -7,13 +7,16 @@ import org.mauikit.controls 1.3 as Maui
 
 import org.slike.strike 1.0 as Strike
 
-Item
+Control
 {
     id: control
 
-    implicitHeight: Maui.Style.rowHeight
+    implicitHeight: _layout.implicitHeight + topPadding + bottomPadding
 
-//    enabled: _project.manager.status === Strike.Manager.Ready
+    padding: 0
+    background: null
+
+    //    enabled: _project.manager.status === Strike.Manager.Ready
     Maui.Popup
     {
         id: _projectMenu
@@ -74,33 +77,35 @@ Item
         }
     }
 
-    RowLayout
+    contentItem: RowLayout
     {
-        anchors.fill: parent
+        id: _layout
         spacing: 2
 
         AbstractButton
         {
             id: _buildButton
+
             Maui.Theme.colorSet: Maui.Theme.Button
             Maui.Theme.inherit: false
 
             Layout.fillHeight: true
             Layout.preferredWidth: height * 1.5
+
             opacity: enabled ? 1 : 0.4
             hoverEnabled: true
-//            enabled: !manager.process.processRunning
+            //            enabled: !manager.process.processRunning
             onClicked:
             {
                 if(manager.process.processRunning)
                 {
-                  if(manager.process.deployStatus === Strike.Process.Running)
-                  {
-                      manager.process.stopDeploy()
-                  }
+                    if(manager.process.deployStatus === Strike.Process.Running)
+                    {
+                        manager.process.stopDeploy()
+                    }
                 }else
                 {
-                     _execMenu.show(0, height + Maui.Style.space.medium)
+                    _execMenu.show(0, height + Maui.Style.space.medium)
                 }
             }
 
@@ -116,14 +121,17 @@ Item
                 }
             }
 
-            Kirigami.Icon
+            contentItem: Item
             {
-                anchors.centerIn: parent
-                source: manager.process.processRunning ? "media-playback-stop" : "run-build"
+                Kirigami.Icon
+                {
+                    anchors.centerIn: parent
+                    source: manager.process.processRunning ? "media-playback-stop" : "run-build"
 
-                color: _buildButton.containsMouse || _buildButton.containsPress ? control.Maui.Theme.highlightColor : control.Maui.Theme.textColor
-                width: Maui.Style.iconSizes.small
-                height: width
+                    color: _buildButton.containsMouse || _buildButton.containsPress ? control.Maui.Theme.highlightColor : control.Maui.Theme.textColor
+                    width: Maui.Style.iconSizes.small
+                    height: width
+                }
             }
 
             Maui.ContextualMenu
@@ -160,14 +168,21 @@ Item
             }
         }
 
-
         AbstractButton
         {
+            id: _menuButton
             Layout.fillWidth: true
             Layout.fillHeight: true
+
             Maui.Theme.colorSet: Maui.Theme.Button
             Maui.Theme.inherit: false
-padding: Maui.Style.space.small
+
+            implicitHeight: _template.implicitHeight + topPadding + bottomPadding
+
+            leftPadding: Maui.Style.space.small
+            rightPadding: leftPadding
+            padding: 0
+
             background: Kirigami.ShadowedRectangle
             {
                 color: Maui.Theme.backgroundColor
@@ -180,76 +195,87 @@ padding: Maui.Style.space.small
                     bottomLeftRadius: 0
                     bottomRightRadius: Maui.Style.radiusV
                 }
+
+                ProgressBar
+                {
+                    id: _progress
+                    width: parent.width
+                    anchors.bottom: parent.bottom
+                    visible: manager.process.processRunning
+                    indeterminate: true
+
+                    contentItem: Item
+                    {
+                        x: _progress.leftPadding
+                        y: _progress.topPadding
+                        width: _progress.availableWidth
+                        height: _progress.availableHeight
+
+                        scale: _progress.mirrored ? -1 : 1
+
+                        Repeater
+                        {
+                            model: 2
+
+                            Rectangle
+                            {
+                                property real offset: 0
+
+                                x: (_progress.indeterminate ? offset * parent.width : 0)
+                                y: (parent.height - height) / 2
+                                width: offset * (parent.width - x)
+                                height: 4
+
+                                color: "violet"
+
+                                SequentialAnimation on offset {
+                                    loops: Animation.Infinite
+                                    running: _progress.indeterminate && _progress.visible
+                                    PauseAnimation { duration: index ? 520 : 0 }
+                                    NumberAnimation {
+                                        easing.type: Easing.OutCubic
+                                        duration: 1240
+                                        from: 0
+                                        to: 1
+                                    }
+                                    PauseAnimation { duration: index ? 0 : 520 }
+                                }
+                            }
+                        }
+                    }
+
+                    background: null
+                }
             }
 
             onClicked: _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
 
+            indicator: Kirigami.Icon
+            {
+                x: _menuButton.width - width - _menuButton.rightPadding
+                y: _menuButton.topPadding + (_menuButton.availableHeight - height) / 2
+
+                implicitHeight: 8
+                implicitWidth: 8
+                rotation: 90
+                source: "qrc:/qt-project.org/imports/QtQuick/Controls.2/Material/images/arrow-indicator.png"
+
+
+                color: Maui.Theme.textColor
+            }
+
+
             contentItem: Maui.ListItemTemplate
             {
+                id: _template
                 label1.text: _cmakeProject.title || root.title
                 label1.horizontalAlignment: Qt.AlignHCenter
                 label2.horizontalAlignment: Qt.AlignHCenter
-                label2.font.pointSize: Maui.Style.fontSizes.small
-                label2.text: manager.process.infoLabel || _project.projectPath
+                //                label2.font.pointSize: Maui.Style.fontSizes.small
+                //                label2.text: manager.process.infoLabel || _project.projectPath
                 imageSource: _project.projectLogo
                 imageSizeHint: Maui.Style.iconSizes.medium
                 iconVisible: root.isWide
-
-                Kirigami.Icon
-                {
-                    source: "go-down"
-                    color: Maui.Theme.textColor
-                    implicitHeight: Maui.Style.iconSizes.small
-                    implicitWidth: implicitHeight
-                }
-            }
-
-            ProgressBar
-            {
-                id: _progress
-                width: parent.width
-                anchors.centerIn: parent
-                visible: manager.process.processRunning
-                indeterminate: true
-
-                contentItem: Item {
-                    x: _progress.leftPadding
-                    y: _progress.topPadding
-                    width: _progress.availableWidth
-                    height: _progress.availableHeight
-
-                    scale: _progress.mirrored ? -1 : 1
-
-                    Repeater {
-                        model: 2
-
-                        Rectangle {
-                            property real offset: 0
-
-                            x: (_progress.indeterminate ? offset * parent.width : 0)
-                            y: (parent.height - height) / 2
-                            width: offset * (parent.width - x)
-                            height: 4
-
-                            color: "violet"
-
-                            SequentialAnimation on offset {
-                                loops: Animation.Infinite
-                                running: _progress.indeterminate && _progress.visible
-                                PauseAnimation { duration: index ? 520 : 0 }
-                                NumberAnimation {
-                                    easing.type: Easing.OutCubic
-                                    duration: 1240
-                                    from: 0
-                                    to: 1
-                                }
-                                PauseAnimation { duration: index ? 0 : 520 }
-                            }
-                        }
-                    }
-                }
-
-                background: null
             }
 
             Maui.ContextualMenu
@@ -261,7 +287,7 @@ padding: Maui.Style.space.small
                     Action
                     {
                         icon.name: "edit-undo"
-//                        text: i18n("Undo")
+                        //                        text: i18n("Undo")
                         enabled: currentEditor.body.canUndo
                         onTriggered: currentEditor.body.undo()
                     }
@@ -269,7 +295,7 @@ padding: Maui.Style.space.small
                     Action
                     {
                         icon.name: "edit-redo"
-//                        text: i18n("Redo")
+                        //                        text: i18n("Redo")
                         enabled: currentEditor.body.canRedo
                         onTriggered: currentEditor.body.redo()
                     }
@@ -277,7 +303,7 @@ padding: Maui.Style.space.small
 
                     Action
                     {
-//                        text: i18n("Save")
+                        //                        text: i18n("Save")
                         icon.name: "document-save"
                         enabled: currentEditor ? currentEditor.document.modified : false
                         onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
@@ -286,7 +312,7 @@ padding: Maui.Style.space.small
                     Action
                     {
                         icon.name: "document-save-as"
-//                        text: i18n("Save as...")
+                        //                        text: i18n("Save as...")
                         onTriggered: saveFile("", control.currentEditor)
                     }
                 }
@@ -347,7 +373,7 @@ padding: Maui.Style.space.small
                 {
                     Action
                     {
-//                        text: i18n("Share")
+                        //                        text: i18n("Share")
                         icon.name: "document-share"
                         onTriggered: Maui.Platform.shareFiles([currentEditor.fileUrl])
 
@@ -355,7 +381,7 @@ padding: Maui.Style.space.small
 
                     Action
                     {
-//                        text: i18n("Show in folder")
+                        //                        text: i18n("Show in folder")
                         icon.name: "folder-open"
                         onTriggered:
                         {
@@ -365,7 +391,7 @@ padding: Maui.Style.space.small
 
                     Action
                     {
-//                        text: i18n("Info")
+                        //                        text: i18n("Info")
                         icon.name: "documentinfo"
                         onTriggered:
                         {
