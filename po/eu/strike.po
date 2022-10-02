@@ -1,0 +1,399 @@
+# Translation for strike.po to Euskara/Basque (eu).
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+# KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
+#
+# Translators:
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2022-09-06 20:07+0200\n"
+"Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
+"Language-Team: Basque <kde-i18n-eu@kde.org>\n"
+"Language: eu\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 22.08.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Iñigo Salvador Azurmendi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "xalba@ni.eus"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Kodea eraiki eta ibili."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Garatzailea"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Gorde gabeko fitxategiak"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Gorde gabeko fitxategiak dituzu. Itzuli eta gorde egin ditzakezu, edo "
+"aldaketa guztiak baztertu eta irten zaitezke."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Joan atzera"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Baztertu"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Txandakatu alboko-barra"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Ireki hemen"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Ireki fitxa berrian"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Ireki zatiketa berrian"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Utzi"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Klonatu"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Sartu proiektuaren Git URLa"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Falta den proiektua"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Sortu edo ireki proiektu berri bat."
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Ireki proiektua"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Klonatu proiektua"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Fitxategi berria"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Sortu proiektu berria"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Ireki lehendik dagoen proiektu bat"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Ireki fitxategia"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Ireki fitxategi bat edo gehiago"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Txantiloi sorburu fitxategi berria"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Oinarrizko testuaren formatua editatzeko euskarriarekin"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Proiektuaren sorburuak"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Sorburu fitxategiak hemen zerrendatuko dira."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Aurrekoa"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Gora"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Hurrengoa"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Erakutsi karpetak lehenengo"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Mota"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Data"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Aldatua"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Neurria"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Izena"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Taldea"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Jomugak"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Konfiguratu"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Eraiki"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Ibili"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Instalatu"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Zatitu"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Aurkitu eta Ordeztu"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Lerro/Hitz zenbatzailea"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Honi buruz"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Galarazi"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Ezarri lehentasunak beharrean hasteko!"
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Eraikitzeko direktorioa"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Hautatu eraikitzeko direktorioa bat edo mantendu lehenetsitakoa"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Eraikitzeko direktorioaren bide-izena"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Proiektua"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Aukeratu helburu proiektua"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Amaitu"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Editorea"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Konfiguratu editorearen itxura eta izaera. Ezarpenak osotasunari ezarriko "
+"zaizkio"
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Gorde automatikoki"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Zure fitxategia segundo gutxiero automatikoki gordetzen du"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Lerro zenbakiak"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Azaldu lerro-zenbakiak ezker aldean"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Estiloa"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Konfiguratu sintaxi-nabarmentzeko estiloa. Konfigurazio hau ez da erabiliko "
+"testu aberastuko formatuekin"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Letra-tipo familia"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Letra-tipo neurria"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Tabulazioen tartea"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Gaia"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Editorearen kolore-antolaera estiloa"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Kolorea"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Editore hondoko kolorea"

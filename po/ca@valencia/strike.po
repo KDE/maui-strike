@@ -1,0 +1,400 @@
+# Translation of strike.po to Catalan (Valencian)
+# Copyright (C) 2021 This_file_is_part_of_KDE
+# This file is distributed under the license LGPL version 2.1 or
+# version 3 or later versions approved by the membership of KDE e.V.
+#
+# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-09-21 10:26+0200\n"
+"Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
+"Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
+"Language: ca@valencia\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.12.0\n"
+"X-Accelerator-Marker: &\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Josep M. Ferrer"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "txemaq@gmail.com"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Construïx i executa el codi."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Desenvolupador"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Fitxers sense guardar"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Hi ha fitxers sense guardar. Podeu retrocedir i guardar-los o triar "
+"descartar els canvis i eixir."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Retrocedix"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Descarta"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Alterna la barra lateral"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Obri ací"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Obri en una pestanya nova"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Obri a una divisió nova"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Cancel·la"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Clona"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Introduïu l'URL Git del projecte"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Falta el projecte"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Crea o obri un projecte nou."
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Obri un projecte"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Clona el projecte"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Fitxer nou"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Crea un projecte nou"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Obri un projecte existent"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Obri un fitxer"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Obri un fitxer o més"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Plantilla nova de fitxer de codi font"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Implementa l'edició de formats bàsics de text"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Codi font dels projectes"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Ací es llistaran els fitxers de codi font."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Anterior"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Amunt"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Següent"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Mostra primer les carpetes"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Tipus"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Data"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Modificat"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Mida"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Nom"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Grup"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Objectius"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Configura"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Construïx"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Executa"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Instal·la"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Dividix"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Busca i substituïx"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Comptador de línies/paraules"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Configuració"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Quant a"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Interromp"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Configureu les preferències per començar a treballar!"
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Directori de construcció"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr ""
+"Seleccioneu un directori de construcció o manteniu amb el predeterminat"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Camí cap al directori de construcció"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Projecte"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Seleccioneu el projecte de destinació"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Finalitza"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Editor"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Configura l'aspecte i el comportament de l'editor. La configuració s'aplica "
+"globalment"
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Guardada automàtica"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Guarda automàticament el fitxer cada pocs segons"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Números de línia"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Mostra els números de les línies a la banda esquerra"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Estil"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Configura l'estil del ressaltat de la sintaxi. Esta configuració no s'aplica "
+"als formats de text enriquit"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Família del tipus de lletra"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Mida del tipus de lletra"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Espaiat del tabulador"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Editor de l'estil de l'esquema de color"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Color"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Editor del color de fons"

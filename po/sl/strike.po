@@ -1,0 +1,396 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+#
+# Matjaž Jeran <matjaz.jeran@amis.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-09-27 11:35+0200\n"
+"Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
+"Language-Team: Slovenian <lugos-slo@lugos.si>\n"
+"Language: sl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Lokalize 20.12.2\n"
+"Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
+"%100==4 ? 3 : 0);\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Matjaž Jeran"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "matjaz.jeran@amis.net"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Prevedi in poženi kodo."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Razvijalec"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Neshranjene datoteke"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Imate neshranjene datoteke. Lahko greste nazaj in jih shranite ali izberete, "
+"da zavržete vse spremembe in zapustite program."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Pojdi nazaj"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Zavrzi"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Preklopi stransko vrstico"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Odpri tu"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Odpri v novem zavihku"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Odpri v novem predelu"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Prekliči"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Kloniraj"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Vnesite URL projekta v Gitu"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Manjka projekt"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Ustvari ali odpri novi projekt."
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Odpri projekt"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Kloniraj projekt"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Nova datoteka"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Ustvari nov projekt"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Odpri obstoječ projekt"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Odpri datoteko"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Odpri eno ali več datotek"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Nova datoteka vira predloge"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "S podporo za osnovno urejanje besedil"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Viri projekta"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Tu bodo prikazane izvorne datoteke."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Prejšnji"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Gor"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Naslednji"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Najprej prikaži mape"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Zvrst"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Datum"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Spremenjeno"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Velikost"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Ime"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Skupina"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Cilji"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Nastavi"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Izgradi"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Poženi"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Namesti"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Razdeli"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Najdi in zamenjaj"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Števec vrstic/besed"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Nastavitve"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "O programu"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Prekini"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Nastavite preference in začnite programirati!"
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Imenik izgradnje"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Izberi imenik izgradnje ali ohrani privzetega"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Pot do imenika izgradnje"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Projekt"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Izberi ciljni projekt"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Končaj"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Urejevalnik"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Nastavi videz in obnašanje urejevalnika. Nastavitve so uveljavljene globalno"
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Samodejno shranjevanje"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Samodejno shranjevanje shranjuje vsako datoteko vsakih nekaj sekund"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Številke vrstic"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Prikaži številke vrstic na levi strani"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Slog"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Nastavi slog osvetljevanja skladnje. Ta nastavitev ni uveljavljena za "
+"formate obogatenega besedila"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Družina pisav"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Velikost pisave"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Razmik med tabulatorji"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Barvna shema sloga urejevalnika"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Barva"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Barva ozadja urejevalnika"

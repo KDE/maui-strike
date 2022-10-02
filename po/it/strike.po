@@ -1,0 +1,395 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+# Paolo Zamponi <zapaolo@email.it>, 2021.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-10-05 18:33+0200\n"
+"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"Language-Team: Italian <kde-i18n-it@kde.org>\n"
+"Language: it\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Paolo Zamponi"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zapaolo@email.it"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Compila ed esegui il codice."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Sviluppatore"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "File non salvati"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Hai dei file non salvati. Puoi tornare indietro e salvarli, oppure scartare "
+"tutte le modifiche e uscire."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Indietro"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Scarta"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Attiva o disattiva barra laterale"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Apri qui"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Apri in una nuova scheda"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Apri in una nuova divisione"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Annulla"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Clona"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Inserisci l'URL Git del progetto"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Progetto mancante"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Crea o apri un nuovo progetto"
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Apri progetto"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Clona progetto"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Nuovo file"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Crea un nuovo progetto"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Apri un progetto esistente"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Apri file"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Apri uno o più file"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Nuovo modello di file sorgente"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Con il supporto per la modifica del formato di testo di base"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Sorgenti del progetto"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "I file sorgenti verranno elencati qui."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Precedente"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Su"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Successivo"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Mostra prima le cartelle"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Tipo"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Data"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Modificato"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Dimensione"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Nome"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Gruppo"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Obiettivi"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Configura"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Compila"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Esegui"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Installa"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Dividi"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Trova e sostituisci"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Contatore di righe/parole"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Impostazioni"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Informazioni su"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Interrompi"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Imposta le preferenze per iniziare a modificare."
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Cartella di compilazione"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Scegli una cartella di compilazione o mantieni quella predefinita"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Percorso della cartella di compilazione"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Progetto"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Seleziona il progetto di destinazione"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Finito"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Editor"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Configura l'aspetto dell'editor. Le impostazioni sono applicate globalmente"
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Salvataggio automatico"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Salva automaticamente i tuoi file ogni pochi secondi"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Numeri di riga"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Mostra i numeri di riga sul lato sinistro"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Stile"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Configura lo stile dell'evidenziazione della sintassi. Questa configurazione "
+"non viene applicata con i formati di testo ricco"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Famiglia di caratteri"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Dimensione del carattere"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Spaziatura delle tabulazioni"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Modifica lo stile dello schema di colori"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Colore"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Colore di sfondo dell'editor"

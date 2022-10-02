@@ -1,0 +1,904 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+#
+# Yuri Chornoivan <yurchor@ukr.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-09-21 09:45+0300\n"
+"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
+"Language: uk\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+"X-Generator: Lokalize 20.12.0\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Юрій Чорноіван"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "yurchor@ukr.net"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Збирання і запуску коду."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© Camilo Higuita, 2021-%1"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Розробник"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Незбережені файли"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Частину файлів не збережено. Ви можете повернутися і зберегти їх або "
+"відкинути усі внесені зміни і завершити роботу програми."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Назад"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Відкинути"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Увімкнути чи вимкнути бічну панель"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Відкрити тут"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Відкрити у новій вкладці"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Відкрити у новій розділеній панелі"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Скасувати"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Клонувати"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Введіть адресу проєкту Git"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Не вистачає проєкту"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Створити або відкрити новий проєкт."
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Відкрити проєкт"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Клонувати проєкт"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Створити файл"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Створити проєкт"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Відкрити наявний проєкт"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Відкрити файл"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Відкрити один або декілька файлів"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Створити шаблон файла коду"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Із підтримкою базового редагування форматування тексту"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Початкові коди проєкту"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Тут буде показано файли початкового коду."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Назад"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Вгору"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Далі"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Показувати теки першими"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Тип"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Дата"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Змінено"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Розмір"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Назва"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Група"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Призначення"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Налаштувати"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Зібрати"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Запустити"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Встановити"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Розділити"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Знайти і замінити"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Лічильник рядків/слів"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Параметри"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Про програму"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Перервати"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Налаштуйте усе, щоб розпочати програмування!"
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Каталог збирання"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Виберіть каталог збирання або лишіть типовий каталог"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Шлях до каталогу збирання"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Проєкт"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Виберіть цільовий проєкт"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Завершити"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Редактор"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Налаштувати вигляд і поведінку редактора. Параметри буде застосовано на "
+"загальному рівні."
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Автозбереження"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Автозбереження файла кожні декілька секунд"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Номери рядків"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Показувати номери рядків ліворуч"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Стиль"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Налаштувати стиль підсвічування синтаксису Ці налаштування не буде "
+"застосовано до форматованого тексту"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Гарнітура шрифту"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Розмір шрифту"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Інтервал табуляції"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Тема"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Схема кольорів редактора"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Колір"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Колір тла редактора"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory - %1"
+#~ msgstr "Налаштовування каталогу збирання — %1"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory for %1"
+#~ msgstr "Налаштувати параметри каталогу збирання для %1"
+
+#~ msgid "You need to specify a build directory."
+#~ msgstr "Вам слід вказати каталог збирання."
+
+#~ msgid "Using an already created build directory."
+#~ msgstr "Використання вже створеного каталогу збирання."
+
+#~ msgid "Creating a new build directory."
+#~ msgstr "Створення нового каталогу збирання."
+
+#~ msgid "Build directory already configured."
+#~ msgstr "Каталог збирання вже налаштовано."
+
+#~ msgid "This build directory is for %1, but the project directory is %2."
+#~ msgstr "Цей каталог збирання належить %1, але каталог проєкту — це %2."
+
+#~ msgid "You may not select a relative build directory."
+#~ msgstr "Не можна вказувати відносну адресу каталогу збирання."
+
+#~ msgid "The selected build directory is not empty."
+#~ msgstr "Вибраний каталог збирання не є порожнім."
+
+#~ msgid "INVALID"
+#~ msgstr "НЕКОРЕКТНО"
+
+#~ msgctxt "@item"
+#~ msgid "Command"
+#~ msgstr "Команда"
+
+#~ msgctxt "@item"
+#~ msgid "Variable"
+#~ msgstr "Змінна"
+
+#~ msgctxt "@item"
+#~ msgid "Macro"
+#~ msgstr "Макрос"
+
+#~ msgctxt "@item"
+#~ msgid "Path"
+#~ msgstr "Шлях"
+
+#~ msgctxt "@item"
+#~ msgid "Target"
+#~ msgstr "Призначення"
+
+#~ msgid "wrong"
+#~ msgstr "помилкове"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Commands"
+#~ msgstr "Команди"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Variables"
+#~ msgstr "Змінні"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Modules"
+#~ msgstr "Модулі"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Properties"
+#~ msgstr "Властивості"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Policies"
+#~ msgstr "Правила"
+
+#~ msgid "<p>For better CMake documentation rendering, install rst2html.</p>"
+#~ msgstr ""
+#~ "<p>Для перегляду документації з CMake із кращим форматуванням встановіть "
+#~ "rst2html</p>"
+
+#~ msgid "Unable to find a CMake executable. Is one installed on the system?"
+#~ msgstr ""
+#~ "Не вдалося виявити виконуваний файл CMake. Чи встановлено його у системі?"
+
+#~ msgid "<br /><em>Cache Value:</em> %1\n"
+#~ msgstr "<br /><em>Розмір кешу:</em> %1\n"
+
+#~ msgid "<br /><em>Cache Documentation:</em> %1\n"
+#~ msgstr "<br /><em>Кеш документації:</em> %1\n"
+
+#~ msgid "CMake Content Page"
+#~ msgstr "Сторінка вмісту CMake"
+
+#~ msgid ""
+#~ "Failed to configure project '%1' (error message: %2). As a result, "
+#~ "KDevelop's code understanding will likely be broken.\n"
+#~ "\n"
+#~ "To fix this issue, please ensure that the project's CMakeLists.txt files "
+#~ "are correct, and KDevelop is configured to use the correct CMake version "
+#~ "and settings. Then right-click the project item in the projects tool view "
+#~ "and click 'Reload'."
+#~ msgstr ""
+#~ "Не вдалося налаштувати проєкт «%1» (повідомлення про помилку: %2). У "
+#~ "результаті можливість розібратися з кодом у KDevelop, ймовірно, буде "
+#~ "неповною.\n"
+#~ "\n"
+#~ "Щоб виправити цю проблему, переконайтеся, що у файлах CMakeLists.txt "
+#~ "немає помилок, і що KDevelop налаштовано на використання належної версії "
+#~ "CMake і вказано правильні параметри роботи. Далі, наведіть вказівник миші "
+#~ "на пункт проєкту на панелі інструмента перегляду проєктів, клацніть "
+#~ "правою кнопкою і виберіть у меню пункт «Перезавантажити»."
+
+#~ msgctxt "@title:column"
+#~ msgid "Name"
+#~ msgstr "Назва"
+
+#~ msgctxt "@title:column"
+#~ msgid "Type"
+#~ msgstr "Тип"
+
+#~ msgctxt "@title:column"
+#~ msgid "Value"
+#~ msgstr "Значення"
+
+#~ msgctxt "@title:column"
+#~ msgid "Comment"
+#~ msgstr "Коментар"
+
+#~ msgctxt "@title:column"
+#~ msgid "Advanced"
+#~ msgstr "Додатково"
+
+#~ msgctxt "@title:column"
+#~ msgid "Strings"
+#~ msgstr "Рядки"
+
+#~ msgid ""
+#~ "The %1 directory is about to be removed in KDevelop's list.\n"
+#~ "Do you want KDevelop to remove it in the file system as well?"
+#~ msgstr ""
+#~ "Зараз зі списку KDevelop буде вилучено каталог %1.\n"
+#~ "Чи бажаєте ви, щоб KDevelop вилучив цей каталог і з файлової системи?"
+
+#~ msgid "Could not remove: %1"
+#~ msgstr "Не вдалося вилучити: %1"
+
+#~ msgctxt "@title:tab"
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure CMake Settings"
+#~ msgstr "Налаштовування параметрів CMake"
+
+#~ msgid "Parse test suite %1"
+#~ msgstr "Обробка комплексу для перевірки %1"
+
+#~ msgid "CTest"
+#~ msgstr "CTest"
+
+#~ msgctxt "running test %1, %2 test case"
+#~ msgid "CTest %1: %2"
+#~ msgstr "CTest %1: %2"
+
+#~ msgctxt "running test %1, %2 number of test cases"
+#~ msgid "CTest %2 (%1)"
+#~ msgid_plural "CTest %2 (%1)"
+#~ msgstr[0] "CTest %2 (%1)"
+#~ msgstr[1] "CTest %2 (%1)"
+#~ msgstr[2] "CTest %2 (%1)"
+#~ msgstr[3] "CTest %2 (%1)"
+
+#~ msgid "KDevelop"
+#~ msgstr "KDevelop"
+
+#~ msgid "opens a project then closes it, debugging tool"
+#~ msgstr "відкриває проєкт, а потім закриває його, діагностичний інструмент"
+
+#~ msgid "Copyright 1999-2012, The KDevelop developers"
+#~ msgstr "© Розробники KDevelop, 1999–2012"
+
+#~ msgid "Aleix Pol Gonzalez"
+#~ msgstr "Aleix Pol Gonzalez"
+
+#~ msgid "Projects to load"
+#~ msgstr "Проєкти, які слід завантажити"
+
+#~ msgid "Swi&tch Colors"
+#~ msgstr "Пе&ремкнути кольори"
+
+#~ msgid "General"
+#~ msgstr "Загальне"
+
+#~ msgid "This project is one day old"
+#~ msgid_plural "This project is %1 days old"
+#~ msgstr[0] "Вік цього проєкту складає %1 день"
+#~ msgstr[1] "Вік цього проєкту складає %1 дні"
+#~ msgstr[2] "Вік цього проєкту складає %1 днів"
+#~ msgstr[3] "Вік цього проєкту складає один день"
+
+#~ msgid "Settings changed"
+#~ msgstr "Параметри змінено"
+
+#~ msgid "A KDE 4 Application"
+#~ msgstr "Програма KDE 4"
+
+#~ msgid "kde4app"
+#~ msgstr "kde4app"
+
+#~ msgid "(C) 2007 %{AUTHOR}"
+#~ msgstr "(C) 2007 %{AUTHOR}"
+
+#~ msgid "%{AUTHOR}"
+#~ msgstr "%{AUTHOR}"
+
+#~ msgid "Document to open"
+#~ msgstr "Документ, який слід відкрити"
+
+#~ msgid "Could not find the make builder. Check your installation"
+#~ msgstr ""
+#~ "Не вдалося знайти засіб збирання make. Перевірте, чи належним чином "
+#~ "встановлено програми"
+
+#~ msgid "Could not find a builder for %1"
+#~ msgstr "Не вдалося знайти засіб збирання для %1"
+
+#~ msgid "No build directory configured, cannot install"
+#~ msgstr "Не вказано каталогу для збирання, встановлення неможливе"
+
+#~ msgid "No build directory configured, cannot configure"
+#~ msgstr "Не вказано каталогу для збирання, запуск configure неможливий"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure Global CMake Settings"
+#~ msgstr "Налаштовування загальних параметрів CMake"
+
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgid "Internal error: no project specified to configure."
+#~ msgstr "Внутрішня помилка: не вказано проєкту для налаштовування."
+
+#~ msgid "Failed to create build directory %1."
+#~ msgstr "Не вдалося створити каталог збирання %1."
+
+#~ msgid "CMake: %1"
+#~ msgstr "CMake: %1"
+
+#~ msgid "No build directory configured, cannot clear the build directory"
+#~ msgstr ""
+#~ "Не вказано каталогу для збирання, спорожнення каталогу збирання неможливе"
+
+#~ msgid "Wrong build directory, cannot clear the build directory"
+#~ msgstr "Помилковий каталог збирання: не вдалося його спорожнити."
+
+#~ msgid "%1> rm -rf %2"
+#~ msgstr "%1> rm -rf %2"
+
+#~ msgid "** Prune successful **"
+#~ msgstr "** Успішне вилучення **"
+
+#~ msgid "** Prune failed: %1 **"
+#~ msgstr "** Спроба вилучення зазнала невдачі: %1 **"
+
+#~ msgid "Move %1 item into %2"
+#~ msgid_plural "Move %1 items into %2"
+#~ msgstr[0] "Пересунути %1 запис до %2"
+#~ msgstr[1] "Пересунути %1 записи до %2"
+#~ msgstr[2] "Пересунути %1 записів до %2"
+#~ msgstr[3] "Пересунути %1 запис до %2"
+
+#~ msgid "Copy %1 item into %2"
+#~ msgid_plural "Copy %1 items into %2"
+#~ msgstr[0] "Копіювати %1 запис до %2"
+#~ msgstr[1] "Копіювати %1 записи до %2"
+#~ msgstr[2] "Копіювати %1 записів до %2"
+#~ msgstr[3] "Копіювати %1 запис до %2"
+
+#~ msgid "Delete %1 item"
+#~ msgid_plural "Delete %1 items"
+#~ msgstr[0] "Вилучити %1 запис"
+#~ msgstr[1] "Вилучити %1 записи"
+#~ msgstr[2] "Вилучити %1 записів"
+#~ msgstr[3] "Вилучити %1 запис"
+
+#~ msgid "Move item %1 into %2"
+#~ msgstr "Пересунути запис %1 до %2"
+
+#~ msgid "Copy item %1 into %2"
+#~ msgstr "Копіювати запис %1 до %2"
+
+#~ msgid "Delete item %1"
+#~ msgstr "Вилучити запис %1"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation succeeded"
+#~ msgstr "Успішна піддія"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation failed"
+#~ msgstr "Помилка піддії"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation skipped to prevent data loss"
+#~ msgstr "Піддію пропущено для запобігання втраті даних"
+
+#~ msgctxt "@title:window"
+#~ msgid "Paste Failed"
+#~ msgstr "Помилка під час вставляння"
+
+#~ msgid ""
+#~ "Failed to paste. Below is a list of suboperations that have been "
+#~ "attempted."
+#~ msgstr ""
+#~ "Не вдалося вставити. Нижче наведено список піддій, які намагалася "
+#~ "виконати програма."
+
+#~ msgctxt "@title:menu"
+#~ msgid "Build Set"
+#~ msgstr "Набір збирання"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from Build Set"
+#~ msgstr "Вилучити з набору збирання"
+
+#~ msgctxt "@title:window"
+#~ msgid "Projects"
+#~ msgstr "Проєкти"
+
+#~ msgctxt "@action"
+#~ msgid "Locate Current Document"
+#~ msgstr "Знайти місце поточного документа"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Locates the current document in the project tree and selects it."
+#~ msgstr ""
+#~ "Встановлює місце поточного документа у дереві проєкту і виділяє позначку "
+#~ "документа."
+
+#~ msgctxt "@action"
+#~ msgid "Show Build Targets"
+#~ msgstr "Показати набори збирання"
+
+#~ msgctxt "@action"
+#~ msgid "Build All Projects"
+#~ msgstr "Зібрати всі проєкти"
+
+#~ msgctxt "@action"
+#~ msgid "Build Selection"
+#~ msgstr "Зібрати позначене"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Build"
+#~ msgstr "Зібрати"
+
+#~ msgctxt "@action"
+#~ msgid "Install Selection"
+#~ msgstr "Встановити позначене"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Install"
+#~ msgstr "Встановити"
+
+#~ msgctxt "@action"
+#~ msgid "Clean Selection"
+#~ msgstr "Зняти позначення"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Clean"
+#~ msgstr "Очистити"
+
+#~ msgctxt "@action"
+#~ msgid "Configure Selection"
+#~ msgstr "Налаштувати позначене"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Configure"
+#~ msgstr "Налаштувати"
+
+#~ msgctxt "@action"
+#~ msgid "Prune Selection"
+#~ msgstr "Вирізати позначене"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Prune"
+#~ msgstr "Спростити"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create &File..."
+#~ msgstr "Створити &файл…"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create F&older..."
+#~ msgstr "Створити &теку…"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Build"
+#~ msgstr "Зі&брати"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Install"
+#~ msgstr "&Встановити"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Clean"
+#~ msgstr "&Очистити"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Set"
+#~ msgstr "&Додати до набору збирання"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&lose Project"
+#~ msgid_plural "Close Projects"
+#~ msgstr[0] "За&крити проєкти"
+#~ msgstr[1] "За&крити проєкти"
+#~ msgstr[2] "За&крити проєкти"
+#~ msgstr[3] "За&крити проєкт"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Reload"
+#~ msgstr "П&ерезавантажити"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remo&ve"
+#~ msgstr "Ви&лучити"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Re&name..."
+#~ msgstr "Пере&йменувати…"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from &Target"
+#~ msgstr "Вилучити зі з&бирання"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Folder in %1"
+#~ msgstr "Створити теку у %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Folder name:"
+#~ msgstr "Назва теки:"
+
+#~ msgid "Do you really want to delete this item?"
+#~ msgid_plural "Do you really want to delete these %1 items?"
+#~ msgstr[0] "Ви справді бажаєте вилучити цей %1 об'єкт?"
+#~ msgstr[1] "Ви справді бажаєте вилучити ці %1 об'єкти?"
+#~ msgstr[2] "Ви справді бажаєте вилучити ці %1 об'єктів?"
+#~ msgstr[3] "Ви справді бажаєте вилучити цей об'єкт?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Delete Files"
+#~ msgstr "Вилучення файлів"
+
+#~ msgctxt "@window:title"
+#~ msgid "Rename"
+#~ msgstr "Перейменувати"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "New name for '%1':"
+#~ msgstr "Нова назва «%1»:"
+
+#~ msgid "There is already a file named '%1'"
+#~ msgstr "Файл з назвою «%1» вже існує"
+
+#~ msgid "Could not rename '%1'"
+#~ msgstr "Не вдалося перейменувати «%1»"
+
+#~ msgid "'%1' is not a valid file name"
+#~ msgstr "«%1» не є коректною назвою файла"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create File in %1"
+#~ msgstr "Створити файл у %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "File name:"
+#~ msgstr "Назва файла:"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Move Here"
+#~ msgstr "Пере&сунути сюди"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Copy Here"
+#~ msgstr "&Копіювати сюди"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&ancel"
+#~ msgstr "&Скасувати"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Target"
+#~ msgstr "&Додати до набору збирання"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Analyze with"
+#~ msgstr "Проаналізувати за допомогою"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Open Configuration..."
+#~ msgstr "Відкрити налаштування..."
+
+#~ msgctxt "Version control: Currently not on a branch"
+#~ msgid "(no branch)"
+#~ msgstr "(немає гілки)"

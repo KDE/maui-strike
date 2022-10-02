@@ -1,0 +1,879 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+#
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-09-21 18:49+0200\n"
+"Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
+"Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
+"Language: sv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 20.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Stefan Asserhäll"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "stefan.asserhall@bredband.net"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Bygg och kör"
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Utvecklare"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Osparade filer"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"Du har osparade filer. Du kan gå tillbaka och spara dem eller välja att "
+"kasta alla ändringar och avsluta."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Gå tillbaka"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Kasta"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Visa eller dölj sidorad"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Öppna här"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Öppna i ny flik"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "Öppna under ny delning"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Avbryt"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Duplicera"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Ange projektets Git-webbadress"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Saknar projekt"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Skapa eller öppna ett nytt projekt"
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Öppna projekt"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Duplicera projekt"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Ny fil"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Skapa nytt projekt"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Öppna ett befintligt projekt"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Öppna fil"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Öppna en eller flera filer"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Ny mallkällfil"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Med stöd för grundläggande textformatredigering"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Projektkällor"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Källfiler listas här."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Föregående"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Upp"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Nästa"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Visa kataloger först"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Typ"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Datum"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Ändrad"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Storlek"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Namn"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Grupp"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Mål"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Anpassa"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Bygg"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Kör"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Installera"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Dela"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Sök och ersätt"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Rad- och ordräknare"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Inställningar"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Om"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Avbryt"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Ange inställningar för att börja koda."
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Byggkatalog"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Välj en byggkatalog eller behåll den förvalda"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Byggkatalogsökväg"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Projekt"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Välj målprojektet"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Slutför"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Editor"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr "Anpassa editorns utseende och känsla. Inställningarna gäller globalt."
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Spara automatiskt"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Sparar filen automatiskt med några sekunders mellanrum"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Radnummer"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Visa radnummer på vänster sida"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Stil"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Anpassa syntaxfärgläggningens stil. Inställningen gäller inte rich text-"
+"format."
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Teckenfamilj"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Teckenstorlek"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Flikmellanrum"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Editorns färgschemastil"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Färg"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Editorns bakgrundsfärg"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory - %1"
+#~ msgstr "Anpassa en byggkatalog - %1"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory for %1"
+#~ msgstr "Anpassa en byggkatalog för %1"
+
+#~ msgid "You need to specify a build directory."
+#~ msgstr "Du måste ange en byggkatalog."
+
+#~ msgid "Using an already created build directory."
+#~ msgstr "Använder en byggkatalog som redan skapats."
+
+#~ msgid "Creating a new build directory."
+#~ msgstr "Skapar en ny byggkatalog."
+
+#~ msgid "Build directory already configured."
+#~ msgstr "Byggkatalog redan inställd."
+
+#~ msgid "This build directory is for %1, but the project directory is %2."
+#~ msgstr "Den här byggkatalogen är för %1, men projektkatalogen är %2."
+
+#~ msgid "You may not select a relative build directory."
+#~ msgstr "Du får inte välja en relativ byggkatalog."
+
+#~ msgid "The selected build directory is not empty."
+#~ msgstr "Den valda byggkatalogen är inte tom."
+
+#~ msgid "INVALID"
+#~ msgstr "OGILTIG"
+
+#~ msgctxt "@item"
+#~ msgid "Command"
+#~ msgstr "Kommando"
+
+#~ msgctxt "@item"
+#~ msgid "Variable"
+#~ msgstr "Variabel"
+
+#~ msgctxt "@item"
+#~ msgid "Macro"
+#~ msgstr "Makro"
+
+#~ msgctxt "@item"
+#~ msgid "Path"
+#~ msgstr "Sökväg"
+
+#~ msgctxt "@item"
+#~ msgid "Target"
+#~ msgstr "Mål"
+
+#~ msgid "wrong"
+#~ msgstr "fel"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Commands"
+#~ msgstr "Kommandon"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Variables"
+#~ msgstr "Variabler"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Modules"
+#~ msgstr "Moduler"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Properties"
+#~ msgstr "Egenskaper"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Policies"
+#~ msgstr "Policyer"
+
+#~ msgid "<p>For better CMake documentation rendering, install rst2html.</p>"
+#~ msgstr ""
+#~ "<p>Installera rst2html för bättre återgivning av CMake-dokumentation</p>"
+
+#~ msgid "Unable to find a CMake executable. Is one installed on the system?"
+#~ msgstr ""
+#~ "Kan inte hitta CMake körbart program. Är det installerat på systemet?"
+
+#~ msgid "<br /><em>Cache Value:</em> %1\n"
+#~ msgstr "<br /><em>Cache-värde:</em> %1\n"
+
+#~ msgid "<br /><em>Cache Documentation:</em> %1\n"
+#~ msgstr "<br /><em>Cache-dokumentation:</em> %1\n"
+
+#~ msgid "CMake Content Page"
+#~ msgstr "CMake innehållssida"
+
+#~ msgid ""
+#~ "Failed to configure project '%1' (error message: %2). As a result, "
+#~ "KDevelop's code understanding will likely be broken.\n"
+#~ "\n"
+#~ "To fix this issue, please ensure that the project's CMakeLists.txt files "
+#~ "are correct, and KDevelop is configured to use the correct CMake version "
+#~ "and settings. Then right-click the project item in the projects tool view "
+#~ "and click 'Reload'."
+#~ msgstr ""
+#~ "Inställning av projektet '%1' misslyckades (felmeddelande: %2). Av denna "
+#~ "anledning är KDevelops kodförståelse troligen sönder.\n"
+#~ "\n"
+#~ "Säkerställ att projektets CMakeLists.txt filer är riktiga, och att "
+#~ "KDevelop är inställt att använda korrekt CMake-version och inställningar. "
+#~ "Högerklicka därefter på projektobjektet i projektets verktygsvy och "
+#~ "klicka på 'Uppdatera'."
+
+#~ msgctxt "@title:column"
+#~ msgid "Name"
+#~ msgstr "Namn"
+
+#~ msgctxt "@title:column"
+#~ msgid "Type"
+#~ msgstr "Typ"
+
+#~ msgctxt "@title:column"
+#~ msgid "Value"
+#~ msgstr "Värde"
+
+#~ msgctxt "@title:column"
+#~ msgid "Comment"
+#~ msgstr "Kommentar"
+
+#~ msgctxt "@title:column"
+#~ msgid "Advanced"
+#~ msgstr "Avancerat"
+
+#~ msgctxt "@title:column"
+#~ msgid "Strings"
+#~ msgstr "Strängar"
+
+#~ msgid ""
+#~ "The %1 directory is about to be removed in KDevelop's list.\n"
+#~ "Do you want KDevelop to remove it in the file system as well?"
+#~ msgstr ""
+#~ "Katalogen %1 kommer nu att tas bort från KDevelops lista.\n"
+#~ "Vill du att KDevelop också ska ta bort den i filsystemet?"
+
+#~ msgid "Could not remove: %1"
+#~ msgstr "Kunde inte ta bort: %1"
+
+#~ msgctxt "@title:tab"
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure CMake Settings"
+#~ msgstr "Anpassa inställningar för CMake"
+
+#~ msgid "Parse test suite %1"
+#~ msgstr "Tolka testsvit %1"
+
+#~ msgid "CTest"
+#~ msgstr "CTest"
+
+#~ msgctxt "running test %1, %2 test case"
+#~ msgid "CTest %1: %2"
+#~ msgstr "CTest %1: %2"
+
+#~ msgctxt "running test %1, %2 number of test cases"
+#~ msgid "CTest %2 (%1)"
+#~ msgid_plural "CTest %2 (%1)"
+#~ msgstr[0] "CTest %2 (%1)"
+#~ msgstr[1] "CTest %2 (%1)"
+
+#~ msgid "KDevelop"
+#~ msgstr "KDevelop"
+
+#~ msgid "opens a project then closes it, debugging tool"
+#~ msgstr "öppnar ett projekt och stänger det, felsökningsverktyg"
+
+#~ msgid "Copyright 1999-2012, The KDevelop developers"
+#~ msgstr "Copyright 1999-2012, KDevelop-utvecklarna"
+
+#~ msgid "Aleix Pol Gonzalez"
+#~ msgstr "Aleix Pol Gonzalez"
+
+#~ msgid "Projects to load"
+#~ msgstr "Projekt att läsa in"
+
+#~ msgid "Swi&tch Colors"
+#~ msgstr "By&t färger"
+
+#~ msgid "General"
+#~ msgstr "Allmänt"
+
+#~ msgid "This project is one day old"
+#~ msgid_plural "This project is %1 days old"
+#~ msgstr[0] "Projektet är en dag gammalt"
+#~ msgstr[1] "Projektet är %1 dagar gammalt"
+
+#~ msgid "Settings changed"
+#~ msgstr "Inställningar ändrades"
+
+#~ msgid "A KDE 4 Application"
+#~ msgstr "Ett KDE 4 program"
+
+#~ msgid "kde4app"
+#~ msgstr "kde4app"
+
+#~ msgid "(C) 2007 %{AUTHOR}"
+#~ msgstr "© 2007 %{AUTHOR}"
+
+#~ msgid "%{AUTHOR}"
+#~ msgstr "%{AUTHOR}"
+
+#~ msgid "Document to open"
+#~ msgstr "Dokument att öppna"
+
+#~ msgid "Could not find the make builder. Check your installation"
+#~ msgstr "Kunde inte hitta byggprogrammet make. Kontrollera installationen."
+
+#~ msgid "Could not find a builder for %1"
+#~ msgstr "Kunde inte hitta ett byggprogram för %1"
+
+#~ msgid "No build directory configured, cannot install"
+#~ msgstr "Ingen byggkatalog inställd, kan inte installera"
+
+#~ msgid "No build directory configured, cannot configure"
+#~ msgstr "Ingen byggkatalog inställd, kan inte konfigurera"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure Global CMake Settings"
+#~ msgstr "Anpassa globala inställningar för CMake"
+
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgid "Internal error: no project specified to configure."
+#~ msgstr "Internt fel: Inget projekt specificerat att konfigurera."
+
+#~ msgid "Failed to create build directory %1."
+#~ msgstr "Misslyckades skapa byggkatalogen %1."
+
+#~ msgid "CMake: %1"
+#~ msgstr "CMake: %1"
+
+#~ msgid "No build directory configured, cannot clear the build directory"
+#~ msgstr "Ingen byggkatalog inställd, kan inte rensa byggkatalogen"
+
+#~ msgid "Wrong build directory, cannot clear the build directory"
+#~ msgstr "Felaktig byggkatalog, kan inte rensa byggkatalogen"
+
+#~ msgid "%1> rm -rf %2"
+#~ msgstr "%1> rm -rf %2"
+
+#~ msgid "** Prune successful **"
+#~ msgstr "** Borttagning lyckades **"
+
+#~ msgid "** Prune failed: %1 **"
+#~ msgstr "** Borttagning misslyckades: %1 **"
+
+#~ msgid "Move %1 item into %2"
+#~ msgid_plural "Move %1 items into %2"
+#~ msgstr[0] "Flytta %1 objekt in i %2"
+#~ msgstr[1] "Flytta %1 objekt in i %2"
+
+#~ msgid "Copy %1 item into %2"
+#~ msgid_plural "Copy %1 items into %2"
+#~ msgstr[0] "Kopiera %1 objekt in i %2"
+#~ msgstr[1] "Kopiera %1 objekt in i %2"
+
+#~ msgid "Delete %1 item"
+#~ msgid_plural "Delete %1 items"
+#~ msgstr[0] "Ta bort %1 objekt"
+#~ msgstr[1] "Ta bort %1 objekt"
+
+#~ msgid "Move item %1 into %2"
+#~ msgstr "Flytta objekt %1 in i %2"
+
+#~ msgid "Copy item %1 into %2"
+#~ msgstr "Kopiera objekt %1 in i %2"
+
+#~ msgid "Delete item %1"
+#~ msgstr "Ta bort objekt %1"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation succeeded"
+#~ msgstr "Delåtgärd lyckades"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation failed"
+#~ msgstr "Delåtgärd misslyckades"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation skipped to prevent data loss"
+#~ msgstr "Delåtgärd hoppades över för att förhindra dataförlust"
+
+#~ msgctxt "@title:window"
+#~ msgid "Paste Failed"
+#~ msgstr "Misslyckades klistra in"
+
+#~ msgid ""
+#~ "Failed to paste. Below is a list of suboperations that have been "
+#~ "attempted."
+#~ msgstr ""
+#~ "Misslyckades klistra in. Nedan visas en lista över delåtgärder som "
+#~ "försöktes."
+
+#~ msgctxt "@title:menu"
+#~ msgid "Build Set"
+#~ msgstr "Bygguppsättning"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from Build Set"
+#~ msgstr "Ta bort från bygguppsättning"
+
+#~ msgctxt "@title:window"
+#~ msgid "Projects"
+#~ msgstr "Projekt"
+
+#~ msgctxt "@action"
+#~ msgid "Locate Current Document"
+#~ msgstr "Hitta nuvarande dokument"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Locates the current document in the project tree and selects it."
+#~ msgstr "Hittar nuvarande dokument i projektträdet och markerar det."
+
+#~ msgctxt "@action"
+#~ msgid "Show Build Targets"
+#~ msgstr "Visa byggmål"
+
+#~ msgctxt "@action"
+#~ msgid "Build All Projects"
+#~ msgstr "Bygg alla projekt"
+
+#~ msgctxt "@action"
+#~ msgid "Build Selection"
+#~ msgstr "Byggval"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Build"
+#~ msgstr "Bygg"
+
+#~ msgctxt "@action"
+#~ msgid "Install Selection"
+#~ msgstr "Installationsval"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Install"
+#~ msgstr "Installera"
+
+#~ msgctxt "@action"
+#~ msgid "Clean Selection"
+#~ msgstr "Rensa val"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Clean"
+#~ msgstr "Rensa"
+
+#~ msgctxt "@action"
+#~ msgid "Configure Selection"
+#~ msgstr "Konfigurera val"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Configure"
+#~ msgstr "Konfigurera"
+
+#~ msgctxt "@action"
+#~ msgid "Prune Selection"
+#~ msgstr "Borttagning av val"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Prune"
+#~ msgstr "Borttagning"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create &File..."
+#~ msgstr "Skapa &fil..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create F&older..."
+#~ msgstr "Skapa &katalog..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Build"
+#~ msgstr "&Bygg"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Install"
+#~ msgstr "&Installera"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Clean"
+#~ msgstr "&Rensa"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Set"
+#~ msgstr "&Lägg till i bygguppsättning"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&lose Project"
+#~ msgid_plural "Close Projects"
+#~ msgstr[0] "Stän&g projekt"
+#~ msgstr[1] "Stäng projekt"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Reload"
+#~ msgstr "Uppdate&ra"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remo&ve"
+#~ msgstr "Ta &bort"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Re&name..."
+#~ msgstr "Byt &namn..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from &Target"
+#~ msgstr "Ta bort från &mål"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Folder in %1"
+#~ msgstr "Skapa katalog i %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Folder name:"
+#~ msgstr "Katalognamn:"
+
+#~ msgid "Do you really want to delete this item?"
+#~ msgid_plural "Do you really want to delete these %1 items?"
+#~ msgstr[0] "Är du säker på att du vill ta bort detta objekt?"
+#~ msgstr[1] "Vill du verkligen ta bort dessa %1 objekt?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Delete Files"
+#~ msgstr "Ta bort filer"
+
+#~ msgctxt "@window:title"
+#~ msgid "Rename"
+#~ msgstr "Byt namn"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "New name for '%1':"
+#~ msgstr "Nytt namn på '%1':"
+
+#~ msgid "There is already a file named '%1'"
+#~ msgstr "Det finns redan en fil som heter '%1'"
+
+#~ msgid "Could not rename '%1'"
+#~ msgstr "Kunde inte byta namn på '%1'"
+
+#~ msgid "'%1' is not a valid file name"
+#~ msgstr "'%1' är inte ett giltigt filnamn"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create File in %1"
+#~ msgstr "Skapa fil i %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "File name:"
+#~ msgstr "Filnamn:"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Move Here"
+#~ msgstr "&Flytta hit"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Copy Here"
+#~ msgstr "&Kopiera hit"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&ancel"
+#~ msgstr "&Avbryt"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Target"
+#~ msgstr "&Lägg till i bygguppsättning"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Analyze with"
+#~ msgstr "Analysera med"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Open Configuration..."
+#~ msgstr "Öppna inställning..."
+
+#~ msgctxt "Version control: Currently not on a branch"
+#~ msgid "(no branch)"
+#~ msgstr "(ingen gren)"

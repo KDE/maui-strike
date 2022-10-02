@@ -1,0 +1,886 @@
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+#
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2021.
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"PO-Revision-Date: 2021-09-21 12:23+0200\n"
+"Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
+"Language-Team: \n"
+"Language: nl\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: Lokalize 21.08.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Freek de Kruijf - 2021"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "freekdekruijf@kde.nl"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Code bouwen en uitvoeren."
+
+#: main.cpp:42
+#, kde-format
+msgid "© 2021-%1 Camilo Higuita"
+msgstr "© 2021-%1 Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Camilo Higuita"
+msgstr "Camilo Higuita"
+
+#: main.cpp:44
+#, kde-format
+msgid "Developer"
+msgstr "Ontwikkelaar"
+
+#: main.qml:133
+#, kde-format
+msgid "Unsaved files"
+msgstr "Niet opgeslagen bestanden"
+
+#: main.qml:134
+#, kde-format
+msgid ""
+"You have unsaved files. You can go back and save them or choose to discard "
+"all changes and exit."
+msgstr ""
+"U hebt niet opgeslagen bestanden. U kunt terug gaan en ze opslaan of kiezen "
+"om alle wijzigingen te verwerpen en te eindigen."
+
+#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Ga terug"
+
+#: main.qml:138
+#, kde-format
+msgid "Discard"
+msgstr "Verwerpen"
+
+#: main.qml:245
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Zijbalk omschakelen"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr "Hier openen"
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "In nieuw tabblad openen"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr "In nieuw gesplitste weergave openen"
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Annuleren"
+
+#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#, kde-format
+msgid "Clone"
+msgstr "Kloon"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "De URL van het project-Git invoeren"
+
+#: views/editor/EditorView.qml:59
+#, kde-format
+msgid "Missing Project"
+msgstr "Ontbrekend project"
+
+#: views/editor/EditorView.qml:60
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Een nieuw project aanmaken of openen."
+
+#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
+#, kde-format
+msgid "Open Project"
+msgstr "Project openen"
+
+#: views/editor/EditorView.qml:87
+#, kde-format
+msgid "Clone Project"
+msgstr "Project klonen"
+
+#: views/editor/NewFileDialog.qml:11
+#, kde-format
+msgid "New file"
+msgstr "Nieuw bestand"
+
+#: views/editor/NewFileDialog.qml:25
+#, kde-format
+msgid "Create New Project"
+msgstr "Nieuw project aanmaken"
+
+#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
+#, kde-format
+msgid "Open a existing project"
+msgstr "Een bestand project openen"
+
+#: views/editor/NewFileDialog.qml:64
+#, kde-format
+msgid "Open File"
+msgstr "Bestand openen"
+
+#: views/editor/NewFileDialog.qml:65
+#, kde-format
+msgid "Open one or multiple files"
+msgstr "Een of meerdere bestanden openen"
+
+#: views/editor/NewFileDialog.qml:79
+#, kde-format
+msgid "New Template Source File"
+msgstr "Nieuw sjabloon voor bronbestand"
+
+#: views/editor/NewFileDialog.qml:80
+#, kde-format
+msgid "With support for basic text format editing"
+msgstr "Met ondersteuning voor basis tekstbewerking met indeling"
+
+#: views/PlacesSidebar.qml:68
+#, kde-format
+msgid "Project Sources"
+msgstr "Projectbronnen"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Bronbestanden komen hier."
+
+#: views/PlacesSidebar.qml:113
+#, kde-format
+msgid "Previous"
+msgstr "Vorige"
+
+#: views/PlacesSidebar.qml:120
+#, kde-format
+msgid "Up"
+msgstr "Omhoog"
+
+#: views/PlacesSidebar.qml:128
+#, kde-format
+msgid "Next"
+msgstr "Volgende"
+
+#: views/PlacesSidebar.qml:152
+#, kde-format
+msgid "Show Folders First"
+msgstr "Mappen als eerste tonen"
+
+#: views/PlacesSidebar.qml:162
+#, kde-format
+msgid "Type"
+msgstr "Type"
+
+#: views/PlacesSidebar.qml:171
+#, kde-format
+msgid "Date"
+msgstr "Datum"
+
+#: views/PlacesSidebar.qml:180
+#, kde-format
+msgid "Modified"
+msgstr "Gewijzigd"
+
+#: views/PlacesSidebar.qml:189
+#, kde-format
+msgid "Size"
+msgstr "Grootte"
+
+#: views/PlacesSidebar.qml:198
+#, kde-format
+msgid "Name"
+msgstr "Naam"
+
+#: views/PlacesSidebar.qml:210
+#, kde-format
+msgid "Group"
+msgstr "Groep"
+
+#: views/widgets/BuildBar.qml:49
+#, kde-format
+msgid "Targets"
+msgstr "Doelen"
+
+#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/ProjectConfigDialog.qml:66
+#: views/widgets/ProjectConfigDialog.qml:177
+#, kde-format
+msgid "Configure"
+msgstr "Configureren"
+
+#: views/widgets/BuildBar.qml:142
+#, kde-format
+msgid "Build"
+msgstr "Bouwen"
+
+#: views/widgets/BuildBar.qml:149
+#, kde-format
+msgid "Run"
+msgstr "Uitvoeren"
+
+#: views/widgets/BuildBar.qml:156
+#, kde-format
+msgid "Install"
+msgstr "Installeren"
+
+#: views/widgets/BuildBar.qml:298
+#, kde-format
+msgid "Split"
+msgstr "Splitsen"
+
+#: views/widgets/BuildBar.qml:320
+#, kde-format
+msgid "Find and Replace"
+msgstr "Zoeken en vervangen"
+
+#: views/widgets/BuildBar.qml:333
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Regels/woordenteller"
+
+#: views/widgets/BuildBar.qml:381
+#, kde-format
+msgid "Settings"
+msgstr "Instellingen"
+
+#: views/widgets/BuildBar.qml:392
+#, kde-format
+msgid "About"
+msgstr "Info over"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Afbreken"
+
+#: views/widgets/ProjectConfigDialog.qml:67
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "De voorkeuren instellen om met hacking te beginnen!"
+
+#: views/widgets/ProjectConfigDialog.qml:81
+#, kde-format
+msgid "Build Directory"
+msgstr "Bouwmap"
+
+#: views/widgets/ProjectConfigDialog.qml:82
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Kies een bouwmap of behoud de standaard"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Build directory path"
+msgstr "Pad van bouwmap"
+
+#: views/widgets/ProjectConfigDialog.qml:125
+#, kde-format
+msgid "Project"
+msgstr "Project"
+
+#: views/widgets/ProjectConfigDialog.qml:126
+#, kde-format
+msgid "Select the target project"
+msgstr "Het doelproject selecteren"
+
+#: views/widgets/ProjectConfigDialog.qml:178
+#, kde-format
+msgid "Finish"
+msgstr "Voltooien"
+
+#: views/widgets/SettingsDialog.qml:14
+#, kde-format
+msgid "Editor"
+msgstr "Editor"
+
+#: views/widgets/SettingsDialog.qml:15
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Het uiterlijk en gedrag van de tekstbewerker configureren. De instellingen "
+"worden globaal toegepast"
+
+#: views/widgets/SettingsDialog.qml:19
+#, kde-format
+msgid "Auto Save"
+msgstr "Automatisch opslaan"
+
+#: views/widgets/SettingsDialog.qml:20
+#, kde-format
+msgid "Auto saves your file every few seconds"
+msgstr "Uw bestand elke paar seconden automatisch opslaan"
+
+#: views/widgets/SettingsDialog.qml:31
+#, kde-format
+msgid "Line Numbers"
+msgstr "Regelnummers"
+
+#: views/widgets/SettingsDialog.qml:32
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "De regelnummering aan de linkerzijde tonen"
+
+#: views/widgets/SettingsDialog.qml:45
+#, kde-format
+msgid "Style"
+msgstr "Stijl"
+
+#: views/widgets/SettingsDialog.qml:46
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"De stijl van de syntaxisaccentuering configureren. Deze configuratie wordt "
+"niet toegepast voor indelingen met opgemaakte tekst."
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Font Family"
+msgstr "Lettertypefamilie"
+
+#: views/widgets/SettingsDialog.qml:65
+#, kde-format
+msgid "Font Size"
+msgstr "Tekengrootte"
+
+#: views/widgets/SettingsDialog.qml:77
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Spatiëring van tabs"
+
+#: views/widgets/SettingsDialog.qml:89
+#, kde-format
+msgid "Theme"
+msgstr "Thema"
+
+#: views/widgets/SettingsDialog.qml:90
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Kleurenschemastijl van bewerker"
+
+#: views/widgets/SettingsDialog.qml:108
+#, kde-format
+msgid "Color"
+msgstr "Kleur"
+
+#: views/widgets/SettingsDialog.qml:109
+#, kde-format
+msgid "Editor background color"
+msgstr "Achtergrondkleur van bewerker"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory - %1"
+#~ msgstr "Een bouwmap configureren - %1"
+
+#~ msgctxt "@title:window"
+#~ msgid "Configure a Build Directory for %1"
+#~ msgstr "Een bouwmap instellen voor %1"
+
+#~ msgid "You need to specify a build directory."
+#~ msgstr "Specificeer een bouw-map."
+
+#~ msgid "Using an already created build directory."
+#~ msgstr "Een reeds aangemaakt bouw-map gebruiken."
+
+#~ msgid "Creating a new build directory."
+#~ msgstr "Een nieuwe bouw-map aan maken"
+
+#~ msgid "Build directory already configured."
+#~ msgstr "Bouw-map is al ingesteld."
+
+#~ msgid "This build directory is for %1, but the project directory is %2."
+#~ msgstr "Deze bouwmap is voor %1, maar de projectmap is %2."
+
+#~ msgid "You may not select a relative build directory."
+#~ msgstr "U mag geen relatieve bouwmap selecteren."
+
+#~ msgid "The selected build directory is not empty."
+#~ msgstr "De geselecteerde bouwmap is niet leeg."
+
+#~ msgid "INVALID"
+#~ msgstr "ONGELDIG"
+
+#~ msgctxt "@item"
+#~ msgid "Command"
+#~ msgstr "Commando"
+
+#~ msgctxt "@item"
+#~ msgid "Variable"
+#~ msgstr "Variabele"
+
+#~ msgctxt "@item"
+#~ msgid "Macro"
+#~ msgstr "Macro"
+
+#~ msgctxt "@item"
+#~ msgid "Path"
+#~ msgstr "Pad"
+
+#~ msgctxt "@item"
+#~ msgid "Target"
+#~ msgstr "Doel"
+
+#~ msgid "wrong"
+#~ msgstr "verkeerd"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Commands"
+#~ msgstr "Commando's"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Variables"
+#~ msgstr "Variabelen"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Modules"
+#~ msgstr "Modules"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Properties"
+#~ msgstr "Eigenschappen"
+
+#~ msgctxt "@item cmake"
+#~ msgid "Policies"
+#~ msgstr "Beleidsregels"
+
+#~ msgid "<p>For better CMake documentation rendering, install rst2html.</p>"
+#~ msgstr ""
+#~ "<p>Voor betere rendering van CMake documentatie, installeer rst2html.</p>"
+
+#~ msgid "Unable to find a CMake executable. Is one installed on the system?"
+#~ msgstr ""
+#~ "Kan het CMake uitvoerbaar programma niet vinden. Is er een geïnstalleerd "
+#~ "op het systeem?"
+
+#~ msgid "<br /><em>Cache Value:</em> %1\n"
+#~ msgstr "<br /><em>Cache-waarde:</em> %1\n"
+
+#~ msgid "<br /><em>Cache Documentation:</em> %1\n"
+#~ msgstr "<br /><em>Cache-documentatie:</em> %1\n"
+
+#~ msgid "CMake Content Page"
+#~ msgstr "Inhoudspagina van CMake"
+
+#~ msgid ""
+#~ "Failed to configure project '%1' (error message: %2). As a result, "
+#~ "KDevelop's code understanding will likely be broken.\n"
+#~ "\n"
+#~ "To fix this issue, please ensure that the project's CMakeLists.txt files "
+#~ "are correct, and KDevelop is configured to use the correct CMake version "
+#~ "and settings. Then right-click the project item in the projects tool view "
+#~ "and click 'Reload'."
+#~ msgstr ""
+#~ "Het project '%1' configureren is mislukt (foutmelding: %2). Als "
+#~ "resultaat, begrijpen van code door KDevelop zal waarschijnlijk gebroken "
+#~ "zijn.\n"
+#~ "\n"
+#~ "Om dit probleem op te lossen, ga na dat de CMakeLists.txt bestanden van "
+#~ "het project juist zijn and KDevelop geconfigureerd is om de juiste CMake-"
+#~ "versie en instellingen te gebruiken. Klik daarna rechts op het "
+#~ "projectitem in de weergave van het projectenhulpmiddel en klik 'Herladen'."
+
+#~ msgctxt "@title:column"
+#~ msgid "Name"
+#~ msgstr "Naam"
+
+#~ msgctxt "@title:column"
+#~ msgid "Type"
+#~ msgstr "Type"
+
+#~ msgctxt "@title:column"
+#~ msgid "Value"
+#~ msgstr "Waarde"
+
+#~ msgctxt "@title:column"
+#~ msgid "Comment"
+#~ msgstr "Toelichting"
+
+#~ msgctxt "@title:column"
+#~ msgid "Advanced"
+#~ msgstr "Geavanceerd"
+
+#~ msgctxt "@title:column"
+#~ msgid "Strings"
+#~ msgstr "Tekenreeksen"
+
+#~ msgid ""
+#~ "The %1 directory is about to be removed in KDevelop's list.\n"
+#~ "Do you want KDevelop to remove it in the file system as well?"
+#~ msgstr ""
+#~ "De map %1 staat op het punt te worden verwijderd uit de lijst van "
+#~ "KDevelop.\n"
+#~ "Wilt u dat KDevelop het ook uit het bestandssysteem verwijdert?"
+
+#~ msgid "Could not remove: %1"
+#~ msgstr "Kon niet verwijderen: %1"
+
+#~ msgctxt "@title:tab"
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure CMake Settings"
+#~ msgstr "CMake-instellingen configureren"
+
+#~ msgid "Parse test suite %1"
+#~ msgstr "Testsuite %1 ontleden"
+
+#~ msgid "CTest"
+#~ msgstr "CTest"
+
+#~ msgctxt "running test %1, %2 test case"
+#~ msgid "CTest %1: %2"
+#~ msgstr "CTest %1: %2"
+
+#~ msgctxt "running test %1, %2 number of test cases"
+#~ msgid "CTest %2 (%1)"
+#~ msgid_plural "CTest %2 (%1)"
+#~ msgstr[0] "CTest %2 (%1)"
+#~ msgstr[1] "CTest %2 (%1)"
+
+#~ msgid "KDevelop"
+#~ msgstr "KDevelop"
+
+#~ msgid "opens a project then closes it, debugging tool"
+#~ msgstr "opent een project en sluit het daarna, hulpmiddel voor debugging"
+
+#~ msgid "Copyright 1999-2012, The KDevelop developers"
+#~ msgstr "Copyright 1999-2012, de ontwikkelaars van KDevelop"
+
+#~ msgid "Aleix Pol Gonzalez"
+#~ msgstr "Aleix Pol Gonzalez"
+
+#~ msgid "Projects to load"
+#~ msgstr "Te laden projecten"
+
+#~ msgid "Swi&tch Colors"
+#~ msgstr "Kleuren om&wisselen"
+
+#~ msgid "General"
+#~ msgstr "Algemeen"
+
+#~ msgid "This project is one day old"
+#~ msgid_plural "This project is %1 days old"
+#~ msgstr[0] "Dit project is één dag oud"
+#~ msgstr[1] "Dit project is %1 dagen oud"
+
+#~ msgid "Settings changed"
+#~ msgstr "Instellingen gewijzigd"
+
+#~ msgid "A KDE 4 Application"
+#~ msgstr "Een KDE 4-toepassing"
+
+#~ msgid "kde4app"
+#~ msgstr "kde4app"
+
+#~ msgid "(C) 2007 %{AUTHOR}"
+#~ msgstr "(C) 2007 %{AUTHOR}"
+
+#~ msgid "%{AUTHOR}"
+#~ msgstr "%{AUTHOR}"
+
+#~ msgid "Document to open"
+#~ msgstr "Te openen document"
+
+#~ msgid "Could not find the make builder. Check your installation"
+#~ msgstr "Kon de make-bouwer niet vinden. Controleer uw installatie"
+
+#~ msgid "Could not find a builder for %1"
+#~ msgstr "Kon geen bouwer voor %1 vinden"
+
+#~ msgid "No build directory configured, cannot install"
+#~ msgstr "Geen bouwmap geconfigureerd, installeren lukt niet"
+
+#~ msgid "No build directory configured, cannot configure"
+#~ msgstr "Geen bouwmap geconfigureerd, configureren lukt niet"
+
+#~ msgctxt "@title:tab"
+#~ msgid "Configure Global CMake Settings"
+#~ msgstr "Globale CMake-instellingen configureren"
+
+#~ msgid "CMake"
+#~ msgstr "CMake"
+
+#~ msgid "Internal error: no project specified to configure."
+#~ msgstr "Interne fout: geen te configureren project gespecificeerd."
+
+#~ msgid "Failed to create build directory %1."
+#~ msgstr "De map voor bouwen, %1, aanmaken is mislukt."
+
+#~ msgid "CMake: %1"
+#~ msgstr "CMake: %1"
+
+#~ msgid "No build directory configured, cannot clear the build directory"
+#~ msgstr "Geen bouwmap geconfigureerd, de bouwmap wissen lukt niet"
+
+#~ msgid "Wrong build directory, cannot clear the build directory"
+#~ msgstr "Foute bouwmap, kan de bouwmap niet wissen"
+
+#~ msgid "%1> rm -rf %2"
+#~ msgstr "%1> rm -rf %2"
+
+#~ msgid "** Prune successful **"
+#~ msgstr "** Opschonen succesvol **"
+
+#~ msgid "** Prune failed: %1 **"
+#~ msgstr "** Opschonen is mislukt: %1 **"
+
+#~ msgid "Move %1 item into %2"
+#~ msgid_plural "Move %1 items into %2"
+#~ msgstr[0] "%1 item verplaatsen naar %2"
+#~ msgstr[1] "%1 items verplaatsen in %2"
+
+#~ msgid "Copy %1 item into %2"
+#~ msgid_plural "Copy %1 items into %2"
+#~ msgstr[0] "%1 item kopiëren naar %2"
+#~ msgstr[1] "%1 items kopiëren in %2"
+
+#~ msgid "Delete %1 item"
+#~ msgid_plural "Delete %1 items"
+#~ msgstr[0] "%1 item verwijderen"
+#~ msgstr[1] "%1 items verwijderen"
+
+#~ msgid "Move item %1 into %2"
+#~ msgstr "Item %1 verplaatsen naar %2"
+
+#~ msgid "Copy item %1 into %2"
+#~ msgstr "%1 item kopiëren naar %2"
+
+#~ msgid "Delete item %1"
+#~ msgstr "Item %1 verwijderen"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation succeeded"
+#~ msgstr "Subbewerking is gelukt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation failed"
+#~ msgstr "Subbewerking is mislukt"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Suboperation skipped to prevent data loss"
+#~ msgstr "Subbewerking overgeslagen om verlies van gegevens te voorkomen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Paste Failed"
+#~ msgstr "Plakken is mislukt"
+
+#~ msgid ""
+#~ "Failed to paste. Below is a list of suboperations that have been "
+#~ "attempted."
+#~ msgstr ""
+#~ "Plakken is mislukt. Hier onder is een lijst met subbewerkingen die zijn "
+#~ "geprobeerd."
+
+#~ msgctxt "@title:menu"
+#~ msgid "Build Set"
+#~ msgstr "Bouwset"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from Build Set"
+#~ msgstr "Uit bouwset verwijderen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Projects"
+#~ msgstr "Projecten"
+
+#~ msgctxt "@action"
+#~ msgid "Locate Current Document"
+#~ msgstr "Huidige document lokaliseren"
+
+#~ msgctxt "@info:tooltip"
+#~ msgid "Locates the current document in the project tree and selects it."
+#~ msgstr ""
+#~ "Zoekt het huidige document in de boomstructuur van het project en "
+#~ "selecteert het."
+
+#~ msgctxt "@action"
+#~ msgid "Show Build Targets"
+#~ msgstr "Bouwdoelen tonen"
+
+#~ msgctxt "@action"
+#~ msgid "Build All Projects"
+#~ msgstr "Alle projecten bouwen"
+
+#~ msgctxt "@action"
+#~ msgid "Build Selection"
+#~ msgstr "Selectie bouwen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Build"
+#~ msgstr "Bouwen"
+
+#~ msgctxt "@action"
+#~ msgid "Install Selection"
+#~ msgstr "Selectie installeren"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Install"
+#~ msgstr "Installeren"
+
+#~ msgctxt "@action"
+#~ msgid "Clean Selection"
+#~ msgstr "Selectie opschonen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Clean"
+#~ msgstr "Opschonen"
+
+#~ msgctxt "@action"
+#~ msgid "Configure Selection"
+#~ msgstr "Selectie instellen"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Configure"
+#~ msgstr "Configureren"
+
+#~ msgctxt "@action"
+#~ msgid "Prune Selection"
+#~ msgstr "Rommel verwijderen uit selectie"
+
+#~ msgctxt "@action:intoolbar"
+#~ msgid "Prune"
+#~ msgstr "Rommel verwijderen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create &File..."
+#~ msgstr "&Bestand aanmaken..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Create F&older..."
+#~ msgstr "&Map aanmaken..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Build"
+#~ msgstr "&Bouwen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Install"
+#~ msgstr "&Installeren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Clean"
+#~ msgstr "&Opschonen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Set"
+#~ msgstr "Aan bouwset &toevoegen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&lose Project"
+#~ msgid_plural "Close Projects"
+#~ msgstr[0] "Project sluiten"
+#~ msgstr[1] "Project instellen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Reload"
+#~ msgstr "He&rladen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remo&ve"
+#~ msgstr "&Verwijderen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Re&name..."
+#~ msgstr "Her&noemen..."
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Remove from &Target"
+#~ msgstr "Uit &doel verwijderen"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create Folder in %1"
+#~ msgstr "Map aanmaken in %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "Folder name:"
+#~ msgstr "Mapnaam:"
+
+#~ msgid "Do you really want to delete this item?"
+#~ msgid_plural "Do you really want to delete these %1 items?"
+#~ msgstr[0] "Bent U er zeker van dat u dit item wilt verwijderen?"
+#~ msgstr[1] "Bent u er zeker van dat u deze %1 items wilt verwijderen?"
+
+#~ msgctxt "@title:window"
+#~ msgid "Delete Files"
+#~ msgstr "Bestanden verwijderen"
+
+#~ msgctxt "@window:title"
+#~ msgid "Rename"
+#~ msgstr "Hernoemen"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "New name for '%1':"
+#~ msgstr "Nieuwe naam voor '%1':"
+
+#~ msgid "There is already a file named '%1'"
+#~ msgstr "Er is al een bestand met de naam '%1'"
+
+#~ msgid "Could not rename '%1'"
+#~ msgstr "Kon '%1' niet hernoemen"
+
+#~ msgid "'%1' is not a valid file name"
+#~ msgstr "'%1' is geen geldige bestandsnaam"
+
+#~ msgctxt "@title:window"
+#~ msgid "Create File in %1"
+#~ msgstr "Nieuw bestand aanmaken in %1"
+
+#~ msgctxt "@label:textbox"
+#~ msgid "File name:"
+#~ msgstr "Bestandsnaam:"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Move Here"
+#~ msgstr "Hierheen &verplaatsen"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Copy Here"
+#~ msgstr "Hierheen &kopiëren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "C&ancel"
+#~ msgstr "&Annuleren"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "&Add to Build Target"
+#~ msgstr "Aan bouwdoel &toevoegen"
+
+#~ msgctxt "@title:menu"
+#~ msgid "Analyze with"
+#~ msgstr "Analyseren met"
+
+#~ msgctxt "@action:inmenu"
+#~ msgid "Open Configuration..."
+#~ msgstr "Configuratie openen..."
+
+#~ msgctxt "Version control: Currently not on a branch"
+#~ msgid "(no branch)"
+#~ msgstr "(geen branch)"
