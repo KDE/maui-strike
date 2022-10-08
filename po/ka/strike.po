@@ -1,34 +1,37 @@
-# Frederik Schwarzer <schwarzer@kde.org>, 2021.
-# Alois Spitzbart <spitz234@hotmail.com>, 2021.
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-08-21 00:45+0000\n"
-"PO-Revision-Date: 2021-11-07 13:58+0100\n"
-"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2022-10-07 13:06+0200\n"
+"Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
+"Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
+"Language: ka\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 21.08.2\n"
+"X-Generator: Poedit 3.1.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Deutsches KDE-Übersetzerteam"
+msgstr "Temuri Doghonadze"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-i18n-de@kde.org"
+msgstr "Temuri.doghonadze@gmail.com"
 
 #: main.cpp:42
 #, kde-format
 msgid "Build and run code."
-msgstr "Quelltext erstellen und ausführen."
+msgstr ""
 
 #: main.cpp:42
 #, kde-format
@@ -38,17 +41,17 @@ msgstr "© 2021-%1 Camilo Higuita"
 #: main.cpp:44
 #, kde-format
 msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
+msgstr "კამილო ჰიგუიტა"
 
 #: main.cpp:44
 #, kde-format
 msgid "Developer"
-msgstr "Entwickler"
+msgstr "პროგრამისტი"
 
 #: main.qml:133
 #, kde-format
 msgid "Unsaved files"
-msgstr "Ungespeicherte Dateien"
+msgstr "შეუნახავი ფაილები"
 
 #: main.qml:134
 #, kde-format
@@ -56,298 +59,294 @@ msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
 "all changes and exit."
 msgstr ""
-"Sie haben nicht gespeicherte Dateien. Sie können zurückgehen und sie "
-"speichern oder alle Änderungen verwerfen und die Anwendung beenden."
 
 #: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
-msgstr "Zurück"
+msgstr "უკან დაბრუნება"
 
 #: main.qml:138
 #, kde-format
 msgid "Discard"
-msgstr "Verwerfen"
+msgstr "გაუქმება"
 
 #: main.qml:245
 #, kde-format
 msgid "Toogle SideBar"
-msgstr "Seitenleiste umschalten"
+msgstr ""
 
 #: views/editor/Editor.qml:88
 #, kde-format
 msgid "Open here"
-msgstr "Hier öffnen"
+msgstr "აქ გახსნა"
 
 #: views/editor/Editor.qml:98
 #, kde-format
 msgid "Open in new tab"
-msgstr "In neuem Unterfenster öffnen"
+msgstr "ახალ ჩანართში გახსნა"
 
 #: views/editor/Editor.qml:109
 #, kde-format
 msgid "Open in new split"
-msgstr "In neuer geteilter Ansicht öffnen"
+msgstr "დაყოფილ ხედში გახსნა"
 
 #: views/editor/Editor.qml:121
 #, kde-format
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr "გაუქმება"
 
 #: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
 #, kde-format
 msgid "Clone"
-msgstr "Klonen"
+msgstr "კლონირება"
 
 #: views/editor/EditorView.qml:35
 #, kde-format
 msgid "Enter the project Git URL"
-msgstr "URL des Git-Projekts eingeben"
+msgstr "შეიყვანეთ პროექტის git URL"
 
 #: views/editor/EditorView.qml:59
 #, kde-format
 msgid "Missing Project"
-msgstr "Fehlendes Projekt"
+msgstr "აკლია პროექტი"
 
 #: views/editor/EditorView.qml:60
 #, kde-format
 msgid "Create or open a new project."
-msgstr "Neues Projekt erstellen oder öffnen."
+msgstr "შექმენით ან გახსენით ახალი პროექტი."
 
 #: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
 #, kde-format
 msgid "Open Project"
-msgstr "Projekt öffnen"
+msgstr "პროექტის გახსნა"
 
 #: views/editor/EditorView.qml:87
 #, kde-format
 msgid "Clone Project"
-msgstr "Projekt klonen"
+msgstr "პროექტის კლონირება"
 
 #: views/editor/NewFileDialog.qml:11
 #, kde-format
 msgid "New file"
-msgstr "Neue Datei"
+msgstr "ახალი ფაილი"
 
 #: views/editor/NewFileDialog.qml:25
 #, kde-format
 msgid "Create New Project"
-msgstr "Neues Projekt erzeugen"
+msgstr "ახალი პროექტის შექმნა"
 
 #: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
 #, kde-format
 msgid "Open a existing project"
-msgstr "Vorhandenes Projekt öffnen"
+msgstr "არსებული პროექტის გახსნა"
 
 #: views/editor/NewFileDialog.qml:64
 #, kde-format
 msgid "Open File"
-msgstr "Datei öffnen"
+msgstr "ფაილის გახსნა"
 
 #: views/editor/NewFileDialog.qml:65
 #, kde-format
 msgid "Open one or multiple files"
-msgstr "Eine oder mehrere Dateien öffnen"
+msgstr "ერთი ან მეტი ფაილის გახსნა"
 
 #: views/editor/NewFileDialog.qml:79
 #, kde-format
 msgid "New Template Source File"
-msgstr "Neue Vorlagen-Quelldatei"
+msgstr "ახალი შაბლონური კოდის ფაილი"
 
 #: views/editor/NewFileDialog.qml:80
 #, kde-format
 msgid "With support for basic text format editing"
-msgstr "Mit Unterstützung für einfache Textformatierung"
+msgstr ""
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
 msgid "Project Sources"
-msgstr "Projektquellen"
+msgstr "პროექტის კოდი"
 
 #: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Source files will be listed in here."
-msgstr "Quelldateien werden hier angeführt."
+msgstr "კოდის ფაილები აქ ჩამოითვლება."
 
 #: views/PlacesSidebar.qml:113
 #, kde-format
 msgid "Previous"
-msgstr "Zurück"
+msgstr "წინა"
 
 #: views/PlacesSidebar.qml:120
 #, kde-format
 msgid "Up"
-msgstr "Nach oben"
+msgstr "მაღლა"
 
 #: views/PlacesSidebar.qml:128
 #, kde-format
 msgid "Next"
-msgstr "Weiter"
+msgstr "შემდეგი"
 
 #: views/PlacesSidebar.qml:152
 #, kde-format
 msgid "Show Folders First"
-msgstr "Ordner zuerst anzeigen"
+msgstr "ჯერ საქაღალდეების ჩვენება"
 
 #: views/PlacesSidebar.qml:162
 #, kde-format
 msgid "Type"
-msgstr "Typ"
+msgstr "ტიპი"
 
 #: views/PlacesSidebar.qml:171
 #, kde-format
 msgid "Date"
-msgstr "Datum"
+msgstr "თარიღი"
 
 #: views/PlacesSidebar.qml:180
 #, kde-format
 msgid "Modified"
-msgstr "Geändert"
+msgstr "შეცვლილია"
 
 #: views/PlacesSidebar.qml:189
 #, kde-format
 msgid "Size"
-msgstr "Größe"
+msgstr "ზომა"
 
 #: views/PlacesSidebar.qml:198
 #, kde-format
 msgid "Name"
-msgstr "Name"
+msgstr "სახელი"
 
 #: views/PlacesSidebar.qml:210
 #, kde-format
 msgid "Group"
-msgstr "Gruppe"
+msgstr "ჯგუფი"
 
 #: views/widgets/BuildBar.qml:49
 #, kde-format
 msgid "Targets"
-msgstr "Ziele"
+msgstr "სამიზნეები"
 
 #: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
-msgstr "Einrichten"
+msgstr "მორგება"
 
 #: views/widgets/BuildBar.qml:142
 #, kde-format
 msgid "Build"
-msgstr "Erstellen"
+msgstr "აგება"
 
 #: views/widgets/BuildBar.qml:149
 #, kde-format
 msgid "Run"
-msgstr "Ausführen"
+msgstr "გაშვება"
 
 #: views/widgets/BuildBar.qml:156
 #, kde-format
 msgid "Install"
-msgstr "Installieren"
+msgstr "დაყენება"
 
 #: views/widgets/BuildBar.qml:298
 #, kde-format
 msgid "Split"
-msgstr "Teilen"
+msgstr "გაყოფა"
 
 #: views/widgets/BuildBar.qml:320
 #, kde-format
 msgid "Find and Replace"
-msgstr "Suchen und Ersetzen"
+msgstr "ძებნა და ჩანაცვლება"
 
 #: views/widgets/BuildBar.qml:333
 #, kde-format
 msgid "Line/Word Counter"
-msgstr "Zeilen- und Wortzähler"
+msgstr "ხაზების/სიტყვების რაოდენობა"
 
 #: views/widgets/BuildBar.qml:381
 #, kde-format
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr "მორგება"
 
 #: views/widgets/BuildBar.qml:392
 #, kde-format
 msgid "About"
-msgstr "Über"
+msgstr "შესახებ"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
-msgstr "Abbrechen"
+msgstr "შეწყვეტა"
 
 #: views/widgets/ProjectConfigDialog.qml:67
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr "Einstellungen festlegen, um mit dem Programmieren zu beginnen!"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:81
 #, kde-format
 msgid "Build Directory"
-msgstr "Build-Ordner"
+msgstr "აგების საქაღალდე"
 
 #: views/widgets/ProjectConfigDialog.qml:82
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr "Einen Build-Ordner auswählen oder Standardordner beibehalten"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Build directory path"
-msgstr "Build-Ordner-Pfad"
+msgstr "აგების საქაღალდის ბილიკი"
 
 #: views/widgets/ProjectConfigDialog.qml:125
 #, kde-format
 msgid "Project"
-msgstr "Projekt"
+msgstr "პროექტი"
 
 #: views/widgets/ProjectConfigDialog.qml:126
 #, kde-format
 msgid "Select the target project"
-msgstr "Wählen Sie das Ausgabeprojekt aus"
+msgstr "აირჩიეტ სამიზნე პროექტი"
 
 #: views/widgets/ProjectConfigDialog.qml:178
 #, kde-format
 msgid "Finish"
-msgstr "Fertigstellen"
+msgstr "დასრულება"
 
 #: views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Editor"
-msgstr "Editor"
+msgstr "რედაქტორი"
 
 #: views/widgets/SettingsDialog.qml:15
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
-"Einstellungen für das Erscheinungsbild des Editors, die Einstellungen werden "
-"global angewendet"
 
 #: views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Auto Save"
-msgstr "Automatisch speichern"
+msgstr "ავტომატური შენახვა"
 
 #: views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Auto saves your file every few seconds"
-msgstr "Speichert Ihre Datei automatisch alle paar Sekunden"
+msgstr "თქვენი ფაილის ავტომატური შენახვა რამდენიმე წამში ერთხელ"
 
 #: views/widgets/SettingsDialog.qml:31
 #, kde-format
 msgid "Line Numbers"
-msgstr "Zeilennummern"
+msgstr "ხაზის ნომრები"
 
 #: views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr "Zeilennummern am linken Rand anzeigen"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Style"
-msgstr "Stil"
+msgstr "სტილი"
 
 #: views/widgets/SettingsDialog.qml:46
 #, kde-format
@@ -355,40 +354,38 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
-"Stil der Syntaxhervorhebung einrichten. Diese Einstellungen werden nicht für "
-"Rich-Textformate angewendet"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Font Family"
-msgstr "Schriftfamilie"
+msgstr "ფონტების ოჯახი"
 
 #: views/widgets/SettingsDialog.qml:65
 #, kde-format
 msgid "Font Size"
-msgstr "Schriftgröße"
+msgstr "ფონტის ზომა"
 
 #: views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Tab Spacing"
-msgstr "Tabulator-Einrückungsabstand"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:89
 #, kde-format
 msgid "Theme"
-msgstr "Design"
+msgstr "თემა"
 
 #: views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Editor color scheme style"
-msgstr "Editor-Farbschema"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Color"
-msgstr "Farbe"
+msgstr "ფერი"
 
 #: views/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Editor background color"
-msgstr "Editor-Hintergrundfarbe"
+msgstr ""
