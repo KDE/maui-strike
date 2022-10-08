@@ -18,6 +18,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="fi">Strike</name>
   <name xml:lang="fr">Strike</name>
   <name xml:lang="it">Strike</name>
+  <name xml:lang="ka">Strike</name>
   <name xml:lang="ko">Strike</name>
   <name xml:lang="nl">Strike</name>
   <name xml:lang="pl">Strike</name>
@@ -39,6 +40,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="fi">Yksinkertainen ja mukautuva kehityskäyttöliittymä</summary>
   <summary xml:lang="fr">Un environnement de développement simple et convergent</summary>
   <summary xml:lang="it">IDE semplice e convergente</summary>
+  <summary xml:lang="ka">მარტივი კონვერგენტული IDE</summary>
   <summary xml:lang="ko">간단한 올인원 IDE</summary>
   <summary xml:lang="nl">Eenvoudige en convergente IDE</summary>
   <summary xml:lang="pl">Prosty i dostosowujący się IDE</summary>
@@ -89,6 +91,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="fi">Strike</caption>
       <caption xml:lang="fr">Strike</caption>
       <caption xml:lang="it">Strike</caption>
+      <caption xml:lang="ka">Strike</caption>
       <caption xml:lang="ko">Strike</caption>
       <caption xml:lang="nl">Strike</caption>
       <caption xml:lang="pl">Strike</caption>
