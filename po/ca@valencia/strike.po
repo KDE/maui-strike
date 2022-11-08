@@ -348,7 +348,7 @@ msgstr "Números de línia"
 #: views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr "Mostra els números de les línies a la banda esquerra"
+msgstr "Mostra els números de les línies en la banda esquerra"
 
 #: views/widgets/SettingsDialog.qml:45
 #, kde-format
