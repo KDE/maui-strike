@@ -35,9 +35,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     app.setOrganizationName(QStringLiteral("Maui"));
     app.setWindowIcon(QIcon(":/img/strike.svg"));
 
-    MauiApp::instance()->setIconName("qrc:/img/strike.svg");
-
-    KLocalizedString::setApplicationDomain("slike");
+    KLocalizedString::setApplicationDomain("strike");
 
     KAboutData about(QStringLiteral("strike"), "Strike", STRIKE_VERSION_STRING, i18n("Build and run code."), KAboutLicense::LGPL_V3,i18n("© 2021-%1 Camilo Higuita", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
@@ -49,6 +47,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     about.setProgramLogo(app.windowIcon());
 
     KAboutData::setApplicationData(about);
+    MauiApp::instance()->setIconName("qrc:/img/strike.svg");
 
     QCommandLineParser parser;
 
