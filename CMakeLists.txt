@@ -80,6 +80,8 @@ ecm_setup_version(${STRIKE_VERSION}
 
 add_subdirectory(src)
 
+ki18n_install(po)
+
 install(FILES org.kde.strike.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
 install(FILES org.kde.strike.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES src/assets/strike.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)

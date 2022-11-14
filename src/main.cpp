@@ -73,6 +73,8 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     },
     Qt::QueuedConnection);
 
+    engine.rootContext()->setContextObject(new KLocalizedContext(&engine));
+
     qmlRegisterSingletonInstance<Strike>(STRIKE_URI, 1, 0, "Strike", Strike::instance());
     qmlRegisterType<ProjectManager>(STRIKE_URI, 1, 0, "Project"); //entry point for the project
 
