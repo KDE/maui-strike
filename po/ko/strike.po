@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"POT-Creation-Date: 2022-11-15 00:45+0000\n"
 "PO-Revision-Date: 2021-11-14 19:20+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -27,22 +27,22 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "kde@peremen.name"
 
-#: main.cpp:42
+#: main.cpp:40
 #, kde-format
 msgid "Build and run code."
 msgstr "코드를 빌드하고 실행합니다."
 
-#: main.cpp:42
+#: main.cpp:40
 #, kde-format
 msgid "© 2021-%1 Camilo Higuita"
 msgstr "© 2021-%1 Camilo Higuita"
 
-#: main.cpp:44
+#: main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: main.cpp:44
+#: main.cpp:42
 #, kde-format
 msgid "Developer"
 msgstr "개발자"
@@ -221,54 +221,54 @@ msgstr "이름"
 msgid "Group"
 msgstr "그룹"
 
-#: views/widgets/BuildBar.qml:49
+#: views/widgets/BuildBar.qml:52
 #, kde-format
 msgid "Targets"
 msgstr "대상"
 
-#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "설정"
 
-#: views/widgets/BuildBar.qml:142
+#: views/widgets/BuildBar.qml:150
 #, kde-format
 msgid "Build"
 msgstr "빌드"
 
-#: views/widgets/BuildBar.qml:149
+#: views/widgets/BuildBar.qml:157
 #, kde-format
 msgid "Run"
 msgstr "실행"
 
-#: views/widgets/BuildBar.qml:156
+#: views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Install"
 msgstr "설치"
 
-#: views/widgets/BuildBar.qml:298
+#: views/widgets/BuildBar.qml:324
 #, kde-format
 msgid "Split"
 msgstr "분할"
 
-#: views/widgets/BuildBar.qml:320
+#: views/widgets/BuildBar.qml:346
 #, kde-format
 msgid "Find and Replace"
 msgstr "찾기 및 바꾸기"
 
-#: views/widgets/BuildBar.qml:333
+#: views/widgets/BuildBar.qml:359
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "줄/단어 카운터"
 
-#: views/widgets/BuildBar.qml:381
+#: views/widgets/BuildBar.qml:407
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: views/widgets/BuildBar.qml:392
+#: views/widgets/BuildBar.qml:418
 #, kde-format
 msgid "About"
 msgstr "정보"

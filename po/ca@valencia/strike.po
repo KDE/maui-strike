@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-08-21 00:45+0000\n"
+"POT-Creation-Date: 2022-11-15 00:45+0000\n"
 "PO-Revision-Date: 2021-09-21 10:26+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -30,22 +30,22 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: main.cpp:42
+#: main.cpp:40
 #, kde-format
 msgid "Build and run code."
 msgstr "Construïx i executa el codi."
 
-#: main.cpp:42
+#: main.cpp:40
 #, kde-format
 msgid "© 2021-%1 Camilo Higuita"
 msgstr "© 2021-%1 Camilo Higuita"
 
-#: main.cpp:44
+#: main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: main.cpp:44
+#: main.cpp:42
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolupador"
@@ -224,54 +224,54 @@ msgstr "Nom"
 msgid "Group"
 msgstr "Grup"
 
-#: views/widgets/BuildBar.qml:49
+#: views/widgets/BuildBar.qml:52
 #, kde-format
 msgid "Targets"
 msgstr "Objectius"
 
-#: views/widgets/BuildBar.qml:135 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Configura"
 
-#: views/widgets/BuildBar.qml:142
+#: views/widgets/BuildBar.qml:150
 #, kde-format
 msgid "Build"
 msgstr "Construïx"
 
-#: views/widgets/BuildBar.qml:149
+#: views/widgets/BuildBar.qml:157
 #, kde-format
 msgid "Run"
 msgstr "Executa"
 
-#: views/widgets/BuildBar.qml:156
+#: views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Install"
 msgstr "Instal·la"
 
-#: views/widgets/BuildBar.qml:298
+#: views/widgets/BuildBar.qml:324
 #, kde-format
 msgid "Split"
 msgstr "Dividix"
 
-#: views/widgets/BuildBar.qml:320
+#: views/widgets/BuildBar.qml:346
 #, kde-format
 msgid "Find and Replace"
 msgstr "Busca i substituïx"
 
-#: views/widgets/BuildBar.qml:333
+#: views/widgets/BuildBar.qml:359
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Comptador de línies/paraules"
 
-#: views/widgets/BuildBar.qml:381
+#: views/widgets/BuildBar.qml:407
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: views/widgets/BuildBar.qml:392
+#: views/widgets/BuildBar.qml:418
 #, kde-format
 msgid "About"
 msgstr "Quant a"
