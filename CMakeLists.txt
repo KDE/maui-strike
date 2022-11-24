@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(STRIKE_VERSION 1.0.0)
+set(STRIKE_VERSION 1.0.1)
 project(strike VERSION ${STRIKE_VERSION})
 
 set(CMAKE_CXX_STANDARD 17)
