@@ -11,7 +11,7 @@ Control
 {
     id: control
 
-    implicitHeight: _layout.implicitHeight + topPadding + bottomPadding
+    implicitHeight: Math.max(_layout.implicitHeight + topPadding + bottomPadding, Maui.Style.rowHeight)
 
     padding: 0
     background: null
