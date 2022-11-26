@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-11-15 00:45+0000\n"
-"PO-Revision-Date: 2022-10-07 13:06+0200\n"
+"PO-Revision-Date: 2022-11-25 23:18+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.1.1\n"
+"X-Generator: Poedit 3.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -31,7 +31,7 @@ msgstr "Temuri.doghonadze@gmail.com"
 #: main.cpp:40
 #, kde-format
 msgid "Build and run code."
-msgstr ""
+msgstr "კოდის აგება და გაშვება."
 
 #: main.cpp:40
 #, kde-format
@@ -59,6 +59,8 @@ msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
 "all changes and exit."
 msgstr ""
+"გაქვთ შეუნახავი ფაილები. შეგიძლიათ დაბრუნდეთ და შეინახოთ ისინი, ან გააუქმოთ "
+"ყველა ცვლილება და გახვიდეთ."
 
 #: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -73,7 +75,7 @@ msgstr "გაუქმება"
 #: main.qml:245
 #, kde-format
 msgid "Toogle SideBar"
-msgstr ""
+msgstr "გვერდითი პანელის გადართვა"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -158,7 +160,7 @@ msgstr "ახალი შაბლონური კოდის ფაილ
 #: views/editor/NewFileDialog.qml:80
 #, kde-format
 msgid "With support for basic text format editing"
-msgstr ""
+msgstr "ტექსტის ფორმატირების საბაზისო მხარდაჭერა"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -280,7 +282,7 @@ msgstr "შეწყვეტა"
 #: views/widgets/ProjectConfigDialog.qml:67
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr ""
+msgstr "მოირგეთ პროგრამა ჰაკინგის დასაწყებად!"
 
 #: views/widgets/ProjectConfigDialog.qml:81
 #, kde-format
@@ -290,7 +292,7 @@ msgstr "აგების საქაღალდე"
 #: views/widgets/ProjectConfigDialog.qml:82
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr ""
+msgstr "აირჩიეთ აგების საქაღალდე ან დატოვეთ მიმდინარე"
 
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
@@ -321,7 +323,7 @@ msgstr "რედაქტორი"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "მოირგეთ რედაქტორის გარეგნობა. პარამეტრები გლობალურია"
 
 #: views/widgets/SettingsDialog.qml:19
 #, kde-format
@@ -341,7 +343,7 @@ msgstr "ხაზის ნომრები"
 #: views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr ""
+msgstr "მარცხენა მხარეს ხაზის ნომრების ჩვენება"
 
 #: views/widgets/SettingsDialog.qml:45
 #, kde-format
@@ -354,6 +356,8 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
+"მოირგეთ სინტაქსის გამოკვეთის სტილი. კონფიგურაცია არ ეხება მდიდარი ტექსტის "
+"ფორმატებს"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -368,7 +372,7 @@ msgstr "ფონტის ზომა"
 #: views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Tab Spacing"
-msgstr ""
+msgstr "ტაბულაციის დაშორება"
 
 #: views/widgets/SettingsDialog.qml:89
 #, kde-format
@@ -378,7 +382,7 @@ msgstr "თემა"
 #: views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Editor color scheme style"
-msgstr ""
+msgstr "რედაქტორის ფერის სქემის სტილი"
 
 #: views/widgets/SettingsDialog.qml:108
 #, kde-format
@@ -388,4 +392,4 @@ msgstr "ფერი"
 #: views/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Editor background color"
-msgstr ""
+msgstr "რედაქტორის ფონის ფერი"
