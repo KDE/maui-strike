@@ -13,6 +13,7 @@
 ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
   , m_projectManager(new CMakeProjectManager(this))
   , m_preferences(new ProjectPreferences(this))
+  ,m_active(false)
 {
     connect(this, &ProjectManager::projectUrlChanged, [this](QUrl)
     {
@@ -20,6 +21,7 @@ ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
         if(!FMStatic::fileExists(m_projectUrl))
         {
             qWarning() << "CMake main file doesn't exists. Can not procced";
+            m_active = false;
             return;
         }
 
@@ -38,6 +40,10 @@ ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
             m_projectLogo = m_projectPath.toString() +"/logo.png";
             emit this->projectLogoChanged(m_projectLogo);
         }
+
+        m_active = true;
+        emit activeChanged();
+
     });
 }
 
@@ -83,4 +89,9 @@ void ProjectManager::configure()
 
     //start the initial configuration of the project, like parsing and creating the needed files
     m_projectManager->init();
+}
+
+bool ProjectManager::active() const
+{
+    return m_active;
 }

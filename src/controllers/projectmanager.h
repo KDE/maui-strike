@@ -17,6 +17,8 @@ class ProjectManager : public QObject
     Q_PROPERTY(QUrl projectPath READ projectPath NOTIFY projectPathChanged FINAL)
     Q_PROPERTY(QString projectLogo READ projectLogo NOTIFY projectLogoChanged FINAL)
 
+    Q_PROPERTY(bool active READ active NOTIFY activeChanged FINAL)
+
     Q_PROPERTY(ProjectPreferences * preferences READ preferences CONSTANT FINAL)
     Q_PROPERTY(CMakeProjectManager * manager READ manager CONSTANT FINAL)
 
@@ -31,6 +33,8 @@ public:
 
     CMakeProjectManager * manager() const;
 
+    bool active() const;
+
 public slots:
     void setProjectUrl(QUrl projectUrl);
     void configure();
@@ -44,10 +48,13 @@ private:
 
     ProjectPreferences *m_preferences;
 
+    bool m_active;
+
 signals:
     void projectUrlChanged(QUrl projectUrl);
     void projectPathChanged(QUrl projectPath);
     void projectLogoChanged(QString projectLogo);
+    void activeChanged();
 };
 
 #endif // PROJECTMANAGER_H

@@ -102,11 +102,6 @@ Maui.ApplicationWindow
         close.accepted = true
     }
 
-    NewFileDialog
-    {
-        id: _newDocumentMenu
-    }
-
     Widgets.ProjectConfigDialog
     {
         id: _initialConfigDialog
@@ -247,12 +242,106 @@ Maui.ApplicationWindow
 
             headBar.rightContent: [
 
-                ToolButton
+                Maui.ToolButtonMenu
                 {
                     icon.name: "list-add"
-                    onClicked:
+
+
+                    MenuItem
                     {
-                        _newDocumentMenu.open()
+                        icon.name: "applications-development"
+                        text: i18n("Create New Project")
+
+                        onTriggered:
+                        {
+                            openFileDialog()
+                            control.close()
+                        }
+                    }
+
+                    MenuItem
+                    {
+                        icon.name: "folder"
+                        text: i18n("Open Project")
+
+                        onTriggered:
+                        {
+
+                            _dialogLoader.sourceComponent = _fileDialogComponent
+                            dialog.mode = dialog.modes.OPEN
+                //            dialog.singleSelection = true
+                            dialog.settings.filters = ["CMakeLists.txt"]
+                            dialog.callback =  function (urls)
+                            {
+                                _projectManager.projectUrl = urls[0]
+                            }
+                            dialog.open()
+                            control.close()
+                        }
+                    }
+
+                    MenuItem
+                    {
+                       icon.name: "text-plain"
+                        text: i18n("Open File")
+
+                        onTriggered:
+                        {
+                            openFileDialog()
+                            control.close()
+                        }
+                    }
+
+                    MenuItem
+                    {
+                        icon.name: "text-enriched"
+                        text: i18n("New Template Source File")
+
+                        onTriggered:
+                        {
+                            openTab("")
+                            //                _editorListView.currentItem.body.textFormat = TextEdit.RichText
+                            control.close()
+                        }
+                    }
+                    MenuSeparator{}
+
+                    MenuItem
+                    {
+                        text: i18n("Split")
+                        visible: settings.supportSplit
+                        icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
+                        checked: root.currentTab && root.currentTab.count === 2
+                        checkable: true
+                        onTriggered:
+                        {
+                            if(root.currentTab.count === 2)
+                            {
+                                root.currentTab.pop()
+                                return
+                            }//close the inactive split
+
+                            root.currentTab.split("")
+                        }
+                    }
+
+                    MenuSeparator{}
+                    MenuItem
+                    {
+                        text: i18n("Settings")
+                        icon.name: "settings-configure"
+                        onTriggered:
+                        {
+                            _dialogLoader.sourceComponent = _settingsDialogComponent
+                            dialog.open()
+                        }
+                    }
+
+                    MenuItem
+                    {
+                        text: i18n("About")
+                        icon.name: "documentinfo"
+                        onTriggered: root.about()
                     }
                 }
             ]
@@ -261,7 +350,7 @@ Maui.ApplicationWindow
             {
                 Layout.fillWidth: true
                 Layout.alignment: Qt.AlignCenter
-                Layout.maximumWidth: 500
+                Layout.maximumWidth: 300
                 Layout.minimumWidth: 0
             }
 

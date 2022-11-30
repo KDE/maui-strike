@@ -54,6 +54,9 @@ Maui.Page
             SplitView.fillWidth: true
             SplitView.fillHeight: true
 
+            tabBar.visible: currentEditor
+                      tabBar.showNewTabButton: false
+
             holder.emoji: "qrc:/img/draw-calligraphic.svg"
 
             holder.title: i18n("Missing Project")
@@ -111,157 +114,293 @@ Maui.Page
                 else
                     closeTab(index)
             }
-        }
 
-        OutputPanel
-        {
-            id: _outputPanel
-            visible: _editorListView.count > 0
-            SplitView.fillWidth: true
-            SplitView.preferredHeight: 200
-            SplitView.maximumHeight: parent.height * 0.5
-            SplitView.minimumHeight : Maui.Style.space.big
-        }
-
-        handle: Kirigami.ShadowedRectangle
-        {
-            Maui.Theme.inherit: false
-            Maui.Theme.colorSet: Maui.Theme.Complementary
-            Maui.Theme.backgroundColor: "#2c2c2c"
-
-            implicitWidth: 22
-            implicitHeight: Maui.Style.toolBarHeight
-            color: Maui.Theme.backgroundColor
-
-            corners
+            tabViewButton: Maui.TabViewButton
             {
-                topLeftRadius: 10
-                topRightRadius: 10
-                bottomLeftRadius: 0
-                bottomRightRadius: 0
-            }
-
-            Maui.ToolActions
-            {
-                anchors.centerIn: parent
-                anchors.leftMargin:  Maui.Style.space.medium
-                anchors.rightMargin:  Maui.Style.space.medium
-                currentIndex : _outputPanel.currentIndex
-                Action
+                id:  _tabButton
+                tabBar: _editorListView.tabBar
+                tabView: _editorListView
+                onClicked:
                 {
-                    icon.name: "dialog-scripts"
-                    checked:  _outputPanel.currentIndex === 0
-                    onTriggered: _outputPanel.currentIndex = 0
+                    if(_tabButton.mindex === _editorListView.currentIndex)
+                    {
+                        _docMenu.show((width*0.5)-(_docMenu.width*0.5), height + Maui.Style.space.medium)
+                        return
+                    }
+
+                    _editorListView.setCurrentIndex(_tabButton.mindex)
+                    _editorListView.currentItem.forceActiveFocus()
                 }
 
-                Action
+                    onCloseClicked:
+                    {
+                        _editorListView.closeTabClicked(_tabButton.mindex)
+                    }
+
+                    rightContent: Maui.Icon
+                                 {
+                                     visible: _tabButton.checked
+                                     source: "overflow-menu"
+                                     height: Maui.Style.iconSizes.small
+                                     width: height
+                                 }
+
+                    Maui.ContextualMenu
+                    {
+                        id: _docMenu
+
+                        Maui.MenuItemActionRow
+                        {
+                            Action
+                            {
+                                icon.name: "edit-undo"
+                                //                        text: i18n("Undo")
+                                enabled: currentEditor && currentEditor.body.canUndo
+                                onTriggered: currentEditor.body.undo()
+                            }
+
+                            Action
+                            {
+                                icon.name: "edit-redo"
+                                //                        text: i18n("Redo")
+                                enabled: currentEditor && currentEditor.body.canRedo
+                                onTriggered: currentEditor.body.redo()
+                            }
+
+
+                            Action
+                            {
+                                //                        text: i18n("Save")
+                                icon.name: "document-save"
+                                enabled: currentEditor ? currentEditor.document.modified : false
+                                onTriggered: saveFile( control.currentEditor.fileUrl, control.currentEditor)
+                            }
+
+                            Action
+                            {
+                                icon.name: "document-save-as"
+                                //                        text: i18n("Save as...")
+                                onTriggered: saveFile("", control.currentEditor)
+                            }
+                        }
+
+                        MenuSeparator {}
+
+
+                        MenuItem
+                        {
+                            icon.name: "edit-find"
+                            text: i18n("Find and Replace")
+                            checkable: true
+
+                            onTriggered:
+                            {
+                                currentEditor.showFindBar = !currentEditor.showFindBar
+                            }
+                            checked: currentEditor.showFindBar
+                        }
+
+                        MenuItem
+                        {
+                            icon.name: "document-edit"
+                            text: i18n("Line/Word Counter")
+                            checkable: true
+
+                            onTriggered:
+                            {
+                                currentEditor.showLineCount = checked
+                            }
+
+                            checked: currentEditor.showLineCount
+                        }
+
+                        MenuSeparator {}
+
+                        Maui.MenuItemActionRow
+                        {
+                            Action
+                            {
+                                //                        text: i18n("Share")
+                                icon.name: "document-share"
+                                onTriggered: Maui.Platform.shareFiles([currentEditor.fileUrl])
+
+                            }
+
+                            Action
+                            {
+                                //                        text: i18n("Show in folder")
+                                icon.name: "folder-open"
+                                onTriggered:
+                                {
+                                    FB.FM.openLocation([currentEditor.fileUrl])
+                                }
+                            }
+
+                            Action
+                            {
+                                //                        text: i18n("Info")
+                                icon.name: "documentinfo"
+                                onTriggered:
+                                {
+                                    //            getFileInfo(control.model.get(index).url)
+                                }
+                            }
+                        }
+
+
+                    }
+                }
+            }
+
+            OutputPanel
+            {
+                id: _outputPanel
+                visible: _editorListView.count > 0
+                SplitView.fillWidth: true
+                SplitView.preferredHeight: 200
+                SplitView.maximumHeight: parent.height * 0.5
+                SplitView.minimumHeight : Maui.Style.space.big
+            }
+
+            handle: Kirigami.ShadowedRectangle
+            {
+                Maui.Theme.inherit: false
+                Maui.Theme.colorSet: Maui.Theme.Complementary
+                Maui.Theme.backgroundColor: "#2c2c2c"
+
+                implicitWidth: 22
+                implicitHeight: Maui.Style.toolBarHeight
+                color: Maui.Theme.backgroundColor
+
+                corners
                 {
-                    icon.name: "love"
-                    checked:  _outputPanel.currentIndex === 1
-                    onTriggered: _outputPanel.currentIndex = 1
+                    topLeftRadius: 10
+                    topRightRadius: 10
+                    bottomLeftRadius: 0
+                    bottomRightRadius: 0
                 }
 
-                Action
+                Maui.ToolActions
                 {
-                    icon.name: "git"
-                    checked:  _outputPanel.currentIndex === 2
-                    onTriggered: _outputPanel.currentIndex = 2
+                    anchors.centerIn: parent
+                    anchors.leftMargin:  Maui.Style.space.medium
+                    anchors.rightMargin:  Maui.Style.space.medium
+                    currentIndex : _outputPanel.currentIndex
+                    Action
+                    {
+                        icon.name: "dialog-scripts"
+                        checked:  _outputPanel.currentIndex === 0
+                        onTriggered: _outputPanel.currentIndex = 0
+                    }
+
+                    Action
+                    {
+                        icon.name: "love"
+                        checked:  _outputPanel.currentIndex === 1
+                        onTriggered: _outputPanel.currentIndex = 1
+                    }
+
+                    Action
+                    {
+                        icon.name: "git"
+                        checked:  _outputPanel.currentIndex === 2
+                        onTriggered: _outputPanel.currentIndex = 2
+                    }
                 }
             }
         }
-    }
 
 
-    Component
-    {
-        id: _editorLayoutComponent
-        EditorLayout {}
-    }
-
-
-    function unsavedTabSplits(index) //which split indexes are unsaved
-    {
-        var indexes = []
-        const tab =  control.model.get(index)
-        for(var i = 0; i < tab.count; i++)
+        Component
         {
-            if(tab.model.get(i).editor.document.modified)
-            {
-                indexes.push(i)
-            }
-        }
-        return indexes
-    }
-
-    function tabHasUnsavedFiles(index) //if a tab has at least one unsaved file in a split
-    {
-        return unsavedTabSplits(index).length
-    }
-
-    function fileIndex(path) //find the [tab, split] index for a path
-    {
-        if(path.length === 0)
-        {
-            return [-1, -1]
+            id: _editorLayoutComponent
+            EditorLayout {}
         }
 
-        for(var i = 0; i < control.count; i++)
+
+        function unsavedTabSplits(index) //which split indexes are unsaved
         {
-            const tab =  control.model.get(i)
-            for(var j = 0; j < tab.count; j++)
+            var indexes = []
+            const tab =  control.model.get(index)
+            for(var i = 0; i < tab.count; i++)
             {
-                const doc = tab.model.get(j)
-                if(doc.fileUrl.toString() === path)
+                if(tab.model.get(i).editor.document.modified)
                 {
-                    return [i, j]
+                    indexes.push(i)
                 }
             }
-        }
-        return [-1,-1]
-    }
-
-    function openTab(path)
-    {
-        const index = fileIndex(path)
-
-        if(index[0] >= 0)
-        {
-            _editorListView.currentIndex = index[0]
-            currentTab.currentIndex = index[1]
-            return
+            return indexes
         }
 
-        _editorListView.addTab(_editorLayoutComponent, {"path": path})
-        _historyList.append(path)
-
-    }
-
-    function closeTab(index) //no questions asked
-    {
-        _editorListView.closeTab(index)
-    }
-
-    function saveFile(path, item)
-    {
-        if(!item)
-            return
-
-        if (path && FB.FM.fileExists(path))
+        function tabHasUnsavedFiles(index) //if a tab has at least one unsaved file in a split
         {
-            item.document.saveAs(path)
-        } else
+            return unsavedTabSplits(index).length
+        }
+
+        function fileIndex(path) //find the [tab, split] index for a path
         {
-            _dialogLoader.sourceComponent = _fileDialogComponent
-            dialog.mode = dialog.modes.SAVE;
-            //            fileDialog.settings.singleSelection = true
-            dialog.callback = function (paths)
+            if(path.length === 0)
             {
-                item.document.saveAs(paths[0])
-                _historyList.append(paths[0])
-            };
+                return [-1, -1]
+            }
 
-            dialog.open()
+            for(var i = 0; i < control.count; i++)
+            {
+                const tab =  control.model.get(i)
+                for(var j = 0; j < tab.count; j++)
+                {
+                    const doc = tab.model.get(j)
+                    if(doc.fileUrl.toString() === path)
+                    {
+                        return [i, j]
+                    }
+                }
+            }
+            return [-1,-1]
         }
-    }
 
-}
+        function openTab(path)
+        {
+            const index = fileIndex(path)
+
+            if(index[0] >= 0)
+            {
+                _editorListView.currentIndex = index[0]
+                currentTab.currentIndex = index[1]
+                return
+            }
+
+            _editorListView.addTab(_editorLayoutComponent, {"path": path})
+            _historyList.append(path)
+
+        }
+
+        function closeTab(index) //no questions asked
+        {
+            _editorListView.closeTab(index)
+        }
+
+        function saveFile(path, item)
+        {
+            if(!item)
+                return
+
+            if (path && FB.FM.fileExists(path))
+            {
+                item.document.saveAs(path)
+            } else
+            {
+                _dialogLoader.sourceComponent = _fileDialogComponent
+                dialog.mode = dialog.modes.SAVE;
+                //            fileDialog.settings.singleSelection = true
+                dialog.callback = function (paths)
+                {
+                    item.document.saveAs(paths[0])
+                    _historyList.append(paths[0])
+                };
+
+                dialog.open()
+            }
+        }
+
+    }
