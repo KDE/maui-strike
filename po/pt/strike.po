@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2021-10-14 15:41+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -48,12 +48,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolvimento"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Ficheiros não gravados"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -62,20 +62,55 @@ msgstr ""
 "Tem ficheiros por gravar. Poderá voltar atrás e gravá-los ou optar por "
 "esquecer todas as alterações e sair."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Recuar"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Apagar"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Comutar a Barra Lateral"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Criar um Novo Projecto"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Abrir um Projecto"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Abrir um Ficheiro"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Novo Ficheiro-Modelo de Código"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Dividir"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Configuração"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Acerca"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -107,60 +142,30 @@ msgstr "Clonar"
 msgid "Enter the project Git URL"
 msgstr "Indicar o URL de Git do projecto"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Projecto em Falta"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Criar ou abrir um novo projecto."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Abrir um Projecto"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Clonar o Projecto"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Novo ficheiro"
+msgid "Find and Replace"
+msgstr "Procurar e Substituir"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Criar um Novo Projecto"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Abrir um projecto existente"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Abrir um Ficheiro"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Abre um ou vários ficheiros"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Novo Ficheiro-Modelo de Código"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Com suporte para a edição no formato de texto simples"
+msgid "Line/Word Counter"
+msgstr "Contador de Linhas/Palavras"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -222,57 +227,49 @@ msgstr "Nome"
 msgid "Group"
 msgstr "Grupo"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Alvos"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Configurar"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Compilar"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Executar"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Instalar"
 
-#: views/widgets/BuildBar.qml:324
+#: views/widgets/BuildBar.qml:188
 #, kde-format
-msgid "Split"
-msgstr "Dividir"
+msgid "Clear CMake"
+msgstr ""
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Procurar e Substituir"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Abrir um Projecto"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Contador de Linhas/Palavras"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Configuração"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Acerca"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -395,3 +392,15 @@ msgstr "Cor"
 #, kde-format
 msgid "Editor background color"
 msgstr "Cor de fundo do editor"
+
+#~ msgid "New file"
+#~ msgstr "Novo ficheiro"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Abrir um projecto existente"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Abre um ou vários ficheiros"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Com suporte para a edição no formato de texto simples"

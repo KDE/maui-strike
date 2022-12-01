@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2022-11-25 23:18+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -48,12 +48,12 @@ msgstr "კამილო ჰიგუიტა"
 msgid "Developer"
 msgstr "პროგრამისტი"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "შეუნახავი ფაილები"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -62,20 +62,55 @@ msgstr ""
 "გაქვთ შეუნახავი ფაილები. შეგიძლიათ დაბრუნდეთ და შეინახოთ ისინი, ან გააუქმოთ "
 "ყველა ცვლილება და გახვიდეთ."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "უკან დაბრუნება"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "გაუქმება"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "გვერდითი პანელის გადართვა"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "ახალი პროექტის შექმნა"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "პროექტის გახსნა"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "ფაილის გახსნა"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "ახალი შაბლონური კოდის ფაილი"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "გაყოფა"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "მორგება"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "შესახებ"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -107,60 +142,30 @@ msgstr "კლონირება"
 msgid "Enter the project Git URL"
 msgstr "შეიყვანეთ პროექტის git URL"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "აკლია პროექტი"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "შექმენით ან გახსენით ახალი პროექტი."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "პროექტის გახსნა"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "პროექტის კლონირება"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "ახალი ფაილი"
+msgid "Find and Replace"
+msgstr "ძებნა და ჩანაცვლება"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "ახალი პროექტის შექმნა"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "არსებული პროექტის გახსნა"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "ფაილის გახსნა"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "ერთი ან მეტი ფაილის გახსნა"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "ახალი შაბლონური კოდის ფაილი"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "ტექსტის ფორმატირების საბაზისო მხარდაჭერა"
+msgid "Line/Word Counter"
+msgstr "ხაზების/სიტყვების რაოდენობა"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -222,57 +227,49 @@ msgstr "სახელი"
 msgid "Group"
 msgstr "ჯგუფი"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "სამიზნეები"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "მორგება"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "აგება"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "გაშვება"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "დაყენება"
 
-#: views/widgets/BuildBar.qml:324
+#: views/widgets/BuildBar.qml:188
 #, kde-format
-msgid "Split"
-msgstr "გაყოფა"
+msgid "Clear CMake"
+msgstr ""
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "ძებნა და ჩანაცვლება"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "პროექტის გახსნა"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "ხაზების/სიტყვების რაოდენობა"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "მორგება"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "შესახებ"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -393,3 +390,15 @@ msgstr "ფერი"
 #, kde-format
 msgid "Editor background color"
 msgstr "რედაქტორის ფონის ფერი"
+
+#~ msgid "New file"
+#~ msgstr "ახალი ფაილი"
+
+#~ msgid "Open a existing project"
+#~ msgstr "არსებული პროექტის გახსნა"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "ერთი ან მეტი ფაილის გახსნა"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "ტექსტის ფორმატირების საბაზისო მხარდაჭერა"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2021-09-21 10:26+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -50,12 +50,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Fitxers sense guardar"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -64,20 +64,55 @@ msgstr ""
 "Hi ha fitxers sense guardar. Podeu retrocedir i guardar-los o triar "
 "descartar els canvis i eixir."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Retrocedix"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Descarta"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Alterna la barra lateral"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Crea un projecte nou"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Obri un projecte"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Obri un fitxer"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Plantilla nova de fitxer de codi font"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Dividix"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Configuració"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Quant a"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -109,60 +144,30 @@ msgstr "Clona"
 msgid "Enter the project Git URL"
 msgstr "Introduïu l'URL Git del projecte"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Falta el projecte"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Crea o obri un projecte nou."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Obri un projecte"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Clona el projecte"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Fitxer nou"
+msgid "Find and Replace"
+msgstr "Busca i substituïx"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Crea un projecte nou"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Obri un projecte existent"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Obri un fitxer"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Obri un fitxer o més"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Plantilla nova de fitxer de codi font"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Implementa l'edició de formats bàsics de text"
+msgid "Line/Word Counter"
+msgstr "Comptador de línies/paraules"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -224,57 +229,49 @@ msgstr "Nom"
 msgid "Group"
 msgstr "Grup"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Objectius"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Configura"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Construïx"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Executa"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Instal·la"
 
-#: views/widgets/BuildBar.qml:324
+#: views/widgets/BuildBar.qml:188
 #, kde-format
-msgid "Split"
-msgstr "Dividix"
+msgid "Clear CMake"
+msgstr ""
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Busca i substituïx"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Obri un projecte"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Comptador de línies/paraules"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Configuració"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Quant a"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -398,3 +395,15 @@ msgstr "Color"
 #, kde-format
 msgid "Editor background color"
 msgstr "Editor del color de fons"
+
+#~ msgid "New file"
+#~ msgstr "Fitxer nou"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Obri un projecte existent"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Obri un fitxer o més"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Implementa l'edició de formats bàsics de text"

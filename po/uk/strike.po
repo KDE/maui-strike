@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2021-09-21 09:45+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -48,12 +48,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Розробник"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Незбережені файли"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -62,20 +62,55 @@ msgstr ""
 "Частину файлів не збережено. Ви можете повернутися і зберегти їх або "
 "відкинути усі внесені зміни і завершити роботу програми."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Назад"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Відкинути"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Увімкнути чи вимкнути бічну панель"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Створити проєкт"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Відкрити проєкт"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Відкрити файл"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Створити шаблон файла коду"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Розділити"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Параметри"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Про програму"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -107,60 +142,30 @@ msgstr "Клонувати"
 msgid "Enter the project Git URL"
 msgstr "Введіть адресу проєкту Git"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Не вистачає проєкту"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Створити або відкрити новий проєкт."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Відкрити проєкт"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Клонувати проєкт"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Створити файл"
+msgid "Find and Replace"
+msgstr "Знайти і замінити"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Створити проєкт"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Відкрити наявний проєкт"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Відкрити файл"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Відкрити один або декілька файлів"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Створити шаблон файла коду"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Із підтримкою базового редагування форматування тексту"
+msgid "Line/Word Counter"
+msgstr "Лічильник рядків/слів"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -222,57 +227,50 @@ msgstr "Назва"
 msgid "Group"
 msgstr "Група"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Призначення"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Налаштувати"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Зібрати"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Запустити"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Встановити"
 
-#: views/widgets/BuildBar.qml:324
-#, kde-format
-msgid "Split"
-msgstr "Розділити"
+#: views/widgets/BuildBar.qml:188
+#, fuzzy, kde-format
+#| msgid "CMake"
+msgid "Clear CMake"
+msgstr "CMake"
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Знайти і замінити"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Відкрити проєкт"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Лічильник рядків/слів"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Параметри"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Про програму"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -395,6 +393,18 @@ msgstr "Колір"
 #, kde-format
 msgid "Editor background color"
 msgstr "Колір тла редактора"
+
+#~ msgid "New file"
+#~ msgstr "Створити файл"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Відкрити наявний проєкт"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Відкрити один або декілька файлів"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Із підтримкою базового редагування форматування тексту"
 
 #~ msgctxt "@title:window"
 #~ msgid "Configure a Build Directory - %1"
@@ -631,9 +641,6 @@ msgstr "Колір тла редактора"
 #~ msgctxt "@title:tab"
 #~ msgid "Configure Global CMake Settings"
 #~ msgstr "Налаштовування загальних параметрів CMake"
-
-#~ msgid "CMake"
-#~ msgstr "CMake"
 
 #~ msgid "Internal error: no project specified to configure."
 #~ msgstr "Внутрішня помилка: не вказано проєкту для налаштовування."

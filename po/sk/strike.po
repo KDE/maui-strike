@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2021-09-21 17:11+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -45,32 +45,67 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Vývojár"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr ""
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
 "all changes and exit."
 msgstr ""
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Prejsť späť"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Zahodiť"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Prepnúť bočný panel"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Vytvoriť nový projekt"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Otvoriť projekt"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Otvoriť súbor"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr ""
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Rozdeliť"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Nastavenia"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "O aplikácii"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -102,59 +137,29 @@ msgstr "Klonovať"
 msgid "Enter the project Git URL"
 msgstr ""
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr ""
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr ""
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Otvoriť projekt"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr ""
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Nový súbor"
+msgid "Find and Replace"
+msgstr "Nájsť a Nahradiť"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Vytvoriť nový projekt"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr ""
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Otvoriť súbor"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr ""
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr ""
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
+msgid "Line/Word Counter"
 msgstr ""
 
 #: views/PlacesSidebar.qml:68
@@ -217,57 +222,50 @@ msgstr "Názov"
 msgid "Group"
 msgstr "Skupina"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Ciele"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Nastaviť"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Zostavenie"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Spustiť"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Inštalovať"
 
-#: views/widgets/BuildBar.qml:324
-#, kde-format
-msgid "Split"
-msgstr "Rozdeliť"
+#: views/widgets/BuildBar.qml:188
+#, fuzzy, kde-format
+#| msgid "CMake"
+msgid "Clear CMake"
+msgstr "CMake"
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Nájsť a Nahradiť"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Otvoriť projekt"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
+msgid "Close"
 msgstr ""
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Nastavenia"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "O aplikácii"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -386,6 +384,9 @@ msgstr "Farba"
 #, kde-format
 msgid "Editor background color"
 msgstr ""
+
+#~ msgid "New file"
+#~ msgstr "Nový súbor"
 
 #~ msgid "You need to specify a build directory."
 #~ msgstr "Musíte zadať adresár buildu."
@@ -554,9 +555,6 @@ msgstr ""
 
 #~ msgid "Could not find a builder for %1"
 #~ msgstr "Nemôžem nájsť zostavovač pre %1"
-
-#~ msgid "CMake"
-#~ msgstr "CMake"
 
 #~ msgid "CMake: %1"
 #~ msgstr "CMake: %1"

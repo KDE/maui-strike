@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2022-04-16 18:59+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -47,12 +47,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Geliştirici"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Kaydedilmemiş dosyalar"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -61,20 +61,55 @@ msgstr ""
 "Kaydedilmemiş dosyalarınız var. Geri gidip onları kaydedebilir veya tüm "
 "değişiklikleri atıp çıkabilirsiniz."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Geri Git"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "At"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Kenar Çubuğunu Aç/Kapat"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Yeni Proje Oluştur"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Proje Aç"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Dosya Aç"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Yeni Şablon Kaynak Dosyası"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Böl"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Ayarlar"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Hakkında"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -106,60 +141,30 @@ msgstr "Klonla"
 msgid "Enter the project Git URL"
 msgstr "Proje Git URL'sini girin"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Eksik Proje"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Yeni bir proje açın veya oluşturun."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Proje Aç"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Projeyi Klonla"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Yeni Dosya"
+msgid "Find and Replace"
+msgstr "Bul ve Değiştir"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Yeni Proje Oluştur"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Var Olan Bir Proje Aç"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Dosya Aç"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Bir veya daha çok dosya açın"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Yeni Şablon Kaynak Dosyası"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Yalın metin düzenleme desteği ile"
+msgid "Line/Word Counter"
+msgstr "Satır/Sözcük Sayacı"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -221,57 +226,49 @@ msgstr "Ad"
 msgid "Group"
 msgstr "Grup"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Hedefler"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Yapılandır"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Yap"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Çalıştır"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Kur"
 
-#: views/widgets/BuildBar.qml:324
+#: views/widgets/BuildBar.qml:188
 #, kde-format
-msgid "Split"
-msgstr "Böl"
+msgid "Clear CMake"
+msgstr ""
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Bul ve Değiştir"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Proje Aç"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Satır/Sözcük Sayacı"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Ayarlar"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Hakkında"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -394,3 +391,15 @@ msgstr "Renk"
 #, kde-format
 msgid "Editor background color"
 msgstr "Düzenleyici arka plan rengi"
+
+#~ msgid "New file"
+#~ msgstr "Yeni Dosya"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Var Olan Bir Proje Aç"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Bir veya daha çok dosya açın"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Yalın metin düzenleme desteği ile"

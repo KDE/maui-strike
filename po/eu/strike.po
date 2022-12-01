@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2022-09-06 20:07+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -50,12 +50,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Gorde gabeko fitxategiak"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -64,20 +64,55 @@ msgstr ""
 "Gorde gabeko fitxategiak dituzu. Itzuli eta gorde egin ditzakezu, edo "
 "aldaketa guztiak baztertu eta irten zaitezke."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Joan atzera"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Baztertu"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Txandakatu alboko-barra"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Sortu proiektu berria"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Ireki proiektua"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Ireki fitxategia"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Txantiloi sorburu fitxategi berria"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Zatitu"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Ezarpenak"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Honi buruz"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -109,60 +144,30 @@ msgstr "Klonatu"
 msgid "Enter the project Git URL"
 msgstr "Sartu proiektuaren Git URLa"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Falta den proiektua"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Sortu edo ireki proiektu berri bat."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Ireki proiektua"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Klonatu proiektua"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Fitxategi berria"
+msgid "Find and Replace"
+msgstr "Aurkitu eta Ordeztu"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Sortu proiektu berria"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Ireki lehendik dagoen proiektu bat"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Ireki fitxategia"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Ireki fitxategi bat edo gehiago"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Txantiloi sorburu fitxategi berria"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Oinarrizko testuaren formatua editatzeko euskarriarekin"
+msgid "Line/Word Counter"
+msgstr "Lerro/Hitz zenbatzailea"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -224,57 +229,49 @@ msgstr "Izena"
 msgid "Group"
 msgstr "Taldea"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Jomugak"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Konfiguratu"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Eraiki"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Ibili"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Instalatu"
 
-#: views/widgets/BuildBar.qml:324
+#: views/widgets/BuildBar.qml:188
 #, kde-format
-msgid "Split"
-msgstr "Zatitu"
+msgid "Clear CMake"
+msgstr ""
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Aurkitu eta Ordeztu"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Ireki proiektua"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Lerro/Hitz zenbatzailea"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Ezarpenak"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Honi buruz"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -397,3 +394,15 @@ msgstr "Kolorea"
 #, kde-format
 msgid "Editor background color"
 msgstr "Editore hondoko kolorea"
+
+#~ msgid "New file"
+#~ msgstr "Fitxategi berria"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Ireki lehendik dagoen proiektu bat"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Ireki fitxategi bat edo gehiago"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Oinarrizko testuaren formatua editatzeko euskarriarekin"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-11-15 00:45+0000\n"
+"POT-Creation-Date: 2022-12-01 00:45+0000\n"
 "PO-Revision-Date: 2021-09-21 12:23+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -47,12 +47,12 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Ontwikkelaar"
 
-#: main.qml:133
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Niet opgeslagen bestanden"
 
-#: main.qml:134
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
@@ -61,20 +61,55 @@ msgstr ""
 "U hebt niet opgeslagen bestanden. U kunt terug gaan en ze opslaan of kiezen "
 "om alle wijzigingen te verwerpen en te eindigen."
 
-#: main.qml:137 views/widgets/ProjectConfigDialog.qml:20
+#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
 msgstr "Ga terug"
 
-#: main.qml:138
+#: main.qml:133
 #, kde-format
 msgid "Discard"
 msgstr "Verwerpen"
 
-#: main.qml:245
+#: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Zijbalk omschakelen"
+
+#: main.qml:253
+#, kde-format
+msgid "Create New Project"
+msgstr "Nieuw project aanmaken"
+
+#: main.qml:265 views/editor/EditorView.qml:69
+#, kde-format
+msgid "Open Project"
+msgstr "Project openen"
+
+#: main.qml:286
+#, kde-format
+msgid "Open File"
+msgstr "Bestand openen"
+
+#: main.qml:298
+#, kde-format
+msgid "New Template Source File"
+msgstr "Nieuw sjabloon voor bronbestand"
+
+#: main.qml:311
+#, kde-format
+msgid "Split"
+msgstr "Splitsen"
+
+#: main.qml:331
+#, kde-format
+msgid "Settings"
+msgstr "Instellingen"
+
+#: main.qml:342
+#, kde-format
+msgid "About"
+msgstr "Info over"
 
 #: views/editor/Editor.qml:88
 #, kde-format
@@ -106,60 +141,30 @@ msgstr "Kloon"
 msgid "Enter the project Git URL"
 msgstr "De URL van het project-Git invoeren"
 
-#: views/editor/EditorView.qml:59
+#: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
 msgstr "Ontbrekend project"
 
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Een nieuw project aanmaken of openen."
 
-#: views/editor/EditorView.qml:66 views/editor/NewFileDialog.qml:40
-#, kde-format
-msgid "Open Project"
-msgstr "Project openen"
-
-#: views/editor/EditorView.qml:87
+#: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
 msgstr "Project klonen"
 
-#: views/editor/NewFileDialog.qml:11
+#: views/editor/EditorView.qml:193
 #, kde-format
-msgid "New file"
-msgstr "Nieuw bestand"
+msgid "Find and Replace"
+msgstr "Zoeken en vervangen"
 
-#: views/editor/NewFileDialog.qml:25
+#: views/editor/EditorView.qml:206
 #, kde-format
-msgid "Create New Project"
-msgstr "Nieuw project aanmaken"
-
-#: views/editor/NewFileDialog.qml:26 views/editor/NewFileDialog.qml:41
-#, kde-format
-msgid "Open a existing project"
-msgstr "Een bestand project openen"
-
-#: views/editor/NewFileDialog.qml:64
-#, kde-format
-msgid "Open File"
-msgstr "Bestand openen"
-
-#: views/editor/NewFileDialog.qml:65
-#, kde-format
-msgid "Open one or multiple files"
-msgstr "Een of meerdere bestanden openen"
-
-#: views/editor/NewFileDialog.qml:79
-#, kde-format
-msgid "New Template Source File"
-msgstr "Nieuw sjabloon voor bronbestand"
-
-#: views/editor/NewFileDialog.qml:80
-#, kde-format
-msgid "With support for basic text format editing"
-msgstr "Met ondersteuning voor basis tekstbewerking met indeling"
+msgid "Line/Word Counter"
+msgstr "Regels/woordenteller"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
@@ -221,57 +226,50 @@ msgstr "Naam"
 msgid "Group"
 msgstr "Groep"
 
-#: views/widgets/BuildBar.qml:52
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
 #, kde-format
 msgid "Targets"
 msgstr "Doelen"
 
-#: views/widgets/BuildBar.qml:143 views/widgets/ProjectConfigDialog.qml:14
+#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
 msgstr "Configureren"
 
-#: views/widgets/BuildBar.qml:150
+#: views/widgets/BuildBar.qml:116
 #, kde-format
 msgid "Build"
 msgstr "Bouwen"
 
-#: views/widgets/BuildBar.qml:157
+#: views/widgets/BuildBar.qml:123
 #, kde-format
 msgid "Run"
 msgstr "Uitvoeren"
 
-#: views/widgets/BuildBar.qml:164
+#: views/widgets/BuildBar.qml:130
 #, kde-format
 msgid "Install"
 msgstr "Installeren"
 
-#: views/widgets/BuildBar.qml:324
-#, kde-format
-msgid "Split"
-msgstr "Splitsen"
+#: views/widgets/BuildBar.qml:188
+#, fuzzy, kde-format
+#| msgid "CMake"
+msgid "Clear CMake"
+msgstr "CMake"
 
-#: views/widgets/BuildBar.qml:346
-#, kde-format
-msgid "Find and Replace"
-msgstr "Zoeken en vervangen"
+#: views/widgets/BuildBar.qml:196
+#, fuzzy, kde-format
+#| msgid "Open Project"
+msgid "Open directory"
+msgstr "Project openen"
 
-#: views/widgets/BuildBar.qml:359
+#: views/widgets/BuildBar.qml:206
 #, kde-format
-msgid "Line/Word Counter"
-msgstr "Regels/woordenteller"
-
-#: views/widgets/BuildBar.qml:407
-#, kde-format
-msgid "Settings"
-msgstr "Instellingen"
-
-#: views/widgets/BuildBar.qml:418
-#, kde-format
-msgid "About"
-msgstr "Info over"
+msgid "Close"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -394,6 +392,18 @@ msgstr "Kleur"
 #, kde-format
 msgid "Editor background color"
 msgstr "Achtergrondkleur van bewerker"
+
+#~ msgid "New file"
+#~ msgstr "Nieuw bestand"
+
+#~ msgid "Open a existing project"
+#~ msgstr "Een bestand project openen"
+
+#~ msgid "Open one or multiple files"
+#~ msgstr "Een of meerdere bestanden openen"
+
+#~ msgid "With support for basic text format editing"
+#~ msgstr "Met ondersteuning voor basis tekstbewerking met indeling"
 
 #~ msgctxt "@title:window"
 #~ msgid "Configure a Build Directory - %1"
@@ -624,9 +634,6 @@ msgstr "Achtergrondkleur van bewerker"
 #~ msgctxt "@title:tab"
 #~ msgid "Configure Global CMake Settings"
 #~ msgstr "Globale CMake-instellingen configureren"
-
-#~ msgid "CMake"
-#~ msgstr "CMake"
 
 #~ msgid "Internal error: no project specified to configure."
 #~ msgstr "Interne fout: geen te configureren project gespecificeerd."
