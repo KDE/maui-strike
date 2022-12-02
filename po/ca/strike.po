@@ -3,13 +3,13 @@
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2021.
+# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-01 00:45+0000\n"
-"PO-Revision-Date: 2021-09-21 10:26+0200\n"
+"PO-Revision-Date: 2022-12-01 13:40+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -258,21 +258,19 @@ msgid "Install"
 msgstr "Instal·la"
 
 #: views/widgets/BuildBar.qml:188
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
-msgstr "CMake"
+msgstr "Neteja el CMake"
 
 #: views/widgets/BuildBar.qml:196
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Obre un projecte"
+msgstr "Obre un directori"
 
 #: views/widgets/BuildBar.qml:206
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Tanca"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format

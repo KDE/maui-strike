@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# Freek de Kruijf <freekdekruijf@kde.nl>, 2021.
+# Freek de Kruijf <freekdekruijf@kde.nl>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-01 00:45+0000\n"
-"PO-Revision-Date: 2021-09-21 12:23+0200\n"
+"PO-Revision-Date: 2022-12-01 10:34+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,12 +15,12 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 22.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Freek de Kruijf - 2021"
+msgstr "Freek de Kruijf - 2021 t/m 2022"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
@@ -255,21 +255,19 @@ msgid "Install"
 msgstr "Installeren"
 
 #: views/widgets/BuildBar.qml:188
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
-msgstr "CMake"
+msgstr "CMake wissen"
 
 #: views/widgets/BuildBar.qml:196
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Project openen"
+msgstr "Map openen"
 
 #: views/widgets/BuildBar.qml:206
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Sluiten"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format

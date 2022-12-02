@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2021.
+# Yuri Chornoivan <yurchor@ukr.net>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-01 00:45+0000\n"
-"PO-Revision-Date: 2021-09-21 09:45+0300\n"
+"PO-Revision-Date: 2022-12-01 10:49+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -256,21 +256,19 @@ msgid "Install"
 msgstr "Встановити"
 
 #: views/widgets/BuildBar.qml:188
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
-msgstr "CMake"
+msgstr "Спорожнити CMake"
 
 #: views/widgets/BuildBar.qml:196
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Відкрити проєкт"
+msgstr "Відкрити каталог"
 
 #: views/widgets/BuildBar.qml:206
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Закрити"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format

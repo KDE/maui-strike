@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the maui-strike package.
 #
 # Automatically generated, 2021.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2021.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2021, 2022.
 msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-01 00:45+0000\n"
-"PO-Revision-Date: 2021-09-22 19:27+0200\n"
+"PO-Revision-Date: 2022-12-01 16:35+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.1\n"
+"X-Generator: Lokalize 22.11.90\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -257,21 +257,19 @@ msgid "Install"
 msgstr "Instalar"
 
 #: views/widgets/BuildBar.qml:188
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
-msgstr "CMake"
+msgstr "Limpiar CMake"
 
 #: views/widgets/BuildBar.qml:196
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Abrir proyecto"
+msgstr "Abrir directorio"
 
 #: views/widgets/BuildBar.qml:206
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Cerrar"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
