@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2022-12-01 00:45+0000\n"
-"PO-Revision-Date: 2021-10-14 15:41+0100\n"
+"PO-Revision-Date: 2022-12-04 02:20+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-POFile-SpellExtra: Higuita\n"
+"X-POFile-SpellExtra: Higuita CMake\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -258,18 +258,17 @@ msgstr "Instalar"
 #: views/widgets/BuildBar.qml:188
 #, kde-format
 msgid "Clear CMake"
-msgstr ""
+msgstr "Limpar o CMake"
 
 #: views/widgets/BuildBar.qml:196
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Abrir um Projecto"
+msgstr "Abrir uma pasta"
 
 #: views/widgets/BuildBar.qml:206
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Fechar"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -392,15 +391,3 @@ msgstr "Cor"
 #, kde-format
 msgid "Editor background color"
 msgstr "Cor de fundo do editor"
-
-#~ msgid "New file"
-#~ msgstr "Novo ficheiro"
-
-#~ msgid "Open a existing project"
-#~ msgstr "Abrir um projecto existente"
-
-#~ msgid "Open one or multiple files"
-#~ msgstr "Abre um ou vários ficheiros"
-
-#~ msgid "With support for basic text format editing"
-#~ msgstr "Com suporte para a edição no formato de texto simples"
