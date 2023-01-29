@@ -9,12 +9,12 @@ import org.slike.strike 1.0 as Strike
 
 Maui.SettingsDialog
 {
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Editor")
         description: i18n("Configure the look and feel of the editor. The settings are applied globally")
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Auto Save")
             label2.text: i18n("Auto saves your file every few seconds")
@@ -26,7 +26,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text: i18n("Line Numbers")
             label2.text: i18n("Display the line numbers on the left side")
@@ -40,18 +40,18 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SettingsSection
+    Maui.SectionGroup
     {
         title: i18n("Style")
         description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
         visible: settings.enableSyntaxHighlighting
 
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Font Family")
 
-            Maui.ComboBox
+            Maui.FontsComboBox
             {
                 Layout.fillWidth: true
                 model: Strike.Fonts.monospaceFamilies
@@ -60,7 +60,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Font Size")
 
@@ -72,7 +72,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Tab Spacing")
 
@@ -84,12 +84,12 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Theme")
             label2.text: i18n("Editor color scheme style")
 
-            Maui.ComboBox
+            ComboBox
             {
                 model:  _dummyDocumentHandler.getThemes()
                 Component.onCompleted: currentIndex = find(settings.theme, Qt.MatchExactly)
@@ -103,7 +103,7 @@ Maui.SettingsDialog
             }
         }
 
-        Maui.SettingTemplate
+        Maui.SectionItem
         {
             label1.text:  i18n("Color")
             label2.text: i18n("Editor background color")

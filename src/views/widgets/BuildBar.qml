@@ -90,19 +90,16 @@ implicitWidth: _layout.implicitWidth +leftPadding + rightPadding
             Layout.fillHeight: true
             icon.name: manager.process.processRunning ? "media-playback-stop" : "run-build"
 
-//            onClicked:
-//            {
-//                if(manager.process.processRunning)
-//                {
-//                    if(manager.process.deployStatus === Strike.Process.Running)
-//                    {
-//                        manager.process.stopDeploy()
-//                    }
-//                }else
-//                {
-//                    _execMenu.show(0, height + Maui.Style.space.medium)
-//                }
-//            }
+            onClicked:
+            {
+                if(manager.process.processRunning)
+                {
+                    if(manager.process.deployStatus === Strike.Process.Running)
+                    {
+                        manager.process.stopDeploy()
+                    }
+                }
+            }
 
             MenuItem
             {

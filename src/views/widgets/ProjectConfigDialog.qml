@@ -80,7 +80,7 @@ Maui.Dialog
                         anchors.centerIn: parent
                         label1.text: i18n("Build Directory")
                         label2.text: i18n("Pick a build directory or keep the default one")
-                        leftLabels.data: Maui.TextField
+                        leftLabels.data: TextField
                         {
                             Layout.fillWidth: true
                             placeholderText: i18n("Build directory path")
@@ -94,7 +94,7 @@ Maui.Dialog
                 //                    Layout.fillWidth: true
                 //                    label1.text: i18n("Install Prefix")
                 //                    label2.text: i18n("Where do you want to install the project")
-                //                    leftLabels.data: Maui.TextField
+                //                    leftLabels.data: TextField
                 //                    {
                 //                        Layout.fillWidth: true
                 //                        placeholderText: i18n("Prefix path")
