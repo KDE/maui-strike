@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-01 00:45+0000\n"
+"POT-Creation-Date: 2023-01-30 00:56+0000\n"
 "PO-Revision-Date: 2022-12-31 15:33+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
 "Language-Team: English <kde-i18n-doc@kde.org>\n"
@@ -226,12 +226,12 @@ msgstr "Name"
 msgid "Group"
 msgstr "Group"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
 msgstr "Targets"
 
-#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
@@ -239,32 +239,32 @@ msgstr "Targets"
 msgid "Configure"
 msgstr "Configure"
 
-#: views/widgets/BuildBar.qml:116
+#: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
 msgstr "Build"
 
-#: views/widgets/BuildBar.qml:123
+#: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
 msgstr "Run"
 
-#: views/widgets/BuildBar.qml:130
+#: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
 msgstr "Install"
 
-#: views/widgets/BuildBar.qml:188
+#: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
 msgstr "Clear CMake"
 
-#: views/widgets/BuildBar.qml:196
+#: views/widgets/BuildBar.qml:193
 #, kde-format
 msgid "Open directory"
 msgstr "Open directory"
 
-#: views/widgets/BuildBar.qml:206
+#: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
 msgstr "Close"

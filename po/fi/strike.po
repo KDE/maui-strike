@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-01 00:45+0000\n"
+"POT-Creation-Date: 2023-01-30 00:56+0000\n"
 "PO-Revision-Date: 2021-11-23 16:40+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -226,12 +226,12 @@ msgstr "Nimi"
 msgid "Group"
 msgstr "Ryhmä"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
 msgstr "Kohteet"
 
-#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
@@ -239,33 +239,33 @@ msgstr "Kohteet"
 msgid "Configure"
 msgstr "Asetukset"
 
-#: views/widgets/BuildBar.qml:116
+#: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
 msgstr "Koosta"
 
-#: views/widgets/BuildBar.qml:123
+#: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
 msgstr "Suorita"
 
-#: views/widgets/BuildBar.qml:130
+#: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
 msgstr "Asenna"
 
-#: views/widgets/BuildBar.qml:188
+#: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:196
+#: views/widgets/BuildBar.qml:193
 #, fuzzy, kde-format
 #| msgid "Open Project"
 msgid "Open directory"
 msgstr "Avaa projekti"
 
-#: views/widgets/BuildBar.qml:206
+#: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
 msgstr ""

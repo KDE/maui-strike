@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-01 00:45+0000\n"
+"POT-Creation-Date: 2023-01-30 00:56+0000\n"
 "PO-Revision-Date: 2021-11-14 19:20+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -226,12 +226,12 @@ msgstr "이름"
 msgid "Group"
 msgstr "그룹"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
 msgstr "대상"
 
-#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
@@ -239,33 +239,33 @@ msgstr "대상"
 msgid "Configure"
 msgstr "설정"
 
-#: views/widgets/BuildBar.qml:116
+#: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
 msgstr "빌드"
 
-#: views/widgets/BuildBar.qml:123
+#: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
 msgstr "실행"
 
-#: views/widgets/BuildBar.qml:130
+#: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
 msgstr "설치"
 
-#: views/widgets/BuildBar.qml:188
+#: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:196
+#: views/widgets/BuildBar.qml:193
 #, fuzzy, kde-format
 #| msgid "Open Project"
 msgid "Open directory"
 msgstr "프로젝트 열기"
 
-#: views/widgets/BuildBar.qml:206
+#: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
 msgstr ""

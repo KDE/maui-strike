@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2022-12-01 00:45+0000\n"
+"POT-Creation-Date: 2023-01-30 00:56+0000\n"
 "PO-Revision-Date: 2023-01-12 10:32\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -224,12 +224,12 @@ msgstr "名称"
 msgid "Group"
 msgstr "分组"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:169
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
 msgstr "目标"
 
-#: views/widgets/BuildBar.qml:109 views/widgets/BuildBar.qml:201
+#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
 #: views/widgets/ProjectConfigDialog.qml:66
 #: views/widgets/ProjectConfigDialog.qml:177
@@ -237,32 +237,32 @@ msgstr "目标"
 msgid "Configure"
 msgstr "配置"
 
-#: views/widgets/BuildBar.qml:116
+#: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
 msgstr "构建"
 
-#: views/widgets/BuildBar.qml:123
+#: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
 msgstr "运行"
 
-#: views/widgets/BuildBar.qml:130
+#: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
 msgstr "安装"
 
-#: views/widgets/BuildBar.qml:188
+#: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:196
+#: views/widgets/BuildBar.qml:193
 #, kde-format
 msgid "Open directory"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:206
+#: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
 msgstr ""
