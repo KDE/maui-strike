@@ -31,6 +31,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="uk">Strike</name>
   <name xml:lang="x-test">xxStrikexx</name>
   <name xml:lang="zh-CN">Strike</name>
+  <name xml:lang="zh-TW">Strike</name>
   <summary>Simple and convergent IDE</summary>
   <summary xml:lang="ca">IDE convergent i senzill</summary>
   <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
@@ -53,6 +54,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="uk">Просте і цілеспрямоване комплексне середовище розробки</summary>
   <summary xml:lang="x-test">xxSimple and convergent IDExx</summary>
   <summary xml:lang="zh-CN">简易桌面与移动平台通用 IDE</summary>
+  <summary xml:lang="zh-TW">簡潔且響應式的 IDE</summary>
   <description>
     <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="ca">L'Strike és un IDE senzill i convergent que funciona a l'escriptori Linux i als ordinadors mòbils.</p>
@@ -75,6 +77,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="uk">Strike — просте і цілеспрямоване комплексне середовище розробки, яке працює на робочих станціях Linux та мобільних комп'ютерах.</p>
     <p xml:lang="x-test">xxStrike is a simple and covergent IDE that works on Linux desktop and mobile computers.xx</p>
     <p xml:lang="zh-CN">Strike 是一款同时支持 Linux 桌面环境与移动环境的简易通用 。</p>
+    <p xml:lang="zh-TW">Strike 是一個簡潔且響應式的 IDE，可以在 Linux 桌面電腦和手機上使用。</p>
   </description>
   <url type="homepage">https://mauikit.org/</url>
   <url type="bugtracker">https://invent.kde.org/maui/strike/-/issues</url>
@@ -105,6 +108,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="uk">Strike</caption>
       <caption xml:lang="x-test">xxStrikexx</caption>
       <caption xml:lang="zh-CN">Strike</caption>
+      <caption xml:lang="zh-TW">Strike</caption>
       <image type="source" width="2464" height="1929">
         https://cdn.kde.org/screenshots/nota/nota.png
       </image>
