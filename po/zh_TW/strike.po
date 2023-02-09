@@ -2,233 +2,235 @@
 # maui-strike 套件的正體中文翻譯.
 # Copyright (C) 2022 This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
-# Automatically generated, 2022.
 #
+# Automatically generated, 2022.
+# Kisaragi Hiu <mail@kisaragi-hiu.com>, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-01-30 00:56+0000\n"
-"PO-Revision-Date: 2022-06-09 00:49+0000\n"
-"Last-Translator: Automatically generated\n"
-"Language-Team: none\n"
+"PO-Revision-Date: 2023-02-09 02:17+0900\n"
+"Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
+"Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
 "Language: zh_TW\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: Lokalize 23.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr ""
+msgstr "Kisaragi Hiu"
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr ""
+msgstr "mail@kisaragi-hiu.com"
 
 #: main.cpp:40
 #, kde-format
 msgid "Build and run code."
-msgstr ""
+msgstr "編譯並執行程式碼。"
 
 #: main.cpp:40
 #, kde-format
 msgid "© 2021-%1 Camilo Higuita"
-msgstr ""
+msgstr "© 2021-%1 Camilo Higuita"
 
 #: main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
-msgstr ""
+msgstr "Camilo Higuita"
 
 #: main.cpp:42
 #, kde-format
 msgid "Developer"
-msgstr ""
+msgstr "開發者"
 
 #: main.qml:128
 #, kde-format
 msgid "Unsaved files"
-msgstr ""
+msgstr "未儲存的檔案"
 
 #: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
 "all changes and exit."
-msgstr ""
+msgstr "您有未儲存的檔案。您可以回去儲存它們或是選擇放棄所有變更並離開。"
 
 #: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
-msgstr ""
+msgstr "返回"
 
 #: main.qml:133
 #, kde-format
 msgid "Discard"
-msgstr ""
+msgstr "丟棄"
 
 #: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
-msgstr ""
+msgstr "切換側邊欄"
 
 #: main.qml:253
 #, kde-format
 msgid "Create New Project"
-msgstr ""
+msgstr "建立新專案"
 
 #: main.qml:265 views/editor/EditorView.qml:69
 #, kde-format
 msgid "Open Project"
-msgstr ""
+msgstr "開啟專案"
 
 #: main.qml:286
 #, kde-format
 msgid "Open File"
-msgstr ""
+msgstr "開啟檔案"
 
 #: main.qml:298
 #, kde-format
 msgid "New Template Source File"
-msgstr ""
+msgstr "新增樣本原始檔"
 
 #: main.qml:311
 #, kde-format
 msgid "Split"
-msgstr ""
+msgstr "分割"
 
 #: main.qml:331
 #, kde-format
 msgid "Settings"
-msgstr ""
+msgstr "設定"
 
 #: main.qml:342
 #, kde-format
 msgid "About"
-msgstr ""
+msgstr "關於"
 
 #: views/editor/Editor.qml:88
 #, kde-format
 msgid "Open here"
-msgstr ""
+msgstr "在此開啟"
 
 #: views/editor/Editor.qml:98
 #, kde-format
 msgid "Open in new tab"
-msgstr ""
+msgstr "在新分頁開啟"
 
 #: views/editor/Editor.qml:109
 #, kde-format
 msgid "Open in new split"
-msgstr ""
+msgstr "在新分割畫面開啟"
 
 #: views/editor/Editor.qml:121
 #, kde-format
 msgid "Cancel"
-msgstr ""
+msgstr "取消"
 
 #: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
 #, kde-format
 msgid "Clone"
-msgstr ""
+msgstr "建立複本"
 
 #: views/editor/EditorView.qml:35
 #, kde-format
 msgid "Enter the project Git URL"
-msgstr ""
+msgstr "輸入專案 Git 網址"
 
 #: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Missing Project"
-msgstr ""
+msgstr "缺失專案"
 
 #: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Create or open a new project."
-msgstr ""
+msgstr "建立並開啟新專案。"
 
 #: views/editor/EditorView.qml:90
 #, kde-format
 msgid "Clone Project"
-msgstr ""
+msgstr "建立專案複本"
 
 #: views/editor/EditorView.qml:193
 #, kde-format
 msgid "Find and Replace"
-msgstr ""
+msgstr "搜尋與取代"
 
 #: views/editor/EditorView.qml:206
 #, kde-format
 msgid "Line/Word Counter"
-msgstr ""
+msgstr "行數/字數計數器"
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
 msgid "Project Sources"
-msgstr ""
+msgstr "專案原始碼"
 
 #: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Source files will be listed in here."
-msgstr ""
+msgstr "原始檔案會被列於此處。"
 
 #: views/PlacesSidebar.qml:113
 #, kde-format
 msgid "Previous"
-msgstr ""
+msgstr "前一個"
 
 #: views/PlacesSidebar.qml:120
 #, kde-format
 msgid "Up"
-msgstr ""
+msgstr "往上"
 
 #: views/PlacesSidebar.qml:128
 #, kde-format
 msgid "Next"
-msgstr ""
+msgstr "下一個"
 
 #: views/PlacesSidebar.qml:152
 #, kde-format
 msgid "Show Folders First"
-msgstr ""
+msgstr "先顯示資料夾"
 
 #: views/PlacesSidebar.qml:162
 #, kde-format
 msgid "Type"
-msgstr ""
+msgstr "類型"
 
 #: views/PlacesSidebar.qml:171
 #, kde-format
 msgid "Date"
-msgstr ""
+msgstr "日期"
 
 #: views/PlacesSidebar.qml:180
 #, kde-format
 msgid "Modified"
-msgstr ""
+msgstr "修改時間"
 
 #: views/PlacesSidebar.qml:189
 #, kde-format
 msgid "Size"
-msgstr ""
+msgstr "大小"
 
 #: views/PlacesSidebar.qml:198
 #, kde-format
 msgid "Name"
-msgstr ""
+msgstr "名稱"
 
 #: views/PlacesSidebar.qml:210
 #, kde-format
 msgid "Group"
-msgstr ""
+msgstr "群組"
 
 #: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
-msgstr ""
+msgstr "目標"
 
 #: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
@@ -236,152 +238,152 @@ msgstr ""
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
-msgstr ""
+msgstr "設定"
 
 #: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
-msgstr ""
+msgstr "編譯"
 
 #: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
-msgstr ""
+msgstr "執行"
 
 #: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
-msgstr ""
+msgstr "安裝"
 
 #: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
-msgstr ""
+msgstr "清除 CMake"
 
 #: views/widgets/BuildBar.qml:193
 #, kde-format
 msgid "Open directory"
-msgstr ""
+msgstr "開啟目錄"
 
 #: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "關閉"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
-msgstr ""
+msgstr "中止"
 
 #: views/widgets/ProjectConfigDialog.qml:67
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr ""
+msgstr "調整偏好設定來開始寫碼吧！"
 
 #: views/widgets/ProjectConfigDialog.qml:81
 #, kde-format
 msgid "Build Directory"
-msgstr ""
+msgstr "編譯目錄"
 
 #: views/widgets/ProjectConfigDialog.qml:82
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr ""
+msgstr "選一個編譯目錄或是保留預設的"
 
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Build directory path"
-msgstr ""
+msgstr "編譯目錄路徑"
 
 #: views/widgets/ProjectConfigDialog.qml:125
 #, kde-format
 msgid "Project"
-msgstr ""
+msgstr "專案"
 
 #: views/widgets/ProjectConfigDialog.qml:126
 #, kde-format
 msgid "Select the target project"
-msgstr ""
+msgstr "選擇目標專案"
 
 #: views/widgets/ProjectConfigDialog.qml:178
 #, kde-format
 msgid "Finish"
-msgstr ""
+msgstr "完成"
 
 #: views/widgets/SettingsDialog.qml:14
 #, kde-format
 msgid "Editor"
-msgstr ""
+msgstr "編輯器"
 
 #: views/widgets/SettingsDialog.qml:15
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "設定編輯器外觀與行為。這些設定是全域套用的"
 
 #: views/widgets/SettingsDialog.qml:19
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "自動儲存"
 
 #: views/widgets/SettingsDialog.qml:20
 #, kde-format
 msgid "Auto saves your file every few seconds"
-msgstr ""
+msgstr "每隔幾秒自動儲存您的檔案"
 
 #: views/widgets/SettingsDialog.qml:31
 #, kde-format
 msgid "Line Numbers"
-msgstr ""
+msgstr "行號"
 
 #: views/widgets/SettingsDialog.qml:32
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr ""
+msgstr "在左側顯示行號"
 
 #: views/widgets/SettingsDialog.qml:45
 #, kde-format
 msgid "Style"
-msgstr ""
+msgstr "風格"
 
 #: views/widgets/SettingsDialog.qml:46
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
 "applied for rich text formats"
-msgstr ""
+msgstr "設定語法突顯風格。這個選項不會套用到富文字格式上"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Font Family"
-msgstr ""
+msgstr "字型家族"
 
 #: views/widgets/SettingsDialog.qml:65
 #, kde-format
 msgid "Font Size"
-msgstr ""
+msgstr "字型大小"
 
 #: views/widgets/SettingsDialog.qml:77
 #, kde-format
 msgid "Tab Spacing"
-msgstr ""
+msgstr "Tab 間距"
 
 #: views/widgets/SettingsDialog.qml:89
 #, kde-format
 msgid "Theme"
-msgstr ""
+msgstr "主題"
 
 #: views/widgets/SettingsDialog.qml:90
 #, kde-format
 msgid "Editor color scheme style"
-msgstr ""
+msgstr "編輯器配色方案風格"
 
 #: views/widgets/SettingsDialog.qml:108
 #, kde-format
 msgid "Color"
-msgstr ""
+msgstr "色彩"
 
 #: views/widgets/SettingsDialog.qml:109
 #, kde-format
 msgid "Editor background color"
-msgstr ""
+msgstr "編輯器背景色彩"
