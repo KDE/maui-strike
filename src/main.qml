@@ -305,27 +305,6 @@ Maui.ApplicationWindow
                         }
                     }
                     MenuSeparator{}
-
-                    MenuItem
-                    {
-                        text: i18n("Split")
-                        visible: settings.supportSplit
-                        icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
-                        checked: root.currentTab && root.currentTab.count === 2
-                        checkable: true
-                        onTriggered:
-                        {
-                            if(root.currentTab.count === 2)
-                            {
-                                root.currentTab.pop()
-                                return
-                            }//close the inactive split
-
-                            root.currentTab.split("")
-                        }
-                    }
-
-                    MenuSeparator{}
                     MenuItem
                     {
                         text: i18n("Settings")

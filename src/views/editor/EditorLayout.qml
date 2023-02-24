@@ -112,7 +112,9 @@ Item
         }
 
         const item = _splitView.itemAt(index)
-        if( item.document.modified)
+
+        console.log("supossed to close " , item.title, item.editor.document.modified)
+        if(item.editor.document.modified)
         {
             _dialogLoader.sourceComponent = _unsavedDialogComponent
             dialog.callback = function () { destroyItem(index) }

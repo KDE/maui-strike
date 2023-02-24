@@ -4,6 +4,7 @@ import QtQuick.Layouts 1.3
 
 import org.mauikit.controls 1.3 as Maui
 import org.mauikit.filebrowsing 1.3 as FB
+import org.mauikit.terminal 1.0 as Term
 
 SwipeView
 {
@@ -34,10 +35,30 @@ SwipeView
         }
     }
 
-    Maui.Terminal
+    Term.Terminal
     {
         id: _terminal
-        kterminal.colorScheme: "DarkPastels"
+        kterminal.colorScheme: _customCS.path
+
+        Term.CustomColorScheme
+        {
+            id: _customCS
+            Maui.Theme.inherit: false
+            Maui.Theme.colorSet: Maui.Theme.Complementary
+            Maui.Theme.backgroundColor: "#2c2c2c"
+            name: "Adaptive"
+            description: i18n("Follows the system color scheme.")
+            backgroundColor: Maui.Theme.backgroundColor
+            foregroundColor: Maui.Theme.textColor
+            color2: Maui.Theme.highlightColor
+            color3: Maui.Theme.negativeBackgroundColor
+            color4: Maui.Theme.positiveBackgroundColor
+            color5: Maui.Theme.hoverColor
+            color6: Maui.Theme.highlightColor
+            color7: Maui.Theme.linkColor
+            color8: Maui.Theme.neutralBackgroundColor
+            color9: Maui.Theme.textColor
+        }
     }
 
     BuildOutputPanel
