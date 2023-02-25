@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 00:56+0000\n"
+"POT-Creation-Date: 2023-02-25 00:59+0000\n"
 "PO-Revision-Date: 2022-12-04 02:20+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
@@ -82,7 +82,7 @@ msgstr "Comutar a Barra Lateral"
 msgid "Create New Project"
 msgstr "Criar um Novo Projecto"
 
-#: main.qml:265 views/editor/EditorView.qml:69
+#: main.qml:265 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Abrir um Projecto"
@@ -97,17 +97,12 @@ msgstr "Abrir um Ficheiro"
 msgid "New Template Source File"
 msgstr "Novo Ficheiro-Modelo de Código"
 
-#: main.qml:311
-#, kde-format
-msgid "Split"
-msgstr "Dividir"
-
-#: main.qml:331
+#: main.qml:310
 #, kde-format
 msgid "Settings"
 msgstr "Configuração"
 
-#: main.qml:342
+#: main.qml:321
 #, kde-format
 msgid "About"
 msgstr "Acerca"
@@ -142,27 +137,27 @@ msgstr "Clonar"
 msgid "Enter the project Git URL"
 msgstr "Indicar o URL de Git do projecto"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
 msgstr "Projecto em Falta"
 
-#: views/editor/EditorView.qml:63
+#: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Criar ou abrir um novo projecto."
 
-#: views/editor/EditorView.qml:90
+#: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
 msgstr "Clonar o Projecto"
 
-#: views/editor/EditorView.qml:193
+#: views/editor/EditorView.qml:212
 #, kde-format
 msgid "Find and Replace"
 msgstr "Procurar e Substituir"
 
-#: views/editor/EditorView.qml:206
+#: views/editor/EditorView.qml:225
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Contador de Linhas/Palavras"
@@ -270,6 +265,11 @@ msgstr "Abrir uma pasta"
 msgid "Close"
 msgstr "Fechar"
 
+#: views/widgets/OutputPanel.qml:50
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
+
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
@@ -310,12 +310,12 @@ msgstr "Seleccionar o projecto predefinido"
 msgid "Finish"
 msgstr "Terminar"
 
-#: views/widgets/SettingsDialog.qml:14
+#: views/widgets/SettingsDialog.qml:16
 #, kde-format
 msgid "Editor"
 msgstr "Editor"
 
-#: views/widgets/SettingsDialog.qml:15
+#: views/widgets/SettingsDialog.qml:17
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -323,32 +323,32 @@ msgstr ""
 "Configura a aparência e comportamento do editor. A configuração é aplicada a "
 "nível global"
 
-#: views/widgets/SettingsDialog.qml:19
+#: views/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Auto Save"
 msgstr "Gravação Automática"
 
-#: views/widgets/SettingsDialog.qml:20
+#: views/widgets/SettingsDialog.qml:22
 #, kde-format
 msgid "Auto saves your file every few seconds"
 msgstr "Grava automaticamente o seu ficheiro com um período em segundos"
 
-#: views/widgets/SettingsDialog.qml:31
+#: views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Line Numbers"
 msgstr "Números de Linha"
 
-#: views/widgets/SettingsDialog.qml:32
+#: views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "Mostrar os números de linha do lado esquerdo"
 
-#: views/widgets/SettingsDialog.qml:45
+#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Style"
 msgstr "Estilo"
 
-#: views/widgets/SettingsDialog.qml:46
+#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -357,37 +357,51 @@ msgstr ""
 "Configura o estilo do realce de sintaxe. Esta configuração não é aplicada "
 "para formatos de texto formatado"
 
-#: views/widgets/SettingsDialog.qml:52
+#: views/widgets/SettingsDialog.qml:54
 #, kde-format
 msgid "Font Family"
 msgstr "Família do Tipo de Letra"
 
-#: views/widgets/SettingsDialog.qml:65
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid "Font Size"
 msgstr "Tamanho da Letra"
 
-#: views/widgets/SettingsDialog.qml:77
+#: views/widgets/SettingsDialog.qml:79
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Espaços com Tabulações"
 
-#: views/widgets/SettingsDialog.qml:89
-#, kde-format
-msgid "Theme"
-msgstr "Tema"
+#: views/widgets/SettingsDialog.qml:91
+#, fuzzy, kde-format
+#| msgid "Color"
+msgid "Colors"
+msgstr "Cor"
 
-#: views/widgets/SettingsDialog.qml:90
+#: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Editor color scheme style"
-msgstr "Estilo do esquema de cores do editor"
+msgid "Configure the color scheme of the syntax hightlighting."
+msgstr ""
 
-#: views/widgets/SettingsDialog.qml:108
+#: views/widgets/SettingsDialog.qml:116
 #, kde-format
 msgid "Color"
 msgstr "Cor"
 
-#: views/widgets/SettingsDialog.qml:109
+#: views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Editor background color"
 msgstr "Cor de fundo do editor"
+
+#: views/widgets/SettingsDialog.qml:148
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:149
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Estilo do esquema de cores do editor"
+
+#~ msgid "Split"
+#~ msgstr "Dividir"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 00:56+0000\n"
+"POT-Creation-Date: 2023-02-25 00:59+0000\n"
 "PO-Revision-Date: 2022-12-01 17:15+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -81,7 +81,7 @@ msgstr "Kenar Çubuğunu Aç/Kapat"
 msgid "Create New Project"
 msgstr "Yeni Proje Oluştur"
 
-#: main.qml:265 views/editor/EditorView.qml:69
+#: main.qml:265 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Proje Aç"
@@ -96,17 +96,12 @@ msgstr "Dosya Aç"
 msgid "New Template Source File"
 msgstr "Yeni Şablon Kaynak Dosyası"
 
-#: main.qml:311
-#, kde-format
-msgid "Split"
-msgstr "Böl"
-
-#: main.qml:331
+#: main.qml:310
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: main.qml:342
+#: main.qml:321
 #, kde-format
 msgid "About"
 msgstr "Hakkında"
@@ -141,27 +136,27 @@ msgstr "Klonla"
 msgid "Enter the project Git URL"
 msgstr "Proje Git URL'sini girin"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
 msgstr "Eksik Proje"
 
-#: views/editor/EditorView.qml:63
+#: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Yeni bir proje açın veya oluşturun."
 
-#: views/editor/EditorView.qml:90
+#: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
 msgstr "Projeyi Klonla"
 
-#: views/editor/EditorView.qml:193
+#: views/editor/EditorView.qml:212
 #, kde-format
 msgid "Find and Replace"
 msgstr "Bul ve Değiştir"
 
-#: views/editor/EditorView.qml:206
+#: views/editor/EditorView.qml:225
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Satır/Sözcük Sayacı"
@@ -269,6 +264,11 @@ msgstr "Dizin aç"
 msgid "Close"
 msgstr "Kapat"
 
+#: views/widgets/OutputPanel.qml:50
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
+
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
@@ -309,12 +309,12 @@ msgstr "Hedef projeyi seçin"
 msgid "Finish"
 msgstr "Bitir"
 
-#: views/widgets/SettingsDialog.qml:14
+#: views/widgets/SettingsDialog.qml:16
 #, kde-format
 msgid "Editor"
 msgstr "Düzenleyici"
 
-#: views/widgets/SettingsDialog.qml:15
+#: views/widgets/SettingsDialog.qml:17
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -322,32 +322,32 @@ msgstr ""
 "Düzenleyicinin görünüm ve hisini yapılandırır; ayarlar global olarak "
 "uygulanır"
 
-#: views/widgets/SettingsDialog.qml:19
+#: views/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Auto Save"
 msgstr "Otomatik Kaydet"
 
-#: views/widgets/SettingsDialog.qml:20
+#: views/widgets/SettingsDialog.qml:22
 #, kde-format
 msgid "Auto saves your file every few seconds"
 msgstr "Dosyanızı her birkaç saniyede bir kendiliğinden kaydeder"
 
-#: views/widgets/SettingsDialog.qml:31
+#: views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Line Numbers"
 msgstr "Satır Numaraları"
 
-#: views/widgets/SettingsDialog.qml:32
+#: views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "Sol tarafta satır numaralarını görüntüle"
 
-#: views/widgets/SettingsDialog.qml:45
+#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Style"
 msgstr "Biçem"
 
-#: views/widgets/SettingsDialog.qml:46
+#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -356,40 +356,54 @@ msgstr ""
 "Sözdizim vurgulamanın biçemini yapılandır; bu yapılandırma zengn metin "
 "biçimine uygulanmaz"
 
-#: views/widgets/SettingsDialog.qml:52
+#: views/widgets/SettingsDialog.qml:54
 #, kde-format
 msgid "Font Family"
 msgstr "Yazıtipi Ailesi"
 
-#: views/widgets/SettingsDialog.qml:65
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid "Font Size"
 msgstr "Yazıtipi Boyutu"
 
-#: views/widgets/SettingsDialog.qml:77
+#: views/widgets/SettingsDialog.qml:79
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Sekme Aralıklandırması"
 
-#: views/widgets/SettingsDialog.qml:89
-#, kde-format
-msgid "Theme"
-msgstr "Tema"
+#: views/widgets/SettingsDialog.qml:91
+#, fuzzy, kde-format
+#| msgid "Color"
+msgid "Colors"
+msgstr "Renk"
 
-#: views/widgets/SettingsDialog.qml:90
+#: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Editor color scheme style"
-msgstr "Düzenleyici renk şeması biçemi"
+msgid "Configure the color scheme of the syntax hightlighting."
+msgstr ""
 
-#: views/widgets/SettingsDialog.qml:108
+#: views/widgets/SettingsDialog.qml:116
 #, kde-format
 msgid "Color"
 msgstr "Renk"
 
-#: views/widgets/SettingsDialog.qml:109
+#: views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Editor background color"
 msgstr "Düzenleyici arka plan rengi"
+
+#: views/widgets/SettingsDialog.qml:148
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:149
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Düzenleyici renk şeması biçemi"
+
+#~ msgid "Split"
+#~ msgstr "Böl"
 
 #~ msgid "New file"
 #~ msgstr "Yeni Dosya"

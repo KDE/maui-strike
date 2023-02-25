@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 00:56+0000\n"
+"POT-Creation-Date: 2023-02-25 00:59+0000\n"
 "PO-Revision-Date: 2022-12-02 06:43+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
@@ -82,7 +82,7 @@ msgstr "Preklopi stransko vrstico"
 msgid "Create New Project"
 msgstr "Ustvari nov projekt"
 
-#: main.qml:265 views/editor/EditorView.qml:69
+#: main.qml:265 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Odpri projekt"
@@ -97,17 +97,12 @@ msgstr "Odpri datoteko"
 msgid "New Template Source File"
 msgstr "Nova datoteka vira predloge"
 
-#: main.qml:311
-#, kde-format
-msgid "Split"
-msgstr "Razdeli"
-
-#: main.qml:331
+#: main.qml:310
 #, kde-format
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: main.qml:342
+#: main.qml:321
 #, kde-format
 msgid "About"
 msgstr "O programu"
@@ -142,27 +137,27 @@ msgstr "Kloniraj"
 msgid "Enter the project Git URL"
 msgstr "Vnesite URL projekta v Gitu"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
 msgstr "Manjka projekt"
 
-#: views/editor/EditorView.qml:63
+#: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Ustvari ali odpri novi projekt."
 
-#: views/editor/EditorView.qml:90
+#: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
 msgstr "Kloniraj projekt"
 
-#: views/editor/EditorView.qml:193
+#: views/editor/EditorView.qml:212
 #, kde-format
 msgid "Find and Replace"
 msgstr "Najdi in zamenjaj"
 
-#: views/editor/EditorView.qml:206
+#: views/editor/EditorView.qml:225
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Števec vrstic/besed"
@@ -270,6 +265,11 @@ msgstr "Odpri imenik"
 msgid "Close"
 msgstr "Zapri"
 
+#: views/widgets/OutputPanel.qml:50
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
+
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
@@ -310,44 +310,44 @@ msgstr "Izberi ciljni projekt"
 msgid "Finish"
 msgstr "Končaj"
 
-#: views/widgets/SettingsDialog.qml:14
+#: views/widgets/SettingsDialog.qml:16
 #, kde-format
 msgid "Editor"
 msgstr "Urejevalnik"
 
-#: views/widgets/SettingsDialog.qml:15
+#: views/widgets/SettingsDialog.qml:17
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
 "Nastavi videz in obnašanje urejevalnika. Nastavitve so uveljavljene globalno"
 
-#: views/widgets/SettingsDialog.qml:19
+#: views/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Auto Save"
 msgstr "Samodejno shranjevanje"
 
-#: views/widgets/SettingsDialog.qml:20
+#: views/widgets/SettingsDialog.qml:22
 #, kde-format
 msgid "Auto saves your file every few seconds"
 msgstr "Samodejno shranjevanje shranjuje vsako datoteko vsakih nekaj sekund"
 
-#: views/widgets/SettingsDialog.qml:31
+#: views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Line Numbers"
 msgstr "Številke vrstic"
 
-#: views/widgets/SettingsDialog.qml:32
+#: views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "Prikaži številke vrstic na levi strani"
 
-#: views/widgets/SettingsDialog.qml:45
+#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Style"
 msgstr "Slog"
 
-#: views/widgets/SettingsDialog.qml:46
+#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -356,40 +356,54 @@ msgstr ""
 "Nastavi slog osvetljevanja skladnje. Ta nastavitev ni uveljavljena za "
 "formate obogatenega besedila"
 
-#: views/widgets/SettingsDialog.qml:52
+#: views/widgets/SettingsDialog.qml:54
 #, kde-format
 msgid "Font Family"
 msgstr "Družina pisav"
 
-#: views/widgets/SettingsDialog.qml:65
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid "Font Size"
 msgstr "Velikost pisave"
 
-#: views/widgets/SettingsDialog.qml:77
+#: views/widgets/SettingsDialog.qml:79
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Razmik med tabulatorji"
 
-#: views/widgets/SettingsDialog.qml:89
-#, kde-format
-msgid "Theme"
-msgstr "Tema"
+#: views/widgets/SettingsDialog.qml:91
+#, fuzzy, kde-format
+#| msgid "Color"
+msgid "Colors"
+msgstr "Barva"
 
-#: views/widgets/SettingsDialog.qml:90
+#: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Editor color scheme style"
-msgstr "Barvna shema sloga urejevalnika"
+msgid "Configure the color scheme of the syntax hightlighting."
+msgstr ""
 
-#: views/widgets/SettingsDialog.qml:108
+#: views/widgets/SettingsDialog.qml:116
 #, kde-format
 msgid "Color"
 msgstr "Barva"
 
-#: views/widgets/SettingsDialog.qml:109
+#: views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Editor background color"
 msgstr "Barva ozadja urejevalnika"
+
+#: views/widgets/SettingsDialog.qml:148
+#, kde-format
+msgid "Theme"
+msgstr "Tema"
+
+#: views/widgets/SettingsDialog.qml:149
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Barvna shema sloga urejevalnika"
+
+#~ msgid "Split"
+#~ msgstr "Razdeli"
 
 #~ msgid "New file"
 #~ msgstr "Nova datoteka"

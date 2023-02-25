@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-01-30 00:56+0000\n"
+"POT-Creation-Date: 2023-02-25 00:59+0000\n"
 "PO-Revision-Date: 2022-12-01 10:49+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -82,7 +82,7 @@ msgstr "Увімкнути чи вимкнути бічну панель"
 msgid "Create New Project"
 msgstr "Створити проєкт"
 
-#: main.qml:265 views/editor/EditorView.qml:69
+#: main.qml:265 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Відкрити проєкт"
@@ -97,17 +97,12 @@ msgstr "Відкрити файл"
 msgid "New Template Source File"
 msgstr "Створити шаблон файла коду"
 
-#: main.qml:311
-#, kde-format
-msgid "Split"
-msgstr "Розділити"
-
-#: main.qml:331
+#: main.qml:310
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: main.qml:342
+#: main.qml:321
 #, kde-format
 msgid "About"
 msgstr "Про програму"
@@ -142,27 +137,27 @@ msgstr "Клонувати"
 msgid "Enter the project Git URL"
 msgstr "Введіть адресу проєкту Git"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
 msgstr "Не вистачає проєкту"
 
-#: views/editor/EditorView.qml:63
+#: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Створити або відкрити новий проєкт."
 
-#: views/editor/EditorView.qml:90
+#: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
 msgstr "Клонувати проєкт"
 
-#: views/editor/EditorView.qml:193
+#: views/editor/EditorView.qml:212
 #, kde-format
 msgid "Find and Replace"
 msgstr "Знайти і замінити"
 
-#: views/editor/EditorView.qml:206
+#: views/editor/EditorView.qml:225
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Лічильник рядків/слів"
@@ -270,6 +265,11 @@ msgstr "Відкрити каталог"
 msgid "Close"
 msgstr "Закрити"
 
+#: views/widgets/OutputPanel.qml:50
+#, kde-format
+msgid "Follows the system color scheme."
+msgstr ""
+
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
@@ -310,12 +310,12 @@ msgstr "Виберіть цільовий проєкт"
 msgid "Finish"
 msgstr "Завершити"
 
-#: views/widgets/SettingsDialog.qml:14
+#: views/widgets/SettingsDialog.qml:16
 #, kde-format
 msgid "Editor"
 msgstr "Редактор"
 
-#: views/widgets/SettingsDialog.qml:15
+#: views/widgets/SettingsDialog.qml:17
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -323,32 +323,32 @@ msgstr ""
 "Налаштувати вигляд і поведінку редактора. Параметри буде застосовано на "
 "загальному рівні."
 
-#: views/widgets/SettingsDialog.qml:19
+#: views/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Auto Save"
 msgstr "Автозбереження"
 
-#: views/widgets/SettingsDialog.qml:20
+#: views/widgets/SettingsDialog.qml:22
 #, kde-format
 msgid "Auto saves your file every few seconds"
 msgstr "Автозбереження файла кожні декілька секунд"
 
-#: views/widgets/SettingsDialog.qml:31
+#: views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Line Numbers"
 msgstr "Номери рядків"
 
-#: views/widgets/SettingsDialog.qml:32
+#: views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "Показувати номери рядків ліворуч"
 
-#: views/widgets/SettingsDialog.qml:45
+#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Style"
 msgstr "Стиль"
 
-#: views/widgets/SettingsDialog.qml:46
+#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -357,40 +357,54 @@ msgstr ""
 "Налаштувати стиль підсвічування синтаксису Ці налаштування не буде "
 "застосовано до форматованого тексту"
 
-#: views/widgets/SettingsDialog.qml:52
+#: views/widgets/SettingsDialog.qml:54
 #, kde-format
 msgid "Font Family"
 msgstr "Гарнітура шрифту"
 
-#: views/widgets/SettingsDialog.qml:65
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid "Font Size"
 msgstr "Розмір шрифту"
 
-#: views/widgets/SettingsDialog.qml:77
+#: views/widgets/SettingsDialog.qml:79
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Інтервал табуляції"
 
-#: views/widgets/SettingsDialog.qml:89
-#, kde-format
-msgid "Theme"
-msgstr "Тема"
+#: views/widgets/SettingsDialog.qml:91
+#, fuzzy, kde-format
+#| msgid "Color"
+msgid "Colors"
+msgstr "Колір"
 
-#: views/widgets/SettingsDialog.qml:90
+#: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Editor color scheme style"
-msgstr "Схема кольорів редактора"
+msgid "Configure the color scheme of the syntax hightlighting."
+msgstr ""
 
-#: views/widgets/SettingsDialog.qml:108
+#: views/widgets/SettingsDialog.qml:116
 #, kde-format
 msgid "Color"
 msgstr "Колір"
 
-#: views/widgets/SettingsDialog.qml:109
+#: views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Editor background color"
 msgstr "Колір тла редактора"
+
+#: views/widgets/SettingsDialog.qml:148
+#, kde-format
+msgid "Theme"
+msgstr "Тема"
+
+#: views/widgets/SettingsDialog.qml:149
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Схема кольорів редактора"
+
+#~ msgid "Split"
+#~ msgstr "Розділити"
 
 #~ msgid "New file"
 #~ msgstr "Створити файл"
