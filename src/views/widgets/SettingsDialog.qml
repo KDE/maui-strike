@@ -45,7 +45,7 @@ Maui.SettingsDialog
     Maui.SectionGroup
     {
         title: i18n("Style")
-        description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
+        description: i18n("Configure the style of the syntax highlighting. This configuration in not applied for rich text formats")
         visible: settings.enableSyntaxHighlighting
 
 
@@ -89,7 +89,7 @@ Maui.SettingsDialog
         Maui.SectionItem
         {
             label1.text: i18n("Colors")
-            label2.text: i18n("Configure the color scheme of the syntax hightlighting.")
+            label2.text: i18n("Configure the color scheme of the syntax highlighting.")
             enabled: settings.enableSyntaxHighlighting
             ToolButton
             {
