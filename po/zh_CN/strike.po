@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
 "PO-Revision-Date: 2023-02-24 12:44\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -343,10 +343,13 @@ msgstr "显示行号到编辑器左侧。"
 msgid "Style"
 msgstr "风格"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr "配置语法高亮的显示风格。此配置不会被应用于富文本格式"
 
@@ -373,8 +376,15 @@ msgstr "颜色"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
 msgstr ""
+
+#: views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr "配置语法高亮的显示风格。此配置不会被应用于富文本格式"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

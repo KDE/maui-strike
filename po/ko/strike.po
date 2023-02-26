@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
 "PO-Revision-Date: 2021-11-14 19:20+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -346,10 +346,13 @@ msgstr "왼쪽에 줄 번호 표시"
 msgid "Style"
 msgstr "스타일"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr "구문 강조 스타일을 설정합니다. 서식 있는 텍스트에는 적용되지 않습니다"
 
@@ -376,8 +379,15 @@ msgstr "색상"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
 msgstr ""
+
+#: views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr "구문 강조 스타일을 설정합니다. 서식 있는 텍스트에는 적용되지 않습니다"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

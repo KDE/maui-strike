@@ -3,13 +3,13 @@
 # This file is distributed under the same license as the maui-strike package.
 #
 # Automatically generated, 2021.
-# Eloy Cuadra <ecuadra@eloihr.net>, 2021, 2022.
+# Eloy Cuadra <ecuadra@eloihr.net>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2022-12-01 16:35+0100\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"PO-Revision-Date: 2023-02-25 15:49+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.11.90\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -269,7 +269,7 @@ msgstr "Cerrar"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Sigue el esquema de color del sistema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -349,10 +349,13 @@ msgstr "Mostrar los números de línea en el lado izquierdo"
 msgid "Style"
 msgstr "Estilo"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
 "Configurar el estilo del resaltado sintáctico. Esta configuración no se "
@@ -374,15 +377,24 @@ msgid "Tab Spacing"
 msgstr "Espacios del tabulador"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Color"
+msgstr "Colores"
 
 #: views/widgets/SettingsDialog.qml:92
+#, fuzzy, kde-format
+#| msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr "Configurar el esquema de color del resaltado sintáctico."
+
+#: views/widgets/SettingsDialog.qml:112
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
 msgstr ""
+"Configurar el estilo del resaltado sintáctico. Esta configuración no se "
+"aplica a los formatos de texto enriquecido."
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

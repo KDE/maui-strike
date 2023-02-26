@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
 "PO-Revision-Date: 2022-12-02 07:18+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -346,10 +346,13 @@ msgstr "მარცხენა მხარეს ხაზის ნომრ
 msgid "Style"
 msgstr "სტილი"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
 "მოირგეთ სინტაქსის გამოკვეთის სტილი. კონფიგურაცია არ ეხება მდიდარი ტექსტის "
@@ -378,8 +381,17 @@ msgstr "ფერი"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
 msgstr ""
+
+#: views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"მოირგეთ სინტაქსის გამოკვეთის სტილი. კონფიგურაცია არ ეხება მდიდარი ტექსტის "
+"ფორმატებს"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

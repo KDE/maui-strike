@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
 "PO-Revision-Date: 2021-10-10 11:40+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -346,10 +346,13 @@ msgstr "Wyświetl numery wierszy po lewej stronie"
 msgid "Style"
 msgstr "Wygląd"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
 "Ustawienia wyglądu podświetlania składni. Ustawienia te nie są stosowane dla "
@@ -378,8 +381,17 @@ msgstr "Barwa"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
 msgstr ""
+
+#: views/widgets/SettingsDialog.qml:112
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+"Ustawienia wyglądu podświetlania składni. Ustawienia te nie są stosowane dla "
+"tekstu formatowanego"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

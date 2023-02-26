@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# Yuri Chornoivan <yurchor@ukr.net>, 2021, 2022.
+# Yuri Chornoivan <yurchor@ukr.net>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-25 00:59+0000\n"
-"PO-Revision-Date: 2022-12-01 10:49+0200\n"
+"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"PO-Revision-Date: 2023-02-25 09:00+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -268,7 +268,7 @@ msgstr "Закрити"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Використовувати загальносистемну схему кольорів."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -348,10 +348,13 @@ msgstr "Показувати номери рядків ліворуч"
 msgid "Style"
 msgstr "Стиль"
 
-#: views/widgets/SettingsDialog.qml:48 views/widgets/SettingsDialog.qml:112
-#, kde-format
+#: views/widgets/SettingsDialog.qml:48
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
 "Налаштувати стиль підсвічування синтаксису Ці налаштування не буде "
@@ -373,15 +376,24 @@ msgid "Tab Spacing"
 msgstr "Інтервал табуляції"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Колір"
+msgstr "Кольори"
 
 #: views/widgets/SettingsDialog.qml:92
+#, fuzzy, kde-format
+#| msgid "Configure the color scheme of the syntax hightlighting."
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr "Налаштувати схему кольорів для підсвічування синтаксичних конструкцій."
+
+#: views/widgets/SettingsDialog.qml:112
 #, kde-format
-msgid "Configure the color scheme of the syntax hightlighting."
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
 msgstr ""
+"Налаштувати стиль підсвічування синтаксису Ці налаштування не буде "
+"застосовано до форматованого тексту"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format

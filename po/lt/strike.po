@@ -1,54 +1,57 @@
-# Frederik Schwarzer <schwarzer@kde.org>, 2021.
-# Alois Spitzbart <spitz234@hotmail.com>, 2021.
+# Lithuanian translations for maui-strike package.
+# Copyright (C) 2023 This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+# Automatically generated, 2023.
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2021-11-07 13:58+0100\n"
-"Last-Translator: Alois Spitzbart <spitz234@hotmail.com>\n"
-"Language-Team: German <kde-i18n-de@kde.org>\n"
-"Language: de\n"
+"PO-Revision-Date: 2023-02-25 00:59+0000\n"
+"Last-Translator: Automatically generated\n"
+"Language-Team: none\n"
+"Language: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.08.2\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && (n"
+"%100<10 || n%100>=20) ? 1 : 2);\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
 msgid "Your names"
-msgstr "Deutsches KDE-Übersetzerteam"
+msgstr ""
 
 #, kde-format
 msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
-msgstr "kde-i18n-de@kde.org"
+msgstr ""
 
 #: main.cpp:40
 #, kde-format
 msgid "Build and run code."
-msgstr "Quelltext erstellen und ausführen."
+msgstr ""
 
 #: main.cpp:40
 #, kde-format
 msgid "© 2021-%1 Camilo Higuita"
-msgstr "© 2021-%1 Camilo Higuita"
+msgstr ""
 
 #: main.cpp:42
 #, kde-format
 msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
+msgstr ""
 
 #: main.cpp:42
 #, kde-format
 msgid "Developer"
-msgstr "Entwickler"
+msgstr ""
 
 #: main.qml:128
 #, kde-format
 msgid "Unsaved files"
-msgstr "Ungespeicherte Dateien"
+msgstr ""
 
 #: main.qml:129
 #, kde-format
@@ -56,173 +59,171 @@ msgid ""
 "You have unsaved files. You can go back and save them or choose to discard "
 "all changes and exit."
 msgstr ""
-"Sie haben nicht gespeicherte Dateien. Sie können zurückgehen und sie "
-"speichern oder alle Änderungen verwerfen und die Anwendung beenden."
 
 #: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Go back"
-msgstr "Zurück"
+msgstr ""
 
 #: main.qml:133
 #, kde-format
 msgid "Discard"
-msgstr "Verwerfen"
+msgstr ""
 
 #: main.qml:240
 #, kde-format
 msgid "Toogle SideBar"
-msgstr "Seitenleiste umschalten"
+msgstr ""
 
 #: main.qml:253
 #, kde-format
 msgid "Create New Project"
-msgstr "Neues Projekt erzeugen"
+msgstr ""
 
 #: main.qml:265 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
-msgstr "Projekt öffnen"
+msgstr ""
 
 #: main.qml:286
 #, kde-format
 msgid "Open File"
-msgstr "Datei öffnen"
+msgstr ""
 
 #: main.qml:298
 #, kde-format
 msgid "New Template Source File"
-msgstr "Neue Vorlagen-Quelldatei"
+msgstr ""
 
 #: main.qml:310
 #, kde-format
 msgid "Settings"
-msgstr "Einstellungen"
+msgstr ""
 
 #: main.qml:321
 #, kde-format
 msgid "About"
-msgstr "Über"
+msgstr ""
 
 #: views/editor/Editor.qml:88
 #, kde-format
 msgid "Open here"
-msgstr "Hier öffnen"
+msgstr ""
 
 #: views/editor/Editor.qml:98
 #, kde-format
 msgid "Open in new tab"
-msgstr "In neuem Unterfenster öffnen"
+msgstr ""
 
 #: views/editor/Editor.qml:109
 #, kde-format
 msgid "Open in new split"
-msgstr "In neuer geteilter Ansicht öffnen"
+msgstr ""
 
 #: views/editor/Editor.qml:121
 #, kde-format
 msgid "Cancel"
-msgstr "Abbrechen"
+msgstr ""
 
 #: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
 #, kde-format
 msgid "Clone"
-msgstr "Klonen"
+msgstr ""
 
 #: views/editor/EditorView.qml:35
 #, kde-format
 msgid "Enter the project Git URL"
-msgstr "URL des Git-Projekts eingeben"
+msgstr ""
 
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
-msgstr "Fehlendes Projekt"
+msgstr ""
 
 #: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
-msgstr "Neues Projekt erstellen oder öffnen."
+msgstr ""
 
 #: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
-msgstr "Projekt klonen"
+msgstr ""
 
 #: views/editor/EditorView.qml:212
 #, kde-format
 msgid "Find and Replace"
-msgstr "Suchen und Ersetzen"
+msgstr ""
 
 #: views/editor/EditorView.qml:225
 #, kde-format
 msgid "Line/Word Counter"
-msgstr "Zeilen- und Wortzähler"
+msgstr ""
 
 #: views/PlacesSidebar.qml:68
 #, kde-format
 msgid "Project Sources"
-msgstr "Projektquellen"
+msgstr ""
 
 #: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Source files will be listed in here."
-msgstr "Quelldateien werden hier angeführt."
+msgstr ""
 
 #: views/PlacesSidebar.qml:113
 #, kde-format
 msgid "Previous"
-msgstr "Zurück"
+msgstr ""
 
 #: views/PlacesSidebar.qml:120
 #, kde-format
 msgid "Up"
-msgstr "Nach oben"
+msgstr ""
 
 #: views/PlacesSidebar.qml:128
 #, kde-format
 msgid "Next"
-msgstr "Weiter"
+msgstr ""
 
 #: views/PlacesSidebar.qml:152
 #, kde-format
 msgid "Show Folders First"
-msgstr "Ordner zuerst anzeigen"
+msgstr ""
 
 #: views/PlacesSidebar.qml:162
 #, kde-format
 msgid "Type"
-msgstr "Typ"
+msgstr ""
 
 #: views/PlacesSidebar.qml:171
 #, kde-format
 msgid "Date"
-msgstr "Datum"
+msgstr ""
 
 #: views/PlacesSidebar.qml:180
 #, kde-format
 msgid "Modified"
-msgstr "Geändert"
+msgstr ""
 
 #: views/PlacesSidebar.qml:189
 #, kde-format
 msgid "Size"
-msgstr "Größe"
+msgstr ""
 
 #: views/PlacesSidebar.qml:198
 #, kde-format
 msgid "Name"
-msgstr "Name"
+msgstr ""
 
 #: views/PlacesSidebar.qml:210
 #, kde-format
 msgid "Group"
-msgstr "Gruppe"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
 #, kde-format
 msgid "Targets"
-msgstr "Ziele"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
 #: views/widgets/ProjectConfigDialog.qml:14
@@ -230,22 +231,22 @@ msgstr "Ziele"
 #: views/widgets/ProjectConfigDialog.qml:177
 #, kde-format
 msgid "Configure"
-msgstr "Einrichten"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:113
 #, kde-format
 msgid "Build"
-msgstr "Erstellen"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:120
 #, kde-format
 msgid "Run"
-msgstr "Ausführen"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:127
 #, kde-format
 msgid "Install"
-msgstr "Installieren"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:185
 #, kde-format
@@ -253,10 +254,9 @@ msgid "Clear CMake"
 msgstr ""
 
 #: views/widgets/BuildBar.qml:193
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Projekt öffnen"
+msgstr ""
 
 #: views/widgets/BuildBar.qml:203
 #, kde-format
@@ -271,113 +271,105 @@ msgstr ""
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
 msgid "Abort"
-msgstr "Abbrechen"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:67
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr "Einstellungen festlegen, um mit dem Programmieren zu beginnen!"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:81
 #, kde-format
 msgid "Build Directory"
-msgstr "Build-Ordner"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:82
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr "Einen Build-Ordner auswählen oder Standardordner beibehalten"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Build directory path"
-msgstr "Build-Ordner-Pfad"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:125
 #, kde-format
 msgid "Project"
-msgstr "Projekt"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:126
 #, kde-format
 msgid "Select the target project"
-msgstr "Wählen Sie das Ausgabeprojekt aus"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:178
 #, kde-format
 msgid "Finish"
-msgstr "Fertigstellen"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:16
 #, kde-format
 msgid "Editor"
-msgstr "Editor"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:17
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr ""
-"Einstellungen für das Erscheinungsbild des Editors, die Einstellungen werden "
-"global angewendet"
 
 #: views/widgets/SettingsDialog.qml:21
 #, kde-format
 msgid "Auto Save"
-msgstr "Automatisch speichern"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:22
 #, kde-format
 msgid "Auto saves your file every few seconds"
-msgstr "Speichert Ihre Datei automatisch alle paar Sekunden"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:33
 #, kde-format
 msgid "Line Numbers"
-msgstr "Zeilennummern"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:34
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr "Zeilennummern am linken Rand anzeigen"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
 #, kde-format
 msgid "Style"
-msgstr "Stil"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
-"Stil der Syntaxhervorhebung einrichten. Diese Einstellungen werden nicht für "
-"Rich-Textformate angewendet"
 
 #: views/widgets/SettingsDialog.qml:54
 #, kde-format
 msgid "Font Family"
-msgstr "Schriftfamilie"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid "Font Size"
-msgstr "Schriftgröße"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:79
 #, kde-format
 msgid "Tab Spacing"
-msgstr "Tabulator-Einrückungsabstand"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Farbe"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
@@ -390,40 +382,23 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
-"Stil der Syntaxhervorhebung einrichten. Diese Einstellungen werden nicht für "
-"Rich-Textformate angewendet"
 
 #: views/widgets/SettingsDialog.qml:116
 #, kde-format
 msgid "Color"
-msgstr "Farbe"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Editor background color"
-msgstr "Editor-Hintergrundfarbe"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:148
 #, kde-format
 msgid "Theme"
-msgstr "Design"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:149
 #, kde-format
 msgid "Editor color scheme style"
-msgstr "Editor-Farbschema"
-
-#~ msgid "Split"
-#~ msgstr "Teilen"
-
-#~ msgid "New file"
-#~ msgstr "Neue Datei"
-
-#~ msgid "Open a existing project"
-#~ msgstr "Vorhandenes Projekt öffnen"
-
-#~ msgid "Open one or multiple files"
-#~ msgstr "Eine oder mehrere Dateien öffnen"
-
-#~ msgid "With support for basic text format editing"
-#~ msgstr "Mit Unterstützung für einfache Textformatierung"
+msgstr ""
