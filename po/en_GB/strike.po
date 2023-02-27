@@ -1,15 +1,15 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# Steve Allewell <steve.allewell@gmail.com>, 2021, 2022.
+# Steve Allewell <steve.allewell@gmail.com>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-31 15:33+0000\n"
+"PO-Revision-Date: 2023-02-26 23:17+0000\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: English <kde-i18n-doc@kde.org>\n"
+"Language-Team: English <kde-l10n-en_gb@kde.org>\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -267,7 +267,7 @@ msgstr "Close"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Follows the system colour scheme."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -347,10 +347,7 @@ msgid "Style"
 msgstr "Style"
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
@@ -374,15 +371,14 @@ msgid "Tab Spacing"
 msgstr "Tab Spacing"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Colour"
+msgstr "Colours"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Configure the colour scheme of the syntax highlighting."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format

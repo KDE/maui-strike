@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-02 07:18+0100\n"
+"PO-Revision-Date: 2023-02-26 03:17+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -268,7 +268,7 @@ msgstr "დახურვა"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -374,15 +374,14 @@ msgid "Tab Spacing"
 msgstr "ტაბულაციის დაშორება"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "ფერი"
+msgstr "ფერები"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "სინტაქსის გამოკვეთის ფერის სქემის მორგება."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format
