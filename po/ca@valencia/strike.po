@@ -1,15 +1,15 @@
 # Translation of strike.po to Catalan (Valencian)
-# Copyright (C) 2021-2022 This_file_is_part_of_KDE
+# Copyright (C) 2021-2023 This_file_is_part_of_KDE
 # This file is distributed under the license LGPL version 2.1 or
 # version 3 or later versions approved by the membership of KDE e.V.
 #
-# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2022.
+# Josep M. Ferrer <txemaq@gmail.com>, 2021, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-01 13:40+0100\n"
+"PO-Revision-Date: 2023-02-26 11:35+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -270,7 +270,7 @@ msgstr "Tanca"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Seguix l'esquema de colors del sistema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -352,10 +352,7 @@ msgid "Style"
 msgstr "Estil"
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
@@ -379,15 +376,14 @@ msgid "Tab Spacing"
 msgstr "Espaiat del tabulador"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Color"
+msgstr "Colors"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Configura l'esquema de colors del ressaltat de sintaxi."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format
@@ -417,6 +413,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Editor de l'estil de l'esquema de color"
-
-#~ msgid "Split"
-#~ msgstr "Dividix"

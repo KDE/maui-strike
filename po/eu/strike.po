@@ -1,16 +1,16 @@
 # Translation for strike.po to Euskara/Basque (eu).
-# Copyright (C) 2022 This file is copyright:
+# Copyright (C) 2022-2023 This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 # KDE euskaratzeko proiektuko arduraduna <xalba@ni.eus>.
 #
 # Translators:
-# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022.
+# Iñigo Salvador Azurmendi <xalba@ni.eus>, 2022, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-01 22:50+0100\n"
+"PO-Revision-Date: 2023-02-27 21:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -270,7 +270,7 @@ msgstr "Itxi"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Sistemaren kolore-antolaerari jarraitzen dio."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -351,15 +351,12 @@ msgid "Style"
 msgstr "Estiloa"
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
-"Konfiguratu sintaxi-nabarmentzeko estiloa. Konfigurazio hau ez da erabiliko "
+"Konfiguratu sintaxia nabarmentzeko estiloa. Konfigurazio hau ez da erabiliko "
 "testu aberastuko formatuekin"
 
 #: views/widgets/SettingsDialog.qml:54
@@ -378,15 +375,14 @@ msgid "Tab Spacing"
 msgstr "Tabulazioen tartea"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Kolorea"
+msgstr "Koloreak"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Konfiguratu sintaxia nabarmentzeko kolore-antolaera."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format
