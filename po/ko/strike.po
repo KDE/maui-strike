@@ -407,7 +407,7 @@ msgstr "테마"
 #: views/widgets/SettingsDialog.qml:149
 #, kde-format
 msgid "Editor color scheme style"
-msgstr "편집기 색 배열 스타일"
+msgstr "편집기 색 구성표 스타일"
 
 #~ msgid "Split"
 #~ msgstr "분할"
