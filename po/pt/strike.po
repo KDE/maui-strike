@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-04 02:20+0000\n"
+"PO-Revision-Date: 2023-03-06 15:02+0000\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -268,7 +268,7 @@ msgstr "Fechar"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Segue o esquema de cores do sistema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -349,10 +349,7 @@ msgid "Style"
 msgstr "Estilo"
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
@@ -383,7 +380,7 @@ msgstr "Cores"
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Configura o esquema de cores do realce de sintaxe."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format
@@ -413,6 +410,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Estilo do esquema de cores do editor"
-
-#~ msgid "Split"
-#~ msgstr "Dividir"
