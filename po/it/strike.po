@@ -1,21 +1,22 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 # Paolo Zamponi <zapaolo@email.it>, 2021, 2022.
+# Vincenzo Reale <smart2128vr@gmail.com>, 2023.
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-02-26 00:57+0000\n"
-"PO-Revision-Date: 2022-12-02 08:57+0100\n"
-"Last-Translator: Paolo Zamponi <zapaolo@email.it>\n"
+"PO-Revision-Date: 2023-03-29 20:23+0200\n"
+"Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.08.3\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -252,7 +253,7 @@ msgstr "Installa"
 #: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
-msgstr ""
+msgstr "Svuota CMake"
 
 #: views/widgets/BuildBar.qml:193
 #, kde-format
@@ -267,7 +268,7 @@ msgstr "Chiudi"
 #: views/widgets/OutputPanel.qml:50
 #, kde-format
 msgid "Follows the system color scheme."
-msgstr ""
+msgstr "Segue lo schema di colori del sistema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -347,15 +348,12 @@ msgid "Style"
 msgstr "Stile"
 
 #: views/widgets/SettingsDialog.qml:48
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
-"Configura lo stile dell'evidenziazione della sintassi. Questa configurazione "
+"Configura lo stile di evidenziazione della sintassi. Questa configurazione "
 "non viene applicata con i formati di testo ricco"
 
 #: views/widgets/SettingsDialog.qml:54
@@ -374,15 +372,14 @@ msgid "Tab Spacing"
 msgstr "Spaziatura delle tabulazioni"
 
 #: views/widgets/SettingsDialog.qml:91
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Colore"
+msgstr "Colori"
 
 #: views/widgets/SettingsDialog.qml:92
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Configura lo schema di colori di evidenziazione della sintassi."
 
 #: views/widgets/SettingsDialog.qml:112
 #, kde-format
