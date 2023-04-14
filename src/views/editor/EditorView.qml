@@ -57,9 +57,9 @@ Maui.Page
             tabBar.visible: currentEditor
             tabBar.showNewTabButton: false
 
-            tabBar.rightContent:  ToolButton
+            tabBar.rightContent: ToolButton
             {
-//                text: i18n("Split")
+                text: i18n("Split")
                 visible: settings.supportSplit
                 icon.name: root.currentTab.orientation === Qt.Horizontal ? "view-split-left-right" : "view-split-top-bottom"
                 checked: root.currentTab && root.currentTab.count === 2
@@ -137,7 +137,6 @@ Maui.Page
             tabViewButton: Maui.TabViewButton
             {
                 id:  _tabButton
-                tabBar: _editorListView.tabBar
                 tabView: _editorListView
                 onClicked:
                 {

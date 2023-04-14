@@ -12,13 +12,13 @@ Control
     id: control
 
     implicitHeight: _layout.implicitHeight + topPadding + bottomPadding
-implicitWidth: _layout.implicitWidth +leftPadding + rightPadding
+    implicitWidth: _layout.implicitWidth +leftPadding + rightPadding
 
     padding: 0
     background: null
 
     //    enabled: _project.manager.status === Strike.Manager.Ready
-    Maui.Popup
+    Popup
     {
         id: _projectMenu
         maxHeight: 200
@@ -147,13 +147,13 @@ implicitWidth: _layout.implicitWidth +leftPadding + rightPadding
             id: _menuButton
             Layout.fillHeight: true
             Layout.fillWidth: true
-icon.source: _project.projectLogo
-icon.color: "transparent"
-enabled: currentEditor
-font.bold: true
-font.weight: Font.Bold
-//icon.height: Maui.Style.iconSizes.medium
-//icon.width:  Maui.Style.iconSizes.medium
+            icon.source: _project.projectLogo
+            icon.color: "transparent"
+            enabled: currentEditor
+            font.bold: true
+            font.weight: Font.Bold
+            //icon.height: Maui.Style.iconSizes.medium
+            //icon.width:  Maui.Style.iconSizes.medium
             text: _cmakeProject.title.length > 0 ? _cmakeProject.title : Maui.App.about.displayName
             display: ToolButton.TextBesideIcon
 
@@ -167,42 +167,42 @@ font.weight: Font.Bold
                 isSection:true
             }
 
-Repeater
-{
-    model: 3
+            Repeater
+            {
+                model: 3
 
-    MenuItem
-    {
-        text: "target " + index
-        checkable: true
-    }
-}
+                MenuItem
+                {
+                    text: "target " + index
+                    checkable: true
+                }
+            }
 
-MenuSeparator{}
+            MenuSeparator{}
 
-MenuItem
-{
-    text: i18n("Clear CMake")
-}
+            MenuItem
+            {
+                text: i18n("Clear CMake")
+            }
 
 
-MenuSeparator{}
+            MenuSeparator{}
 
-MenuItem
-{
-    text: i18n("Open directory")
-}
+            MenuItem
+            {
+                text: i18n("Open directory")
+            }
 
-MenuItem
-{
-    text: i18n("Configure")
-}
+            MenuItem
+            {
+                text: i18n("Configure")
+            }
 
-MenuItem
-{
-    text: i18n("Close")
-}
-     background: Kirigami.ShadowedRectangle
+            MenuItem
+            {
+                text: i18n("Close")
+            }
+            background: Kirigami.ShadowedRectangle
             {
                 color: Maui.Theme.backgroundColor
                 corners
