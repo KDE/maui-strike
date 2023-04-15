@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-25 00:59+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -135,6 +135,11 @@ msgstr ""
 msgid "Enter the project Git URL"
 msgstr ""
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr ""
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -150,12 +155,12 @@ msgstr ""
 msgid "Clone Project"
 msgstr ""
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr ""
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr ""
@@ -261,11 +266,6 @@ msgstr ""
 #: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
-msgstr ""
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
 msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-26 04:43+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -138,6 +138,11 @@ msgstr "Clonar"
 msgid "Enter the project Git URL"
 msgstr "Introduzca la URL Git del proyecto"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Dividir"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -153,12 +158,12 @@ msgstr "Crear o abrir un nuevo proyecto."
 msgid "Clone Project"
 msgstr "Clonar proyecto"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Buscar y sustituir"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Contador de líneas/palabras"
@@ -265,11 +270,6 @@ msgstr "Abrir directorio"
 #, kde-format
 msgid "Close"
 msgstr "Cerrar"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Sigue el esquema de color del sistema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -412,8 +412,8 @@ msgstr "Tema"
 msgid "Editor color scheme style"
 msgstr "Estilo del esquema de colores del editor"
 
-#~ msgid "Split"
-#~ msgstr "Dividir"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Sigue el esquema de color del sistema."
 
 #~ msgid "New file"
 #~ msgstr "Nuevo archivo"

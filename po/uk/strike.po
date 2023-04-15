@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-26 09:22+0200\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -137,6 +137,11 @@ msgstr "Клонувати"
 msgid "Enter the project Git URL"
 msgstr "Введіть адресу проєкту Git"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Розділити"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -152,12 +157,12 @@ msgstr "Створити або відкрити новий проєкт."
 msgid "Clone Project"
 msgstr "Клонувати проєкт"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Знайти і замінити"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Лічильник рядків/слів"
@@ -264,11 +269,6 @@ msgstr "Відкрити каталог"
 #, kde-format
 msgid "Close"
 msgstr "Закрити"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Використовувати загальносистемну схему кольорів."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -411,8 +411,8 @@ msgstr "Тема"
 msgid "Editor color scheme style"
 msgstr "Схема кольорів редактора"
 
-#~ msgid "Split"
-#~ msgstr "Розділити"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Використовувати загальносистемну схему кольорів."
 
 #~ msgid "New file"
 #~ msgstr "Створити файл"

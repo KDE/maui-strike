@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-09 02:17+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@linux.org.tw>\n"
@@ -137,6 +137,11 @@ msgstr "建立複本"
 msgid "Enter the project Git URL"
 msgstr "輸入專案 Git 網址"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "分割"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -152,12 +157,12 @@ msgstr "建立並開啟新專案。"
 msgid "Clone Project"
 msgstr "建立專案複本"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "搜尋與取代"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "行數/字數計數器"
@@ -264,11 +269,6 @@ msgstr "開啟目錄"
 #, kde-format
 msgid "Close"
 msgstr "關閉"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -408,6 +408,3 @@ msgstr "主題"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "編輯器配色方案風格"
-
-#~ msgid "Split"
-#~ msgstr "分割"

@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-03-06 13:45+0200\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -136,6 +136,11 @@ msgstr "Monista"
 msgid "Enter the project Git URL"
 msgstr "Anna projektin Git-verkko-osoite"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Jaa"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -151,12 +156,12 @@ msgstr "Luo tai avaa uusi projekti."
 msgid "Clone Project"
 msgstr "Monista projekti"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Etsi ja korvaa"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Rivi- ja sanalaskuri"
@@ -263,11 +268,6 @@ msgstr "Avaa kansio"
 #, kde-format
 msgid "Close"
 msgstr "Sulje"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Seuraa järjestelmän väriteemaa."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -406,8 +406,8 @@ msgstr "Teema"
 msgid "Editor color scheme style"
 msgstr "Muokkaimen värimalli"
 
-#~ msgid "Split"
-#~ msgstr "Jaa"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Seuraa järjestelmän väriteemaa."
 
 #~ msgid "New file"
 #~ msgstr "Uusi tiedosto"

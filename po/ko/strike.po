@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2021-11-14 19:20+0100\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -136,6 +136,11 @@ msgstr "복제"
 msgid "Enter the project Git URL"
 msgstr "프로젝트 Git URL 입력"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "분할"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -151,12 +156,12 @@ msgstr "새 프로젝트를 만들거나 기존 프로젝트를 엽니다."
 msgid "Clone Project"
 msgstr "프로젝트 복제"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "찾기 및 바꾸기"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "줄/단어 카운터"
@@ -263,11 +268,6 @@ msgstr "프로젝트 열기"
 #: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
-msgstr ""
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
 msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
@@ -408,9 +408,6 @@ msgstr "테마"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "편집기 색 구성표 스타일"
-
-#~ msgid "Split"
-#~ msgstr "분할"
 
 #~ msgid "New file"
 #~ msgstr "새 파일"

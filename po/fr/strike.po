@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-27 07:21+0100\n"
 "Last-Translator: Xavier BESNARD <xavier.besnard]neuf.fr>\n"
 "Language-Team: fr\n"
@@ -134,6 +134,11 @@ msgstr "Cloner"
 msgid "Enter the project Git URL"
 msgstr "Saisir l'URL du projet « Git »"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Scinder"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -149,12 +154,12 @@ msgstr "Créer ou ouvrir un nouveau projet."
 msgid "Clone Project"
 msgstr "Cloner un projet"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Chercher et remplacer"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Compteur de lignes / mots"
@@ -261,11 +266,6 @@ msgstr "Ouvrir un dossier"
 #, kde-format
 msgid "Close"
 msgstr "Fermer"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Suit le thème de couleurs du système"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -410,8 +410,8 @@ msgstr "Thème"
 msgid "Editor color scheme style"
 msgstr "Style du thème de couleurs pour l'éditeur"
 
-#~ msgid "Split"
-#~ msgstr "Scinder"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Suit le thème de couleurs du système"
 
 #~ msgid "New file"
 #~ msgstr "Nouveau fichier"

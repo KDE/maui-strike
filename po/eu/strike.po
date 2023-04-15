@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-27 21:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -139,6 +139,11 @@ msgstr "Klonatu"
 msgid "Enter the project Git URL"
 msgstr "Sartu proiektuaren Git URLa"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Zatitu"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -154,12 +159,12 @@ msgstr "Sortu edo ireki proiektu berri bat."
 msgid "Clone Project"
 msgstr "Klonatu proiektua"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Aurkitu eta Ordeztu"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Lerro/Hitz zenbatzailea"
@@ -266,11 +271,6 @@ msgstr "Ireki direktorioa"
 #, kde-format
 msgid "Close"
 msgstr "Itxi"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Sistemaren kolore-antolaerari jarraitzen dio."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -413,8 +413,8 @@ msgstr "Gaia"
 msgid "Editor color scheme style"
 msgstr "Editorearen kolore-antolaera estiloa"
 
-#~ msgid "Split"
-#~ msgstr "Zatitu"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Sistemaren kolore-antolaerari jarraitzen dio."
 
 #~ msgid "New file"
 #~ msgstr "Fitxategi berria"

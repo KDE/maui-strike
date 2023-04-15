@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-27 06:25+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -137,6 +137,11 @@ msgstr "კლონირება"
 msgid "Enter the project Git URL"
 msgstr "შეიყვანეთ პროექტის git URL"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "გაყოფა"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -152,12 +157,12 @@ msgstr "შექმენით ან გახსენით ახალი
 msgid "Clone Project"
 msgstr "პროექტის კლონირება"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "ძებნა და ჩანაცვლება"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "ხაზების/სიტყვების რაოდენობა"
@@ -264,11 +269,6 @@ msgstr "საქაღალდის გახსნა"
 #, kde-format
 msgid "Close"
 msgstr "დახურვა"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -409,8 +409,8 @@ msgstr "თემა"
 msgid "Editor color scheme style"
 msgstr "რედაქტორის ფერის სქემის სტილი"
 
-#~ msgid "Split"
-#~ msgstr "გაყოფა"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "სისტემური ფერების სქემის მიყოლა."
 
 #~ msgid "New file"
 #~ msgstr "ახალი ფაილი"

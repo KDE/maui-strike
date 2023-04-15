@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-03-12 16:49+0100\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -12,7 +12,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 22.07.70\n"
 
 #, kde-format
@@ -134,6 +134,11 @@ msgstr "Klonen"
 msgid "Enter the project Git URL"
 msgstr "URL des Git-Projekts eingeben"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Teilen"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -149,12 +154,12 @@ msgstr "Neues Projekt erstellen oder öffnen."
 msgid "Clone Project"
 msgstr "Projekt klonen"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Suchen und Ersetzen"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Zeilen- und Wortzähler"
@@ -261,11 +266,6 @@ msgstr "Ordner öffnen"
 #, kde-format
 msgid "Close"
 msgstr "Schließen"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Folgt dem System-Farbschema."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -408,8 +408,8 @@ msgstr "Design"
 msgid "Editor color scheme style"
 msgstr "Editor-Farbschema"
 
-#~ msgid "Split"
-#~ msgstr "Teilen"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Folgt dem System-Farbschema."
 
 #~ msgid "New file"
 #~ msgstr "Neue Datei"

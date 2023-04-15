@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-04-10 14:11\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -134,6 +134,11 @@ msgstr "克隆"
 msgid "Enter the project Git URL"
 msgstr "输入工程的 Git URL"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr ""
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -149,12 +154,12 @@ msgstr "创建或打开新工程"
 msgid "Clone Project"
 msgstr "克隆工程"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "查找和替换"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "行/单词计数器"
@@ -260,11 +265,6 @@ msgstr ""
 #: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
-msgstr ""
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
 msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20

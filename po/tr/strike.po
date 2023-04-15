@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-02-26 00:57+0000\n"
+"POT-Creation-Date: 2023-04-15 00:48+0000\n"
 "PO-Revision-Date: 2023-02-26 13:03+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -136,6 +136,11 @@ msgstr "Klonla"
 msgid "Enter the project Git URL"
 msgstr "Proje Git URL'sini girin"
 
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Böl"
+
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
@@ -151,12 +156,12 @@ msgstr "Yeni bir proje açın veya oluşturun."
 msgid "Clone Project"
 msgstr "Projeyi Klonla"
 
-#: views/editor/EditorView.qml:212
+#: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
 msgstr "Bul ve Değiştir"
 
-#: views/editor/EditorView.qml:225
+#: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Satır/Sözcük Sayacı"
@@ -263,11 +268,6 @@ msgstr "Dizin aç"
 #, kde-format
 msgid "Close"
 msgstr "Kapat"
-
-#: views/widgets/OutputPanel.qml:50
-#, kde-format
-msgid "Follows the system color scheme."
-msgstr "Sistem renk şemasını izler."
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -410,8 +410,8 @@ msgstr "Tema"
 msgid "Editor color scheme style"
 msgstr "Düzenleyici renk şeması biçemi"
 
-#~ msgid "Split"
-#~ msgstr "Böl"
+#~ msgid "Follows the system color scheme."
+#~ msgstr "Sistem renk şemasını izler."
 
 #~ msgid "New file"
 #~ msgstr "Yeni Dosya"
