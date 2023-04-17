@@ -135,8 +135,7 @@ msgid "Enter the project Git URL"
 msgstr "Saisir l'URL du projet « Git »"
 
 #: views/editor/EditorView.qml:62
-#, fuzzy, kde-format
-#| msgid "Split"
+#, kde-format
 msgid "Split"
 msgstr "Scinder"
 
