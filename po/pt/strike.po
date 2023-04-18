@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-04-15 00:48+0000\n"
-"PO-Revision-Date: 2023-03-06 15:02+0000\n"
+"PO-Revision-Date: 2023-04-17 14:31+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -140,7 +140,7 @@ msgstr "Indicar o URL de Git do projecto"
 #: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Split"
-msgstr ""
+msgstr "Dividir"
 
 #: views/editor/EditorView.qml:81
 #, kde-format
@@ -410,6 +410,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Estilo do esquema de cores do editor"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Segue o esquema de cores do sistema."
