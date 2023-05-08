@@ -303,7 +303,7 @@ Maui.Page
                 anchors.centerIn: parent
                 anchors.leftMargin:  Maui.Style.space.medium
                 anchors.rightMargin:  Maui.Style.space.medium
-                currentIndex : _outputPanel.currentIndex
+
                 Action
                 {
                     icon.name: "dialog-scripts"

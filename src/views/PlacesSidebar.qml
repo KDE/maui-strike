@@ -20,7 +20,6 @@ Maui.Page
     {
         id: _browserViews
         Layout.alignment: Qt.AlignCenter
-        currentIndex: _swipeView.currentIndex
         autoExclusive: true
         expanded: true
 
@@ -28,19 +27,22 @@ Maui.Page
         {
             text: "Project"
             icon.name: "project-development"
+            checked: _swipeView.currentIndex === 0
+            onTriggered: _swipeView.currentIndex = 0
         }
 
         Action
         {
             text: "Browser"
             icon.name: "folder"
+            checked: _swipeView.currentIndex === 1
+            onTriggered: _swipeView.currentIndex = 1
         }
     }
 
     SwipeView
     {
         id: _swipeView
-        currentIndex: _browserViews.currentIndex
         anchors.fill: parent
         //background: null
         Maui.Page
