@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-15 00:48+0000\n"
+"POT-Creation-Date: 2023-05-09 00:46+0000\n"
 "PO-Revision-Date: 2023-04-15 11:48+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -169,62 +169,62 @@ msgstr "Busca i substituïx"
 msgid "Line/Word Counter"
 msgstr "Comptador de línies/paraules"
 
-#: views/PlacesSidebar.qml:68
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Project Sources"
 msgstr "Codi font dels projectes"
 
-#: views/PlacesSidebar.qml:69
+#: views/PlacesSidebar.qml:71
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr "Ací es llistaran els fitxers de codi font."
 
-#: views/PlacesSidebar.qml:113
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Anterior"
 
-#: views/PlacesSidebar.qml:120
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Amunt"
 
-#: views/PlacesSidebar.qml:128
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Següent"
 
-#: views/PlacesSidebar.qml:152
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Mostra primer les carpetes"
 
-#: views/PlacesSidebar.qml:162
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Tipus"
 
-#: views/PlacesSidebar.qml:171
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Data"
 
-#: views/PlacesSidebar.qml:180
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Modificat"
 
-#: views/PlacesSidebar.qml:189
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Mida"
 
-#: views/PlacesSidebar.qml:198
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Nom"
 
-#: views/PlacesSidebar.qml:210
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Grup"

@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-15 00:48+0000\n"
+"POT-Creation-Date: 2023-05-09 00:46+0000\n"
 "PO-Revision-Date: 2023-02-25 00:59+0000\n"
 "Last-Translator: Automatically generated\n"
 "Language-Team: none\n"
@@ -165,62 +165,62 @@ msgstr ""
 msgid "Line/Word Counter"
 msgstr ""
 
-#: views/PlacesSidebar.qml:68
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Project Sources"
 msgstr ""
 
-#: views/PlacesSidebar.qml:69
+#: views/PlacesSidebar.qml:71
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr ""
 
-#: views/PlacesSidebar.qml:113
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr ""
 
-#: views/PlacesSidebar.qml:120
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr ""
 
-#: views/PlacesSidebar.qml:128
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr ""
 
-#: views/PlacesSidebar.qml:152
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr ""
 
-#: views/PlacesSidebar.qml:162
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr ""
 
-#: views/PlacesSidebar.qml:171
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr ""
 
-#: views/PlacesSidebar.qml:180
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr ""
 
-#: views/PlacesSidebar.qml:189
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr ""
 
-#: views/PlacesSidebar.qml:198
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr ""
 
-#: views/PlacesSidebar.qml:210
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr ""

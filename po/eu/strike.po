@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-15 00:48+0000\n"
+"POT-Creation-Date: 2023-05-09 00:46+0000\n"
 "PO-Revision-Date: 2023-02-27 21:26+0100\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -169,62 +169,62 @@ msgstr "Aurkitu eta Ordeztu"
 msgid "Line/Word Counter"
 msgstr "Lerro/Hitz zenbatzailea"
 
-#: views/PlacesSidebar.qml:68
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Project Sources"
 msgstr "Proiektuaren sorburuak"
 
-#: views/PlacesSidebar.qml:69
+#: views/PlacesSidebar.qml:71
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr "Sorburu fitxategiak hemen zerrendatuko dira."
 
-#: views/PlacesSidebar.qml:113
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Aurrekoa"
 
-#: views/PlacesSidebar.qml:120
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Gora"
 
-#: views/PlacesSidebar.qml:128
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: views/PlacesSidebar.qml:152
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Erakutsi karpetak lehenengo"
 
-#: views/PlacesSidebar.qml:162
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Mota"
 
-#: views/PlacesSidebar.qml:171
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Data"
 
-#: views/PlacesSidebar.qml:180
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Aldatua"
 
-#: views/PlacesSidebar.qml:189
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Neurria"
 
-#: views/PlacesSidebar.qml:198
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Izena"
 
-#: views/PlacesSidebar.qml:210
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Taldea"

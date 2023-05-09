@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-04-15 00:48+0000\n"
+"POT-Creation-Date: 2023-05-09 00:46+0000\n"
 "PO-Revision-Date: 2023-02-27 06:25+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -167,62 +167,62 @@ msgstr "ძებნა და ჩანაცვლება"
 msgid "Line/Word Counter"
 msgstr "ხაზების/სიტყვების რაოდენობა"
 
-#: views/PlacesSidebar.qml:68
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Project Sources"
 msgstr "პროექტის კოდი"
 
-#: views/PlacesSidebar.qml:69
+#: views/PlacesSidebar.qml:71
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr "კოდის ფაილები აქ ჩამოითვლება."
 
-#: views/PlacesSidebar.qml:113
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "წინა"
 
-#: views/PlacesSidebar.qml:120
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "მაღლა"
 
-#: views/PlacesSidebar.qml:128
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "შემდეგი"
 
-#: views/PlacesSidebar.qml:152
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "ჯერ საქაღალდეების ჩვენება"
 
-#: views/PlacesSidebar.qml:162
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "ტიპი"
 
-#: views/PlacesSidebar.qml:171
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "თარიღი"
 
-#: views/PlacesSidebar.qml:180
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "შეცვლილია"
 
-#: views/PlacesSidebar.qml:189
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "ზომა"
 
-#: views/PlacesSidebar.qml:198
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "სახელი"
 
-#: views/PlacesSidebar.qml:210
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "ჯგუფი"
