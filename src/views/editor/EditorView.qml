@@ -264,8 +264,6 @@ Maui.Page
                             }
                         }
                     }
-
-
                 }
             }
         }
@@ -327,7 +325,6 @@ Maui.Page
             }
         }
     }
-
 
     Component
     {
