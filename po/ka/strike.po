@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-09 00:46+0000\n"
+"POT-Creation-Date: 2023-05-24 00:46+0000\n"
 "PO-Revision-Date: 2023-02-27 06:25+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
@@ -310,43 +310,51 @@ msgstr "აირჩიეტ სამიზნე პროექტი"
 msgid "Finish"
 msgstr "დასრულება"
 
-#: views/widgets/SettingsDialog.qml:16
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
 #, kde-format
 msgid "Editor"
 msgstr "რედაქტორი"
 
-#: views/widgets/SettingsDialog.qml:17
+#: views/widgets/SettingsDialog.qml:23
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr "მოირგეთ რედაქტორის გარეგნობა. პარამეტრები გლობალურია"
 
-#: views/widgets/SettingsDialog.qml:21
+#: views/widgets/SettingsDialog.qml:28
 #, kde-format
 msgid "Auto Save"
 msgstr "ავტომატური შენახვა"
 
-#: views/widgets/SettingsDialog.qml:22
-#, kde-format
-msgid "Auto saves your file every few seconds"
+#: views/widgets/SettingsDialog.qml:29
+#, fuzzy, kde-format
+#| msgid "Auto saves your file every few seconds"
+msgid "Auto saves your file every 5 seconds."
 msgstr "თქვენი ფაილის ავტომატური შენახვა რამდენიმე წამში ერთხელ"
 
-#: views/widgets/SettingsDialog.qml:33
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Line Numbers"
 msgstr "ხაზის ნომრები"
 
-#: views/widgets/SettingsDialog.qml:34
+#: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "მარცხენა მხარეს ხაზის ნომრების ჩვენება"
 
-#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "Style"
 msgstr "სტილი"
 
-#: views/widgets/SettingsDialog.qml:48
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
@@ -355,32 +363,71 @@ msgstr ""
 "მოირგეთ სინტაქსის გამოკვეთის სტილი. კონფიგურაცია არ ეხება მდიდარი ტექსტის "
 "ფორმატებს"
 
-#: views/widgets/SettingsDialog.qml:54
-#, kde-format
-msgid "Font Family"
-msgstr "ფონტების ოჯახი"
-
-#: views/widgets/SettingsDialog.qml:67
-#, kde-format
-msgid "Font Size"
-msgstr "ფონტის ზომა"
-
-#: views/widgets/SettingsDialog.qml:79
+#: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
 msgstr "ტაბულაციის დაშორება"
 
-#: views/widgets/SettingsDialog.qml:91
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Colors"
 msgstr "ფერები"
 
-#: views/widgets/SettingsDialog.qml:92
+#: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
 msgstr "სინტაქსის გამოკვეთის ფერის სქემის მორგება."
 
-#: views/widgets/SettingsDialog.qml:112
+#: views/widgets/SettingsDialog.qml:134
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the look and feel of the editor. The settings are applied "
+#| "globally"
+msgid "Configure the look and feel of the text editor."
+msgstr "მოირგეთ რედაქტორის გარეგნობა. პარამეტრები გლობალურია"
+
+#: views/widgets/SettingsDialog.qml:145
+#, fuzzy, kde-format
+#| msgid "Build"
+msgid "Builder"
+msgstr "აგება"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -389,25 +436,31 @@ msgstr ""
 "მოირგეთ სინტაქსის გამოკვეთის სტილი. კონფიგურაცია არ ეხება მდიდარი ტექსტის "
 "ფორმატებს"
 
-#: views/widgets/SettingsDialog.qml:116
+#: views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Color"
 msgstr "ფერი"
 
-#: views/widgets/SettingsDialog.qml:117
+#: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
 msgstr "რედაქტორის ფონის ფერი"
 
-#: views/widgets/SettingsDialog.qml:148
+#: views/widgets/SettingsDialog.qml:224
 #, kde-format
 msgid "Theme"
 msgstr "თემა"
 
-#: views/widgets/SettingsDialog.qml:149
+#: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "რედაქტორის ფერის სქემის სტილი"
+
+#~ msgid "Font Family"
+#~ msgstr "ფონტების ოჯახი"
+
+#~ msgid "Font Size"
+#~ msgstr "ფონტის ზომა"
 
 #~ msgid "Follows the system color scheme."
 #~ msgstr "სისტემური ფერების სქემის მიყოლა."

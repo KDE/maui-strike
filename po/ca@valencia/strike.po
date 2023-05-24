@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-09 00:46+0000\n"
+"POT-Creation-Date: 2023-05-24 00:46+0000\n"
 "PO-Revision-Date: 2023-04-15 11:48+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -313,12 +313,13 @@ msgstr "Seleccioneu el projecte de destinació"
 msgid "Finish"
 msgstr "Finalitza"
 
-#: views/widgets/SettingsDialog.qml:16
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
 #, kde-format
 msgid "Editor"
 msgstr "Editor"
 
-#: views/widgets/SettingsDialog.qml:17
+#: views/widgets/SettingsDialog.qml:23
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
@@ -326,32 +327,39 @@ msgstr ""
 "Configura l'aspecte i el comportament de l'editor. La configuració s'aplica "
 "globalment"
 
-#: views/widgets/SettingsDialog.qml:21
+#: views/widgets/SettingsDialog.qml:28
 #, kde-format
 msgid "Auto Save"
 msgstr "Guardada automàtica"
 
-#: views/widgets/SettingsDialog.qml:22
-#, kde-format
-msgid "Auto saves your file every few seconds"
+#: views/widgets/SettingsDialog.qml:29
+#, fuzzy, kde-format
+#| msgid "Auto saves your file every few seconds"
+msgid "Auto saves your file every 5 seconds."
 msgstr "Guarda automàticament el fitxer cada pocs segons"
 
-#: views/widgets/SettingsDialog.qml:33
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Line Numbers"
 msgstr "Números de línia"
 
-#: views/widgets/SettingsDialog.qml:34
+#: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "Mostra els números de les línies en la banda esquerra"
 
-#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "Style"
 msgstr "Estil"
 
-#: views/widgets/SettingsDialog.qml:48
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
@@ -360,32 +368,73 @@ msgstr ""
 "Configura l'estil del ressaltat de la sintaxi. Esta configuració no s'aplica "
 "als formats de text enriquit"
 
-#: views/widgets/SettingsDialog.qml:54
-#, kde-format
-msgid "Font Family"
-msgstr "Família del tipus de lletra"
-
-#: views/widgets/SettingsDialog.qml:67
-#, kde-format
-msgid "Font Size"
-msgstr "Mida del tipus de lletra"
-
-#: views/widgets/SettingsDialog.qml:79
+#: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Espaiat del tabulador"
 
-#: views/widgets/SettingsDialog.qml:91
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Colors"
 msgstr "Colors"
 
-#: views/widgets/SettingsDialog.qml:92
+#: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Configura l'esquema de colors del ressaltat de sintaxi."
 
-#: views/widgets/SettingsDialog.qml:112
+#: views/widgets/SettingsDialog.qml:134
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the look and feel of the editor. The settings are applied "
+#| "globally"
+msgid "Configure the look and feel of the text editor."
+msgstr ""
+"Configura l'aspecte i el comportament de l'editor. La configuració s'aplica "
+"globalment"
+
+#: views/widgets/SettingsDialog.qml:145
+#, fuzzy, kde-format
+#| msgid "Build"
+msgid "Builder"
+msgstr "Construïx"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
@@ -394,22 +443,28 @@ msgstr ""
 "Configura l'estil del ressaltat de la sintaxi. Esta configuració no s'aplica "
 "als formats de text enriquit"
 
-#: views/widgets/SettingsDialog.qml:116
+#: views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Color"
 msgstr "Color"
 
-#: views/widgets/SettingsDialog.qml:117
+#: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
 msgstr "Editor del color de fons"
 
-#: views/widgets/SettingsDialog.qml:148
+#: views/widgets/SettingsDialog.qml:224
 #, kde-format
 msgid "Theme"
 msgstr "Tema"
 
-#: views/widgets/SettingsDialog.qml:149
+#: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Editor de l'estil de l'esquema de color"
+
+#~ msgid "Font Family"
+#~ msgstr "Família del tipus de lletra"
+
+#~ msgid "Font Size"
+#~ msgstr "Mida del tipus de lletra"

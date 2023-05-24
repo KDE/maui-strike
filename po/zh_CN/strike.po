@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-09 00:46+0000\n"
+"POT-Creation-Date: 2023-05-24 00:46+0000\n"
 "PO-Revision-Date: 2023-05-22 14:02\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -307,97 +307,150 @@ msgstr "选择目标工程"
 msgid "Finish"
 msgstr "完成"
 
-#: views/widgets/SettingsDialog.qml:16
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
 #, kde-format
 msgid "Editor"
 msgstr "编辑器"
 
-#: views/widgets/SettingsDialog.qml:17
+#: views/widgets/SettingsDialog.qml:23
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
 msgstr "配置编辑器的全局界面外观。"
 
-#: views/widgets/SettingsDialog.qml:21
+#: views/widgets/SettingsDialog.qml:28
 #, kde-format
 msgid "Auto Save"
 msgstr "自动保存"
 
-#: views/widgets/SettingsDialog.qml:22
-#, kde-format
-msgid "Auto saves your file every few seconds"
+#: views/widgets/SettingsDialog.qml:29
+#, fuzzy, kde-format
+#| msgid "Auto saves your file every few seconds"
+msgid "Auto saves your file every 5 seconds."
 msgstr "每隔数秒自动保存文件"
 
-#: views/widgets/SettingsDialog.qml:33
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Line Numbers"
 msgstr "行号"
 
-#: views/widgets/SettingsDialog.qml:34
+#: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
 msgstr "显示行号到编辑器左侧。"
 
-#: views/widgets/SettingsDialog.qml:47 views/widgets/SettingsDialog.qml:111
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "Style"
 msgstr "风格"
 
-#: views/widgets/SettingsDialog.qml:48
+#: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
 msgstr ""
 
-#: views/widgets/SettingsDialog.qml:54
-#, kde-format
-msgid "Font Family"
-msgstr "字体"
-
-#: views/widgets/SettingsDialog.qml:67
-#, kde-format
-msgid "Font Size"
-msgstr "字体大小"
-
-#: views/widgets/SettingsDialog.qml:79
+#: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
 msgstr "Tab 空白"
 
-#: views/widgets/SettingsDialog.qml:91
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Colors"
 msgstr ""
 
-#: views/widgets/SettingsDialog.qml:92
+#: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
 msgstr ""
 
-#: views/widgets/SettingsDialog.qml:112
+#: views/widgets/SettingsDialog.qml:134
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the look and feel of the editor. The settings are applied "
+#| "globally"
+msgid "Configure the look and feel of the text editor."
+msgstr "配置编辑器的全局界面外观。"
+
+#: views/widgets/SettingsDialog.qml:145
+#, fuzzy, kde-format
+#| msgid "Build"
+msgid "Builder"
+msgstr "构建"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration in not "
 "applied for rich text formats"
 msgstr "配置语法高亮的显示风格。此配置不会被应用于富文本格式"
 
-#: views/widgets/SettingsDialog.qml:116
+#: views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Color"
 msgstr "颜色"
 
-#: views/widgets/SettingsDialog.qml:117
+#: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
 msgstr "编辑器背景颜色"
 
-#: views/widgets/SettingsDialog.qml:148
+#: views/widgets/SettingsDialog.qml:224
 #, kde-format
 msgid "Theme"
 msgstr "主题"
 
-#: views/widgets/SettingsDialog.qml:149
+#: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "编辑器配色方案风格"
+
+#~ msgid "Font Family"
+#~ msgstr "字体"
+
+#~ msgid "Font Size"
+#~ msgstr "字体大小"
