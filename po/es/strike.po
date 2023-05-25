@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 04:43+0100\n"
+"PO-Revision-Date: 2023-05-25 01:18+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -331,15 +331,14 @@ msgid "Auto Save"
 msgstr "Guardar automáticamente"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Guarda automáticamente el archivo cada cierto tiempo"
+msgstr "Guarda automáticamente el archivo cada 5 segundos."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Resaltado de sintaxis"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -374,12 +373,12 @@ msgstr "Espacios del tabulador"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Tipos de letra"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Configurar la familia y el estilo de los tipos de letra."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -392,45 +391,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Configurar el esquema de color del resaltado sintáctico."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Configurar el aspecto visual del editor. Las preferencias se aplican de "
-"forma global."
+msgstr "Configurar el aspecto visual del editor de texto."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Construir"
+msgstr "Compilador"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Configurar las órdenes de los pasos de compilación."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Complementos"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Conmutar los complementos disponibles."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Herramientas"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Más herramientas."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format

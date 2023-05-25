@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 09:22+0200\n"
+"PO-Revision-Date: 2023-05-24 08:24+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -330,15 +330,14 @@ msgid "Auto Save"
 msgstr "Автозбереження"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Автозбереження файла кожні декілька секунд"
+msgstr "Автозбереження файла кожні 5 секунд."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Підсвічування синтаксису"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -373,12 +372,12 @@ msgstr "Інтервал табуляції"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Шрифти"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Налаштувати гарнітуру і стиль шрифтів."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -391,45 +390,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Налаштувати схему кольорів для підсвічування синтаксичних конструкцій."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Налаштувати вигляд і поведінку редактора. Параметри буде застосовано на "
-"загальному рівні."
+msgstr "Налаштувати вигляд і поведінку текстового редактора."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Зібрати"
+msgstr "Будівник"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Налаштувати команди кроків збирання."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Додатки"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Увімкнути або вимкнути доступні додатки."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Інструменти"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Додаткові інструменти."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format

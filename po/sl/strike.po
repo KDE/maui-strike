@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 09:15+0100\n"
+"PO-Revision-Date: 2023-05-24 09:12+0200\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -329,15 +329,14 @@ msgid "Auto Save"
 msgstr "Samodejno shranjevanje"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Samodejno shranjevanje shranjuje vsako datoteko vsakih nekaj sekund"
+msgstr "Samodejno shranjuje vašo datoteko vsakih 5 sekund."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Osvetljevanje skladnje"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -372,12 +371,12 @@ msgstr "Razmik med tabulatorji"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Pisave"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Konfiguriraj družino pisav in slog."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -390,44 +389,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Konfiguriraj barvno shemo osvetljevanja skladnje."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Nastavi videz in obnašanje urejevalnika. Nastavitve so uveljavljene globalno"
+msgstr "Konfiguriraj videz in obnašanje urejevalnika."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Izgradi"
+msgstr "Gradbenik"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Konfiguriraj ukaze korakov izgradnje."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Vtičniki"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Preklopi razpoložljive vtičnike."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Orodja"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Več orodij."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format

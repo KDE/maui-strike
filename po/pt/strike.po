@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-04-17 14:31+0100\n"
+"PO-Revision-Date: 2023-05-24 18:46+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -330,15 +330,14 @@ msgid "Auto Save"
 msgstr "Gravação Automática"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Grava automaticamente o seu ficheiro com um período em segundos"
+msgstr "Grava automaticamente o seu ficheiro a cada 5 segundos."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Realce de Sintaxe"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -373,12 +372,12 @@ msgstr "Espaços com Tabulações"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Tipos de Letra"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Configura o estilo e o tipo de letra do texto."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -391,45 +390,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Configura o esquema de cores do realce de sintaxe."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Configura a aparência e comportamento do editor. A configuração é aplicada a "
-"nível global"
+msgstr "Configura a aparência e comportamento do editor de texto."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Compilar"
+msgstr "Construtor"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Configura os comandos dos passos de construção."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "'Plugins'"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Activa/desactiva os 'plugins' disponíveis:"
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Ferramentas"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Mais ferramentas."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
@@ -459,9 +452,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Estilo do esquema de cores do editor"
-
-#~ msgid "Font Family"
-#~ msgstr "Família do Tipo de Letra"
-
-#~ msgid "Font Size"
-#~ msgstr "Tamanho da Letra"

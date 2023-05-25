@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 13:03+0300\n"
+"PO-Revision-Date: 2023-05-24 13:01+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -329,15 +329,14 @@ msgid "Auto Save"
 msgstr "Otomatik Kaydet"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Dosyanızı her birkaç saniyede bir kendiliğinden kaydeder"
+msgstr "Dosyanızı her 5 saniyede bir kendiliğinden kaydeder."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Sözdizim Vurgulama"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -372,12 +371,12 @@ msgstr "Sekme Aralıklandırması"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Yazıtipleri"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Yazıtipi ailelerini ve biçemlerini yapılandırın."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -390,45 +389,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Sözdizim vurgulamasının renk şemasını yapılandırın."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Düzenleyicinin görünüm ve hisini yapılandırır; ayarlar global olarak "
-"uygulanır"
+msgstr "Düzenleyicinin görünüm ve hissini yapılandırın."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Yap"
+msgstr "Yapıcı"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Yapı adımları komutlarını yapılandırın."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Eklentiler"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Kullanılabilir eklentileri açıp/kapatın."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Araçlar"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Ek araçlar."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
