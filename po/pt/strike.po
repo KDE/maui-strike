@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-05-24 18:46+0100\n"
+"PO-Revision-Date: 2023-05-26 22:59+0100\n"
 "Last-Translator: José Nuno Coelho Pires <zepires@gmail.com>\n"
 "Language-Team: Portuguese <kde-i18n-pt@kde.org>\n"
 "Language: pt\n"
@@ -412,7 +412,7 @@ msgstr "'Plugins'"
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr "Activa/desactiva os 'plugins' disponíveis:"
+msgstr "Activa/desactiva os 'plugins' disponíveis."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
