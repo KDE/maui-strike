@@ -7,15 +7,15 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-26 23:17+0000\n"
+"PO-Revision-Date: 2023-05-27 13:10+0100\n"
 "Last-Translator: Steve Allewell <steve.allewell@gmail.com>\n"
-"Language-Team: British English <kde-l10n-en_gb@kde.org>\n"
+"Language-Team: British English\n"
 "Language: en_GB\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 21.12.3\n"
+"X-Generator: Lokalize 23.03.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -328,15 +328,14 @@ msgid "Auto Save"
 msgstr "Auto Save"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Auto saves your file every few seconds"
+msgstr "Auto saves your file every 5 seconds."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Syntax Highlighting"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -371,12 +370,12 @@ msgstr "Tab Spacing"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Fonts"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Configure the fonts family and style."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -389,44 +388,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Configure the colour scheme of the syntax highlighting."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Configure the look and feel of the editor. The settings are applied globally"
+msgstr "Configure the look and feel of the text editor."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Build"
+msgstr "Builder"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Configure the build steps commands."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Plugins"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Toggle available plugins."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Tools"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "More tools."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
