@@ -5,7 +5,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-04-16 13:55+0200\n"
+"PO-Revision-Date: 2023-05-28 10:40+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
 "Language: de\n"
@@ -13,7 +13,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.07.70\n"
+"X-Generator: Lokalize 23.07.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -327,15 +327,14 @@ msgid "Auto Save"
 msgstr "Automatisch speichern"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Speichert Ihre Datei automatisch alle paar Sekunden"
+msgstr "Speichert Ihre Datei automatisch alle 5 Sekunden"
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Syntaxhervorhebung"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -370,7 +369,7 @@ msgstr "Tabulator-Einrückungsabstand"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Schriftarten"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
@@ -388,14 +387,9 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Das Farbschema für die Syntaxhervorhebung einrichten"
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Einstellungen für das Erscheinungsbild des Editors, die Einstellungen werden "
-"global angewendet"
+msgstr "Richten Sie das Erscheinungsbild des Editors ein."
 
 #: views/widgets/SettingsDialog.qml:145
 #, fuzzy, kde-format
@@ -411,22 +405,22 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Module"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Verfügbare Module umschalten."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Extras"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Weitere Programme."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
