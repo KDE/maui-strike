@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-27 14:43+0100\n"
+"PO-Revision-Date: 2023-06-05 12:04+0200\n"
 "Last-Translator: Vit Pelcak <vit@pelcak.org>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
 "Language: cs\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -137,7 +137,7 @@ msgstr ""
 #: views/editor/EditorView.qml:62
 #, kde-format
 msgid "Split"
-msgstr ""
+msgstr "Rozdělit"
 
 #: views/editor/EditorView.qml:81
 #, kde-format
@@ -332,7 +332,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Zvýrazňování syntaxe"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -365,7 +365,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Písma"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
@@ -383,16 +383,14 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Nastavte barevné schéma pro zvýrazňování syntaxe."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid "Configure the color scheme of the syntax highlighting."
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr "Nastavte barevné schéma pro zvýrazňování syntaxe."
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Sestavení"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
@@ -402,22 +400,22 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Moduly"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Zapnout dostupné moduly."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Nástroje"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Více nástrojů."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
@@ -445,12 +443,3 @@ msgstr "Motiv"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Styl barevného schématu editoru"
-
-#~ msgid "Font Family"
-#~ msgstr "Rodina písma"
-
-#~ msgid "Font Size"
-#~ msgstr "Velikost písma"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Následuje barevné schéma systému."
