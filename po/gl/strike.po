@@ -194,7 +194,7 @@ msgstr "Seguinte"
 #: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
-msgstr "Mostrar primeiro os cartafoles"
+msgstr "Amosar primeiro os cartafoles"
 
 #: views/PlacesSidebar.qml:164
 #, kde-format
@@ -344,7 +344,7 @@ msgstr "Números de liña"
 #: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr "Mostrar os números de liña á esquerda."
+msgstr "Amosar os números de liña á esquerda."
 
 #: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
 #: views/widgets/SettingsDialog.qml:188
