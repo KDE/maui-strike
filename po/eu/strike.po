@@ -10,7 +10,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2023-02-27 21:26+0100\n"
+"PO-Revision-Date: 2023-07-21 12:23+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
 "Language: eu\n"
@@ -18,7 +18,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -332,15 +332,14 @@ msgid "Auto Save"
 msgstr "Gorde automatikoki"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Zure fitxategia segundo gutxiero automatikoki gordetzen du"
+msgstr "Zure fitxategia 5 segundoero automatikoki gordetzen du."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Sintaxia nabarmentzea"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -375,12 +374,12 @@ msgstr "Tabulazioen tartea"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Letra-tipoak"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Konfiguratu letra-tipo familia eta estiloa."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -393,45 +392,39 @@ msgid "Configure the color scheme of the syntax highlighting."
 msgstr "Konfiguratu sintaxia nabarmentzeko kolore-antolaera."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
-"Konfiguratu editorearen itxura eta izaera. Ezarpenak osotasunari ezarriko "
-"zaizkio"
+msgstr "Konfiguratu testu-editorearen itxura eta izaera."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Eraiki"
+msgstr "Eraikitzailea"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Konfiguratu eraikitzeko urratsen komandoak."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Pluginak"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Txandakatu plugin erabilgarriak."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Tresnak"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Tresna gehiago."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
