@@ -1,13 +1,13 @@
 # Copyright (C) YEAR This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021.
+# Stefan Asserhäll <stefan.asserhall@bredband.net>, 2021, 2023.
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-05-24 00:46+0000\n"
-"PO-Revision-Date: 2021-09-21 18:49+0200\n"
+"PO-Revision-Date: 2023-07-31 14:25+0200\n"
 "Last-Translator: Stefan Asserhäll <stefan.asserhall@bredband.net>\n"
 "Language-Team: Swedish <kde-i18n-doc@kde.org>\n"
 "Language: sv\n"
@@ -255,21 +255,19 @@ msgid "Install"
 msgstr "Installera"
 
 #: views/widgets/BuildBar.qml:185
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
-msgstr "CMake"
+msgstr "Rensa CMake"
 
 #: views/widgets/BuildBar.qml:193
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
-msgstr "Öppna projekt"
+msgstr "Öppna katalog"
 
 #: views/widgets/BuildBar.qml:203
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Stäng"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -329,15 +327,14 @@ msgid "Auto Save"
 msgstr "Spara automatiskt"
 
 #: views/widgets/SettingsDialog.qml:29
-#, fuzzy, kde-format
-#| msgid "Auto saves your file every few seconds"
+#, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "Sparar filen automatiskt med några sekunders mellanrum"
+msgstr "Spara automatisk sparar filen var femte sekund."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Syntaxfärgläggning"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -356,10 +353,7 @@ msgid "Style"
 msgstr "Stil"
 
 #: views/widgets/SettingsDialog.qml:67
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration in not "
 "applied for rich text formats"
@@ -375,62 +369,57 @@ msgstr "Flikmellanrum"
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Teckensnitt"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Anpassa teckenfamilj och storlek."
 
 #: views/widgets/SettingsDialog.qml:97
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Färg"
+msgstr "Färger"
 
 #: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Anpassa syntaxfärgläggningens färgschema."
 
 #: views/widgets/SettingsDialog.qml:134
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the look and feel of the editor. The settings are applied "
-#| "globally"
+#, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr "Anpassa editorns utseende och känsla. Inställningarna gäller globalt."
+msgstr "Anpassa texteditorns utseende och känsla."
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
-msgstr "Bygg"
+msgstr "Byggare"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Anpassa kommandon för byggstegen."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Insticksprogram"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Ändra tillgängliga insticksprogram."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Verktyg"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Fler verktyg."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
