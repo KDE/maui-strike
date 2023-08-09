@@ -6,7 +6,7 @@ CMakeTargetsModel::CMakeTargetsModel(QObject *parent) : QAbstractListModel(paren
 
 }
 
-void CMakeTargetsModel::setData(const CMakeProjectTargets &data)
+void CMakeTargetsModel::setTargetData(const CMakeProjectTargets &data)
 {
     qDebug() << "Setting the targets model" << data.keys();
     m_data = data;

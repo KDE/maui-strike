@@ -9,8 +9,7 @@ Maui.Page
 {
     anchors.fill: parent
     headBar.visible: true
-    headBar.background: null
-    background: null
+
 
     clip: true
 

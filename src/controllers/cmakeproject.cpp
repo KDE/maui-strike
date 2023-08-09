@@ -48,7 +48,7 @@ void CMakeProject::setData(CMakeProjectData data)
 
   m_data = data;
 
-  m_targetsModel->setData(m_data.targets);
+  m_targetsModel->setTargetData(m_data.targets);
   auto execs = m_targetsModel->filterBy(CMakeTarget::Executable);
 
   if(!execs.isEmpty())

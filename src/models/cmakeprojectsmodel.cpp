@@ -8,7 +8,7 @@ CMakeProjectsModel::CMakeProjectsModel(QObject *parent) : QAbstractListModel(par
 
 }
 
-void CMakeProjectsModel::setData(const QVector<CMakeProjectData> &data)
+void CMakeProjectsModel::setProjectsData(const QVector<CMakeProjectData> &data)
 {
     this->beginResetModel();
     m_data = data;

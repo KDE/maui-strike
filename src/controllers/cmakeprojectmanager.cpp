@@ -4,7 +4,7 @@
 #include <QDir>
 #include <QJsonObject>
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 
 #include "cmakeapi.h"
 #include "cmakedata.h"
@@ -119,7 +119,7 @@ void CMakeProjectManager::readIndexReply()
 
   auto projects = CMake::FileApi::parseReplyIndexFile(indexResponse,sourceDir, buildDir);
 
-  m_projectsModel->setData(projects); //parent each project to the model
+  m_projectsModel->setProjectsData(projects); //parent each project to the model
 
   if(!projects.isEmpty ())
     {

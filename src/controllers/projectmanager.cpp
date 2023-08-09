@@ -3,7 +3,7 @@
 #include <QDebug>
 #include <QDir>
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 
 #include "cmakeprojectmanager.h"
 #include "cmakeapi.h"

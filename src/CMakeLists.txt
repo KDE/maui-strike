@@ -18,12 +18,10 @@ set(strike_SRCS
     controllers/processes/configureprocess.cpp
     controllers/cmakeprojectmanager.cpp
     controllers/git/gitprocess.cpp
-    controllers/git/cloneprocess.cpp
-    )
+    controllers/git/cloneprocess.cpp)
 
 set(strike_ASSETS
-    assets/img_assets.qrc
-    )
+    assets/img_assets.qrc)
 
 if(QUICK_COMPILER)
     qtquick_compiler_add_resources(strike_QML_QRC qml.qrc)
@@ -38,6 +36,13 @@ add_executable(${PROJECT_NAME}
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 
-target_link_libraries(${PROJECT_NAME} MauiKit MauiKit::FileBrowsing Qt5::Quick Qt5::Widgets Qt5::Qml KF5::CoreAddons KF5::I18n)
+target_link_libraries(${PROJECT_NAME}
+    MauiKit3
+    MauiKit3::FileBrowsing
+    Qt5::Quick
+    Qt5::Widgets
+    Qt5::Qml
+    KF5::CoreAddons
+    KF5::I18n)
 
 install(TARGETS ${PROJECT_NAME} ${KDE_INSTALL_TARGETS_DEFAULT_ARGS})

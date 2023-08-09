@@ -20,7 +20,7 @@ public:
     };
 
     explicit CMakeProjectsModel(QObject *parent = nullptr);
-    void setData(const QVector<CMakeProjectData> &data);
+    void setProjectsData(const QVector<CMakeProjectData> &data);
 
     int rowCount(const QModelIndex &parent) const override final;
     QVariant data(const QModelIndex &index, int role) const override final;

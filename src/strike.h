@@ -6,7 +6,7 @@
 #include <QProcess>
 #include <QDebug>
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 
 class Strike : public QObject
 {

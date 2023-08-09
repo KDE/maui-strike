@@ -12,7 +12,7 @@
 #include "projectmanager.h"
 #include "cmakeprojecttarget.h"
 
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 
 ProcessManager::ProcessManager(CMakeProject *project) : QObject(project)
 ,m_project(project)

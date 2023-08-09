@@ -29,7 +29,7 @@ Maui.Page
     {
         id: _gitCloneDialogComponent
 
-        Maui.NewDialog
+        Maui.InputDialog
         {
             title: i18n("Clone")
             message: i18n("Enter the project Git URL")
@@ -37,7 +37,7 @@ Maui.Page
             template.iconSource: "git"
             template.iconSizeHint: Maui.Style.iconSizes.huge
             template.iconVisible: true
-            acceptButton.text: i18n("Clone")
+//            acceptButton.text: i18n("Clone")
         }
     }
 

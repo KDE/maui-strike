@@ -25,7 +25,7 @@ public:
 
     explicit CMakeTargetsModel(QObject *parent =nullptr);
 
-    void setData(const CMakeProjectTargets &data);
+    void setTargetData(const CMakeProjectTargets &data);
     QVector<CMakeTarget> filterBy(const CMakeTarget::Type &type);
 
 private:

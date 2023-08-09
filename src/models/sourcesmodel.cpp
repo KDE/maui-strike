@@ -1,5 +1,5 @@
 #include "sourcesmodel.h"
-#include <MauiKit/FileBrowsing/fmstatic.h>
+#include <MauiKit3/FileBrowsing/fmstatic.h>
 #include <QDebug>
 #include <QDir>
 

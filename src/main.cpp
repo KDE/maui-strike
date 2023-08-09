@@ -7,7 +7,7 @@
 
 #include <KI18n/KLocalizedString>
 
-#include <MauiKit/Core/mauiapp.h>
+#include <MauiKit3/Core/mauiapp.h>
 
 #include "controllers/processmanager.h"
 #include "controllers/projectmanager.h"

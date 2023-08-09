@@ -2,50 +2,58 @@ import QtQuick 2.14
 import QtQuick.Controls 2.14
 import QtQuick.Layouts 1.3
 
-import org.kde.kirigami 2.7 as Kirigami
-
 import org.mauikit.controls 1.3 as Maui
 import org.slike.strike 1.0 as Strike
 
-Maui.Dialog
+Maui.PopupPage
 {
     id: control
 
     title: i18n("Configure")
     headBar.visible: false
-    page.floatingHeader: true
     closeButtonVisible: false
     persistent: true
-    defaultButtons: true
-    rejectButton.text: _stackView.depth > 1 ? i18n("Go back") : i18n ("Abort")
-    acceptButton.text: stepLabel(_stackView.depth)
 
-    onAccepted:
-    {
-        switch(_stackView.depth)
+    actions: [
+        Action
         {
-        case 1: _project.configure()
-            _stackView.push(_step2Component)
-            break
-        case 2: control.close()
-            break
-        }
-    }
+            text: _stackView.depth > 1 ? i18n("Go back") : i18n ("Abort")
 
-    onRejected:
-    {
-        switch(_stackView.depth)
+            onTriggered:
+            {
+                switch(_stackView.depth)
+                {
+                case 1: control.close()
+                    break
+                case 2: _stackView.pop()
+                    break
+                }
+            }
+        },
+
+        Action
         {
-        case 1: control.close
-            break
-        case 2: _stackView.pop()
-            break
+            text: stepLabel(_stackView.depth)
+
+            onTriggered:
+            {
+                switch(_stackView.depth)
+                {
+                case 1:
+                    _project.configure()
+                    _stackView.push(_step2Component)
+                    break
+                case 2: control.close()
+                    break
+                }
+            }
         }
-    }
+    ]
 
     stack: StackView
     {
         id: _stackView
+
         Layout.fillHeight: true
         Layout.fillWidth: true
         Layout.margins: Maui.Style.space.big
@@ -70,23 +78,20 @@ Maui.Dialog
                     emojiSize: 64
                 }
 
-                Item
+
+                Maui.ListItemTemplate
                 {
                     Layout.fillWidth: true
-                    Layout.preferredHeight: 120
-                    Maui.ListItemTemplate
-                    {
-                        width: parent.width
-                        anchors.centerIn: parent
-                        label1.text: i18n("Build Directory")
-                        label2.text: i18n("Pick a build directory or keep the default one")
-                        leftLabels.data: TextField
-                        {
-                            Layout.fillWidth: true
-                            placeholderText: i18n("Build directory path")
-                            text: _project.preferences.buildDir
-                        }
-                    }
+                    label1.text: i18n("Build Directory")
+                    label2.text: i18n("Pick a build directory or keep the default one")
+                }
+
+
+                TextField
+                {
+                    Layout.fillWidth: true
+                    placeholderText: i18n("Build directory path")
+                    text: _project.preferences.buildDir
                 }
 
                 //                Maui.ListItemTemplate
