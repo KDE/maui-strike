@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-24 00:46+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-07-21 12:23+0200\n"
 "Last-Translator: Iñigo Salvador Azurmendi <xalba@ni.eus>\n"
 "Language-Team: Basque <kde-i18n-eu@kde.org>\n"
@@ -50,61 +50,54 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Garatzailea"
 
-#: main.qml:128
+#: main.qml:129
 #, kde-format
 msgid "Unsaved files"
 msgstr "Gorde gabeko fitxategiak"
 
-#: main.qml:129
-#, kde-format
+#: main.qml:130
+#, fuzzy, kde-format
+#| msgid ""
+#| "You have unsaved files. You can go back and save them or choose to "
+#| "discard all changes and exit."
 msgid ""
-"You have unsaved files. You can go back and save them or choose to discard "
-"all changes and exit."
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
 msgstr ""
 "Gorde gabeko fitxategiak dituzu. Itzuli eta gorde egin ditzakezu, edo "
 "aldaketa guztiak baztertu eta irten zaitezke."
 
-#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
-#, kde-format
-msgid "Go back"
-msgstr "Joan atzera"
-
-#: main.qml:133
-#, kde-format
-msgid "Discard"
-msgstr "Baztertu"
-
-#: main.qml:240
+#: main.qml:243
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Txandakatu alboko-barra"
 
-#: main.qml:253
+#: main.qml:256
 #, kde-format
 msgid "Create New Project"
 msgstr "Sortu proiektu berria"
 
-#: main.qml:265 views/editor/EditorView.qml:88
+#: main.qml:268 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Ireki proiektua"
 
-#: main.qml:286
+#: main.qml:289
 #, kde-format
 msgid "Open File"
 msgstr "Ireki fitxategia"
 
-#: main.qml:298
+#: main.qml:301
 #, kde-format
 msgid "New Template Source File"
 msgstr "Txantiloi sorburu fitxategi berria"
 
-#: main.qml:310
+#: main.qml:313
 #, kde-format
 msgid "Settings"
 msgstr "Ezarpenak"
 
-#: main.qml:321
+#: main.qml:324
 #, kde-format
 msgid "About"
 msgstr "Honi buruz"
@@ -129,7 +122,7 @@ msgstr "Ireki zatiketa berrian"
 msgid "Cancel"
 msgstr "Utzi"
 
-#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#: views/editor/EditorView.qml:34
 #, kde-format
 msgid "Clone"
 msgstr "Klonatu"
@@ -169,62 +162,62 @@ msgstr "Aurkitu eta Ordeztu"
 msgid "Line/Word Counter"
 msgstr "Lerro/Hitz zenbatzailea"
 
-#: views/PlacesSidebar.qml:70
+#: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Project Sources"
 msgstr "Proiektuaren sorburuak"
 
-#: views/PlacesSidebar.qml:71
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr "Sorburu fitxategiak hemen zerrendatuko dira."
 
-#: views/PlacesSidebar.qml:115
+#: views/PlacesSidebar.qml:114
 #, kde-format
 msgid "Previous"
 msgstr "Aurrekoa"
 
-#: views/PlacesSidebar.qml:122
+#: views/PlacesSidebar.qml:121
 #, kde-format
 msgid "Up"
 msgstr "Gora"
 
-#: views/PlacesSidebar.qml:130
+#: views/PlacesSidebar.qml:129
 #, kde-format
 msgid "Next"
 msgstr "Hurrengoa"
 
-#: views/PlacesSidebar.qml:154
+#: views/PlacesSidebar.qml:153
 #, kde-format
 msgid "Show Folders First"
 msgstr "Erakutsi karpetak lehenengo"
 
-#: views/PlacesSidebar.qml:164
+#: views/PlacesSidebar.qml:163
 #, kde-format
 msgid "Type"
 msgstr "Mota"
 
-#: views/PlacesSidebar.qml:173
+#: views/PlacesSidebar.qml:172
 #, kde-format
 msgid "Date"
 msgstr "Data"
 
-#: views/PlacesSidebar.qml:182
+#: views/PlacesSidebar.qml:181
 #, kde-format
 msgid "Modified"
 msgstr "Aldatua"
 
-#: views/PlacesSidebar.qml:191
+#: views/PlacesSidebar.qml:190
 #, kde-format
 msgid "Size"
 msgstr "Neurria"
 
-#: views/PlacesSidebar.qml:200
+#: views/PlacesSidebar.qml:199
 #, kde-format
 msgid "Name"
 msgstr "Izena"
 
-#: views/PlacesSidebar.qml:212
+#: views/PlacesSidebar.qml:211
 #, kde-format
 msgid "Group"
 msgstr "Taldea"
@@ -235,9 +228,9 @@ msgid "Targets"
 msgstr "Jomugak"
 
 #: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
-#: views/widgets/ProjectConfigDialog.qml:14
-#: views/widgets/ProjectConfigDialog.qml:66
-#: views/widgets/ProjectConfigDialog.qml:177
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:182
 #, kde-format
 msgid "Configure"
 msgstr "Konfiguratu"
@@ -274,40 +267,45 @@ msgstr "Itxi"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
+msgid "Go back"
+msgstr "Joan atzera"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
 msgid "Abort"
 msgstr "Galarazi"
 
-#: views/widgets/ProjectConfigDialog.qml:67
+#: views/widgets/ProjectConfigDialog.qml:75
 #, kde-format
 msgid "Set the preferences to start hacking!"
 msgstr "Ezarri lehentasunak beharrean hasteko!"
 
-#: views/widgets/ProjectConfigDialog.qml:81
+#: views/widgets/ProjectConfigDialog.qml:85
 #, kde-format
 msgid "Build Directory"
 msgstr "Eraikitzeko direktorioa"
 
-#: views/widgets/ProjectConfigDialog.qml:82
+#: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Pick a build directory or keep the default one"
 msgstr "Hautatu eraikitzeko direktorioa bat edo mantendu lehenetsitakoa"
 
-#: views/widgets/ProjectConfigDialog.qml:86
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build directory path"
 msgstr "Eraikitzeko direktorioaren bide-izena"
 
-#: views/widgets/ProjectConfigDialog.qml:125
+#: views/widgets/ProjectConfigDialog.qml:130
 #, kde-format
 msgid "Project"
 msgstr "Proiektua"
 
-#: views/widgets/ProjectConfigDialog.qml:126
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Select the target project"
 msgstr "Aukeratu helburu proiektua"
 
-#: views/widgets/ProjectConfigDialog.qml:178
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Finish"
 msgstr "Amaitu"
@@ -454,6 +452,9 @@ msgstr "Gaia"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Editorearen kolore-antolaera estiloa"
+
+#~ msgid "Discard"
+#~ msgstr "Baztertu"
 
 #~ msgid "Font Family"
 #~ msgstr "Letra-tipo familia"

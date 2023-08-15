@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-05-24 00:46+0000\n"
+"POT-Creation-Date: 2023-08-15 00:44+0000\n"
 "PO-Revision-Date: 2023-04-29 11:29+0200\n"
 "Last-Translator: Łukasz Wojniłowicz <lukasz.wojnilowicz@gmail.com>\n"
 "Language-Team: Polish <kde-i18n-doc@kde.org>\n"
@@ -48,60 +48,53 @@ msgstr "Camilo Higuita"
 msgid "Developer"
 msgstr "Programista"
 
-#: main.qml:128
+#: main.qml:129
 #, kde-format
 msgid "Unsaved files"
 msgstr "Niezapisane pliki"
 
-#: main.qml:129
-#, kde-format
+#: main.qml:130
+#, fuzzy, kde-format
+#| msgid ""
+#| "You have unsaved files. You can go back and save them or choose to "
+#| "discard all changes and exit."
 msgid ""
-"You have unsaved files. You can go back and save them or choose to discard "
-"all changes and exit."
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
 msgstr ""
 "Masz niezapisane pliki. Możesz wrócić i je zapisać lub porzucić i zakończyć."
 
-#: main.qml:132 views/widgets/ProjectConfigDialog.qml:20
-#, kde-format
-msgid "Go back"
-msgstr "Idź wstecz"
-
-#: main.qml:133
-#, kde-format
-msgid "Discard"
-msgstr "Porzuć"
-
-#: main.qml:240
+#: main.qml:243
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Przełącz pasek boczny"
 
-#: main.qml:253
+#: main.qml:256
 #, kde-format
 msgid "Create New Project"
 msgstr "Utwórz nowy projekt"
 
-#: main.qml:265 views/editor/EditorView.qml:88
+#: main.qml:268 views/editor/EditorView.qml:88
 #, kde-format
 msgid "Open Project"
 msgstr "Otwórz projekt"
 
-#: main.qml:286
+#: main.qml:289
 #, kde-format
 msgid "Open File"
 msgstr "Otwórz plik"
 
-#: main.qml:298
+#: main.qml:301
 #, kde-format
 msgid "New Template Source File"
 msgstr "Nowy szablon pliku źródłowego"
 
-#: main.qml:310
+#: main.qml:313
 #, kde-format
 msgid "Settings"
 msgstr "Ustawienia"
 
-#: main.qml:321
+#: main.qml:324
 #, kde-format
 msgid "About"
 msgstr "O programie"
@@ -126,7 +119,7 @@ msgstr "Otwórz w nowym podzielonym widoku"
 msgid "Cancel"
 msgstr "Anuluj"
 
-#: views/editor/EditorView.qml:34 views/editor/EditorView.qml:40
+#: views/editor/EditorView.qml:34
 #, kde-format
 msgid "Clone"
 msgstr "Powiel"
@@ -166,62 +159,62 @@ msgstr "Znajdź i zastąp"
 msgid "Line/Word Counter"
 msgstr "Licznik wierszy/słów"
 
-#: views/PlacesSidebar.qml:70
+#: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Project Sources"
 msgstr "Źródła projektu"
 
-#: views/PlacesSidebar.qml:71
+#: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Source files will be listed in here."
 msgstr "W tym miejscu pojawią się pliki źródłowe."
 
-#: views/PlacesSidebar.qml:115
+#: views/PlacesSidebar.qml:114
 #, kde-format
 msgid "Previous"
 msgstr "Poprzedni"
 
-#: views/PlacesSidebar.qml:122
+#: views/PlacesSidebar.qml:121
 #, kde-format
 msgid "Up"
 msgstr "W górę"
 
-#: views/PlacesSidebar.qml:130
+#: views/PlacesSidebar.qml:129
 #, kde-format
 msgid "Next"
 msgstr "Następny"
 
-#: views/PlacesSidebar.qml:154
+#: views/PlacesSidebar.qml:153
 #, kde-format
 msgid "Show Folders First"
 msgstr "Najpierw pokaż katalogi"
 
-#: views/PlacesSidebar.qml:164
+#: views/PlacesSidebar.qml:163
 #, kde-format
 msgid "Type"
 msgstr "Rodzaj"
 
-#: views/PlacesSidebar.qml:173
+#: views/PlacesSidebar.qml:172
 #, kde-format
 msgid "Date"
 msgstr "Data"
 
-#: views/PlacesSidebar.qml:182
+#: views/PlacesSidebar.qml:181
 #, kde-format
 msgid "Modified"
 msgstr "Zmieniony"
 
-#: views/PlacesSidebar.qml:191
+#: views/PlacesSidebar.qml:190
 #, kde-format
 msgid "Size"
 msgstr "Rozmiar"
 
-#: views/PlacesSidebar.qml:200
+#: views/PlacesSidebar.qml:199
 #, kde-format
 msgid "Name"
 msgstr "Nazwa"
 
-#: views/PlacesSidebar.qml:212
+#: views/PlacesSidebar.qml:211
 #, kde-format
 msgid "Group"
 msgstr "Zgrupuj"
@@ -232,9 +225,9 @@ msgid "Targets"
 msgstr "Cele"
 
 #: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
-#: views/widgets/ProjectConfigDialog.qml:14
-#: views/widgets/ProjectConfigDialog.qml:66
-#: views/widgets/ProjectConfigDialog.qml:177
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:182
 #, kde-format
 msgid "Configure"
 msgstr "Ustawienia"
@@ -271,40 +264,45 @@ msgstr "Zamknij"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
+msgid "Go back"
+msgstr "Idź wstecz"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
 msgid "Abort"
 msgstr "Przerwij"
 
-#: views/widgets/ProjectConfigDialog.qml:67
+#: views/widgets/ProjectConfigDialog.qml:75
 #, kde-format
 msgid "Set the preferences to start hacking!"
 msgstr "Nadaj ustawienia, aby zacząć hakować!"
 
-#: views/widgets/ProjectConfigDialog.qml:81
+#: views/widgets/ProjectConfigDialog.qml:85
 #, kde-format
 msgid "Build Directory"
 msgstr "Katalog budowania"
 
-#: views/widgets/ProjectConfigDialog.qml:82
+#: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Pick a build directory or keep the default one"
 msgstr "Wybierz katalog budowania lub pozostaw domyślny"
 
-#: views/widgets/ProjectConfigDialog.qml:86
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build directory path"
 msgstr "Ścieżka katalogu budowania"
 
-#: views/widgets/ProjectConfigDialog.qml:125
+#: views/widgets/ProjectConfigDialog.qml:130
 #, kde-format
 msgid "Project"
 msgstr "Projekt"
 
-#: views/widgets/ProjectConfigDialog.qml:126
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Select the target project"
 msgstr "Wybierz projekt docelowy"
 
-#: views/widgets/ProjectConfigDialog.qml:178
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Finish"
 msgstr "Zakończ"
@@ -454,6 +452,9 @@ msgstr "Wygląd"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Edytor zestawu barw"
+
+#~ msgid "Discard"
+#~ msgstr "Porzuć"
 
 #~ msgid "Font Family"
 #~ msgstr "Rodzina czcionek"
