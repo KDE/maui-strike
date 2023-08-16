@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-08-15 00:44+0000\n"
-"PO-Revision-Date: 2023-05-24 13:08+0200\n"
+"PO-Revision-Date: 2023-08-15 10:13+0200\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 20.12.0\n"
+"X-Generator: Lokalize 23.04.3\n"
 "X-Accelerator-Marker: &\n"
 
 #, kde-format
@@ -56,16 +56,13 @@ msgid "Unsaved files"
 msgstr "Fitxers sense desar"
 
 #: main.qml:130
-#, fuzzy, kde-format
-#| msgid ""
-#| "You have unsaved files. You can go back and save them or choose to "
-#| "discard all changes and exit."
+#, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
-"Hi ha fitxers sense desar. Podeu retrocedir i desar-los o triar descartar "
-"els canvis i sortir."
+"Hi ha fitxers sense desar. Voleu retrocedir i desar-los o descartar tots els "
+"canvis i sortir?"
 
 #: main.qml:243
 #, kde-format
@@ -452,6 +449,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Editor de l'estil de l'esquema de color"
-
-#~ msgid "Discard"
-#~ msgstr "Descarta"

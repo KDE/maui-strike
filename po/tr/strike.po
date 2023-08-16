@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-08-15 00:44+0000\n"
-"PO-Revision-Date: 2023-05-24 13:01+0300\n"
+"PO-Revision-Date: 2023-08-15 05:12+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 23.07.70\n"
+"X-Generator: Lokalize 23.11.70\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -53,16 +53,13 @@ msgid "Unsaved files"
 msgstr "Kaydedilmemiş dosyalar"
 
 #: main.qml:130
-#, fuzzy, kde-format
-#| msgid ""
-#| "You have unsaved files. You can go back and save them or choose to "
-#| "discard all changes and exit."
+#, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
-"Kaydedilmemiş dosyalarınız var. Geri gidip onları kaydedebilir veya tüm "
-"değişiklikleri atıp çıkabilirsiniz."
+"Kaydedilmemiş dosyalarınız var. Geri dönüp onları kaydetmek mi yoksa tüm "
+"değişiklikleri atıp çıkmak mı istiyorsunuz?"
 
 #: main.qml:243
 #, kde-format

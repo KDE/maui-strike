@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-08-15 00:44+0000\n"
-"PO-Revision-Date: 2023-05-24 08:24+0300\n"
+"PO-Revision-Date: 2023-08-15 09:42+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
@@ -54,16 +54,13 @@ msgid "Unsaved files"
 msgstr "Незбережені файли"
 
 #: main.qml:130
-#, fuzzy, kde-format
-#| msgid ""
-#| "You have unsaved files. You can go back and save them or choose to "
-#| "discard all changes and exit."
+#, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
-"Частину файлів не збережено. Ви можете повернутися і зберегти їх або "
-"відкинути усі внесені зміни і завершити роботу програми."
+"Частину файлів не збережено. Хочете повернутися і зберегти їх чи відкинути "
+"усі внесені зміни і завершити роботу програми?"
 
 #: main.qml:243
 #, kde-format
