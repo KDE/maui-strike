@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-08-15 00:44+0000\n"
-"PO-Revision-Date: 2023-06-11 18:13+0200\n"
+"PO-Revision-Date: 2023-08-26 04:43+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
 "Language: gl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 23.04.2\n"
+"X-Generator: Lokalize 23.04.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -53,16 +53,13 @@ msgid "Unsaved files"
 msgstr "Ficheiros sen gardar"
 
 #: main.qml:130
-#, fuzzy, kde-format
-#| msgid ""
-#| "You have unsaved files. You can go back and save them or choose to "
-#| "discard all changes and exit."
+#, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
-"Ten ficheiros sen gardar. Pode volver e gardalos ou escoller descartar os "
-"cambios e saír."
+"Ten ficheiros sen gardar. Quere volver e gardalos ou descartar os cambios e "
+"saír?"
 
 #: main.qml:243
 #, kde-format
@@ -250,7 +247,7 @@ msgstr "Instalar"
 #: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
-msgstr "Borrar CMake"
+msgstr "Baleirar CMake"
 
 #: views/widgets/BuildBar.qml:193
 #, kde-format
@@ -317,7 +314,7 @@ msgstr "Editor"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr "Configure a aparencia do editor. A configuración aplícase globalmente."
+msgstr "Configurar o xeito do editor. A configuración aplícase globalmente."
 
 #: views/widgets/SettingsDialog.qml:28
 #, kde-format
@@ -387,7 +384,7 @@ msgstr "Configure o esquema de cores do realce de sintaxe."
 #: views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr "Configure a aparencia do editor de texto."
+msgstr "Configurar o xeito do editor de texto."
 
 #: views/widgets/SettingsDialog.qml:145
 #, kde-format
