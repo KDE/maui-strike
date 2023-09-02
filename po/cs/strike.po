@@ -438,6 +438,3 @@ msgstr "Motiv"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Styl barevného schématu editoru"
-
-#~ msgid "Discard"
-#~ msgstr "Zahodit"
