@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2023-11-05 12:29+0000\n"
-"PO-Revision-Date: 2023-05-28 16:48+0300\n"
+"PO-Revision-Date: 2023-09-27 21:33+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 23.04.1\n"
+"X-Generator: Lokalize 22.12.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -53,16 +53,13 @@ msgid "Unsaved files"
 msgstr "Tallentamattomat tiedostot"
 
 #: main.qml:130
-#, fuzzy, kde-format
-#| msgid ""
-#| "You have unsaved files. You can go back and save them or choose to "
-#| "discard all changes and exit."
+#, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
-"Tiedostoja on tallentamatta. Voit palata takaisin ja tallentaa ne tai hylätä "
-"muutokset ja lopettaa."
+"Tiedostoja on tallentamatta. Haluatko palata tallentamaan ne vai hylätä "
+"muutokset ja lopettaa?"
 
 #: main.qml:243
 #, kde-format
