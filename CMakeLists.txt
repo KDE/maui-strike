@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(STRIKE_VERSION 1.1.1)
+set(STRIKE_VERSION 1.1.2)
 project(strike VERSION ${STRIKE_VERSION})
 
 set(CMAKE_CXX_STANDARD 17)
@@ -29,7 +29,7 @@ find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick 
 find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 
 find_package(MauiKit3 REQUIRED)
-find_package(MauiKit3 REQUIRED COMPONENTS FileBrowsing TextEditor)
+find_package(MauiKit3 REQUIRED COMPONENTS FileBrowsing TextEditor Terminal)
 
 if(QUICK_COMPILER)
     find_package(Qt5QuickCompiler)

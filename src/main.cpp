@@ -8,6 +8,9 @@
 #include <KI18n/KLocalizedString>
 
 #include <MauiKit3/Core/mauiapp.h>
+#include <MauiKit3/Terminal/moduleinfo.h>
+#include <MauiKit3/TextEditor/moduleinfo.h>
+#include <MauiKit3/FileBrowsing/moduleinfo.h>
 
 #include "controllers/processmanager.h"
 #include "controllers/projectmanager.h"
@@ -45,6 +48,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     about.setBugAddress("https://invent.kde.org/maui/strike/-/issues");
     about.setOrganizationDomain(STRIKE_URI);
     about.setProgramLogo(app.windowIcon());
+
+    const auto TData = MauiKitTerminal::aboutData();
+    about.addComponent(TData.name(), MauiKitTerminal::buildVersion(), TData.version(), TData.webAddress());
+
+    const auto FBData = MauiKitFileBrowsing::aboutData();
+    about.addComponent(FBData.name(), MauiKitFileBrowsing::buildVersion(), FBData.version(), FBData.webAddress());
+
+    const auto TEData = MauiKitTextEditor::aboutData();
+    about.addComponent(TEData.name(), MauiKitTextEditor::buildVersion(), TEData.version(), TEData.webAddress());
 
     KAboutData::setApplicationData(about);
     MauiApp::instance()->setIconName("qrc:/img/strike.svg");
