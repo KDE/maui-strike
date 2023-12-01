@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2023-12-01 00:41+0000\n"
 "PO-Revision-Date: 2023-08-26 04:43+0200\n"
 "Last-Translator: Adrián Chaves (Gallaecio) <adrian@chaves.io>\n"
 "Language-Team: Galician <proxecto@trasno.gal>\n"
@@ -27,22 +27,22 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "adrian@chaves.io"
 
-#: main.cpp:40
+#: main.cpp:43
 #, kde-format
 msgid "Build and run code."
 msgstr "Construír e executar código."
 
-#: main.cpp:40
+#: main.cpp:43
 #, kde-format
 msgid "© 2021-%1 Camilo Higuita"
 msgstr "© 2021-%1 Camilo Higuita"
 
-#: main.cpp:42
+#: main.cpp:45
 #, kde-format
 msgid "Camilo Higuita"
 msgstr "Camilo Higuita"
 
-#: main.cpp:42
+#: main.cpp:45
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolvemento."
