@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-12-01 00:41+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-12-20 17:42+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -30,22 +30,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "mail@kisaragi-hiu.com"
 
-#: main.cpp:43
+#: main.cpp:45
 #, kde-format
 msgid "Build and run code."
 msgstr "編譯並執行程式碼。"
 
-#: main.cpp:43
-#, kde-format
-msgid "© 2021-%1 Camilo Higuita"
-msgstr "© 2021-%1 Camilo Higuita"
-
-#: main.cpp:45
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: main.cpp:45
+#: main.cpp:50
 #, kde-format
 msgid "Developer"
 msgstr "開發者"
@@ -441,6 +431,12 @@ msgstr "主題"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "編輯器配色方案風格"
+
+#~ msgid "© 2021-%1 Camilo Higuita"
+#~ msgstr "© 2021-%1 Camilo Higuita"
+
+#~ msgid "Camilo Higuita"
+#~ msgstr "Camilo Higuita"
 
 #~ msgid "Discard"
 #~ msgstr "丟棄"
