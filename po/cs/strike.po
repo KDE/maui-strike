@@ -430,9 +430,3 @@ msgstr "Motiv"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Styl barevného schématu editoru"
-
-#~ msgid "© 2021-%1 Camilo Higuita"
-#~ msgstr "© 2021-%1 Camilo Higuita"
-
-#~ msgid "Camilo Higuita"
-#~ msgstr "Camilo Higuita"
