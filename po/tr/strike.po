@@ -436,33 +436,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Düzenleyici renk şeması biçemi"
-
-#~ msgid "© 2021-%1 Camilo Higuita"
-#~ msgstr "© 2021-%1 Camilo Higuita"
-
-#~ msgid "Camilo Higuita"
-#~ msgstr "Camilo Higuita"
-
-#~ msgid "Discard"
-#~ msgstr "At"
-
-#~ msgid "Font Family"
-#~ msgstr "Yazıtipi Ailesi"
-
-#~ msgid "Font Size"
-#~ msgstr "Yazıtipi Boyutu"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Sistem renk şemasını izler."
-
-#~ msgid "New file"
-#~ msgstr "Yeni Dosya"
-
-#~ msgid "Open a existing project"
-#~ msgstr "Var Olan Bir Proje Aç"
-
-#~ msgid "Open one or multiple files"
-#~ msgstr "Bir veya daha çok dosya açın"
-
-#~ msgid "With support for basic text format editing"
-#~ msgstr "Yalın metin düzenleme desteği ile"
