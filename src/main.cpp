@@ -1,6 +1,5 @@
 #include <QApplication>
 #include <QCommandLineParser>
-#include <QDate>
 #include <QQmlApplicationEngine>
 #include <QQmlContext>
 #include <QIcon>
@@ -40,9 +39,15 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     KLocalizedString::setApplicationDomain("strike");
 
-    KAboutData about(QStringLiteral("strike"), "Strike", STRIKE_VERSION_STRING, i18n("Build and run code."), KAboutLicense::LGPL_V3,i18n("© 2021-%1 Camilo Higuita", QString::number(QDate::currentDate().year())), QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
+    KAboutData about(QStringLiteral("strike"),
+                     QStringLiteral("Strike"), 
+                     STRIKE_VERSION_STRING, 
+                     i18n("Build and run code."), 
+                     KAboutLicense::LGPL_V3,
+                     APP_COPYRIGHT_NOTICE, 
+                     QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
-    about.addAuthor(i18n("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
+    about.addAuthor(QStringLiteral("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
     about.setHomepage("https://slike.org");
     about.setProductName("slike/strike");
     about.setBugAddress("https://invent.kde.org/maui/strike/-/issues");

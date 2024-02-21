@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-08-15 05:12+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -27,22 +27,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "emir_sari@icloud.com"
 
-#: main.cpp:40
+#: main.cpp:45
 #, kde-format
 msgid "Build and run code."
 msgstr "Kod yapın ve çalıştırın."
 
-#: main.cpp:40
-#, kde-format
-msgid "© 2021-%1 Camilo Higuita"
-msgstr "© 2021-%1 Camilo Higuita"
-
-#: main.cpp:42
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: main.cpp:42
+#: main.cpp:50
 #, kde-format
 msgid "Developer"
 msgstr "Geliştirici"
@@ -446,27 +436,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Düzenleyici renk şeması biçemi"
-
-#~ msgid "Discard"
-#~ msgstr "At"
-
-#~ msgid "Font Family"
-#~ msgstr "Yazıtipi Ailesi"
-
-#~ msgid "Font Size"
-#~ msgstr "Yazıtipi Boyutu"
-
-#~ msgid "Follows the system color scheme."
-#~ msgstr "Sistem renk şemasını izler."
-
-#~ msgid "New file"
-#~ msgstr "Yeni Dosya"
-
-#~ msgid "Open a existing project"
-#~ msgstr "Var Olan Bir Proje Aç"
-
-#~ msgid "Open one or multiple files"
-#~ msgstr "Bir veya daha çok dosya açın"
-
-#~ msgid "With support for basic text format editing"
-#~ msgstr "Yalın metin düzenleme desteği ile"

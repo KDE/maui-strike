@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-08-15 18:52+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -29,22 +29,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "ecuadra@eloihr.net"
 
-#: main.cpp:40
+#: main.cpp:45
 #, kde-format
 msgid "Build and run code."
 msgstr "Construir y ejecutar el código."
 
-#: main.cpp:40
-#, kde-format
-msgid "© 2021-%1 Camilo Higuita"
-msgstr "© 2021-%1 Camilo Higuita"
-
-#: main.cpp:42
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: main.cpp:42
+#: main.cpp:50
 #, kde-format
 msgid "Developer"
 msgstr "Desarrollador"
@@ -448,6 +438,12 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Estilo del esquema de colores del editor"
+
+#~ msgid "© 2021-%1 Camilo Higuita"
+#~ msgstr "© 2021-%1 Camilo Higuita"
+
+#~ msgid "Camilo Higuita"
+#~ msgstr "Camilo Higuita"
 
 #~ msgid "Discard"
 #~ msgstr "Descartar"

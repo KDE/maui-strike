@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2023-11-05 12:29+0000\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
 "PO-Revision-Date: 2023-09-27 21:33+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -27,22 +27,12 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: main.cpp:40
+#: main.cpp:45
 #, kde-format
 msgid "Build and run code."
 msgstr "Koosta ja suorita koodia."
 
-#: main.cpp:40
-#, kde-format
-msgid "© 2021-%1 Camilo Higuita"
-msgstr "© 2021–%1 Camilo Higuita"
-
-#: main.cpp:42
-#, kde-format
-msgid "Camilo Higuita"
-msgstr "Camilo Higuita"
-
-#: main.cpp:42
+#: main.cpp:50
 #, kde-format
 msgid "Developer"
 msgstr "Kehittäjä"
@@ -442,6 +432,12 @@ msgstr "Teema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Muokkaimen värimalli"
+
+#~ msgid "© 2021-%1 Camilo Higuita"
+#~ msgstr "© 2021–%1 Camilo Higuita"
+
+#~ msgid "Camilo Higuita"
+#~ msgstr "Camilo Higuita"
 
 #~ msgid "Discard"
 #~ msgstr "Hylkää"

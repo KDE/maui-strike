@@ -323,7 +323,7 @@ Maui.ApplicationWindow
                     {
                         text: i18n("About")
                         icon.name: "documentinfo"
-                        onTriggered: root.about()
+                        onTriggered: Maui.App.aboutDialog()
                     }
                 }
             ]
