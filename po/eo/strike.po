@@ -1,0 +1,431 @@
+# translation of strike.pot to Esperanto
+# Copyright (C) 2024 Free Software Foundation, Inc.
+# This file is distributed under the same license as the maui-strike package.
+# Oliver Kellogg <okellogg@users.sourceforge.net>, 2024.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-02-10 01:51+0000\n"
+"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
+"Language-Team: Esperanto <kde-i18n-eo.org>\n"
+"Language: eo\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: translate-po (https://github.com/zcribe/translate-po)\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr ""
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr ""
+
+#: main.cpp:45
+#, kde-format
+msgid "Build and run code."
+msgstr ""
+
+#: main.cpp:50
+#, kde-format
+msgid "Developer"
+msgstr "Ellaboranto"
+
+#: main.qml:129
+#, kde-format
+msgid "Unsaved files"
+msgstr ""
+
+#: main.qml:130
+#, kde-format
+msgid ""
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
+msgstr ""
+
+#: main.qml:243
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Baskuligi Flankbaron"
+
+#: main.qml:256
+#, kde-format
+msgid "Create New Project"
+msgstr "Krei Novan Projekton"
+
+#: main.qml:268 views/editor/EditorView.qml:88
+#, kde-format
+msgid "Open Project"
+msgstr "Malfermi Projekton"
+
+#: main.qml:289
+#, kde-format
+msgid "Open File"
+msgstr "Malfermi Dosieron"
+
+#: main.qml:301
+#, kde-format
+msgid "New Template Source File"
+msgstr ""
+
+#: main.qml:313
+#, kde-format
+msgid "Settings"
+msgstr "Agordoj"
+
+#: main.qml:324
+#, kde-format
+msgid "About"
+msgstr "Pri"
+
+#: views/editor/Editor.qml:88
+#, kde-format
+msgid "Open here"
+msgstr ""
+
+#: views/editor/Editor.qml:98
+#, kde-format
+msgid "Open in new tab"
+msgstr "Malfermi en nova langeto"
+
+#: views/editor/Editor.qml:109
+#, kde-format
+msgid "Open in new split"
+msgstr ""
+
+#: views/editor/Editor.qml:121
+#, kde-format
+msgid "Cancel"
+msgstr "Nuligi"
+
+#: views/editor/EditorView.qml:34
+#, kde-format
+msgid "Clone"
+msgstr "Kloni"
+
+#: views/editor/EditorView.qml:35
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr ""
+
+#: views/editor/EditorView.qml:62
+#, kde-format
+msgid "Split"
+msgstr "Dividi"
+
+#: views/editor/EditorView.qml:81
+#, kde-format
+msgid "Missing Project"
+msgstr ""
+
+#: views/editor/EditorView.qml:82
+#, kde-format
+msgid "Create or open a new project."
+msgstr ""
+
+#: views/editor/EditorView.qml:109
+#, kde-format
+msgid "Clone Project"
+msgstr ""
+
+#: views/editor/EditorView.qml:211
+#, kde-format
+msgid "Find and Replace"
+msgstr ""
+
+#: views/editor/EditorView.qml:224
+#, kde-format
+msgid "Line/Word Counter"
+msgstr ""
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Project Sources"
+msgstr ""
+
+#: views/PlacesSidebar.qml:70
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr ""
+
+#: views/PlacesSidebar.qml:114
+#, kde-format
+msgid "Previous"
+msgstr "Antaŭa"
+
+#: views/PlacesSidebar.qml:121
+#, kde-format
+msgid "Up"
+msgstr "Supren"
+
+#: views/PlacesSidebar.qml:129
+#, kde-format
+msgid "Next"
+msgstr "Sekva"
+
+#: views/PlacesSidebar.qml:153
+#, kde-format
+msgid "Show Folders First"
+msgstr "Montri Dosierujojn Unue"
+
+#: views/PlacesSidebar.qml:163
+#, kde-format
+msgid "Type"
+msgstr "Tipo"
+
+#: views/PlacesSidebar.qml:172
+#, kde-format
+msgid "Date"
+msgstr "Dato"
+
+#: views/PlacesSidebar.qml:181
+#, kde-format
+msgid "Modified"
+msgstr "Modifita"
+
+#: views/PlacesSidebar.qml:190
+#, kde-format
+msgid "Size"
+msgstr "Grandeco"
+
+#: views/PlacesSidebar.qml:199
+#, kde-format
+msgid "Name"
+msgstr "Nomo"
+
+#: views/PlacesSidebar.qml:211
+#, kde-format
+msgid "Group"
+msgstr "Grupo"
+
+#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
+#, kde-format
+msgid "Targets"
+msgstr "Celoj"
+
+#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:182
+#, kde-format
+msgid "Configure"
+msgstr "Agordi"
+
+#: views/widgets/BuildBar.qml:113
+#, kde-format
+msgid "Build"
+msgstr "Konstrui"
+
+#: views/widgets/BuildBar.qml:120
+#, kde-format
+msgid "Run"
+msgstr "Ruli"
+
+#: views/widgets/BuildBar.qml:127
+#, kde-format
+msgid "Install"
+msgstr "Instali"
+
+#: views/widgets/BuildBar.qml:185
+#, kde-format
+msgid "Clear CMake"
+msgstr ""
+
+#: views/widgets/BuildBar.qml:193
+#, kde-format
+msgid "Open directory"
+msgstr ""
+
+#: views/widgets/BuildBar.qml:203
+#, kde-format
+msgid "Close"
+msgstr "Fermi"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Reiri"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Ĉesigi"
+
+#: views/widgets/ProjectConfigDialog.qml:75
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr ""
+
+#: views/widgets/ProjectConfigDialog.qml:85
+#, kde-format
+msgid "Build Directory"
+msgstr ""
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr ""
+
+#: views/widgets/ProjectConfigDialog.qml:93
+#, kde-format
+msgid "Build directory path"
+msgstr ""
+
+#: views/widgets/ProjectConfigDialog.qml:130
+#, kde-format
+msgid "Project"
+msgstr "Projekto"
+
+#: views/widgets/ProjectConfigDialog.qml:131
+#, kde-format
+msgid "Select the target project"
+msgstr ""
+
+#: views/widgets/ProjectConfigDialog.qml:183
+#, kde-format
+msgid "Finish"
+msgstr "Fini"
+
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
+#, kde-format
+msgid "Editor"
+msgstr "Redaktilo"
+
+#: views/widgets/SettingsDialog.qml:23
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:28
+#, kde-format
+msgid "Auto Save"
+msgstr "Aŭtokonservado"
+
+#: views/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Auto saves your file every 5 seconds."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr "Sintaksmarkigo"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Line Numbers"
+msgstr "Lininombroj:"
+
+#: views/widgets/SettingsDialog.qml:53
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
+#, kde-format
+msgid "Style"
+msgstr "Stilo"
+
+#: views/widgets/SettingsDialog.qml:67
+#, kde-format
+msgid ""
+"Configure the style of the syntax highlighting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Tab Spacing"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr "Tiparoj"
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:97
+#, kde-format
+msgid "Colors"
+msgstr "Koloroj"
+
+#: views/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Configure the look and feel of the text editor."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:145
+#, kde-format
+msgid "Builder"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr "Kromprogramoj"
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr "Iloj"
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration in not "
+"applied for rich text formats"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "Color"
+msgstr "Koloro"
+
+#: views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Editor background color"
+msgstr ""
+
+#: views/widgets/SettingsDialog.qml:224
+#, kde-format
+msgid "Theme"
+msgstr "Etoso"
+
+#: views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Editor color scheme style"
+msgstr ""
