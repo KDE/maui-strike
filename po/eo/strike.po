@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-02-10 01:51+0000\n"
-"PO-Revision-Date: 2024-02-26 21:30+0100\n"
+"PO-Revision-Date: 2024-03-24 10:34+0100\n"
 "Last-Translator: Oliver Kellogg <okellogg@users.sourceforge.net>\n"
 "Language-Team: Esperanto <kde-i18n-eo.org>\n"
 "Language: eo\n"
@@ -31,7 +31,7 @@ msgstr ""
 #: main.cpp:45
 #, kde-format
 msgid "Build and run code."
-msgstr ""
+msgstr "Konstrui kaj ruli kodon."
 
 #: main.cpp:50
 #, kde-format
@@ -41,7 +41,7 @@ msgstr "Ellaboranto"
 #: main.qml:129
 #, kde-format
 msgid "Unsaved files"
-msgstr ""
+msgstr "Nekonservitaj dosieroj"
 
 #: main.qml:130
 #, kde-format
@@ -73,7 +73,7 @@ msgstr "Malfermi Dosieron"
 #: main.qml:301
 #, kde-format
 msgid "New Template Source File"
-msgstr ""
+msgstr "Nova Ŝablona Fonta Dosiero"
 
 #: main.qml:313
 #, kde-format
@@ -88,7 +88,7 @@ msgstr "Pri"
 #: views/editor/Editor.qml:88
 #, kde-format
 msgid "Open here"
-msgstr ""
+msgstr "Malfermi ĉi tie"
 
 #: views/editor/Editor.qml:98
 #, kde-format
@@ -98,7 +98,7 @@ msgstr "Malfermi en nova langeto"
 #: views/editor/Editor.qml:109
 #, kde-format
 msgid "Open in new split"
-msgstr ""
+msgstr "Malfermi en nova disigo"
 
 #: views/editor/Editor.qml:121
 #, kde-format
@@ -113,7 +113,7 @@ msgstr "Kloni"
 #: views/editor/EditorView.qml:35
 #, kde-format
 msgid "Enter the project Git URL"
-msgstr ""
+msgstr "Enigi la projekton Git URL"
 
 #: views/editor/EditorView.qml:62
 #, kde-format
@@ -123,37 +123,37 @@ msgstr "Dividi"
 #: views/editor/EditorView.qml:81
 #, kde-format
 msgid "Missing Project"
-msgstr ""
+msgstr "Mankas Projekto"
 
 #: views/editor/EditorView.qml:82
 #, kde-format
 msgid "Create or open a new project."
-msgstr ""
+msgstr "Krei aŭ malfermi novan projekton."
 
 #: views/editor/EditorView.qml:109
 #, kde-format
 msgid "Clone Project"
-msgstr ""
+msgstr "Klona Projekto"
 
 #: views/editor/EditorView.qml:211
 #, kde-format
 msgid "Find and Replace"
-msgstr ""
+msgstr "Trovi kaj Anstataŭigi"
 
 #: views/editor/EditorView.qml:224
 #, kde-format
 msgid "Line/Word Counter"
-msgstr ""
+msgstr "Linio/Vortkalkulilo"
 
 #: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Project Sources"
-msgstr ""
+msgstr "Projektaj Fontoj"
 
 #: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Source files will be listed in here."
-msgstr ""
+msgstr "Fontdosieroj estos listigitaj ĉi tie."
 
 #: views/PlacesSidebar.qml:114
 #, kde-format
@@ -236,12 +236,12 @@ msgstr "Instali"
 #: views/widgets/BuildBar.qml:185
 #, kde-format
 msgid "Clear CMake"
-msgstr ""
+msgstr "Viŝi CMake"
 
 #: views/widgets/BuildBar.qml:193
 #, kde-format
 msgid "Open directory"
-msgstr ""
+msgstr "Malfermi dosierujon"
 
 #: views/widgets/BuildBar.qml:203
 #, kde-format
@@ -261,22 +261,22 @@ msgstr "Ĉesigi"
 #: views/widgets/ProjectConfigDialog.qml:75
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr ""
+msgstr "Agordi la preferojn por komenci haki!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
 #, kde-format
 msgid "Build Directory"
-msgstr ""
+msgstr "Konstrui Dosierujon"
 
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr ""
+msgstr "Elekti konstruan dosierujon aŭ konservi la defaŭltan"
 
 #: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build directory path"
-msgstr ""
+msgstr "Konstrui dosierujan vojon"
 
 #: views/widgets/ProjectConfigDialog.qml:130
 #, kde-format
@@ -286,7 +286,7 @@ msgstr "Projekto"
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Select the target project"
-msgstr ""
+msgstr "Elekti la celprojekton"
 
 #: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
@@ -313,7 +313,7 @@ msgstr "Aŭtokonservado"
 #: views/widgets/SettingsDialog.qml:29
 #, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr ""
+msgstr "Aŭtomate konservas vian dosieron ĉiujn 5 sekundojn."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
@@ -328,7 +328,7 @@ msgstr "Lininombroj:"
 #: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr ""
+msgstr "Montri la linionumeroj sur la maldekstra flanko"
 
 #: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
 #: views/widgets/SettingsDialog.qml:188
@@ -346,7 +346,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
-msgstr ""
+msgstr "Tab Interspaco"
 
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
@@ -356,7 +356,7 @@ msgstr "Tiparoj"
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Agordi la tiparfamilion kaj stilon."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -366,22 +366,22 @@ msgstr "Koloroj"
 #: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Agordi la kolorskemon de la sintaksa reliefigo."
 
 #: views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
+msgstr "Agordi la aspekton de la tekstredaktilo."
 
 #: views/widgets/SettingsDialog.qml:145
 #, kde-format
 msgid "Builder"
-msgstr ""
+msgstr "Konstruisto"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Agordi la komandojn de konstrupaŝoj."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
@@ -391,7 +391,7 @@ msgstr "Kromprogramoj"
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Ŝalti disponeblajn kromaĵojn."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
@@ -401,7 +401,7 @@ msgstr "Iloj"
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Pli da iloj."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
@@ -418,7 +418,7 @@ msgstr "Koloro"
 #: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
-msgstr ""
+msgstr "Fonkoloro de la redaktilo"
 
 #: views/widgets/SettingsDialog.qml:224
 #, kde-format
@@ -428,4 +428,4 @@ msgstr "Etoso"
 #: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
-msgstr ""
+msgstr "Redaktora kolorskemo stilo"
