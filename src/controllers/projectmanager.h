@@ -4,9 +4,9 @@
 #include <QObject>
 #include <QUrl>
 
-class CMakeProjectManager;
+#include "projectpreferences.h"
+#include "cmakeprojectmanager.h"
 
-class ProjectPreferences;
 class ProjectManager : public QObject
 {
     Q_OBJECT
@@ -35,7 +35,7 @@ public:
 
     bool active() const;
 
-public slots:
+public Q_SLOTS:
     void setProjectUrl(QUrl projectUrl);
     void configure();
 
@@ -50,7 +50,7 @@ private:
 
     bool m_active;
 
-signals:
+Q_SIGNALS:
     void projectUrlChanged(QUrl projectUrl);
     void projectPathChanged(QUrl projectPath);
     void projectLogoChanged(QString projectLogo);

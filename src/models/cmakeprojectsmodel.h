@@ -29,7 +29,7 @@ public:
 private:
     QVector<CMakeProjectData> m_data;
 
-signals:
+Q_SIGNALS:
     void currentProjectIndexChanged(int currentProjectIndex);
 };
 

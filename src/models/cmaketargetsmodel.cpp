@@ -11,7 +11,7 @@ void CMakeTargetsModel::setTargetData(const CMakeProjectTargets &data)
     qDebug() << "Setting the targets model" << data.keys();
     m_data = data;
     this->setList();
-    emit dataChanged(m_data);
+    Q_EMIT dataChanged(m_data);
 }
 
 QVector<CMakeTarget> CMakeTargetsModel::filterBy(const CMakeTarget::Type &type)

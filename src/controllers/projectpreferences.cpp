@@ -26,7 +26,7 @@ void ProjectPreferences::setInstallPrefix(QString installPrefix)
         return;
 
     m_installPrefix = installPrefix;
-    emit installPrefixChanged(m_installPrefix);
+    Q_EMIT installPrefixChanged(m_installPrefix);
 }
 
 void ProjectPreferences::setCmakeProgram(QString cmakeProgram)
@@ -35,7 +35,7 @@ void ProjectPreferences::setCmakeProgram(QString cmakeProgram)
         return;
 
     m_cmakeProgram = cmakeProgram;
-    emit cmakeProgramChanged(m_cmakeProgram);
+    Q_EMIT cmakeProgramChanged(m_cmakeProgram);
 }
 
 void ProjectPreferences::setBuildDir(QUrl buildDir)
@@ -44,5 +44,5 @@ void ProjectPreferences::setBuildDir(QUrl buildDir)
         return;
 
     m_buildDir = buildDir;
-    emit buildDirChanged(m_buildDir);
+    Q_EMIT buildDirChanged(m_buildDir);
 }

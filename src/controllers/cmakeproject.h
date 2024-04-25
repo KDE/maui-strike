@@ -2,11 +2,13 @@
 #define CMAKEPROJECT_H
 
 #include <QObject>
-#include "cmakedata.h"
+#include <QString>
 
-class CMakeProjectTarget;
+#include "cmakedata.h"
+#include "cmakeprojecttarget.h"
+#include "models/cmaketargetsmodel.h"
+
 class CMakeProjectManager;
-class CMakeTargetsModel;
 class CMakeProject : public QObject
 {
     Q_OBJECT
@@ -29,7 +31,7 @@ public:
     CMakeProjectTarget *target() const;
     CMakeProjectManager *manager() const;
 
-public slots:
+public Q_SLOTS:
     void setData(CMakeProjectData data);
 
 private:
@@ -38,8 +40,7 @@ private:
     CMakeProjectTarget *m_target;
     CMakeProjectManager *m_manager;
 
-
-signals:
+Q_SIGNALS:
     void dataChanged(CMakeProjectData data);
 };
 

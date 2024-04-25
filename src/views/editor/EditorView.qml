@@ -1,13 +1,11 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.13
+import QtQuick
+import QtQuick.Controls
 
-import org.kde.kirigami 2.14 as Kirigami
+import org.mauikit.controls as Maui
+import org.mauikit.filebrowsing as FB
+import org.mauikit.texteditor as TE
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.filebrowsing 1.3 as FB
-import org.mauikit.texteditor 1.0 as TE
-
-import QtQuick.Window 2.0
+import QtQuick.Window
 
 import "../widgets"
 
@@ -278,7 +276,7 @@ Maui.Page
             SplitView.minimumHeight : Maui.Style.space.big
         }
 
-        handle: Kirigami.ShadowedRectangle
+        handle: Maui.ShadowedRectangle
         {
             Maui.Theme.inherit: false
             Maui.Theme.colorSet: Maui.Theme.Complementary

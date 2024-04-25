@@ -4,18 +4,15 @@
 #include <QDir>
 #include <QJsonObject>
 
-#include <MauiKit3/FileBrowsing/fmstatic.h>
+#include <MauiKit4/FileBrowsing/fmstatic.h>
 
 #include "cmakeapi.h"
 #include "cmakedata.h"
 
-#include "controllers/cmakeproject.h"
 #include "controllers/processes/configureprocess.h"
 #include "controllers/projectmanager.h"
 #include "controllers/projectpreferences.h"
-#include "processmanager.h"
 
-#include "models/cmakeprojectsmodel.h"
 
 CMakeProjectManager::CMakeProjectManager(ProjectManager *parent) : QObject(parent)
 ,m_projectsModel(new CMakeProjectsModel(this))
@@ -135,5 +132,5 @@ void CMakeProjectManager::setStatus(const CMakeProjectManager::Status &status)
     }
 
   m_status = status;
-  emit statusChanged(m_status);
+  Q_EMIT statusChanged(m_status);
 }

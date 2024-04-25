@@ -1,11 +1,11 @@
-import QtQuick 2.13
-import QtQuick.Controls 2.13
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.texteditor 1.0 as TE
+import org.mauikit.controls as Maui
+import org.mauikit.texteditor as TE
 
-import org.slike.strike 1.0 as Strike
+import org.slike.strike as Strike
 
 Maui.SettingsDialog
 {
@@ -23,7 +23,7 @@ Maui.SettingsDialog
                 description: i18n("Configure the look and feel of the editor. The settings are applied globally")
 
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text:  i18n("Auto Save")
                     label2.text: i18n("Auto saves your file every 5 seconds.")
@@ -36,7 +36,7 @@ Maui.SettingsDialog
                 }
 
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text:  i18n("Syntax Highlighting")
                     Switch
@@ -47,7 +47,7 @@ Maui.SettingsDialog
                     }
                 }
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text: i18n("Line Numbers")
                     label2.text: i18n("Display the line numbers on the left side")
@@ -67,7 +67,7 @@ Maui.SettingsDialog
                 description: i18n("Configure the style of the syntax highlighting. This configuration in not applied for rich text formats")
                 visible: settings.enableSyntaxHighlighting
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text:  i18n("Tab Spacing")
 
@@ -79,7 +79,7 @@ Maui.SettingsDialog
                     }
                 }
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text: i18n("Fonts")
                     label2.text: i18n("Configure the fonts family and style.")
@@ -92,7 +92,7 @@ Maui.SettingsDialog
                     }
                 }
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text: i18n("Colors")
                     label2.text: i18n("Configure the color scheme of the syntax highlighting.")
@@ -128,7 +128,7 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SectionItem
+    Maui.FlexSectionItem
     {
         label1.text: i18n("Editor")
         label2.text: i18n("Configure the look and feel of the text editor.")
@@ -140,7 +140,7 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SectionItem
+    Maui.FlexSectionItem
     {
         label1.text: i18n("Builder")
         label2.text: i18n("Configure the build steps commands.")
@@ -152,7 +152,7 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SectionItem
+    Maui.FlexSectionItem
     {
         label1.text: i18n("Plugins")
         label2.text: i18n("Toggle available plugins.")
@@ -164,7 +164,7 @@ Maui.SettingsDialog
         }
     }
 
-    Maui.SectionItem
+    Maui.FlexSectionItem
     {
         label1.text: i18n("Tools")
         label2.text: i18n("More tools.")
@@ -188,7 +188,7 @@ Maui.SettingsDialog
                 title: i18n("Style")
                 description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
 
-                Maui.SectionItem
+                Maui.FlexSectionItem
                 {
                     label1.text:  i18n("Color")
                     label2.text: i18n("Editor background color")
@@ -223,7 +223,6 @@ Maui.SettingsDialog
                 {
                     label1.text:  i18n("Theme")
                     label2.text: i18n("Editor color scheme style")
-                    columns: 1
 
                     GridLayout
                     {

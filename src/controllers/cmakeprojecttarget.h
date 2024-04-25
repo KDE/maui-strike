@@ -4,8 +4,8 @@
 #include <QObject>
 #include <QVector>
 #include "cmakedata.h"
+#include "models/sourcesmodel.h"
 
-class SourcesModel;
 class CMakeProjectTarget : public QObject
 {
     Q_OBJECT
@@ -21,14 +21,14 @@ public:
     QList<QUrl> artifacts() const;
     SourcesModel *sources() const;
 
-public slots:
+public Q_SLOTS:
     void setData(CMakeTarget data, const QUrl &source);
 
 private:
     CMakeTarget m_data;
     SourcesModel *m_sources;
 
-signals:
+Q_SIGNALS:
     void dataChanged();
 };
 

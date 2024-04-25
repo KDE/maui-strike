@@ -5,7 +5,7 @@
 
 cmake_minimum_required(VERSION 3.16)
 
-set(STRIKE_VERSION 1.1.3)
+set(STRIKE_VERSION 2.0.0)
 add_compile_definitions(APP_COPYRIGHT_NOTICE="© 2022-2024 Maui Development Team")
 
 project(strike VERSION ${STRIKE_VERSION})
@@ -15,35 +15,25 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 
-set(CMAKE_AUTOUIC ON)
 set(CMAKE_AUTOMOC ON)
 set(CMAKE_AUTORCC ON)
 
-set(REQUIRED_QT_VERSION 5.14.0)
-set(REQUIRED_KF5_VERSION 5.60)
+set(QT_MAJOR_VERSION 6)
 
-option(QUICK_COMPILER "Use QtQuick compiler to improve performance" TRUE)
+set(REQUIRED_QT_VERSION 6.5.2)
+set(REQUIRED_KF_VERSION 5.240.0)
 
-find_package(ECM ${REQUIRED_KF5_VERSION} REQUIRED NO_MODULE)
+
+find_package(ECM ${REQUIRED_KF_VERSION} REQUIRED NO_MODULE)
 set(CMAKE_MODULE_PATH "${CMAKE_CURRENT_SOURCE_DIR}/cmake" ${ECM_MODULE_PATH})
 
-find_package(Qt5 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets)
-find_package(KF5 ${REQUIRED_KF5_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
+find_package(Qt6 ${REQUIRED_QT_VERSION} REQUIRED NO_MODULE COMPONENTS Qml Quick Widgets)
+find_package(KF6 ${REQUIRED_KF_VERSION} REQUIRED COMPONENTS I18n CoreAddons)
 
-find_package(MauiKit3 REQUIRED)
-find_package(MauiKit3 REQUIRED COMPONENTS FileBrowsing TextEditor Terminal)
-
-if(QUICK_COMPILER)
-    find_package(Qt5QuickCompiler)
-    set_package_properties(Qt5QuickCompiler PROPERTIES
-        DESCRIPTION "Compile QML at build time"
-        TYPE OPTIONAL)
-endif()
+find_package(MauiKit4 REQUIRED COMPONENTS FileBrowsing TextEditor Terminal)
 
 include(KDEInstallDirs)
 include(KDECMakeSettings)
-include(ECMInstallIcons)
-include(ECMAddAppIcon)
 include(KDECompilerSettings NO_POLICY_SCOPE)
 include(KDEClangFormat)
 include(ECMSetupVersion)
@@ -80,7 +70,7 @@ add_subdirectory(src)
 
 ki18n_install(po)
 
-install(FILES org.kde.strike.desktop DESTINATION ${XDG_APPS_INSTALL_DIR})
+install(FILES org.kde.strike.desktop DESTINATION ${KDE_INSTALL_APPDIR})
 install(FILES org.kde.strike.metainfo.xml DESTINATION ${KDE_INSTALL_METAINFODIR})
 install(FILES src/assets/strike.svg DESTINATION ${KDE_INSTALL_ICONDIR}/hicolor/scalable/apps)
 

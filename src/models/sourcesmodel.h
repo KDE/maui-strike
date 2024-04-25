@@ -1,7 +1,7 @@
 #ifndef SOURCESMODEL_H
 #define SOURCESMODEL_H
 
-#include <MauiKit3/Core/mauilist.h>
+#include <MauiKit4/Core/mauilist.h>
 
 #include <QObject>
 

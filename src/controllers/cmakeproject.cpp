@@ -1,7 +1,5 @@
 #include "cmakeproject.h"
-#include "cmakedata.h"
-#include "models/cmaketargetsmodel.h"
-#include "cmakeprojecttarget.h"
+
 #include "projectpreferences.h"
 #include "cmakeprojectmanager.h"
 #include "projectmanager.h"
@@ -56,6 +54,6 @@ void CMakeProject::setData(CMakeProjectData data)
       m_target->setData(execs.first(), m_manager->root()->projectPath ());
     }
 
-  emit dataChanged(m_data);
+  Q_EMIT dataChanged(m_data);
 }
 

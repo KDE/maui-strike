@@ -9,8 +9,6 @@ class Process : public QObject
 public:
   explicit Process(QObject *parent = nullptr);
 
-signals:
-
 };
 
 #endif // PROCESS_H
