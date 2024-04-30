@@ -59,6 +59,10 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="x-test">xxSimple and convergent IDExx</summary>
   <summary xml:lang="zh-CN">简易桌面与移动平台通用 IDE</summary>
   <summary xml:lang="zh-TW">簡潔且響應式的 IDE</summary>
+  <developer>
+    <name>maui</name>
+    <url>https://mauikit.org/</url>
+  </developer>
   <description>
     <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="ca">L'Strike és un IDE senzill i convergent que funciona a l'escriptori Linux i als ordinadors mòbils.</p>
@@ -88,6 +92,7 @@ SPDX-License-Identifier: CC0-1.0
   <url type="homepage">https://mauikit.org/</url>
   <url type="bugtracker">https://invent.kde.org/maui/strike/-/issues</url>
   <url type="donation">https://kde.org/community/donations</url>
+  <url type="vcs-browser">https://invent.kde.org/maui/strike</url>
   <screenshots>
     <screenshot type="default">
       <caption>Strike</caption>
@@ -122,6 +127,11 @@ SPDX-License-Identifier: CC0-1.0
       </image>
     </screenshot>
   </screenshots>
+  <categories>
+    <category>Qt</category>
+    <category>Development</category>
+    <category>IDE</category>
+  </categories>
   <provides>
     <binary>strike</binary>
   </provides>
