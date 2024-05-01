@@ -1,5 +1,4 @@
-#ifndef CMAKEPROJECT_H
-#define CMAKEPROJECT_H
+#pragma once
 
 #include <QObject>
 #include <QString>
@@ -44,4 +43,3 @@ Q_SIGNALS:
     void dataChanged(CMakeProjectData data);
 };
 
-#endif // CMAKEPROJECT_H

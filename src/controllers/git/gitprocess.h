@@ -1,6 +1,4 @@
-#ifndef GITPROCESS_H
-#define GITPROCESS_H
-
+#pragma once
 #include <QProcess>
 #include <QObject>
 
@@ -10,5 +8,3 @@ class GitProcess : public QProcess
 public:
   GitProcess();
 };
-
-#endif // GITPROCESS_H

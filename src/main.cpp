@@ -18,7 +18,6 @@
 
 #include "controllers/cmakeprojectmanager.h"
 #include "controllers/projectpreferences.h"
-#include "models/fonts.h"
 #include "models/cmakeprojectsmodel.h"
 #include "models/cmaketargetsmodel.h"
 #include "models/sourcesmodel.h"
@@ -102,12 +101,6 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     qmlRegisterUncreatableType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject", "Get the pointer from CMakeProjectManager");
 
     qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained form StrikeProjec.");
-
-    qmlRegisterSingletonType<Fonts>(STRIKE_URI, 1, 0, "Fonts", [](QQmlEngine *engine, QJSEngine *scriptEngine) -> QObject * {
-      Q_UNUSED(engine)
-      Q_UNUSED(scriptEngine)
-      return new Fonts;
-    });
 
     engine.load(url);
 

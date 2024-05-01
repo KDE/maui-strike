@@ -1,7 +1,6 @@
 #include "cmakeprojecttarget.h"
 #include <QDebug>
 
-#include "models/sourcesmodel.h"
 
 CMakeProjectTarget::CMakeProjectTarget(QObject *parent) : QObject(parent)
   ,m_sources(new SourcesModel(this))

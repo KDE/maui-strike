@@ -1,6 +1,4 @@
-#ifndef PROJECTMANAGER_H
-#define PROJECTMANAGER_H
-
+#pragma once
 #include <QObject>
 #include <QUrl>
 
@@ -56,5 +54,3 @@ Q_SIGNALS:
     void projectLogoChanged(QString projectLogo);
     void activeChanged();
 };
-
-#endif // PROJECTMANAGER_H

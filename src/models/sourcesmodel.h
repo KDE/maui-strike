@@ -1,5 +1,4 @@
-#ifndef SOURCESMODEL_H
-#define SOURCESMODEL_H
+#pragma once
 
 #include <MauiKit4/Core/mauilist.h>
 
@@ -18,5 +17,3 @@ private:
     FMH::MODEL_LIST m_list;
 
 };
-
-#endif // SOURCESMODEL_H

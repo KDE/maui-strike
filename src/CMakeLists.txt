@@ -5,7 +5,6 @@ set(strike_SRCS
     strike.h
     controllers/cmakedata.cpp
     controllers/cmakeapi.cpp
-    models/fonts.cpp
     models/cmakeprojectsmodel.cpp
     models/cmaketargetsmodel.cpp
     models/sourcesmodel.cpp

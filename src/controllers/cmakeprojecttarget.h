@@ -1,5 +1,4 @@
-#ifndef CMAKEPROJECTTARGET_H
-#define CMAKEPROJECTTARGET_H
+#pragma once
 
 #include <QObject>
 #include <QVector>
@@ -31,7 +30,3 @@ private:
 Q_SIGNALS:
     void dataChanged();
 };
-
-
-
-#endif // CMAKEPROJECTTARGET_H

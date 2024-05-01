@@ -1,5 +1,4 @@
-#ifndef PROCESSMANAGER_H
-#define PROCESSMANAGER_H
+#pragma once
 
 #include <QObject>
 #include <QUrl>
@@ -90,4 +89,3 @@ Q_SIGNALS:
     void infoLabelChanged(QString infoLabel);
 };
 
-#endif // PROCESSMANAGER_H

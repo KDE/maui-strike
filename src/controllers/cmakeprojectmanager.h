@@ -1,5 +1,4 @@
-#ifndef CMAKEPROJECTMANAGER_H
-#define CMAKEPROJECTMANAGER_H
+#pragma once
 
 #include <QHash>
 #include <QObject>
@@ -66,7 +65,3 @@ Q_SIGNALS:
     void outputLine(QString output);
     void statusChanged(Status status);
 };
-
-
-
-#endif // CMAKEPROJECTMANAGER_H

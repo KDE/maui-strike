@@ -1,5 +1,4 @@
-#ifndef PROJECTPREFERENCES_H
-#define PROJECTPREFERENCES_H
+#pragma once
 
 #include <QObject>
 #include <QUrl>
@@ -38,5 +37,3 @@ Q_SIGNALS:
     void cmakeProgramChanged(QString cmakeProgram);
     void installPrefixChanged(QString installPrefix);
 };
-
-#endif // PROJECTPREFERENCES_H
