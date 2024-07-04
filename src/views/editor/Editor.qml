@@ -1,11 +1,11 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.texteditor 1.0 as TE
+import org.mauikit.controls as Maui
+import org.mauikit.texteditor as TE
 
-import org.slike.strike 1.0 as Strike
+import org.slike.strike as Strike
 
 Maui.SplitViewItem
 {
@@ -33,7 +33,7 @@ Maui.SplitViewItem
         onFileUrlChanged: editorView.outputPanel.syncTerminal(_editor.fileUrl)
 
         Keys.enabled: true
-        Keys.onPressed:
+        Keys.onPressed: (event) =>
         {
             if((event.key === Qt.Key_S) && (event.modifiers & Qt.ControlModifier))
             {
@@ -67,7 +67,7 @@ Maui.SplitViewItem
             id: _dropArea
             property var urls : []
             anchors.fill: parent
-            onDropped:
+            onDropped: (drop) =>
             {
                 if(drop.urls)
                 {

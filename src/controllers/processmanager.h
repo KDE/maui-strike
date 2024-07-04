@@ -1,5 +1,4 @@
-#ifndef PROCESSMANAGER_H
-#define PROCESSMANAGER_H
+#pragma once
 
 #include <QObject>
 #include <QUrl>
@@ -46,7 +45,7 @@ public:
 
     QString infoLabel() const;
 
-public slots:
+public Q_SLOTS:
     void build();
     void configure();
     void deploy();
@@ -77,7 +76,7 @@ private:
 
     QString m_infoLabel;
 
-signals:
+Q_SIGNALS:
    void processRunningChanged(bool running);
 
     void outputLine(QString output);
@@ -90,4 +89,3 @@ signals:
     void infoLabelChanged(QString infoLabel);
 };
 
-#endif // PROCESSMANAGER_H

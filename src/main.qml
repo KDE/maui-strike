@@ -1,15 +1,14 @@
-import QtQuick 2.14
-import QtQml 2.14
+import QtQuick
+import QtQml
+import QtCore
 
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import Qt.labs.settings 1.0
+import org.mauikit.controls as Maui
+import org.mauikit.filebrowsing as FB
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.filebrowsing 1.3 as FB
-
-import org.slike.strike 1.0 as Strike
+import org.slike.strike as Strike
 
 import "views"
 import "views/editor"
@@ -160,9 +159,12 @@ Maui.ApplicationWindow
         id: _fileDialogComponent
         FB.FileDialog
         {
-            settings.onlyDirs: false
+            browser
+            {
+                settings.onlyDirs: false
             settings.filterType: FB.FMList.TEXT
             settings.sortBy: FB.FMList.MODIFIED
+            }
         }
     }
 
@@ -223,7 +225,7 @@ Maui.ApplicationWindow
         {
             id: editorView
             anchors.fill: parent
-            showCSDControls: true
+            Maui.Controls.showCSD: true
 
             headBar.forceCenterMiddleContent: false
 
@@ -360,7 +362,7 @@ Maui.ApplicationWindow
     function openFileDialog()
     {
         _dialogLoader.sourceComponent = _fileDialogComponent
-        dialog.mode = dialog.modes.OPEN
+        dialog.mode = FB.FileDialog.Open
         dialog.callback =  function (urls)
         {
             for(var url of urls)

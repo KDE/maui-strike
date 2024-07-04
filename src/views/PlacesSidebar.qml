@@ -75,7 +75,7 @@ Maui.Page
                 {
                     width: ListView.view.width
                     height: Maui.Style.rowHeight
-                    label: section
+                    text: section
                     isSection: true
                 }
 

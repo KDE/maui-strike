@@ -39,7 +39,7 @@ public:
     QVariant data(const QModelIndex &index, int role) const override final;
     QHash<int, QByteArray> roleNames() const override final;
 
-signals:
+Q_SIGNALS:
     void dataChanged(CMakeProjectTargets data);
 };
 

@@ -1,7 +1,6 @@
 #include "cmakeprojecttarget.h"
 #include <QDebug>
 
-#include "models/sourcesmodel.h"
 
 CMakeProjectTarget::CMakeProjectTarget(QObject *parent) : QObject(parent)
   ,m_sources(new SourcesModel(this))
@@ -34,5 +33,5 @@ void CMakeProjectTarget::setData(CMakeTarget data, const QUrl &source)
     qDebug() << "Setting target data" << data.name << data.artifacts;
     m_data = data;
     m_sources->setData(m_data.sources, source);
-    emit this->dataChanged();
+    Q_EMIT this->dataChanged();
 }

@@ -1,5 +1,4 @@
-#ifndef CLONEPROCESS_H
-#define CLONEPROCESS_H
+#pragma once
 
 #include <QProcess>
 #include <QObject>
@@ -11,4 +10,3 @@ public:
   CloneProcess();
 };
 
-#endif // CLONEPROCESS_H

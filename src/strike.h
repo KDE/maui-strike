@@ -1,12 +1,11 @@
-#ifndef STRIKE_H
-#define STRIKE_H
+#pragma once
 
 #include <QFileInfo>
 #include <QObject>
 #include <QProcess>
 #include <QDebug>
 
-#include <MauiKit3/FileBrowsing/fmstatic.h>
+#include <MauiKit4/FileBrowsing/fmstatic.h>
 
 class Strike : public QObject
 {
@@ -24,7 +23,7 @@ public:
     Strike(Strike &&) = delete;
     Strike &operator=(Strike &&) = delete;
 
-public slots:
+public Q_SLOTS:
     void requestFiles(const QStringList &urls)
     {
         qDebug() << "REQUEST FILES" << urls;
@@ -39,7 +38,7 @@ public slots:
 
         qDebug() << "REQUEST FILES" << res;
 
-        emit this->openFiles(res);
+        Q_EMIT this->openFiles(res);
     }
 
     bool run(const QString &process, const QStringList &params = {})
@@ -53,7 +52,7 @@ public slots:
         return true;
     }
 
-signals:
+Q_SIGNALS:
     void openFiles(QStringList urls);
 
 private:
@@ -62,5 +61,3 @@ private:
     {
     }
 };
-
-#endif // STRIKE_H

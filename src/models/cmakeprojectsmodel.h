@@ -1,5 +1,4 @@
-#ifndef CMAKEPROJECTSMODEL_H
-#define CMAKEPROJECTSMODEL_H
+#pragma once
 
 #include <QAbstractListModel>
 #include <QObject>
@@ -29,8 +28,6 @@ public:
 private:
     QVector<CMakeProjectData> m_data;
 
-signals:
+Q_SIGNALS:
     void currentProjectIndexChanged(int currentProjectIndex);
 };
-
-#endif // CMAKEPROJECTMODEL_H

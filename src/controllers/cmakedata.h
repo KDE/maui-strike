@@ -1,5 +1,4 @@
-#ifndef CMAKEDATA_H
-#define CMAKEDATA_H
+#pragma once
 
 #include <QHash>
 #include <QList>
@@ -77,4 +76,3 @@ Q_DECLARE_METATYPE(CMakeTarget)
 Q_DECLARE_METATYPE(CMakeProjectTargets)
 Q_DECLARE_METATYPE(CMakeFile)
 
-#endif // CMAKEDATA_H

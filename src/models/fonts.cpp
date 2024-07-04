@@ -30,12 +30,12 @@ void Fonts::updateFamilies()
 {
     m_monospaceFamilies.clear();
 
-    foreach (const QString &family, m_fontDatabase.families()) {
+    for (const QString &family : m_fontDatabase.families()) {
         if (m_fontDatabase.isFixedPitch(family)) {
             m_monospaceFamilies << family;
         }
     }
-    emit monospaceFamiliesChanged();
+    Q_EMIT monospaceFamiliesChanged();
 }
 
 QStringList Fonts::monospaceFamilies() const

@@ -1,11 +1,10 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.kde.kirigami 2.14 as Kirigami
-import org.mauikit.controls 1.3 as Maui
+import org.mauikit.controls as Maui
 
-import org.slike.strike 1.0 as Strike
+import org.slike.strike as Strike
 
 Control
 {
@@ -50,7 +49,7 @@ Control
             Maui.LabelDelegate
             {
                 Layout.fillWidth: true
-                label: i18n("Targets")
+                text: i18n("Targets")
                 isSection: true
             }
 
@@ -129,7 +128,7 @@ Control
                 onTriggered: {}
             }
 
-            background: Kirigami.ShadowedRectangle
+            background: Maui.ShadowedRectangle
             {
                 color: Maui.Theme.backgroundColor
                 corners
@@ -163,7 +162,7 @@ Control
 
             Maui.LabelDelegate
             {
-                label: i18n("Targets")
+                text: i18n("Targets")
                 isSection:true
             }
 
@@ -202,7 +201,8 @@ Control
             {
                 text: i18n("Close")
             }
-            background: Kirigami.ShadowedRectangle
+
+            background: Maui.ShadowedRectangle
             {
                 color: Maui.Theme.backgroundColor
                 corners

@@ -1,8 +1,8 @@
-#ifndef PROJECTPREFERENCES_H
-#define PROJECTPREFERENCES_H
+#pragma once
 
 #include <QObject>
 #include <QUrl>
+#include <QString>
 
 class ProjectPreferences : public QObject
 {
@@ -22,7 +22,7 @@ public:
     QString cmakeProgram() const;
     QString installPrefix() const;
 
-public slots:
+public Q_SLOTS:
     void setBuildDir(QUrl buildDir);
     void setCmakeProgram(QString cmakeProgram);
     void setInstallPrefix(QString installPrefix);
@@ -32,10 +32,8 @@ private:
     QString m_installPrefix ="/usr";
     QString m_cmakeProgram = "cmake";
 
-signals:
+Q_SIGNALS:
     void buildDirChanged(QUrl buildDir);
     void cmakeProgramChanged(QString cmakeProgram);
     void installPrefixChanged(QString installPrefix);
 };
-
-#endif // PROJECTPREFERENCES_H

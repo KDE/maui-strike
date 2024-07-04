@@ -1,14 +1,13 @@
-#ifndef CMAKEPROJECTMANAGER_H
-#define CMAKEPROJECTMANAGER_H
+#pragma once
 
 #include <QHash>
 #include <QObject>
 
-class CMakeProject;
-class CMakeProjectsModel;
-class ProjectManager;
-class ProcessManager;
+#include "models/cmakeprojectsmodel.h"
+#include "controllers/cmakeproject.h"
+#include "processmanager.h"
 
+class ProjectManager;
 /**
  * @brief The CMakeProjectManager class
  * The manager handles the current CMake file projects and paths.
@@ -19,12 +18,12 @@ class CMakeProjectManager : public QObject
 {
     Q_OBJECT
 
-    //The projects model
+           //The projects model
     Q_PROPERTY(CMakeProjectsModel * projectsModel READ projectsModel CONSTANT FINAL)
     Q_PROPERTY(Status status READ status NOTIFY statusChanged FINAL)
 
-  Q_PROPERTY(CMakeProject *project READ project CONSTANT FINAL)
-  Q_PROPERTY(ProcessManager *process READ process CONSTANT FINAL)
+    Q_PROPERTY(CMakeProject *project READ project CONSTANT FINAL)
+    Q_PROPERTY(ProcessManager *process READ process CONSTANT FINAL)
 
 public:
     enum Status
@@ -62,11 +61,7 @@ private:
 
     void setStatus(const Status &status);
 
-signals:
+Q_SIGNALS:
     void outputLine(QString output);
     void statusChanged(Status status);
 };
-
-
-
-#endif // CMAKEPROJECTMANAGER_H

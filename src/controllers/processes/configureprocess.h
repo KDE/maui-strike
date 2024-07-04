@@ -1,5 +1,4 @@
-#ifndef CONFIGUREPROCESS_H
-#define CONFIGUREPROCESS_H
+#pragma once
 
 #include <QProcess>
 #include <QUrl>
@@ -16,5 +15,3 @@ private:
     CMakeProjectManager *m_project;
     void makeDir();
 };
-
-#endif // CONFIGUREPROCESS_H

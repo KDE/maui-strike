@@ -1,5 +1,5 @@
 #include "sourcesmodel.h"
-#include <MauiKit3/FileBrowsing/fmstatic.h>
+#include <MauiKit4/FileBrowsing/fmstatic.h>
 #include <QDebug>
 #include <QDir>
 
@@ -11,7 +11,7 @@ SourcesModel::SourcesModel(QObject *parent) : MauiList(parent)
 void SourcesModel::setData(const QList<QUrl> &data, const QUrl &baseUrl)
 {
   this->m_list.clear ();
-    emit this->preListChanged();
+    Q_EMIT this->preListChanged();
     for(const auto &url : data)
     {
         qDebug() << "Getting model sources data";
@@ -21,7 +21,7 @@ void SourcesModel::setData(const QList<QUrl> &data, const QUrl &baseUrl)
         item[FMH::MODEL_KEY::SOURCE] = baseUrl.toString ();
         m_list << item;
     }
-    emit this->postListChanged();
+    Q_EMIT this->postListChanged();
 }
 
 const FMH::MODEL_LIST &SourcesModel::items() const
