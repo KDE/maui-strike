@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-10 01:51+0000\n"
+"POT-Creation-Date: 2024-07-05 01:41+0000\n"
 "PO-Revision-Date: 2023-09-27 21:33+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
@@ -27,22 +27,22 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "translator@legisign.org"
 
-#: main.cpp:45
+#: main.cpp:42
 #, kde-format
 msgid "Build and run code."
 msgstr "Koosta ja suorita koodia."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "Developer"
 msgstr "Kehittäjä"
 
-#: main.qml:129
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Tallentamattomat tiedostot"
 
-#: main.qml:130
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -51,37 +51,37 @@ msgstr ""
 "Tiedostoja on tallentamatta. Haluatko palata tallentamaan ne vai hylätä "
 "muutokset ja lopettaa?"
 
-#: main.qml:243
+#: main.qml:245
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Näytä tai piilota sivupaneeli"
 
-#: main.qml:256
+#: main.qml:258
 #, kde-format
 msgid "Create New Project"
 msgstr "Luo uusi projekti"
 
-#: main.qml:268 views/editor/EditorView.qml:88
+#: main.qml:270 views/editor/EditorView.qml:86
 #, kde-format
 msgid "Open Project"
 msgstr "Avaa projekti"
 
-#: main.qml:289
+#: main.qml:291
 #, kde-format
 msgid "Open File"
 msgstr "Avaa tiedosto"
 
-#: main.qml:301
+#: main.qml:303
 #, kde-format
 msgid "New Template Source File"
 msgstr "Uusi mallipohjalähdetiedosto"
 
-#: main.qml:313
+#: main.qml:315
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: main.qml:324
+#: main.qml:326
 #, kde-format
 msgid "About"
 msgstr "Tietoa"
@@ -106,42 +106,42 @@ msgstr "Avaa uuteen jakoon"
 msgid "Cancel"
 msgstr "Peru"
 
-#: views/editor/EditorView.qml:34
+#: views/editor/EditorView.qml:32
 #, kde-format
 msgid "Clone"
 msgstr "Monista"
 
-#: views/editor/EditorView.qml:35
+#: views/editor/EditorView.qml:33
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Anna projektin Git-verkko-osoite"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:60
 #, kde-format
 msgid "Split"
 msgstr "Jaa"
 
-#: views/editor/EditorView.qml:81
+#: views/editor/EditorView.qml:79
 #, kde-format
 msgid "Missing Project"
 msgstr "Projekti puuttuu"
 
-#: views/editor/EditorView.qml:82
+#: views/editor/EditorView.qml:80
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Luo tai avaa uusi projekti."
 
-#: views/editor/EditorView.qml:109
+#: views/editor/EditorView.qml:107
 #, kde-format
 msgid "Clone Project"
 msgstr "Monista projekti"
 
-#: views/editor/EditorView.qml:211
+#: views/editor/EditorView.qml:209
 #, kde-format
 msgid "Find and Replace"
 msgstr "Etsi ja korvaa"
 
-#: views/editor/EditorView.qml:224
+#: views/editor/EditorView.qml:222
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Rivi- ja sanalaskuri"
@@ -206,12 +206,12 @@ msgstr "Nimi"
 msgid "Group"
 msgstr "Ryhmä"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
 #, kde-format
 msgid "Targets"
 msgstr "Kohteet"
 
-#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
 #: views/widgets/ProjectConfigDialog.qml:182
@@ -219,32 +219,32 @@ msgstr "Kohteet"
 msgid "Configure"
 msgstr "Asetukset"
 
-#: views/widgets/BuildBar.qml:113
+#: views/widgets/BuildBar.qml:112
 #, kde-format
 msgid "Build"
 msgstr "Koosta"
 
-#: views/widgets/BuildBar.qml:120
+#: views/widgets/BuildBar.qml:119
 #, kde-format
 msgid "Run"
 msgstr "Suorita"
 
-#: views/widgets/BuildBar.qml:127
+#: views/widgets/BuildBar.qml:126
 #, kde-format
 msgid "Install"
 msgstr "Asenna"
 
-#: views/widgets/BuildBar.qml:185
+#: views/widgets/BuildBar.qml:184
 #, kde-format
 msgid "Clear CMake"
 msgstr "Tyhjennä CMake"
 
-#: views/widgets/BuildBar.qml:193
+#: views/widgets/BuildBar.qml:192
 #, kde-format
 msgid "Open directory"
 msgstr "Avaa kansio"
 
-#: views/widgets/BuildBar.qml:203
+#: views/widgets/BuildBar.qml:202
 #, kde-format
 msgid "Close"
 msgstr "Sulje"

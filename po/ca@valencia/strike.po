@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-10 01:51+0000\n"
+"POT-Creation-Date: 2024-07-05 01:41+0000\n"
 "PO-Revision-Date: 2024-01-30 10:57+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -30,22 +30,22 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "txemaq@gmail.com"
 
-#: main.cpp:45
+#: main.cpp:42
 #, kde-format
 msgid "Build and run code."
 msgstr "Construïx i executa el codi."
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: main.qml:129
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "Fitxers sense guardar"
 
-#: main.qml:130
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -54,37 +54,37 @@ msgstr ""
 "Hi ha fitxers sense guardar. Voleu retrocedir i guardar-los o descartar tots "
 "els canvis i eixir?"
 
-#: main.qml:243
+#: main.qml:245
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Alterna la barra lateral"
 
-#: main.qml:256
+#: main.qml:258
 #, kde-format
 msgid "Create New Project"
 msgstr "Crea un projecte nou"
 
-#: main.qml:268 views/editor/EditorView.qml:88
+#: main.qml:270 views/editor/EditorView.qml:86
 #, kde-format
 msgid "Open Project"
 msgstr "Obri un projecte"
 
-#: main.qml:289
+#: main.qml:291
 #, kde-format
 msgid "Open File"
 msgstr "Obri un fitxer"
 
-#: main.qml:301
+#: main.qml:303
 #, kde-format
 msgid "New Template Source File"
 msgstr "Plantilla nova de fitxer de codi font"
 
-#: main.qml:313
+#: main.qml:315
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: main.qml:324
+#: main.qml:326
 #, kde-format
 msgid "About"
 msgstr "Quant a"
@@ -109,42 +109,42 @@ msgstr "Obri a una divisió nova"
 msgid "Cancel"
 msgstr "Cancel·la"
 
-#: views/editor/EditorView.qml:34
+#: views/editor/EditorView.qml:32
 #, kde-format
 msgid "Clone"
 msgstr "Clona"
 
-#: views/editor/EditorView.qml:35
+#: views/editor/EditorView.qml:33
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Introduïu l'URL Git del projecte"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:60
 #, kde-format
 msgid "Split"
 msgstr "Dividix"
 
-#: views/editor/EditorView.qml:81
+#: views/editor/EditorView.qml:79
 #, kde-format
 msgid "Missing Project"
 msgstr "Falta el projecte"
 
-#: views/editor/EditorView.qml:82
+#: views/editor/EditorView.qml:80
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Crea o obri un projecte nou."
 
-#: views/editor/EditorView.qml:109
+#: views/editor/EditorView.qml:107
 #, kde-format
 msgid "Clone Project"
 msgstr "Clona el projecte"
 
-#: views/editor/EditorView.qml:211
+#: views/editor/EditorView.qml:209
 #, kde-format
 msgid "Find and Replace"
 msgstr "Busca i substituïx"
 
-#: views/editor/EditorView.qml:224
+#: views/editor/EditorView.qml:222
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Comptador de línies/paraules"
@@ -209,12 +209,12 @@ msgstr "Nom"
 msgid "Group"
 msgstr "Grup"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
 #, kde-format
 msgid "Targets"
 msgstr "Objectius"
 
-#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
 #: views/widgets/ProjectConfigDialog.qml:182
@@ -222,32 +222,32 @@ msgstr "Objectius"
 msgid "Configure"
 msgstr "Configura"
 
-#: views/widgets/BuildBar.qml:113
+#: views/widgets/BuildBar.qml:112
 #, kde-format
 msgid "Build"
 msgstr "Construïx"
 
-#: views/widgets/BuildBar.qml:120
+#: views/widgets/BuildBar.qml:119
 #, kde-format
 msgid "Run"
 msgstr "Executa"
 
-#: views/widgets/BuildBar.qml:127
+#: views/widgets/BuildBar.qml:126
 #, kde-format
 msgid "Install"
 msgstr "Instal·la"
 
-#: views/widgets/BuildBar.qml:185
+#: views/widgets/BuildBar.qml:184
 #, kde-format
 msgid "Clear CMake"
 msgstr "Neteja CMake"
 
-#: views/widgets/BuildBar.qml:193
+#: views/widgets/BuildBar.qml:192
 #, kde-format
 msgid "Open directory"
 msgstr "Obri un directori"
 
-#: views/widgets/BuildBar.qml:203
+#: views/widgets/BuildBar.qml:202
 #, kde-format
 msgid "Close"
 msgstr "Tanca"

@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: kdeorg\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-02-10 01:51+0000\n"
+"POT-Creation-Date: 2024-07-05 01:41+0000\n"
 "PO-Revision-Date: 2024-04-22 16:06\n"
 "Last-Translator: \n"
 "Language-Team: Chinese Simplified\n"
@@ -27,59 +27,59 @@ msgctxt "EMAIL OF TRANSLATORS"
 msgid "Your emails"
 msgstr "tds00@qq.com"
 
-#: main.cpp:45
+#: main.cpp:42
 #, kde-format
 msgid "Build and run code."
 msgstr "构建和运行代码。"
 
-#: main.cpp:50
+#: main.cpp:47
 #, kde-format
 msgid "Developer"
 msgstr "开发者"
 
-#: main.qml:129
+#: main.qml:128
 #, kde-format
 msgid "Unsaved files"
 msgstr "未保存的文件"
 
-#: main.qml:130
+#: main.qml:129
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
 
-#: main.qml:243
+#: main.qml:245
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "显示/隐藏侧边栏"
 
-#: main.qml:256
+#: main.qml:258
 #, kde-format
 msgid "Create New Project"
 msgstr "创建新工程"
 
-#: main.qml:268 views/editor/EditorView.qml:88
+#: main.qml:270 views/editor/EditorView.qml:86
 #, kde-format
 msgid "Open Project"
 msgstr "打开工程"
 
-#: main.qml:289
+#: main.qml:291
 #, kde-format
 msgid "Open File"
 msgstr "打开文件"
 
-#: main.qml:301
+#: main.qml:303
 #, kde-format
 msgid "New Template Source File"
 msgstr "新建模板源文件"
 
-#: main.qml:313
+#: main.qml:315
 #, kde-format
 msgid "Settings"
 msgstr "设置"
 
-#: main.qml:324
+#: main.qml:326
 #, kde-format
 msgid "About"
 msgstr "关于"
@@ -104,42 +104,42 @@ msgstr "在新拆分视图中打开"
 msgid "Cancel"
 msgstr "取消"
 
-#: views/editor/EditorView.qml:34
+#: views/editor/EditorView.qml:32
 #, kde-format
 msgid "Clone"
 msgstr "克隆"
 
-#: views/editor/EditorView.qml:35
+#: views/editor/EditorView.qml:33
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "输入工程的 Git URL"
 
-#: views/editor/EditorView.qml:62
+#: views/editor/EditorView.qml:60
 #, kde-format
 msgid "Split"
 msgstr ""
 
-#: views/editor/EditorView.qml:81
+#: views/editor/EditorView.qml:79
 #, kde-format
 msgid "Missing Project"
 msgstr "没有工程"
 
-#: views/editor/EditorView.qml:82
+#: views/editor/EditorView.qml:80
 #, kde-format
 msgid "Create or open a new project."
 msgstr "创建或打开新工程"
 
-#: views/editor/EditorView.qml:109
+#: views/editor/EditorView.qml:107
 #, kde-format
 msgid "Clone Project"
 msgstr "克隆工程"
 
-#: views/editor/EditorView.qml:211
+#: views/editor/EditorView.qml:209
 #, kde-format
 msgid "Find and Replace"
 msgstr "查找和替换"
 
-#: views/editor/EditorView.qml:224
+#: views/editor/EditorView.qml:222
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "行/单词计数器"
@@ -204,12 +204,12 @@ msgstr "名称"
 msgid "Group"
 msgstr "分组"
 
-#: views/widgets/BuildBar.qml:53 views/widgets/BuildBar.qml:166
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
 #, kde-format
 msgid "Targets"
 msgstr "目标"
 
-#: views/widgets/BuildBar.qml:106 views/widgets/BuildBar.qml:198
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
 #: views/widgets/ProjectConfigDialog.qml:182
@@ -217,32 +217,32 @@ msgstr "目标"
 msgid "Configure"
 msgstr "配置"
 
-#: views/widgets/BuildBar.qml:113
+#: views/widgets/BuildBar.qml:112
 #, kde-format
 msgid "Build"
 msgstr "构建"
 
-#: views/widgets/BuildBar.qml:120
+#: views/widgets/BuildBar.qml:119
 #, kde-format
 msgid "Run"
 msgstr "运行"
 
-#: views/widgets/BuildBar.qml:127
+#: views/widgets/BuildBar.qml:126
 #, kde-format
 msgid "Install"
 msgstr "安装"
 
-#: views/widgets/BuildBar.qml:185
+#: views/widgets/BuildBar.qml:184
 #, kde-format
 msgid "Clear CMake"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:193
+#: views/widgets/BuildBar.qml:192
 #, kde-format
 msgid "Open directory"
 msgstr ""
 
-#: views/widgets/BuildBar.qml:203
+#: views/widgets/BuildBar.qml:202
 #, kde-format
 msgid "Close"
 msgstr ""
