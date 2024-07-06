@@ -64,7 +64,7 @@ Maui.SettingsDialog
             Maui.SectionGroup
             {
                 title: i18n("Style")
-                description: i18n("Configure the style of the syntax highlighting. This configuration in not applied for rich text formats")
+                description: i18n("Configure the style of the syntax highlighting. This configuration is not applied for rich text formats")
                 visible: settings.enableSyntaxHighlighting
 
                 Maui.FlexSectionItem
@@ -186,7 +186,7 @@ Maui.SettingsDialog
             Maui.SectionGroup
             {
                 title: i18n("Style")
-                description: i18n("Configure the style of the syntax highliting. This configuration in not applied for rich text formats")
+                description: i18n("Configure the style of the syntax highliting. This configuration is not applied for rich text formats")
 
                 Maui.FlexSectionItem
                 {
