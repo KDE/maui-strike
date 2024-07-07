@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-05 01:41+0000\n"
+"POT-Creation-Date: 2024-07-07 01:45+0000\n"
 "PO-Revision-Date: 2023-05-28 10:40+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -341,9 +341,12 @@ msgid "Style"
 msgstr "Stil"
 
 #: views/widgets/SettingsDialog.qml:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highlighting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highlighting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Stil der Syntaxhervorhebung einrichten. Diese Einstellungen werden nicht für "
@@ -411,9 +414,12 @@ msgid "More tools."
 msgstr "Weitere Programme."
 
 #: views/widgets/SettingsDialog.qml:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Stil der Syntaxhervorhebung einrichten. Diese Einstellungen werden nicht für "

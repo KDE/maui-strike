@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-05 01:41+0000\n"
+"POT-Creation-Date: 2024-07-07 01:45+0000\n"
 "PO-Revision-Date: 2023-08-25 23:04+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -338,9 +338,12 @@ msgid "Style"
 msgstr "스타일"
 
 #: views/widgets/SettingsDialog.qml:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highlighting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highlighting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr "구문 강조 스타일을 설정합니다. 서식 있는 텍스트에는 적용되지 않습니다."
 
@@ -405,9 +408,12 @@ msgid "More tools."
 msgstr "더 많은 도구."
 
 #: views/widgets/SettingsDialog.qml:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr "구문 강조 스타일을 설정합니다. 서식 있는 텍스트에는 적용되지 않습니다"
 

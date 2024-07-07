@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-05 01:41+0000\n"
+"POT-Creation-Date: 2024-07-07 01:45+0000\n"
 "PO-Revision-Date: 2023-11-14 12:00-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -339,9 +339,12 @@ msgid "Style"
 msgstr "Estilo"
 
 #: views/widgets/SettingsDialog.qml:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highlighting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highlighting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Configure o estilo do realce de sintaxe. Esta configuração nãoaplicado para "
@@ -408,9 +411,12 @@ msgid "More tools."
 msgstr "Mais ferramentas."
 
 #: views/widgets/SettingsDialog.qml:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Configure o estilo do destaque da sintaxe. Esta configuração nãoaplicado "

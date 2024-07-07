@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-05 01:41+0000\n"
+"POT-Creation-Date: 2024-07-07 01:45+0000\n"
 "PO-Revision-Date: 2023-08-15 18:52+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -342,9 +342,12 @@ msgid "Style"
 msgstr "Estilo"
 
 #: views/widgets/SettingsDialog.qml:67
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highlighting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highlighting. This configuration in not "
+"Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Configurar el estilo del resaltado sintáctico. Esta configuración no se "
@@ -411,9 +414,12 @@ msgid "More tools."
 msgstr "Más herramientas."
 
 #: views/widgets/SettingsDialog.qml:189
-#, kde-format
+#, fuzzy, kde-format
+#| msgid ""
+#| "Configure the style of the syntax highliting. This configuration in not "
+#| "applied for rich text formats"
 msgid ""
-"Configure the style of the syntax highliting. This configuration in not "
+"Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
 "Configurar el estilo del resaltado sintáctico. Esta configuración no se "
