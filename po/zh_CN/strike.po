@@ -336,14 +336,11 @@ msgid "Style"
 msgstr "风格"
 
 #: views/widgets/SettingsDialog.qml:67
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
-msgstr "配置语法高亮的显示风格。此配置不会被应用于富文本格式"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
@@ -406,14 +403,11 @@ msgid "More tools."
 msgstr ""
 
 #: views/widgets/SettingsDialog.qml:189
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
-msgstr "配置语法高亮的显示风格。此配置不会被应用于富文本格式"
+msgstr ""
 
 #: views/widgets/SettingsDialog.qml:193
 #, kde-format
