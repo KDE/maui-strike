@@ -23,8 +23,8 @@ Item
     readonly property alias model : _splitView.contentModel
     readonly property string title : count === 2 ?  model.get(0).title + "  -  " + model.get(1).title : currentItem.title
 
-    Maui.TabViewInfo.tabTitle: title
-    Maui.TabViewInfo.tabToolTipText:  currentItem.fileUrl
+    Maui.Controls.title: title
+    Maui.Controls.toolTipText:  currentItem.fileUrl
 
     readonly property alias editor : _splitView.currentItem
 
