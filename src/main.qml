@@ -271,17 +271,15 @@ Maui.ApplicationWindow
 
                         onTriggered:
                         {
-
                             _dialogLoader.sourceComponent = _fileDialogComponent
-                            dialog.mode = dialog.modes.OPEN
+                            dialog.mode = FB.FileDialog.Modes.Open
                 //            dialog.singleSelection = true
-                            dialog.settings.filters = ["CMakeLists.txt"]
+                            dialog.browser.settings.filters = ["CMakeLists.txt"]
                             dialog.callback =  function (urls)
                             {
                                 _projectManager.projectUrl = urls[0]
                             }
                             dialog.open()
-                            control.close()
                         }
                     }
 
@@ -293,7 +291,6 @@ Maui.ApplicationWindow
                         onTriggered:
                         {
                             openFileDialog()
-                            control.close()
                         }
                     }
 

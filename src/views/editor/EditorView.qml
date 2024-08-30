@@ -89,15 +89,14 @@ Maui.Page
                     {
 
                         _dialogLoader.sourceComponent = _fileDialogComponent
-                        dialog.mode = dialog.modes.OPEN
+                        dialog.mode = FB.FileDialog.Modes.Open
                         //            dialog.singleSelection = true
-                        dialog.settings.filters = ["*.txt"]
+                        dialog.browser.settings.filters = ["*.txt"]
                         dialog.callback =  function (urls)
                         {
                             _project.projectUrl = urls[0]
                         }
                         dialog.open()
-                        control.close()
                     }
                 },
 

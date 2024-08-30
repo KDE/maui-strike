@@ -72,7 +72,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     const QStringList args = parser.positionalArguments();
 
     QQmlApplicationEngine engine;
-    const QUrl url(QStringLiteral("qrc:/main.qml"));
+    const QUrl url(QStringLiteral("qrc:/app/maui/strike/main.qml"));
     QObject::connect(
                 &engine,
                 &QQmlApplicationEngine::objectCreated,

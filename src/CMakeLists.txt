@@ -21,19 +21,32 @@ set(strike_SRCS
     controllers/git/gitprocess.cpp
     controllers/git/cloneprocess.cpp)
 
-set(strike_ASSETS
+qt_add_resources(strike_ASSETS
     assets/img_assets.qrc)
 
-qt_add_resources(strike_QML_QRC qml.qrc)
-
-add_executable(${PROJECT_NAME}
+qt_add_executable(${PROJECT_NAME}
     ${strike_SRCS}
-    ${strike_QML_QRC}
     ${strike_ASSETS})
+
+qt_add_qml_module(${PROJECT_NAME} URI app.maui.strike
+    NO_PLUGIN
+    QML_FILES
+    main.qml
+    views/widgets/SettingsDialog.qml
+    views/PlacesSidebar.qml
+    views/editor/EditorView.qml
+    views/editor/Editor.qml
+    views/editor/EditorLayout.qml
+    views/widgets/BuildBar.qml
+    views/widgets/OutputPanel.qml
+    views/widgets/ProjectConfigDialog.qml
+    views/widgets/GitPanel.qml
+    views/widgets/BuildOutputPanel.qml)
 
 target_compile_definitions(${PROJECT_NAME} PRIVATE $<$<OR:$<CONFIG:Debug>,$<CONFIG:RelWithDebInfo>>:QT_QML_DEBUG>)
 
 target_link_libraries(${PROJECT_NAME}
+    PRIVATE
     MauiKit4
     MauiKit4::FileBrowsing
     MauiKit4::Terminal
