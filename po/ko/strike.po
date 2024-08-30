@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
+"POT-Creation-Date: 2024-08-30 01:54+0000\n"
 "PO-Revision-Date: 2024-08-20 00:32+0200\n"
 "Last-Translator: Shinjo Park <kde@peremen.name>\n"
 "Language-Team: Korean <kde-kr@kde.org>\n"
@@ -66,42 +66,42 @@ msgstr "새 프로젝트 만들기"
 msgid "Open Project"
 msgstr "프로젝트 열기"
 
-#: main.qml:291
+#: main.qml:289
 #, kde-format
 msgid "Open File"
 msgstr "파일 열기"
 
-#: main.qml:303
+#: main.qml:300
 #, kde-format
 msgid "New Template Source File"
 msgstr "새 템플릿 소스 파일"
 
-#: main.qml:315
+#: main.qml:312
 #, kde-format
 msgid "Settings"
 msgstr "설정"
 
-#: main.qml:326
+#: main.qml:323
 #, kde-format
 msgid "About"
 msgstr "정보"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "여기에 열기"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "새 탭으로 열기"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "새 분할 보기에서 열기"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "취소"
@@ -131,17 +131,17 @@ msgstr "프로젝트 없음"
 msgid "Create or open a new project."
 msgstr "새 프로젝트를 만들거나 기존 프로젝트를 엽니다."
 
-#: views/editor/EditorView.qml:107
+#: views/editor/EditorView.qml:106
 #, kde-format
 msgid "Clone Project"
 msgstr "프로젝트 복제"
 
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:208
 #, kde-format
 msgid "Find and Replace"
 msgstr "찾기 및 바꾸기"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:221
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "줄/단어 카운터"

@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
+"POT-Creation-Date: 2024-08-30 01:54+0000\n"
 "PO-Revision-Date: 2023-05-28 10:40+0200\n"
 "Last-Translator: Frederik Schwarzer <schwarzer@kde.org>\n"
 "Language-Team: German <kde-i18n-de@kde.org>\n"
@@ -67,42 +67,42 @@ msgstr "Neues Projekt erzeugen"
 msgid "Open Project"
 msgstr "Projekt öffnen"
 
-#: main.qml:291
+#: main.qml:289
 #, kde-format
 msgid "Open File"
 msgstr "Datei öffnen"
 
-#: main.qml:303
+#: main.qml:300
 #, kde-format
 msgid "New Template Source File"
 msgstr "Neue Vorlagen-Quelldatei"
 
-#: main.qml:315
+#: main.qml:312
 #, kde-format
 msgid "Settings"
 msgstr "Einstellungen"
 
-#: main.qml:326
+#: main.qml:323
 #, kde-format
 msgid "About"
 msgstr "Über"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Hier öffnen"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "In neuem Unterfenster öffnen"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "In neuer geteilter Ansicht öffnen"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Abbrechen"
@@ -132,17 +132,17 @@ msgstr "Fehlendes Projekt"
 msgid "Create or open a new project."
 msgstr "Neues Projekt erstellen oder öffnen."
 
-#: views/editor/EditorView.qml:107
+#: views/editor/EditorView.qml:106
 #, kde-format
 msgid "Clone Project"
 msgstr "Projekt klonen"
 
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:208
 #, kde-format
 msgid "Find and Replace"
 msgstr "Suchen und Ersetzen"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:221
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Zeilen- und Wortzähler"

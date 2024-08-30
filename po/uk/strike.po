@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
+"POT-Creation-Date: 2024-08-30 01:54+0000\n"
 "PO-Revision-Date: 2024-07-07 08:27+0300\n"
 "Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian\n"
@@ -67,42 +67,42 @@ msgstr "Створити проєкт"
 msgid "Open Project"
 msgstr "Відкрити проєкт"
 
-#: main.qml:291
+#: main.qml:289
 #, kde-format
 msgid "Open File"
 msgstr "Відкрити файл"
 
-#: main.qml:303
+#: main.qml:300
 #, kde-format
 msgid "New Template Source File"
 msgstr "Створити шаблон файла коду"
 
-#: main.qml:315
+#: main.qml:312
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: main.qml:326
+#: main.qml:323
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Відкрити тут"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "Відкрити у новій вкладці"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "Відкрити у новій розділеній панелі"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Скасувати"
@@ -132,17 +132,17 @@ msgstr "Не вистачає проєкту"
 msgid "Create or open a new project."
 msgstr "Створити або відкрити новий проєкт."
 
-#: views/editor/EditorView.qml:107
+#: views/editor/EditorView.qml:106
 #, kde-format
 msgid "Clone Project"
 msgstr "Клонувати проєкт"
 
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:208
 #, kde-format
 msgid "Find and Replace"
 msgstr "Знайти і замінити"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:221
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Лічильник рядків/слів"
