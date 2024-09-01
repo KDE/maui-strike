@@ -303,7 +303,6 @@ Maui.ApplicationWindow
                         {
                             openTab("")
                             //                _editorListView.currentItem.body.textFormat = TextEdit.RichText
-                            control.close()
                         }
                     }
                     MenuSeparator{}
