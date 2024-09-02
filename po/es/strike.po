@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-30 01:54+0000\n"
+"POT-Creation-Date: 2024-09-02 01:46+0000\n"
 "PO-Revision-Date: 2024-07-07 12:18+0200\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
@@ -78,12 +78,12 @@ msgstr "Abrir archivo"
 msgid "New Template Source File"
 msgstr "Nueva plantilla de archivo de código fuente"
 
-#: main.qml:312
+#: main.qml:311
 #, kde-format
 msgid "Settings"
 msgstr "Preferencias"
 
-#: main.qml:323
+#: main.qml:322
 #, kde-format
 msgid "About"
 msgstr "Acerca de"

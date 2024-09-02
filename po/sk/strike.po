@@ -4,7 +4,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-30 01:54+0000\n"
+"POT-Creation-Date: 2024-09-02 01:46+0000\n"
 "PO-Revision-Date: 2021-09-21 17:11+0200\n"
 "Last-Translator: Roman Paholik <wizzardsk@gmail.com>\n"
 "Language-Team: Slovak <kde-sk@linux.sk>\n"
@@ -72,12 +72,12 @@ msgstr "Otvoriť súbor"
 msgid "New Template Source File"
 msgstr ""
 
-#: main.qml:312
+#: main.qml:311
 #, kde-format
 msgid "Settings"
 msgstr "Nastavenia"
 
-#: main.qml:323
+#: main.qml:322
 #, kde-format
 msgid "About"
 msgstr "O aplikácii"

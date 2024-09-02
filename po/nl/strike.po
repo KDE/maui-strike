@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-30 01:54+0000\n"
+"POT-Creation-Date: 2024-09-02 01:46+0000\n"
 "PO-Revision-Date: 2024-07-07 16:10+0200\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
@@ -76,12 +76,12 @@ msgstr "Bestand openen"
 msgid "New Template Source File"
 msgstr "Nieuw sjabloon voor bronbestand"
 
-#: main.qml:312
+#: main.qml:311
 #, kde-format
 msgid "Settings"
 msgstr "Instellingen"
 
-#: main.qml:323
+#: main.qml:322
 #, kde-format
 msgid "About"
 msgstr "Info over"

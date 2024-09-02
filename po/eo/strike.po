@@ -7,7 +7,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-08-30 01:54+0000\n"
+"POT-Creation-Date: 2024-09-02 01:46+0000\n"
 "PO-Revision-Date: 2024-07-06 16:50+0200\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
@@ -77,12 +77,12 @@ msgstr "Malfermi Dosieron"
 msgid "New Template Source File"
 msgstr "Nova Ŝablona Fonta Dosiero"
 
-#: main.qml:312
+#: main.qml:311
 #, kde-format
 msgid "Settings"
 msgstr "Agordoj"
 
-#: main.qml:323
+#: main.qml:322
 #, kde-format
 msgid "About"
 msgstr "Pri"
