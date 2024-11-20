@@ -79,7 +79,7 @@ Maui.ApplicationWindow
         editorView.outputPanel.syncTerminal(currentEditor.fileUrl)
     }
 
-    onClosing:
+    onClosing: (close) =>
     {
         _dialogLoader.sourceComponent = _unsavedDialogComponent
 
@@ -273,7 +273,7 @@ Maui.ApplicationWindow
                         {
                             _dialogLoader.sourceComponent = _fileDialogComponent
                             dialog.mode = FB.FileDialog.Modes.Open
-                //            dialog.singleSelection = true
+                           dialog.singleSelection = true
                             dialog.browser.settings.filters = ["CMakeLists.txt"]
                             dialog.callback =  function (urls)
                             {
@@ -358,7 +358,7 @@ Maui.ApplicationWindow
     function openFileDialog()
     {
         _dialogLoader.sourceComponent = _fileDialogComponent
-        dialog.mode = FB.FileDialog.Open
+        dialog.mode = FB.FileDialog.Modes.Open
         dialog.callback =  function (urls)
         {
             for(var url of urls)
