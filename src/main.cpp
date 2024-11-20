@@ -37,11 +37,11 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
     KLocalizedString::setApplicationDomain("strike");
 
     KAboutData about(QStringLiteral("strike"),
-                     QStringLiteral("Strike"), 
-                     STRIKE_VERSION_STRING, 
-                     i18n("Build and run code."), 
+                     QStringLiteral("Strike"),
+                     STRIKE_VERSION_STRING,
+                     i18n("Build and run code."),
                      KAboutLicense::LGPL_V3,
-                     APP_COPYRIGHT_NOTICE, 
+                     APP_COPYRIGHT_NOTICE,
                      QString(GIT_BRANCH) + "/" + QString(GIT_COMMIT_HASH));
 
     about.addAuthor(QStringLiteral("Camilo Higuita"), i18n("Developer"), QStringLiteral("milo.h@aol.com"));
@@ -100,7 +100,7 @@ Q_DECL_EXPORT int main(int argc, char *argv[])
 
     qmlRegisterUncreatableType<CMakeProject>(STRIKE_URI, 1, 0, "CMakeProject", "Get the pointer from CMakeProjectManager");
 
-    qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained form StrikeProjec.");
+    qmlRegisterUncreatableType<CMakeProjectManager>(STRIKE_URI, 1, 0, "Manager", "The Project Manager get obtained from StrikeProject.");
 
     engine.load(url);
 

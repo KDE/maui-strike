@@ -77,8 +77,6 @@ Item
         Editor {}
     }
 
-
-
     function split(path)
     {
         if(_splitView.count === 1 && !settings.supportSplit)
