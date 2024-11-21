@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-09-02 01:46+0000\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
 "PO-Revision-Date: 2024-04-30 15:54+0200\n"
 "Last-Translator: Vit Pelcak <vpelcak@suse.cz>\n"
 "Language-Team: Czech <kde-i18n-doc@kde.org>\n"
@@ -37,12 +37,37 @@ msgstr ""
 msgid "Developer"
 msgstr "Vývojář"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Otevřít projekt"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr ""
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Otevřít soubor"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Klonovat"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr ""
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "Neuložené soubory"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -51,37 +76,27 @@ msgstr ""
 "Máte neuložené změny. Přejete si vrátit se a je uložit je nebo je všechny "
 "zahodit a ukončit?"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Přepnout postranní panel"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "Vytvořit nový projekt"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "Otevřít projekt"
-
-#: main.qml:289
-#, kde-format
-msgid "Open File"
-msgstr "Otevřít soubor"
-
-#: main.qml:300
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr ""
 
-#: main.qml:311
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "Nastavení"
 
-#: main.qml:322
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "O aplikaci"
@@ -106,42 +121,27 @@ msgstr ""
 msgid "Cancel"
 msgstr "Zrušit"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "Klonovat"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr ""
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "Rozdělit"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr ""
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr ""
 
-#: views/editor/EditorView.qml:106
-#, kde-format
-msgid "Clone Project"
-msgstr ""
-
-#: views/editor/EditorView.qml:208
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "Najít a nahradit"
 
-#: views/editor/EditorView.qml:221
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Čítač řádků/slov"
@@ -156,65 +156,65 @@ msgstr ""
 msgid "Source files will be listed in here."
 msgstr ""
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Předchozí"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Nahoru"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Následující"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Zobrazovat nejdříve složky"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Typ"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Datum"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Změněno"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Velikost"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Název"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Skupina"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "Cíle"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "Nastavit"
@@ -234,20 +234,35 @@ msgstr "Spustit"
 msgid "Install"
 msgstr "Instalovat"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "Vyčistit CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "Otevřít adresář"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "Zavřít"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -265,6 +280,7 @@ msgid "Set the preferences to start hacking!"
 msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "Adresář pro sestavení"
@@ -274,22 +290,22 @@ msgstr "Adresář pro sestavení"
 msgid "Pick a build directory or keep the default one"
 msgstr ""
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
+msgid "Directory path where the project will be build"
 msgstr ""
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "Projekt"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr ""
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "Dokončit"
