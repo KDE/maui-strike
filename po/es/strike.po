@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2024-07-07 12:18+0200\n"
+"PO-Revision-Date: 2024-11-21 11:35+0100\n"
 "Last-Translator: Eloy Cuadra <ecuadra@eloihr.net>\n"
 "Language-Team: Spanish <kde-l10n-es@kde.org>\n"
 "Language: es\n"
@@ -17,7 +17,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -254,17 +254,17 @@ msgstr "Cerrar"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "Salida"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -295,7 +295,7 @@ msgstr "Escoja un directorio de construcción o deje el predeterminado"
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "Ruta del directorio donde se compilará el proyecto"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format

@@ -444,6 +444,3 @@ msgstr "主题"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "编辑器配色方案风格"
-
-#~ msgid "Build directory path"
-#~ msgstr "构建目录路径"

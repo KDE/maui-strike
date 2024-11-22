@@ -9,7 +9,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2024-07-07 09:56+0200\n"
+"PO-Revision-Date: 2024-11-21 09:25+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
 "Language: ca@valencia\n"
@@ -255,17 +255,17 @@ msgstr "Tanca"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "Eixida"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -297,7 +297,7 @@ msgstr ""
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "Camí cap al directori a on es construirà el projecte"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
@@ -456,6 +456,3 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Editor de l'estil de l'esquema de color"
-
-#~ msgid "Build directory path"
-#~ msgstr "Camí cap al directori de construcció"

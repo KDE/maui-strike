@@ -7,7 +7,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2024-07-07 16:10+0200\n"
+"PO-Revision-Date: 2024-11-21 10:28+0100\n"
 "Last-Translator: Freek de Kruijf <freekdekruijf@kde.nl>\n"
 "Language-Team: \n"
 "Language: nl\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=n != 1;\n"
-"X-Generator: Lokalize 24.05.1\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -252,17 +252,17 @@ msgstr "Sluiten"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminal"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "Uitvoer"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -293,7 +293,7 @@ msgstr "Kies een bouwmap of behoud de standaard"
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "Pad naar map waar het project zal worden gebouwd"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
