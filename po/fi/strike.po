@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
-# Tommi Nieminen <translator@legisign.org>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2023-09-27 21:33+0300\n"
+"PO-Revision-Date: 2024-10-17 13:07+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -354,10 +354,7 @@ msgid "Style"
 msgstr "Tyyli"
 
 #: views/widgets/SettingsDialog.qml:67
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highlighting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
@@ -425,10 +422,7 @@ msgid "More tools."
 msgstr "Lisää työkaluja."
 
 #: views/widgets/SettingsDialog.qml:189
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
