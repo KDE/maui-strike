@@ -1,13 +1,13 @@
-# Copyright (C) YEAR This file is copyright:
+# Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
-# Tommi Nieminen <translator@legisign.org>, 2021, 2023.
+# SPDX-FileCopyrightText: 2021, 2023, 2024 Tommi Nieminen <translator@legisign.org>
 #
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
-"PO-Revision-Date: 2023-09-27 21:33+0300\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"PO-Revision-Date: 2024-10-17 13:07+0300\n"
 "Last-Translator: Tommi Nieminen <translator@legisign.org>\n"
 "Language-Team: Finnish <kde-i18n-doc@kde.org>\n"
 "Language: fi\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 22.12.3\n"
+"X-Generator: Lokalize 23.08.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -37,12 +37,37 @@ msgstr "Koosta ja suorita koodia."
 msgid "Developer"
 msgstr "Kehittäjä"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Avaa projekti"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "Monista projekti"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Avaa tiedosto"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Monista"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Anna projektin Git-verkko-osoite"
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "Tallentamattomat tiedostot"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -51,97 +76,72 @@ msgstr ""
 "Tiedostoja on tallentamatta. Haluatko palata tallentamaan ne vai hylätä "
 "muutokset ja lopettaa?"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Näytä tai piilota sivupaneeli"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "Luo uusi projekti"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "Avaa projekti"
-
-#: main.qml:291
-#, kde-format
-msgid "Open File"
-msgstr "Avaa tiedosto"
-
-#: main.qml:303
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr "Uusi mallipohjalähdetiedosto"
 
-#: main.qml:315
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "Asetukset"
 
-#: main.qml:326
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "Tietoa"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Avaa tähän"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "Avaa uuteen välilehteen"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "Avaa uuteen jakoon"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Peru"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "Monista"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr "Anna projektin Git-verkko-osoite"
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "Jaa"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr "Projekti puuttuu"
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Luo tai avaa uusi projekti."
 
-#: views/editor/EditorView.qml:107
-#, kde-format
-msgid "Clone Project"
-msgstr "Monista projekti"
-
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "Etsi ja korvaa"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Rivi- ja sanalaskuri"
@@ -156,65 +156,65 @@ msgstr "Projektin lähteet"
 msgid "Source files will be listed in here."
 msgstr "Tässä luetellaan lähdetiedostot."
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Edellinen"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Ylemmäs"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Seuraava"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Näytä kansiot ensin"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Tyyppi"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Päiväys"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Muutettu"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Koko"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Nimi"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Ryhmä"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "Kohteet"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "Asetukset"
@@ -234,20 +234,35 @@ msgstr "Suorita"
 msgid "Install"
 msgstr "Asenna"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "Tyhjennä CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "Avaa kansio"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "Sulje"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -265,6 +280,7 @@ msgid "Set the preferences to start hacking!"
 msgstr "Tee asetusvalintasi ja ala koodata!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "Koostamiskansio"
@@ -274,22 +290,22 @@ msgstr "Koostamiskansio"
 msgid "Pick a build directory or keep the default one"
 msgstr "Valitse koostamiskansio tai pidä nykyisellään"
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
-msgstr "Koostamiskansion sijainti"
+msgid "Directory path where the project will be build"
+msgstr ""
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "Projekti"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr "Valitse kohdeprojekti"
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "Viimeistele"
@@ -338,10 +354,7 @@ msgid "Style"
 msgstr "Tyyli"
 
 #: views/widgets/SettingsDialog.qml:67
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highlighting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
@@ -409,10 +422,7 @@ msgid "More tools."
 msgstr "Lisää työkaluja."
 
 #: views/widgets/SettingsDialog.qml:189
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
@@ -438,6 +448,9 @@ msgstr "Teema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Muokkaimen värimalli"
+
+#~ msgid "Build directory path"
+#~ msgstr "Koostamiskansion sijainti"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© 2021–%1 Camilo Higuita"

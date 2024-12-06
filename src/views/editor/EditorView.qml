@@ -23,21 +23,6 @@ Maui.Page
 
     property alias outputPanel :_outputPanel
 
-    Component
-    {
-        id: _gitCloneDialogComponent
-
-        Maui.InputDialog
-        {
-            title: i18n("Clone")
-            message: i18n("Enter the project Git URL")
-            textEntry.placeholderText: "git@invent.kde.org:maui/mauikit.git"
-            template.iconSource: "git"
-            template.iconSizeHint: Maui.Style.iconSizes.huge
-            template.iconVisible: true
-//            acceptButton.text: i18n("Clone")
-        }
-    }
 
     Maui.SplitView
     {
@@ -45,13 +30,12 @@ Maui.Page
         spacing: 0
         orientation: Qt.Vertical
 
-        Maui.TabView
+              Maui.TabView
         {
             id: _editorListView
 
             SplitView.fillWidth: true
             SplitView.fillHeight: true
-
             tabBar.visible: currentEditor
             tabBar.showNewTabButton: false
 
@@ -79,39 +63,7 @@ Maui.Page
             holder.title: i18n("Missing Project")
             holder.body: i18n("Create or open a new project.")
 
-            holder.actions: [
-                Action
-                {
-                    icon.name: "folder-open"
-                    text: i18n("Open Project")
-
-                    onTriggered:
-                    {
-
-                        _dialogLoader.sourceComponent = _fileDialogComponent
-                        dialog.mode = FB.FileDialog.Modes.Open
-                        //            dialog.singleSelection = true
-                        dialog.browser.settings.filters = ["*.txt"]
-                        dialog.callback =  function (urls)
-                        {
-                            _project.projectUrl = urls[0]
-                        }
-                        dialog.open()
-                    }
-                },
-
-                Action
-                {
-                    icon.name: "vcs-merge-request"
-                    text: i18n("Clone Project")
-
-                    onTriggered:
-                    {
-                        _dialogLoader.sourceComponent = _gitCloneDialogComponent
-                        dialog.open()
-                    }
-                }
-            ]
+            holder.actions: [_openProjectAction, _cloneProjectAction, _openFileAction]
 
             onNewTabClicked: control.openTab("")
             onCloseTabClicked:
@@ -265,61 +217,22 @@ Maui.Page
             }
         }
 
-        OutputPanel
+
+        Maui.SplitViewItem
         {
-            id: _outputPanel
+            autoClose: false
             visible: _editorListView.count > 0
             SplitView.fillWidth: true
             SplitView.preferredHeight: 200
             SplitView.maximumHeight: parent.height * 0.5
             SplitView.minimumHeight : Maui.Style.space.big
-        }
 
-        handle: Maui.ShadowedRectangle
+        OutputPanel
         {
-            Maui.Theme.inherit: false
-            Maui.Theme.colorSet: Maui.Theme.Complementary
-            Maui.Theme.backgroundColor: "#2c2c2c"
+            id: _outputPanel
+            anchors.fill: parent
 
-            implicitWidth: 22
-            implicitHeight: Maui.Style.toolBarHeight
-            color: Maui.Theme.backgroundColor
-
-            corners
-            {
-                topLeftRadius: 10
-                topRightRadius: 10
-                bottomLeftRadius: 0
-                bottomRightRadius: 0
-            }
-
-            Maui.ToolActions
-            {
-                anchors.centerIn: parent
-                anchors.leftMargin:  Maui.Style.space.medium
-                anchors.rightMargin:  Maui.Style.space.medium
-
-                Action
-                {
-                    icon.name: "dialog-scripts"
-                    checked:  _outputPanel.currentIndex === 0
-                    onTriggered: _outputPanel.currentIndex = 0
-                }
-
-                Action
-                {
-                    icon.name: "love"
-                    checked:  _outputPanel.currentIndex === 1
-                    onTriggered: _outputPanel.currentIndex = 1
-                }
-
-                Action
-                {
-                    icon.name: "git"
-                    checked:  _outputPanel.currentIndex === 2
-                    onTriggered: _outputPanel.currentIndex = 2
-                }
-            }
+        }
         }
     }
 

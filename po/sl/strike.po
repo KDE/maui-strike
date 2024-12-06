@@ -6,8 +6,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
-"PO-Revision-Date: 2024-07-07 05:58+0200\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"PO-Revision-Date: 2024-11-21 07:11+0100\n"
 "Last-Translator: Matjaž Jeran <matjaz.jeran@amis.net>\n"
 "Language-Team: Slovenian <lugos-slo@lugos.si>\n"
 "Language: sl\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=4; plural=(n%100==1 ? 1 : n%100==2 ? 2 : n%100==3 || n"
 "%100==4 ? 3 : 0);\n"
-"X-Generator: Poedit 3.4.4\n"
+"X-Generator: Poedit 3.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -38,12 +38,37 @@ msgstr "Prevedi in poženi kodo."
 msgid "Developer"
 msgstr "Razvijalec"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Odpri projekt"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "Kloniraj projekt"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Odpri datoteko"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Kloniraj"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Vnesite URL projekta v Gitu"
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "Neshranjene datoteke"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -52,97 +77,72 @@ msgstr ""
 "Imate neshranjene datoteke. Ali greste nazaj in jih shranite ali zavržete "
 "vse spremembe in zapustite program?"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Preklopi stransko vrstico"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "Ustvari nov projekt"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "Odpri projekt"
-
-#: main.qml:291
-#, kde-format
-msgid "Open File"
-msgstr "Odpri datoteko"
-
-#: main.qml:303
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr "Nova datoteka vira predloge"
 
-#: main.qml:315
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "Nastavitve"
 
-#: main.qml:326
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "O programu"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Odpri tu"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "Odpri v novem zavihku"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "Odpri v novem predelu"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Prekliči"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "Kloniraj"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr "Vnesite URL projekta v Gitu"
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "Razdeli"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr "Manjka projekt"
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Ustvari ali odpri novi projekt."
 
-#: views/editor/EditorView.qml:107
-#, kde-format
-msgid "Clone Project"
-msgstr "Kloniraj projekt"
-
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "Najdi in zamenjaj"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Števec vrstic/besed"
@@ -157,65 +157,65 @@ msgstr "Viri projekta"
 msgid "Source files will be listed in here."
 msgstr "Tu bodo prikazane izvorne datoteke."
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Prejšnji"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Gor"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Naslednji"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Najprej prikaži mape"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Zvrst"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Datum"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Spremenjeno"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Velikost"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Ime"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Skupina"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "Cilji"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "Nastavi"
@@ -235,20 +235,35 @@ msgstr "Poženi"
 msgid "Install"
 msgstr "Namesti"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "Počisti CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "Odpri imenik"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "Zapri"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "Terminal"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "Output"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -266,6 +281,7 @@ msgid "Set the preferences to start hacking!"
 msgstr "Nastavite preference in začnite programirati!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "Imenik izgradnje"
@@ -275,22 +291,22 @@ msgstr "Imenik izgradnje"
 msgid "Pick a build directory or keep the default one"
 msgstr "Izberi imenik izgradnje ali ohrani privzetega"
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
-msgstr "Pot do imenika izgradnje"
+msgid "Directory path where the project will be build"
+msgstr "Pot do imenika, kjer bo izgrajen projekt"
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "Projekt"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr "Izberi ciljni projekt"
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "Končaj"
@@ -436,6 +452,9 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Barvna shema sloga urejevalnika"
+
+#~ msgid "Build directory path"
+#~ msgstr "Pot do imenika izgradnje"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© 2021-%1 Camilo Higuita"

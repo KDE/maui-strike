@@ -17,7 +17,7 @@ Control
     background: null
 
     //    enabled: _project.manager.status === Strike.Manager.Ready
-    Popup
+    Maui.Popup
     {
         id: _projectMenu
         maxHeight: 200
@@ -156,9 +156,8 @@ Control
             text: _cmakeProject.title.length > 0 ? _cmakeProject.title : Maui.App.about.displayName
             display: ToolButton.TextBesideIcon
 
-
             menu.title: _cmakeProject.title
-            menu.titleImageSource: _project.projectLogo
+            menu.icon.source: _project.projectLogo
 
             Maui.LabelDelegate
             {

@@ -20,11 +20,11 @@ Maui.ApplicationWindow
     title: currentEditor ? currentTab.title : ""
 
     property alias project : _project
-    property alias manager : _project.manager
+    readonly property alias manager : _project.manager
 
-    property alias currentTab : editorView.currentTab
-    property alias currentEditor: editorView.currentEditor
-    property alias dialog : _dialogLoader.item
+    readonly property alias currentTab : editorView.currentTab
+    readonly property alias currentEditor: editorView.currentEditor
+    readonly property alias dialog : _dialogLoader.item
 
     readonly property font defaultFont:
     {
@@ -35,7 +35,7 @@ Maui.ApplicationWindow
     //Global editor props
     property alias appSettings: settings
 
-    property Strike.CMakeProject _cmakeProject : _project.manager.project
+    readonly property Strike.CMakeProject _cmakeProject : _project.manager.project
 
     Maui.WindowBlur
     {
@@ -79,7 +79,7 @@ Maui.ApplicationWindow
         editorView.outputPanel.syncTerminal(currentEditor.fileUrl)
     }
 
-    onClosing:
+    onClosing: (close) =>
     {
         _dialogLoader.sourceComponent = _unsavedDialogComponent
 
@@ -101,6 +101,37 @@ Maui.ApplicationWindow
         close.accepted = true
     }
 
+    Action
+    {
+        id: _openProjectAction
+        icon.name: "folder"
+        text: i18n("Open Project")
+
+        onTriggered: openFileDialog_project()
+    }
+
+    Action
+    {
+        id: _cloneProjectAction
+        icon.name: "vcs-merge-request"
+        text: i18n("Clone Project")
+
+        onTriggered:
+        {
+            _dialogLoader.sourceComponent = _gitCloneDialogComponent
+            dialog.open()
+        }
+    }
+
+    Action
+    {
+        id: _openFileAction
+        icon.name: "text-plain"
+        text: i18n("Open File")
+
+        onTriggered: openFileDialog_file()
+    }
+
     Widgets.ProjectConfigDialog
     {
         id: _initialConfigDialog
@@ -114,6 +145,23 @@ Maui.ApplicationWindow
     Loader
     {
         id: _dialogLoader
+    }
+
+
+    Component
+    {
+        id: _gitCloneDialogComponent
+
+        Maui.InputDialog
+        {
+            title: i18n("Clone")
+            message: i18n("Enter the project Git URL")
+            textEntry.placeholderText: "git@invent.kde.org:maui/mauikit.git"
+            template.iconSource: "git"
+            template.iconSizeHint: Maui.Style.iconSizes.huge
+            template.iconVisible: true
+            //            acceptButton.text: i18n("Clone")
+        }
     }
 
     Component
@@ -162,8 +210,7 @@ Maui.ApplicationWindow
             browser
             {
                 settings.onlyDirs: false
-            settings.filterType: FB.FMList.TEXT
-            settings.sortBy: FB.FMList.MODIFIED
+                settings.sortBy: FB.FMList.MODIFIED
             }
         }
     }
@@ -259,39 +306,23 @@ Maui.ApplicationWindow
 
                         onTriggered:
                         {
-                            openFileDialog()
-                            control.close()
+
                         }
                     }
 
                     MenuItem
                     {
-                        icon.name: "folder"
-                        text: i18n("Open Project")
-
-                        onTriggered:
-                        {
-                            _dialogLoader.sourceComponent = _fileDialogComponent
-                            dialog.mode = FB.FileDialog.Modes.Open
-                //            dialog.singleSelection = true
-                            dialog.browser.settings.filters = ["CMakeLists.txt"]
-                            dialog.callback =  function (urls)
-                            {
-                                _projectManager.projectUrl = urls[0]
-                            }
-                            dialog.open()
-                        }
+                        action: _openProjectAction
                     }
 
                     MenuItem
                     {
-                       icon.name: "text-plain"
-                        text: i18n("Open File")
+                        action: _cloneProjectAction
+                    }
 
-                        onTriggered:
-                        {
-                            openFileDialog()
-                        }
+                    MenuItem
+                    {
+                       action: _openFileAction
                     }
 
                     MenuItem
@@ -355,10 +386,27 @@ Maui.ApplicationWindow
         }
     }
 
-    function openFileDialog()
+    function openFileDialog_project()
+    {
+            _dialogLoader.sourceComponent = _fileDialogComponent
+            dialog.mode = FB.FileDialog.Modes.Open
+            dialog.singleSelection = true
+            dialog.browser.settings.filterType = FB.FMList.NONE
+            dialog.browser.settings.filters = ["CMakeLists.txt"]
+            dialog.callback = function (urls)
+            {
+                _project.projectUrl = urls[0]
+            }
+            dialog.open()
+    }
+
+    function openFileDialog_file()
     {
         _dialogLoader.sourceComponent = _fileDialogComponent
-        dialog.mode = FB.FileDialog.Open
+        dialog.mode = FB.FileDialog.Modes.Open
+        dialog.singleSelection = false
+        dialog.browser.settings.filterType = FB.FMList.TEXT
+        dialog.browser.settings.filters = []
         dialog.callback =  function (urls)
         {
             for(var url of urls)

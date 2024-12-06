@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
 "PO-Revision-Date: 2024-07-08 17:55+0900\n"
 "Last-Translator: Kisaragi Hiu <mail@kisaragi-hiu.com>\n"
 "Language-Team: Traditional Chinese <zh-l10n@lists.slat.org>\n"
@@ -40,109 +40,109 @@ msgstr "編譯並執行程式碼。"
 msgid "Developer"
 msgstr "開發者"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "開啟專案"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "建立專案複本"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "開啟檔案"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "建立複本"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "輸入專案 Git 網址"
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "未儲存的檔案"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr "您有未儲存的檔案。您要返回以儲存它們，還是要放棄所有變更並離開？"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "切換側邊欄"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "建立新專案"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "開啟專案"
-
-#: main.qml:291
-#, kde-format
-msgid "Open File"
-msgstr "開啟檔案"
-
-#: main.qml:303
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr "新增樣本原始檔"
 
-#: main.qml:315
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "設定"
 
-#: main.qml:326
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "關於"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "在此開啟"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "在新分頁開啟"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "在新分割畫面開啟"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "取消"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "建立複本"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr "輸入專案 Git 網址"
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "分割"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr "缺失專案"
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr "建立並開啟新專案。"
 
-#: views/editor/EditorView.qml:107
-#, kde-format
-msgid "Clone Project"
-msgstr "建立專案複本"
-
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "搜尋與取代"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "行數/字數計數器"
@@ -157,65 +157,65 @@ msgstr "專案原始碼"
 msgid "Source files will be listed in here."
 msgstr "原始檔案會被列於此處。"
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "前一個"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "往上"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "下一個"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "先顯示資料夾"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "類型"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "日期"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "修改時間"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "大小"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "名稱"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "群組"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "目標"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "設定"
@@ -235,20 +235,35 @@ msgstr "執行"
 msgid "Install"
 msgstr "安裝"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "清除 CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "開啟目錄"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "關閉"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr ""
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr ""
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -266,6 +281,7 @@ msgid "Set the preferences to start hacking!"
 msgstr "調整偏好設定來開始寫碼吧！"
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "編譯目錄"
@@ -275,22 +291,22 @@ msgstr "編譯目錄"
 msgid "Pick a build directory or keep the default one"
 msgstr "選一個編譯目錄或是保留預設的"
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
-msgstr "編譯目錄路徑"
+msgid "Directory path where the project will be build"
+msgstr ""
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "專案"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr "選擇目標專案"
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "完成"
@@ -431,6 +447,9 @@ msgstr "主題"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "編輯器配色方案風格"
+
+#~ msgid "Build directory path"
+#~ msgstr "編譯目錄路徑"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© 2021-%1 Camilo Higuita"

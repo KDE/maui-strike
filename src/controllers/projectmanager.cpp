@@ -11,7 +11,7 @@
 ProjectManager::ProjectManager(QObject *parent) : QObject(parent)
   , m_projectManager(new CMakeProjectManager(this))
   , m_preferences(new ProjectPreferences(this))
-  ,m_active(false)
+  , m_active(false)
 {
     connect(this, &ProjectManager::projectUrlChanged, [this](QUrl)
     {

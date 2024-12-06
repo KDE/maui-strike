@@ -87,10 +87,11 @@ Maui.PopupPage
                 }
 
 
-                TextField
+                Maui.TextField
                 {
                     Layout.fillWidth: true
-                    placeholderText: i18n("Build directory path")
+                    Maui.Controls.title: i18n("Build Directory")
+                    Maui.Controls.subtitle: i18n("Directory path where the project will be build")
                     text: _project.preferences.buildDir
                 }
 

@@ -7,8 +7,8 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
-"PO-Revision-Date: 2024-07-15 10:11+0200\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"PO-Revision-Date: 2024-11-22 09:06+0100\n"
 "Last-Translator: Vincenzo Reale <smart2128vr@gmail.com>\n"
 "Language-Team: Italian <kde-i18n-it@kde.org>\n"
 "Language: it\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Lokalize 24.05.2\n"
+"X-Generator: Lokalize 24.08.3\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -38,12 +38,37 @@ msgstr "Compila ed esegui il codice."
 msgid "Developer"
 msgstr "Sviluppatore"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Apri progetto"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "Clona progetto"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Apri file"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Clona"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Inserisci l'URL Git del progetto"
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "File non salvati"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -52,97 +77,72 @@ msgstr ""
 "Hai dei file non salvati. Vuoi tornare indietro e salvarli, oppure scartare "
 "tutte le modifiche e uscire?"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Attiva o disattiva barra laterale"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "Crea un nuovo progetto"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "Apri progetto"
-
-#: main.qml:291
-#, kde-format
-msgid "Open File"
-msgstr "Apri file"
-
-#: main.qml:303
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr "Nuovo modello di file sorgente"
 
-#: main.qml:315
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "Impostazioni"
 
-#: main.qml:326
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "Informazioni su"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Apri qui"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "Apri in una nuova scheda"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "Apri in una nuova divisione"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Annulla"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "Clona"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr "Inserisci l'URL Git del progetto"
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "Dividi"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr "Progetto mancante"
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Crea o apri un nuovo progetto"
 
-#: views/editor/EditorView.qml:107
-#, kde-format
-msgid "Clone Project"
-msgstr "Clona progetto"
-
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "Trova e sostituisci"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Contatore di righe/parole"
@@ -157,65 +157,65 @@ msgstr "Sorgenti del progetto"
 msgid "Source files will be listed in here."
 msgstr "I file sorgenti verranno elencati qui."
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Precedente"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Su"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Successivo"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Mostra prima le cartelle"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Tipo"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Data"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Modificato"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Dimensione"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Nome"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Gruppo"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "Obiettivi"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "Configura"
@@ -235,20 +235,35 @@ msgstr "Esegui"
 msgid "Install"
 msgstr "Installa"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "Svuota CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "Apri cartella"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "Chiudi"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "Terminale"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "Risultato"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -266,6 +281,7 @@ msgid "Set the preferences to start hacking!"
 msgstr "Imposta le preferenze per iniziare a modificare."
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "Cartella di compilazione"
@@ -275,22 +291,22 @@ msgstr "Cartella di compilazione"
 msgid "Pick a build directory or keep the default one"
 msgstr "Scegli una cartella di compilazione o mantieni quella predefinita"
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
-msgstr "Percorso della cartella di compilazione"
+msgid "Directory path where the project will be build"
+msgstr "Percorso della cartella in cui verrà compilato il progetto"
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "Progetto"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr "Seleziona il progetto di destinazione"
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "Finito"
@@ -436,6 +452,9 @@ msgstr "Tema"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Stile dello schema di colori dell'editor"
+
+#~ msgid "Build directory path"
+#~ msgstr "Percorso della cartella di compilazione"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© 2021-%1 Camilo Higuita"

@@ -1,12 +1,12 @@
-import QtQuick 2.14
-import QtQuick.Controls 2.14
-import QtQuick.Layouts 1.3
+import QtQuick
+import QtQuick.Controls
+import QtQuick.Layouts
 
-import org.mauikit.controls 1.3 as Maui
-import org.mauikit.filebrowsing 1.3 as FB
-import org.mauikit.terminal 1.0 as Term
+import org.mauikit.controls as Maui
+import org.mauikit.filebrowsing as FB
+import org.mauikit.terminal as Term
 
-SwipeView
+Maui.SwipeView
 {
     id: control
 
@@ -39,31 +39,38 @@ SwipeView
     {
         id: _terminal
         kterminal.colorScheme: "Adaptive"
+        Maui.Controls.title: i18n("Terminal")
+        Maui.Controls.iconName: "dialog-scripts"
     }
 
     BuildOutputPanel
     {
         id: _buildOutputPanel
+        Maui.Controls.title: i18n("Output")
+        Maui.Controls.iconName: "love"
     }
 
     GitPanel
     {
         id: _gitPanel
+        Maui.Controls.title: i18n("Git")
+        Maui.Controls.iconName: "git"
     }
 
     function goTerminal()
     {
-        control.currentIndex = 0
+        control.setCurrentIndex(0)
     }
 
     function goOutput()
     {
-        control.currentIndex = 1
+        control.setCurrentIndex(1)
     }
 
     function syncTerminal(path)
     {
+
         if(control.terminal && control.terminal.visible && FB.FM.fileExists(path))
-            control.terminal.session.sendText("cd '" + String(FB.FM.fileDir(path)).replace("file://", "") + "'\n")
+            terminal.session.changeDir(String(FB.FM.fileDir(path)).replace("file://", ""))
     }
 }

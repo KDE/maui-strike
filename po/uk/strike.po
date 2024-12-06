@@ -6,10 +6,10 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-07-07 01:45+0000\n"
-"PO-Revision-Date: 2024-07-07 08:27+0300\n"
-"Last-Translator: Yuri Chornoivan <yurchor@ukr.net>\n"
-"Language-Team: Ukrainian\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"PO-Revision-Date: 2024-11-21 10:05+0200\n"
+"Last-Translator: Fracture dept <yurchor@ukr.net>\n"
+"Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
 "Language: uk\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -38,12 +38,37 @@ msgstr "Збирання і запуску коду."
 msgid "Developer"
 msgstr "Розробник"
 
-#: main.qml:128
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Відкрити проєкт"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "Клонувати проєкт"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Відкрити файл"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Клонувати"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Введіть адресу проєкту Git"
+
+#: main.qml:176
 #, kde-format
 msgid "Unsaved files"
 msgstr "Незбережені файли"
 
-#: main.qml:129
+#: main.qml:177
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -52,97 +77,72 @@ msgstr ""
 "Частину файлів не збережено. Хочете повернутися і зберегти їх чи відкинути "
 "усі внесені зміни і завершити роботу програми?"
 
-#: main.qml:245
+#: main.qml:292
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Увімкнути чи вимкнути бічну панель"
 
-#: main.qml:258
+#: main.qml:305
 #, kde-format
 msgid "Create New Project"
 msgstr "Створити проєкт"
 
-#: main.qml:270 views/editor/EditorView.qml:86
-#, kde-format
-msgid "Open Project"
-msgstr "Відкрити проєкт"
-
-#: main.qml:291
-#, kde-format
-msgid "Open File"
-msgstr "Відкрити файл"
-
-#: main.qml:303
+#: main.qml:331
 #, kde-format
 msgid "New Template Source File"
 msgstr "Створити шаблон файла коду"
 
-#: main.qml:315
+#: main.qml:342
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: main.qml:326
+#: main.qml:353
 #, kde-format
 msgid "About"
 msgstr "Про програму"
 
-#: views/editor/Editor.qml:88
+#: views/editor/Editor.qml:90
 #, kde-format
 msgid "Open here"
 msgstr "Відкрити тут"
 
-#: views/editor/Editor.qml:98
+#: views/editor/Editor.qml:100
 #, kde-format
 msgid "Open in new tab"
 msgstr "Відкрити у новій вкладці"
 
-#: views/editor/Editor.qml:109
+#: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
 msgstr "Відкрити у новій розділеній панелі"
 
-#: views/editor/Editor.qml:121
+#: views/editor/Editor.qml:123
 #, kde-format
 msgid "Cancel"
 msgstr "Скасувати"
 
-#: views/editor/EditorView.qml:32
-#, kde-format
-msgid "Clone"
-msgstr "Клонувати"
-
-#: views/editor/EditorView.qml:33
-#, kde-format
-msgid "Enter the project Git URL"
-msgstr "Введіть адресу проєкту Git"
-
-#: views/editor/EditorView.qml:60
+#: views/editor/EditorView.qml:44
 #, kde-format
 msgid "Split"
 msgstr "Розділити"
 
-#: views/editor/EditorView.qml:79
+#: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
 msgstr "Не вистачає проєкту"
 
-#: views/editor/EditorView.qml:80
+#: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
 msgstr "Створити або відкрити новий проєкт."
 
-#: views/editor/EditorView.qml:107
-#, kde-format
-msgid "Clone Project"
-msgstr "Клонувати проєкт"
-
-#: views/editor/EditorView.qml:209
+#: views/editor/EditorView.qml:160
 #, kde-format
 msgid "Find and Replace"
 msgstr "Знайти і замінити"
 
-#: views/editor/EditorView.qml:222
+#: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
 msgstr "Лічильник рядків/слів"
@@ -157,65 +157,65 @@ msgstr "Початкові коди проєкту"
 msgid "Source files will be listed in here."
 msgstr "Тут буде показано файли початкового коду."
 
-#: views/PlacesSidebar.qml:114
+#: views/PlacesSidebar.qml:115
 #, kde-format
 msgid "Previous"
 msgstr "Назад"
 
-#: views/PlacesSidebar.qml:121
+#: views/PlacesSidebar.qml:122
 #, kde-format
 msgid "Up"
 msgstr "Вгору"
 
-#: views/PlacesSidebar.qml:129
+#: views/PlacesSidebar.qml:130
 #, kde-format
 msgid "Next"
 msgstr "Далі"
 
-#: views/PlacesSidebar.qml:153
+#: views/PlacesSidebar.qml:154
 #, kde-format
 msgid "Show Folders First"
 msgstr "Показувати теки першими"
 
-#: views/PlacesSidebar.qml:163
+#: views/PlacesSidebar.qml:164
 #, kde-format
 msgid "Type"
 msgstr "Тип"
 
-#: views/PlacesSidebar.qml:172
+#: views/PlacesSidebar.qml:173
 #, kde-format
 msgid "Date"
 msgstr "Дата"
 
-#: views/PlacesSidebar.qml:181
+#: views/PlacesSidebar.qml:182
 #, kde-format
 msgid "Modified"
 msgstr "Змінено"
 
-#: views/PlacesSidebar.qml:190
+#: views/PlacesSidebar.qml:191
 #, kde-format
 msgid "Size"
 msgstr "Розмір"
 
-#: views/PlacesSidebar.qml:199
+#: views/PlacesSidebar.qml:200
 #, kde-format
 msgid "Name"
 msgstr "Назва"
 
-#: views/PlacesSidebar.qml:211
+#: views/PlacesSidebar.qml:212
 #, kde-format
 msgid "Group"
 msgstr "Група"
 
-#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:165
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
 #, kde-format
 msgid "Targets"
 msgstr "Призначення"
 
-#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:197
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
 #: views/widgets/ProjectConfigDialog.qml:12
 #: views/widgets/ProjectConfigDialog.qml:74
-#: views/widgets/ProjectConfigDialog.qml:182
+#: views/widgets/ProjectConfigDialog.qml:183
 #, kde-format
 msgid "Configure"
 msgstr "Налаштувати"
@@ -235,20 +235,35 @@ msgstr "Запустити"
 msgid "Install"
 msgstr "Встановити"
 
-#: views/widgets/BuildBar.qml:184
+#: views/widgets/BuildBar.qml:183
 #, kde-format
 msgid "Clear CMake"
 msgstr "Спорожнити CMake"
 
-#: views/widgets/BuildBar.qml:192
+#: views/widgets/BuildBar.qml:191
 #, kde-format
 msgid "Open directory"
 msgstr "Відкрити каталог"
 
-#: views/widgets/BuildBar.qml:202
+#: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
 msgstr "Закрити"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "Термінал"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "Виведення"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -266,6 +281,7 @@ msgid "Set the preferences to start hacking!"
 msgstr "Налаштуйте усе, щоб розпочати програмування!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
 #, kde-format
 msgid "Build Directory"
 msgstr "Каталог збирання"
@@ -275,22 +291,22 @@ msgstr "Каталог збирання"
 msgid "Pick a build directory or keep the default one"
 msgstr "Виберіть каталог збирання або лишіть типовий каталог"
 
-#: views/widgets/ProjectConfigDialog.qml:93
+#: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
-msgid "Build directory path"
-msgstr "Шлях до каталогу збирання"
+msgid "Directory path where the project will be build"
+msgstr "Каталог, у якому буде зібрано проєкт"
 
-#: views/widgets/ProjectConfigDialog.qml:130
+#: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
 msgstr "Проєкт"
 
-#: views/widgets/ProjectConfigDialog.qml:131
+#: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
 msgstr "Виберіть цільовий проєкт"
 
-#: views/widgets/ProjectConfigDialog.qml:183
+#: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
 msgstr "Завершити"
@@ -437,6 +453,9 @@ msgstr "Тема"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Схема кольорів редактора"
+
+#~ msgid "Build directory path"
+#~ msgstr "Шлях до каталогу збирання"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© Camilo Higuita, 2021-%1"
