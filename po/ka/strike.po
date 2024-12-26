@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2023-08-16 06:23+0200\n"
+"PO-Revision-Date: 2024-12-25 22:34+0100\n"
 "Last-Translator: Temuri Doghonadze <temuri.doghonadze@gmail.com>\n"
 "Language-Team: Georgian <kde-i18n-doc@kde.org>\n"
 "Language: ka\n"
@@ -16,7 +16,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Generator: Poedit 3.3.2\n"
+"X-Generator: Poedit 3.5\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -253,17 +253,17 @@ msgstr "დახურვა"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "ტერმინალი"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "გამოტანა"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -294,7 +294,7 @@ msgstr "აირჩიეთ აგების საქაღალდე ა
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "საქაღალდის ბილიკი, სადაც პროექტის აგება მოხდება"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
@@ -355,10 +355,7 @@ msgid "Style"
 msgstr "სტილი"
 
 #: views/widgets/SettingsDialog.qml:67
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highlighting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
@@ -427,10 +424,7 @@ msgid "More tools."
 msgstr "მეტი ხელსაწყო."
 
 #: views/widgets/SettingsDialog.qml:189
-#, fuzzy, kde-format
-#| msgid ""
-#| "Configure the style of the syntax highliting. This configuration in not "
-#| "applied for rich text formats"
+#, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
