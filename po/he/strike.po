@@ -7,15 +7,14 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2024-12-29 18:50+0200\n"
+"PO-Revision-Date: 2024-12-31 08:03+0200\n"
 "Last-Translator: Yaron Shahrabani <sh.yaron@gmail.com>\n"
 "Language-Team: צוות התרגום של KDE ישראל\n"
 "Language: he\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Plural-Forms: nplurals=4; plural=(n == 1) ? 0 : ((n == 2) ? 1 : ((n > 10 && "
-"n % 10 == 0) ? 2 : 3));\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 "X-Generator: Lokalize 24.12.0\n"
 
 #, kde-format
@@ -276,7 +275,7 @@ msgstr "ביטול גורף"
 #: views/widgets/ProjectConfigDialog.qml:75
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr ""
+msgstr "מגדירים את ההגדרות ומתחילים ליצור!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
 #: views/widgets/ProjectConfigDialog.qml:93
@@ -292,156 +291,156 @@ msgstr "נא לבחור תיקיית בנייה או להשאיר את זאת כ
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "התיקייה בה ייבנה המיזם"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
 msgid "Project"
-msgstr ""
+msgstr "מיזם"
 
 #: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
-msgstr ""
+msgstr "בחירת מיזם היעד"
 
 #: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
 msgid "Finish"
-msgstr ""
+msgstr "סיום"
 
 #: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
 #: views/widgets/SettingsDialog.qml:133
 #, kde-format
 msgid "Editor"
-msgstr ""
+msgstr "עורך"
 
 #: views/widgets/SettingsDialog.qml:23
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "הגדרת המראה והתחושה של העורך. ההגדרות חלות באופן כוללני"
 
 #: views/widgets/SettingsDialog.qml:28
 #, kde-format
 msgid "Auto Save"
-msgstr ""
+msgstr "שמירה אוטומטית"
 
 #: views/widgets/SettingsDialog.qml:29
 #, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr ""
+msgstr "שמירת הקובץ שלך אוטומטית כל 5 שניות."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "הדגשת תחביר"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
 msgid "Line Numbers"
-msgstr ""
+msgstr "מספרי שורות"
 
 #: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr ""
+msgstr "הצגת מספרי השורות משמאל"
 
 #: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
 #: views/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "Style"
-msgstr ""
+msgstr "סגנון"
 
 #: views/widgets/SettingsDialog.qml:67
 #, kde-format
 msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
-msgstr ""
+msgstr "הגדרת הסגנון להדגשת תחביר. ההגדרה לא חלה על תבניות טקסט עשיר"
 
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
-msgstr ""
+msgstr "ריווח טאבים"
 
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "גופנים"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "הגדרת משפחת וסגנון הגופן."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
 msgid "Colors"
-msgstr ""
+msgstr "צבעים"
 
 #: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "הגדרת ערכת הצבעים של הדגשת התחביר."
 
 #: views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
+msgstr "הגדרת המראה והתחושה של עורך הטקסט."
 
 #: views/widgets/SettingsDialog.qml:145
 #, kde-format
 msgid "Builder"
-msgstr ""
+msgstr "בונה"
 
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "הגדרת פקודות שלבי הבנייה."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "תוספים"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "החלפת מצב התוספים הפעילים."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "כלים"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "כלים נוספים."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
 msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
-msgstr ""
+msgstr "הגדרת הסגנון להדגשת תחביר. ההגדרה לא חלה על תבניות טקסט עשיר"
 
 #: views/widgets/SettingsDialog.qml:193
 #, kde-format
 msgid "Color"
-msgstr ""
+msgstr "צבע"
 
 #: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
-msgstr ""
+msgstr "צבע רקע עורך"
 
 #: views/widgets/SettingsDialog.qml:224
 #, kde-format
 msgid "Theme"
-msgstr ""
+msgstr "ערכת עיצוב"
 
 #: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
-msgstr ""
+msgstr "סגנון ערכת צבעים של העורך"
