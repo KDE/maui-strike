@@ -296,7 +296,6 @@ Maui.Page
         }
 
         _editorListView.addTab(_editorLayoutComponent, {"path": path})
-        _historyList.append(path)
 
     }
 
@@ -315,13 +314,14 @@ Maui.Page
             item.document.saveAs(path)
         } else
         {
+            _dialogLoader.sourceComponent = null
             _dialogLoader.sourceComponent = _fileDialogComponent
-            dialog.mode = dialog.modes.SAVE;
-            //            fileDialog.settings.singleSelection = true
+            dialog.mode = FB.FileDialog.Save
+            dialog.singleSelection = true
+            dialog.suggestedFileName = FB.FM.getFileInfo(item.fileUrl).label
             dialog.callback = function (paths)
             {
                 item.document.saveAs(paths[0])
-                _historyList.append(paths[0])
             };
 
             dialog.open()
