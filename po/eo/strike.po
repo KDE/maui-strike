@@ -8,7 +8,7 @@ msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2024-11-21 01:48+0000\n"
-"PO-Revision-Date: 2024-07-06 16:50+0200\n"
+"PO-Revision-Date: 2025-01-13 22:15+0100\n"
 "Last-Translator: Oliver Kellogg <olivermkellogg@gmail.com>\n"
 "Language-Team: Esperanto <kde-i18n-doc@kde.org>\n"
 "Language: eo\n"
@@ -253,17 +253,17 @@ msgstr "Fermi"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminalo"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "Eligo"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -361,6 +361,8 @@ msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
+"Agordu la stilon de la sintaksa reliefigo. Ĉi tiu agordo ne estas aplikata "
+"por riĉtekstaj formatoj"
 
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
@@ -428,6 +430,8 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
+"Agordu la stilon de la sintaksa reliefigo. Ĉi tiu agordo ne estas aplikata "
+"por riĉtekstaj formatoj"
 
 #: views/widgets/SettingsDialog.qml:193
 #, kde-format
@@ -448,6 +452,3 @@ msgstr "Etoso"
 #, kde-format
 msgid "Editor color scheme style"
 msgstr "Redaktora kolorskemo stilo"
-
-#~ msgid "Build directory path"
-#~ msgstr "Konstrui dosierujan vojon"
