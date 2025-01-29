@@ -83,7 +83,11 @@ Maui.ApplicationWindow
     {
         _dialogLoader.sourceComponent = _unsavedDialogComponent
 
-        dialog.callback = function () {root.close()}
+        dialog.callback = function ()
+        {
+            dialog.discard = true
+            root.close()
+        }
 
         if(!dialog.discard)
         {
@@ -178,12 +182,10 @@ Maui.ApplicationWindow
 
             template.iconSource: "emblem-warning"
 
-            standardButtons: Dialog.Save | Dialog.Discard
+            standardButtons: Dialog.Ok | Dialog.Discard
 
-            onRejected:
+            onDiscarded:
             {
-                discard = true
-
                 if(callback instanceof Function)
                 {
                     callback()
@@ -332,7 +334,7 @@ Maui.ApplicationWindow
 
                         onTriggered:
                         {
-                            openTab("")
+                            editorView.openTab("")
                             //                _editorListView.currentItem.body.textFormat = TextEdit.RichText
                         }
                     }
