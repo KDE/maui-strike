@@ -1,0 +1,454 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+#
+# SPDX-FileCopyrightText: 2025 Toms Trasuns <toms.trasuns@posteo.net>
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"PO-Revision-Date: 2025-02-03 16:29+0200\n"
+"Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
+"Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
+"Language: lv\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=(n%10==1 && n%100!=11 ? 0 : n != 0 ? 1 : "
+"2);\n"
+"X-Generator: Lokalize 24.12.1\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Toms Trasūns"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "toms.trasuns@posteo.net"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Būvēt un palaist kodu"
+
+#: main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "Izstrādātājs"
+
+#: main.qml:108
+#, kde-format
+msgid "Open Project"
+msgstr "Atvērt projektu"
+
+#: main.qml:117
+#, kde-format
+msgid "Clone Project"
+msgstr "Klonēt projektu"
+
+#: main.qml:130
+#, kde-format
+msgid "Open File"
+msgstr "Atvērt datni"
+
+#: main.qml:157
+#, kde-format
+msgid "Clone"
+msgstr "Klonēt"
+
+#: main.qml:158
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Norādiet projekta „Git“ URL"
+
+#: main.qml:176
+#, kde-format
+msgid "Unsaved files"
+msgstr "Nesaglabātas datnes"
+
+#: main.qml:177
+#, kde-format
+msgid ""
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
+msgstr ""
+"Jums ir nesaglabātas datnes. Vai vēlaties atgriezties un tās saglabāt, vai "
+"arī izmaiņas atmest un iziet?"
+
+#: main.qml:292
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Pārslēgt sānu joslu"
+
+#: main.qml:305
+#, kde-format
+msgid "Create New Project"
+msgstr "Izveidot jaunu projektu"
+
+#: main.qml:331
+#, kde-format
+msgid "New Template Source File"
+msgstr "Jauna veidnes avota datne"
+
+#: main.qml:342
+#, kde-format
+msgid "Settings"
+msgstr "Iestatījumi"
+
+#: main.qml:353
+#, kde-format
+msgid "About"
+msgstr "Par"
+
+#: views/editor/Editor.qml:90
+#, kde-format
+msgid "Open here"
+msgstr "Atvērt šeit"
+
+#: views/editor/Editor.qml:100
+#, kde-format
+msgid "Open in new tab"
+msgstr "Atvērt jaunā cilnē"
+
+#: views/editor/Editor.qml:111
+#, kde-format
+msgid "Open in new split"
+msgstr "Atvērt sadalītā skatā"
+
+#: views/editor/Editor.qml:123
+#, kde-format
+msgid "Cancel"
+msgstr "Atcelt"
+
+#: views/editor/EditorView.qml:44
+#, kde-format
+msgid "Split"
+msgstr "Sadalīt"
+
+#: views/editor/EditorView.qml:63
+#, kde-format
+msgid "Missing Project"
+msgstr "Trūkst projekta"
+
+#: views/editor/EditorView.qml:64
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Izveidot vai atvērt jaunu projektu."
+
+#: views/editor/EditorView.qml:160
+#, kde-format
+msgid "Find and Replace"
+msgstr "Meklēt un aizstāt"
+
+#: views/editor/EditorView.qml:173
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Rindu/vārdu skaitītājs"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Project Sources"
+msgstr "Projekta avoti"
+
+#: views/PlacesSidebar.qml:70
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Te būs redzamas avota datnes."
+
+#: views/PlacesSidebar.qml:115
+#, kde-format
+msgid "Previous"
+msgstr "Iepriekšējais"
+
+#: views/PlacesSidebar.qml:122
+#, kde-format
+msgid "Up"
+msgstr "Augšup"
+
+#: views/PlacesSidebar.qml:130
+#, kde-format
+msgid "Next"
+msgstr "Nākamais"
+
+#: views/PlacesSidebar.qml:154
+#, kde-format
+msgid "Show Folders First"
+msgstr "Mapes rādīt augšā"
+
+#: views/PlacesSidebar.qml:164
+#, kde-format
+msgid "Type"
+msgstr "Tips"
+
+#: views/PlacesSidebar.qml:173
+#, kde-format
+msgid "Date"
+msgstr "Datums"
+
+#: views/PlacesSidebar.qml:182
+#, kde-format
+msgid "Modified"
+msgstr "Modificēts"
+
+#: views/PlacesSidebar.qml:191
+#, kde-format
+msgid "Size"
+msgstr "Izmērs"
+
+#: views/PlacesSidebar.qml:200
+#, kde-format
+msgid "Name"
+msgstr "Nosaukums"
+
+#: views/PlacesSidebar.qml:212
+#, kde-format
+msgid "Group"
+msgstr "Grupa"
+
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
+#, kde-format
+msgid "Targets"
+msgstr "Mērķi"
+
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:183
+#, kde-format
+msgid "Configure"
+msgstr "Konfigurēt"
+
+#: views/widgets/BuildBar.qml:112
+#, kde-format
+msgid "Build"
+msgstr "Būvēt"
+
+#: views/widgets/BuildBar.qml:119
+#, kde-format
+msgid "Run"
+msgstr "Palaist"
+
+#: views/widgets/BuildBar.qml:126
+#, kde-format
+msgid "Install"
+msgstr "Instalēt"
+
+#: views/widgets/BuildBar.qml:183
+#, kde-format
+msgid "Clear CMake"
+msgstr "Notīrīt „CMake“"
+
+#: views/widgets/BuildBar.qml:191
+#, kde-format
+msgid "Open directory"
+msgstr "Atvērt mapi"
+
+#: views/widgets/BuildBar.qml:201
+#, kde-format
+msgid "Close"
+msgstr "Aizvērt"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "Terminālis"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "Izvade"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "Git"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Atgriezties"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Pārtraukt"
+
+#: views/widgets/ProjectConfigDialog.qml:75
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Sagatavojiet iestatījumus un sāciet darbu!"
+
+#: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
+#, kde-format
+msgid "Build Directory"
+msgstr "Būvējuma mape"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Izvēlieties būvējuma mapi vai paturiet noklusējuma"
+
+#: views/widgets/ProjectConfigDialog.qml:94
+#, kde-format
+msgid "Directory path where the project will be build"
+msgstr "Ceļš uz mapi, kurā projektu būvēt"
+
+#: views/widgets/ProjectConfigDialog.qml:131
+#, kde-format
+msgid "Project"
+msgstr "Projekts"
+
+#: views/widgets/ProjectConfigDialog.qml:132
+#, kde-format
+msgid "Select the target project"
+msgstr "Atlasiet mērķa projektu"
+
+#: views/widgets/ProjectConfigDialog.qml:184
+#, kde-format
+msgid "Finish"
+msgstr "Pabeigt"
+
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
+#, kde-format
+msgid "Editor"
+msgstr "Redaktors"
+
+#: views/widgets/SettingsDialog.qml:23
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Konfigurēt redaktora izskatu un darbību. Šie iestatījumi darbosies globāli"
+
+#: views/widgets/SettingsDialog.qml:28
+#, kde-format
+msgid "Auto Save"
+msgstr "Saglabāt automātiski"
+
+#: views/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Auto saves your file every 5 seconds."
+msgstr "Saglabā automātiski ik pēc piecām sekundēm."
+
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr "Sintakses izcelšana"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Line Numbers"
+msgstr "Rindu numuri"
+
+#: views/widgets/SettingsDialog.qml:53
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Kreisajā pusē rāda rindu numurus"
+
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
+#, kde-format
+msgid "Style"
+msgstr "Stils"
+
+#: views/widgets/SettingsDialog.qml:67
+#, kde-format
+msgid ""
+"Configure the style of the syntax highlighting. This configuration is not "
+"applied for rich text formats"
+msgstr ""
+"Konfigurēt sintakses izcelšanas stilu. Šī konfigurācija nav pielietojama "
+"tekstam ar formatējumu"
+
+#: views/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Tabulatora atstarpes"
+
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr "Fonti"
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr "Konfigurēt fontu saimi un stilu."
+
+#: views/widgets/SettingsDialog.qml:97
+#, kde-format
+msgid "Colors"
+msgstr "Krāsas"
+
+#: views/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr "Konfigurēt sintakses izcelšanas krāsu shēmu."
+
+#: views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Configure the look and feel of the text editor."
+msgstr "Konfigurēt teksta redaktora izskatu un uzvedību."
+
+#: views/widgets/SettingsDialog.qml:145
+#, kde-format
+msgid "Builder"
+msgstr "Būvētājs"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr "Konfigurēt būvēšanas soļu komandas."
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr "Spraudņi"
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr "Pārslēgt pieejamos spraudņus."
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr "Rīki"
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr "Vairāk rīku."
+
+#: views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration is not "
+"applied for rich text formats"
+msgstr ""
+"Konfigurēt sintakses izcelšanas stilu. Šī konfigurācija nav piemērojama "
+"formatētam tekstam."
+
+#: views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "Color"
+msgstr "Krāsa"
+
+#: views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Editor background color"
+msgstr "Redaktora fona krāsa"
+
+#: views/widgets/SettingsDialog.qml:224
+#, kde-format
+msgid "Theme"
+msgstr "Motīvs"
+
+#: views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Redaktora krāsu shēmas stils"
