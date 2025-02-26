@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-11-21 10:05+0200\n"
 "Last-Translator: Fracture dept <yurchor@ukr.net>\n"
 "Language-Team: Ukrainian <kde-i18n-uk@kde.org>\n"
@@ -38,37 +38,37 @@ msgstr "Збирання і запуску коду."
 msgid "Developer"
 msgstr "Розробник"
 
-#: main.qml:108
+#: main.qml:112
 #, kde-format
 msgid "Open Project"
 msgstr "Відкрити проєкт"
 
-#: main.qml:117
+#: main.qml:121
 #, kde-format
 msgid "Clone Project"
 msgstr "Клонувати проєкт"
 
-#: main.qml:130
+#: main.qml:134
 #, kde-format
 msgid "Open File"
 msgstr "Відкрити файл"
 
-#: main.qml:157
+#: main.qml:161
 #, kde-format
 msgid "Clone"
 msgstr "Клонувати"
 
-#: main.qml:158
+#: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Введіть адресу проєкту Git"
 
-#: main.qml:176
+#: main.qml:180
 #, kde-format
 msgid "Unsaved files"
 msgstr "Незбережені файли"
 
-#: main.qml:177
+#: main.qml:181
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -77,27 +77,27 @@ msgstr ""
 "Частину файлів не збережено. Хочете повернутися і зберегти їх чи відкинути "
 "усі внесені зміни і завершити роботу програми?"
 
-#: main.qml:292
+#: main.qml:294
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Увімкнути чи вимкнути бічну панель"
 
-#: main.qml:305
+#: main.qml:307
 #, kde-format
 msgid "Create New Project"
 msgstr "Створити проєкт"
 
-#: main.qml:331
+#: main.qml:333
 #, kde-format
 msgid "New Template Source File"
 msgstr "Створити шаблон файла коду"
 
-#: main.qml:342
+#: main.qml:344
 #, kde-format
 msgid "Settings"
 msgstr "Параметри"
 
-#: main.qml:353
+#: main.qml:355
 #, kde-format
 msgid "About"
 msgstr "Про програму"

@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-11-21 09:25+0100\n"
 "Last-Translator: Josep M. Ferrer <txemaq@gmail.com>\n"
 "Language-Team: Catalan <kde-i18n-ca@kde.org>\n"
@@ -40,37 +40,37 @@ msgstr "Construeix i executa el codi."
 msgid "Developer"
 msgstr "Desenvolupador"
 
-#: main.qml:108
+#: main.qml:112
 #, kde-format
 msgid "Open Project"
 msgstr "Obre un projecte"
 
-#: main.qml:117
+#: main.qml:121
 #, kde-format
 msgid "Clone Project"
 msgstr "Clona el projecte"
 
-#: main.qml:130
+#: main.qml:134
 #, kde-format
 msgid "Open File"
 msgstr "Obre un fitxer"
 
-#: main.qml:157
+#: main.qml:161
 #, kde-format
 msgid "Clone"
 msgstr "Clona"
 
-#: main.qml:158
+#: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Introduïu l'URL Git del projecte"
 
-#: main.qml:176
+#: main.qml:180
 #, kde-format
 msgid "Unsaved files"
 msgstr "Fitxers sense desar"
 
-#: main.qml:177
+#: main.qml:181
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -79,27 +79,27 @@ msgstr ""
 "Hi ha fitxers sense desar. Voleu retrocedir i desar-los o descartar tots els "
 "canvis i sortir?"
 
-#: main.qml:292
+#: main.qml:294
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Alterna la barra lateral"
 
-#: main.qml:305
+#: main.qml:307
 #, kde-format
 msgid "Create New Project"
 msgstr "Crea un projecte nou"
 
-#: main.qml:331
+#: main.qml:333
 #, kde-format
 msgid "New Template Source File"
 msgstr "Plantilla nova de fitxer de codi font"
 
-#: main.qml:342
+#: main.qml:344
 #, kde-format
 msgid "Settings"
 msgstr "Configuració"
 
-#: main.qml:353
+#: main.qml:355
 #, kde-format
 msgid "About"
 msgstr "Quant al"

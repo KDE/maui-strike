@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2025-02-03 16:29+0200\n"
 "Last-Translator: Toms Trasuns <toms.trasuns@posteo.net>\n"
 "Language-Team: Latvian <kde-i18n-doc@kde.org>\n"
@@ -38,37 +38,37 @@ msgstr "Būvēt un palaist kodu"
 msgid "Developer"
 msgstr "Izstrādātājs"
 
-#: main.qml:108
+#: main.qml:112
 #, kde-format
 msgid "Open Project"
 msgstr "Atvērt projektu"
 
-#: main.qml:117
+#: main.qml:121
 #, kde-format
 msgid "Clone Project"
 msgstr "Klonēt projektu"
 
-#: main.qml:130
+#: main.qml:134
 #, kde-format
 msgid "Open File"
 msgstr "Atvērt datni"
 
-#: main.qml:157
+#: main.qml:161
 #, kde-format
 msgid "Clone"
 msgstr "Klonēt"
 
-#: main.qml:158
+#: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Norādiet projekta „Git“ URL"
 
-#: main.qml:176
+#: main.qml:180
 #, kde-format
 msgid "Unsaved files"
 msgstr "Nesaglabātas datnes"
 
-#: main.qml:177
+#: main.qml:181
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -77,27 +77,27 @@ msgstr ""
 "Jums ir nesaglabātas datnes. Vai vēlaties atgriezties un tās saglabāt, vai "
 "arī izmaiņas atmest un iziet?"
 
-#: main.qml:292
+#: main.qml:294
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Pārslēgt sānu joslu"
 
-#: main.qml:305
+#: main.qml:307
 #, kde-format
 msgid "Create New Project"
 msgstr "Izveidot jaunu projektu"
 
-#: main.qml:331
+#: main.qml:333
 #, kde-format
 msgid "New Template Source File"
 msgstr "Jauna veidnes avota datne"
 
-#: main.qml:342
+#: main.qml:344
 #, kde-format
 msgid "Settings"
 msgstr "Iestatījumi"
 
-#: main.qml:353
+#: main.qml:355
 #, kde-format
 msgid "About"
 msgstr "Par"

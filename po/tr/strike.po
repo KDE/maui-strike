@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2024-11-21 20:57+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
@@ -37,37 +37,37 @@ msgstr "Kod yapın ve çalıştırın."
 msgid "Developer"
 msgstr "Geliştirici"
 
-#: main.qml:108
+#: main.qml:112
 #, kde-format
 msgid "Open Project"
 msgstr "Proje Aç"
 
-#: main.qml:117
+#: main.qml:121
 #, kde-format
 msgid "Clone Project"
 msgstr "Projeyi Klonla"
 
-#: main.qml:130
+#: main.qml:134
 #, kde-format
 msgid "Open File"
 msgstr "Dosya Aç"
 
-#: main.qml:157
+#: main.qml:161
 #, kde-format
 msgid "Clone"
 msgstr "Klonla"
 
-#: main.qml:158
+#: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Proje Git URL'sini girin"
 
-#: main.qml:176
+#: main.qml:180
 #, kde-format
 msgid "Unsaved files"
 msgstr "Kaydedilmemiş dosyalar"
 
-#: main.qml:177
+#: main.qml:181
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -76,27 +76,27 @@ msgstr ""
 "Kaydedilmemiş dosyalarınız var. Geri dönüp onları kaydetmek mi yoksa tüm "
 "değişiklikleri atıp çıkmak mı istiyorsunuz?"
 
-#: main.qml:292
+#: main.qml:294
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Kenar Çubuğunu Aç/Kapat"
 
-#: main.qml:305
+#: main.qml:307
 #, kde-format
 msgid "Create New Project"
 msgstr "Yeni Proje Oluştur"
 
-#: main.qml:331
+#: main.qml:333
 #, kde-format
 msgid "New Template Source File"
 msgstr "Yeni Şablon Kaynak Dosyası"
 
-#: main.qml:342
+#: main.qml:344
 #, kde-format
 msgid "Settings"
 msgstr "Ayarlar"
 
-#: main.qml:353
+#: main.qml:355
 #, kde-format
 msgid "About"
 msgstr "Hakkında"

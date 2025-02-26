@@ -6,7 +6,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
-"POT-Creation-Date: 2024-11-21 01:48+0000\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
 "PO-Revision-Date: 2023-11-14 12:00-0300\n"
 "Last-Translator: Luiz Fernando Ranghetti <elchevive@opensuse.org>\n"
 "Language-Team: Brazilian Portuguese <kde-i18n-pt_BR@kde.org>\n"
@@ -37,37 +37,37 @@ msgstr "Construa e execute código."
 msgid "Developer"
 msgstr "Desenvolvedor"
 
-#: main.qml:108
+#: main.qml:112
 #, kde-format
 msgid "Open Project"
 msgstr "Abrir projeto"
 
-#: main.qml:117
+#: main.qml:121
 #, kde-format
 msgid "Clone Project"
 msgstr "Clonar projeto"
 
-#: main.qml:130
+#: main.qml:134
 #, kde-format
 msgid "Open File"
 msgstr "Abrir arquivo"
 
-#: main.qml:157
+#: main.qml:161
 #, kde-format
 msgid "Clone"
 msgstr "Clonar"
 
-#: main.qml:158
+#: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
 msgstr "Insira o URL do Git do projeto"
 
-#: main.qml:176
+#: main.qml:180
 #, kde-format
 msgid "Unsaved files"
 msgstr "Arquivos não salvos"
 
-#: main.qml:177
+#: main.qml:181
 #, kde-format
 msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
@@ -76,27 +76,27 @@ msgstr ""
 "Você tem arquivos não salvos. Deseja voltar e salvá-los ou descartar todas "
 "as mudanças e sair?"
 
-#: main.qml:292
+#: main.qml:294
 #, kde-format
 msgid "Toogle SideBar"
 msgstr "Alterar barra lateral"
 
-#: main.qml:305
+#: main.qml:307
 #, kde-format
 msgid "Create New Project"
 msgstr "Criar um novo projeto"
 
-#: main.qml:331
+#: main.qml:333
 #, kde-format
 msgid "New Template Source File"
 msgstr "Novo arquivo de origem do modelo"
 
-#: main.qml:342
+#: main.qml:344
 #, kde-format
 msgid "Settings"
 msgstr "Configurações"
 
-#: main.qml:353
+#: main.qml:355
 #, kde-format
 msgid "About"
 msgstr "Sobre"
