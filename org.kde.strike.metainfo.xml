@@ -8,6 +8,7 @@ SPDX-License-Identifier: CC0-1.0
   <metadata_license>CC0-1.0</metadata_license>
   <project_license>LGPL-3.0</project_license>
   <name>Strike</name>
+  <name xml:lang="ar">سدد</name>
   <name xml:lang="ca">Strike</name>
   <name xml:lang="ca-valencia">Strike</name>
   <name xml:lang="cs">Strike</name>
@@ -38,6 +39,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="zh-CN">Strike</name>
   <name xml:lang="zh-TW">Strike</name>
   <summary>Simple and convergent IDE</summary>
+  <summary xml:lang="ar">بيئة تطوير متكاملة بسيطة ومتكيفة</summary>
   <summary xml:lang="ca">IDE convergent i senzill</summary>
   <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
   <summary xml:lang="en-GB">Simple and convergent IDE</summary>
@@ -71,6 +73,7 @@ SPDX-License-Identifier: CC0-1.0
   </developer>
   <description>
     <p>Strike is a simple and covergent IDE that works on Linux desktop and mobile computers.</p>
+    <p xml:lang="ar">سدد عبارة عن بيئة تطوير متكاملة بسيطة وشاملة تعمل على الحواسيب المكتبية والمحمولة التي تعمل بنظام لينكس.</p>
     <p xml:lang="ca">L'Strike és un IDE senzill i convergent que funciona a l'escriptori Linux i als ordinadors mòbils.</p>
     <p xml:lang="ca-valencia">L'Strike és un IDE senzill i convergent que funciona en l'escriptori Linux i en els ordinadors mòbils.</p>
     <p xml:lang="en-GB">Strike is a simple and convergent IDE that works on Linux desktop and mobile computers.</p>
@@ -105,6 +108,7 @@ SPDX-License-Identifier: CC0-1.0
   <screenshots>
     <screenshot type="default">
       <caption>Strike</caption>
+      <caption xml:lang="ar">سدد</caption>
       <caption xml:lang="ca">Strike</caption>
       <caption xml:lang="ca-valencia">Strike</caption>
       <caption xml:lang="cs">Strike</caption>
