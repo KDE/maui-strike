@@ -1,0 +1,449 @@
+# Copyright (C) 2025 This file is copyright:
+# This file is distributed under the same license as the maui-strike package.
+# SPDX-FileCopyrightText: 2025 Zayed Al-Saidi <zayed.alsaidi@gmail.com>
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: maui-strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-02-26 00:40+0000\n"
+"PO-Revision-Date: 2025-05-16 17:00+0400\n"
+"Last-Translator: Zayed Al-Saidi <zayed.alsaidi@gmail.com>\n"
+"Language-Team: ar\n"
+"Language: ar\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=6; plural=n==0 ? 0 : n==1 ? 1 : n==2 ? 2 : n%100>=3 "
+"&& n%100<=10 ? 3 : n%100>=11 && n%100<=99 ? 4 : 5;\n"
+"X-Generator: Lokalize 23.08.5\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "زايد السعيدي"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "zayed.alsaidi@gmail.com"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "ابنِ و شغّل شفرة."
+
+#: main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "المطور"
+
+#: main.qml:112
+#, kde-format
+msgid "Open Project"
+msgstr "افتح مشروعًا"
+
+#: main.qml:121
+#, kde-format
+msgid "Clone Project"
+msgstr "استنسخ مشروع"
+
+#: main.qml:134
+#, kde-format
+msgid "Open File"
+msgstr "افتح الملف"
+
+#: main.qml:161
+#, kde-format
+msgid "Clone"
+msgstr "استنسخ"
+
+#: main.qml:162
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "أدخل عنوان غت للمشروع"
+
+#: main.qml:180
+#, kde-format
+msgid "Unsaved files"
+msgstr "ملفات غير المحفوظة"
+
+#: main.qml:181
+#, kde-format
+msgid ""
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
+msgstr ""
+"لديك ملفات غير محفوظة. هل ترغب في العودة وحفظها أم تجاهل جميع التغييرات "
+"والخروج؟"
+
+#: main.qml:294
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "بدل الشريط الجانبي"
+
+#: main.qml:307
+#, kde-format
+msgid "Create New Project"
+msgstr "أنشئ مشروعًا جديدًا"
+
+#: main.qml:333
+#, kde-format
+msgid "New Template Source File"
+msgstr "ملف مصدر القالب الجديد"
+
+#: main.qml:344
+#, kde-format
+msgid "Settings"
+msgstr "إعدادات"
+
+#: main.qml:355
+#, kde-format
+msgid "About"
+msgstr "عن"
+
+#: views/editor/Editor.qml:90
+#, kde-format
+msgid "Open here"
+msgstr "افتح هنا"
+
+#: views/editor/Editor.qml:100
+#, kde-format
+msgid "Open in new tab"
+msgstr "افتح في لسان جديد"
+
+#: views/editor/Editor.qml:111
+#, kde-format
+msgid "Open in new split"
+msgstr "افتح في قسم جديد"
+
+#: views/editor/Editor.qml:123
+#, kde-format
+msgid "Cancel"
+msgstr "ألغِ"
+
+#: views/editor/EditorView.qml:44
+#, kde-format
+msgid "Split"
+msgstr "اقسم"
+
+#: views/editor/EditorView.qml:63
+#, kde-format
+msgid "Missing Project"
+msgstr "مشروع مفقود"
+
+#: views/editor/EditorView.qml:64
+#, kde-format
+msgid "Create or open a new project."
+msgstr "أنشئ أو افتح مشروعًا جديدًا."
+
+#: views/editor/EditorView.qml:160
+#, kde-format
+msgid "Find and Replace"
+msgstr "اعثر واستبدل"
+
+#: views/editor/EditorView.qml:173
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "عداد السطور/الكلمات"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Project Sources"
+msgstr "مصادر المشروع"
+
+#: views/PlacesSidebar.qml:70
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "ستدرج ملفات  المصدر هنا."
+
+#: views/PlacesSidebar.qml:115
+#, kde-format
+msgid "Previous"
+msgstr "السابق"
+
+#: views/PlacesSidebar.qml:122
+#, kde-format
+msgid "Up"
+msgstr "أعلى"
+
+#: views/PlacesSidebar.qml:130
+#, kde-format
+msgid "Next"
+msgstr "التالي"
+
+#: views/PlacesSidebar.qml:154
+#, kde-format
+msgid "Show Folders First"
+msgstr "أظهر المجلدات أولًا"
+
+#: views/PlacesSidebar.qml:164
+#, kde-format
+msgid "Type"
+msgstr "النوع"
+
+#: views/PlacesSidebar.qml:173
+#, kde-format
+msgid "Date"
+msgstr "التاريخ"
+
+#: views/PlacesSidebar.qml:182
+#, kde-format
+msgid "Modified"
+msgstr "معدّل"
+
+#: views/PlacesSidebar.qml:191
+#, kde-format
+msgid "Size"
+msgstr "الحجم"
+
+#: views/PlacesSidebar.qml:200
+#, kde-format
+msgid "Name"
+msgstr "الاسم"
+
+#: views/PlacesSidebar.qml:212
+#, kde-format
+msgid "Group"
+msgstr "المجموعة"
+
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
+#, kde-format
+msgid "Targets"
+msgstr "الأهداف"
+
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:183
+#, kde-format
+msgid "Configure"
+msgstr "اضبط"
+
+#: views/widgets/BuildBar.qml:112
+#, kde-format
+msgid "Build"
+msgstr "البناء"
+
+#: views/widgets/BuildBar.qml:119
+#, kde-format
+msgid "Run"
+msgstr "شغّل"
+
+#: views/widgets/BuildBar.qml:126
+#, kde-format
+msgid "Install"
+msgstr "ثبّت"
+
+#: views/widgets/BuildBar.qml:183
+#, kde-format
+msgid "Clear CMake"
+msgstr "نظف سي ميك"
+
+#: views/widgets/BuildBar.qml:191
+#, kde-format
+msgid "Open directory"
+msgstr "افتح المجلد"
+
+#: views/widgets/BuildBar.qml:201
+#, kde-format
+msgid "Close"
+msgstr "أغلق"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "الطّرفيّة"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "الخرج"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "غت"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "عُد"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "أجهض"
+
+#: views/widgets/ProjectConfigDialog.qml:75
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "اضبط التفضيلات لبدء البرمجة!"
+
+#: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
+#, kde-format
+msgid "Build Directory"
+msgstr "مجلد البناء"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "اختر مجلد بناء أو احتفظ بالمجلد المبدئي"
+
+#: views/widgets/ProjectConfigDialog.qml:94
+#, kde-format
+msgid "Directory path where the project will be build"
+msgstr "مسار المجلد حيث سيُبنى المشروع"
+
+#: views/widgets/ProjectConfigDialog.qml:131
+#, kde-format
+msgid "Project"
+msgstr "المشروع"
+
+#: views/widgets/ProjectConfigDialog.qml:132
+#, kde-format
+msgid "Select the target project"
+msgstr "حدد المشروع الهدف"
+
+#: views/widgets/ProjectConfigDialog.qml:184
+#, kde-format
+msgid "Finish"
+msgstr "أنهِ"
+
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
+#, kde-format
+msgid "Editor"
+msgstr "المحرّر"
+
+#: views/widgets/SettingsDialog.qml:23
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr "اضبط مظهر وشكل المحرر. ستطبق الإعدادات بشكل عام"
+
+#: views/widgets/SettingsDialog.qml:28
+#, kde-format
+msgid "Auto Save"
+msgstr "حفظ تلقائي"
+
+#: views/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Auto saves your file every 5 seconds."
+msgstr "حفظ تلقائي كلّ 5 ثواني."
+
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr "إبراز الصّياغة"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Line Numbers"
+msgstr "أرقام الأسطر"
+
+#: views/widgets/SettingsDialog.qml:53
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "أظهر أرقام الأسطر على الجانب اليمين"
+
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
+#, kde-format
+msgid "Style"
+msgstr "النّمط"
+
+#: views/widgets/SettingsDialog.qml:67
+#, kde-format
+msgid ""
+"Configure the style of the syntax highlighting. This configuration is not "
+"applied for rich text formats"
+msgstr "اضبط نمط ألوان إبراز الصياغة. هذا الضبط لا يطبق على النص الغني"
+
+#: views/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Tab Spacing"
+msgstr "تباعد علامات الجدولة"
+
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr "الخطوط"
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr "اضبط عائلة الخط وطرازه."
+
+#: views/widgets/SettingsDialog.qml:97
+#, kde-format
+msgid "Colors"
+msgstr "الألوان"
+
+#: views/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr "اضبط تشكيلة ألوان إبراز الصياغة."
+
+#: views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Configure the look and feel of the text editor."
+msgstr "اضبط مظهر محرر النصوص."
+
+#: views/widgets/SettingsDialog.qml:145
+#, kde-format
+msgid "Builder"
+msgstr "الباني"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr "اضبط أوامر خطوات البناء."
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr "الملحقات"
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr "بدّل حالة الملحقات المتوفّرة."
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr "أدوات"
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr "المزيد من الأدوات."
+
+#: views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration is not "
+"applied for rich text formats"
+msgstr "اضبط نمط إبراز الصياغة. هذا الضبط لا يطبق للنص الغني"
+
+#: views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "Color"
+msgstr "اللون"
+
+#: views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Editor background color"
+msgstr "لون خلفيّة المحرّر"
+
+#: views/widgets/SettingsDialog.qml:224
+#, kde-format
+msgid "Theme"
+msgstr "السمة"
+
+#: views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "نمط مخطط ألوان المحرر"
