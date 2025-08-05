@@ -326,12 +326,12 @@ msgstr "اضبط مظهر وشكل المحرر. ستطبق الإعدادات �
 #: views/widgets/SettingsDialog.qml:28
 #, kde-format
 msgid "Auto Save"
-msgstr "حفظ تلقائي"
+msgstr "حفظ آليّ"
 
 #: views/widgets/SettingsDialog.qml:29
 #, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr "حفظ تلقائي كلّ 5 ثواني."
+msgstr "حفظ آليّ كلّ 5 ثواني."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
