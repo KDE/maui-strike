@@ -253,7 +253,7 @@ msgstr "أغلق"
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr "الطّرفيّة"
+msgstr "الطرفية"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
