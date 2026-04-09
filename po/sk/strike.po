@@ -12,8 +12,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Lokalize 21.08.1\n"
 "Plural-Forms: nplurals=3; plural=(n==1) ? 0 : (n>=2 && n<=4) ? 1 : 2;\n"
+"X-Generator: Lokalize 21.08.1\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -43,7 +43,7 @@ msgstr "Otvoriť projekt"
 #: main.qml:121
 #, kde-format
 msgid "Clone Project"
-msgstr ""
+msgstr "Clone Project"
 
 #: main.qml:134
 #, kde-format
@@ -63,7 +63,7 @@ msgstr ""
 #: main.qml:180
 #, kde-format
 msgid "Unsaved files"
-msgstr ""
+msgstr "Uložiť súbor"
 
 #: main.qml:181
 #, kde-format
@@ -125,7 +125,7 @@ msgstr "Rozdeliť"
 #: views/editor/EditorView.qml:63
 #, kde-format
 msgid "Missing Project"
-msgstr ""
+msgstr "Missing Project"
 
 #: views/editor/EditorView.qml:64
 #, kde-format
@@ -145,7 +145,7 @@ msgstr ""
 #: views/PlacesSidebar.qml:69
 #, kde-format
 msgid "Project Sources"
-msgstr ""
+msgstr "Project Sources"
 
 #: views/PlacesSidebar.qml:70
 #, kde-format
@@ -231,36 +231,34 @@ msgid "Install"
 msgstr "Inštalovať"
 
 #: views/widgets/BuildBar.qml:183
-#, fuzzy, kde-format
-#| msgid "CMake"
+#, kde-format
 msgid "Clear CMake"
 msgstr "CMake"
 
 #: views/widgets/BuildBar.qml:191
-#, fuzzy, kde-format
-#| msgid "Open Project"
+#, kde-format
 msgid "Open directory"
 msgstr "Otvoriť projekt"
 
 #: views/widgets/BuildBar.qml:201
 #, kde-format
 msgid "Close"
-msgstr ""
+msgstr "Zavrieť"
 
 #: views/widgets/OutputPanel.qml:42
 #, kde-format
 msgid "Terminal"
-msgstr ""
+msgstr "Terminál"
 
 #: views/widgets/OutputPanel.qml:49
 #, kde-format
 msgid "Output"
-msgstr ""
+msgstr "Výstup"
 
 #: views/widgets/OutputPanel.qml:56
 #, kde-format
 msgid "Git"
-msgstr ""
+msgstr "Git"
 
 #: views/widgets/ProjectConfigDialog.qml:20
 #, kde-format
@@ -333,7 +331,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
 msgid "Syntax Highlighting"
-msgstr ""
+msgstr "Zvýrazňovanie syntaxe"
 
 #: views/widgets/SettingsDialog.qml:52
 #, kde-format
@@ -361,12 +359,12 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
 msgid "Tab Spacing"
-msgstr ""
+msgstr "Tab Spacing"
 
 #: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
 #, kde-format
 msgid "Fonts"
-msgstr ""
+msgstr "Písmo"
 
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
@@ -374,10 +372,9 @@ msgid "Configure the fonts family and style."
 msgstr ""
 
 #: views/widgets/SettingsDialog.qml:97
-#, fuzzy, kde-format
-#| msgid "Color"
+#, kde-format
 msgid "Colors"
-msgstr "Farba"
+msgstr "Farby"
 
 #: views/widgets/SettingsDialog.qml:98
 #, kde-format
@@ -390,8 +387,7 @@ msgid "Configure the look and feel of the text editor."
 msgstr ""
 
 #: views/widgets/SettingsDialog.qml:145
-#, fuzzy, kde-format
-#| msgid "Build"
+#, kde-format
 msgid "Builder"
 msgstr "Zostavenie"
 
@@ -403,7 +399,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
 msgid "Plugins"
-msgstr ""
+msgstr "Moduly"
 
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
@@ -413,7 +409,7 @@ msgstr ""
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
 msgid "Tools"
-msgstr ""
+msgstr "Nástroje"
 
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
