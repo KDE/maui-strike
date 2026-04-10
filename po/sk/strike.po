@@ -28,7 +28,7 @@ msgstr "wizzardsk@gmail.com"
 #: main.cpp:42
 #, kde-format
 msgid "Build and run code."
-msgstr ""
+msgstr "Zostaviť a spustiť kód."
 
 #: main.cpp:47
 #, kde-format
@@ -58,7 +58,7 @@ msgstr "Klonovať"
 #: main.qml:162
 #, kde-format
 msgid "Enter the project Git URL"
-msgstr ""
+msgstr "Zadajte URL Git projektu"
 
 #: main.qml:180
 #, kde-format
@@ -71,6 +71,8 @@ msgid ""
 "You have unsaved files. Do you want to go back and save them or discard all "
 "changes and exit?"
 msgstr ""
+"Máte neuložené súbory. Chcete sa vrátiť a uložiť ich alebo zahodiť všetky "
+"zmeny a ukončiť?"
 
 #: main.qml:294
 #, kde-format
@@ -85,7 +87,7 @@ msgstr "Vytvoriť nový projekt"
 #: main.qml:333
 #, kde-format
 msgid "New Template Source File"
-msgstr ""
+msgstr "Nový zdrojový súbor šablóny"
 
 #: main.qml:344
 #, kde-format
@@ -110,7 +112,7 @@ msgstr "Otvoriť na novej karte"
 #: views/editor/Editor.qml:111
 #, kde-format
 msgid "Open in new split"
-msgstr ""
+msgstr "Otvoriť v novom rozdelení"
 
 #: views/editor/Editor.qml:123
 #, kde-format
@@ -130,7 +132,7 @@ msgstr "Missing Project"
 #: views/editor/EditorView.qml:64
 #, kde-format
 msgid "Create or open a new project."
-msgstr ""
+msgstr "Vytvoriť alebo otvoriť nový projekt."
 
 #: views/editor/EditorView.qml:160
 #, kde-format
@@ -140,7 +142,7 @@ msgstr "Nájsť a Nahradiť"
 #: views/editor/EditorView.qml:173
 #, kde-format
 msgid "Line/Word Counter"
-msgstr ""
+msgstr "Počítadlo riadkov/slov"
 
 #: views/PlacesSidebar.qml:69
 #, kde-format
@@ -150,7 +152,7 @@ msgstr "Project Sources"
 #: views/PlacesSidebar.qml:70
 #, kde-format
 msgid "Source files will be listed in here."
-msgstr ""
+msgstr "Zdrojové súbory budú zobrazené tu."
 
 #: views/PlacesSidebar.qml:115
 #, kde-format
@@ -273,7 +275,7 @@ msgstr "Prerušiť"
 #: views/widgets/ProjectConfigDialog.qml:75
 #, kde-format
 msgid "Set the preferences to start hacking!"
-msgstr ""
+msgstr "Nastavte predvoľby na začatie práce!"
 
 #: views/widgets/ProjectConfigDialog.qml:85
 #: views/widgets/ProjectConfigDialog.qml:93
@@ -284,12 +286,12 @@ msgstr "Adresár zostavenia"
 #: views/widgets/ProjectConfigDialog.qml:86
 #, kde-format
 msgid "Pick a build directory or keep the default one"
-msgstr ""
+msgstr "Vyberte adresár zostavenia alebo ponechajte predvolený"
 
 #: views/widgets/ProjectConfigDialog.qml:94
 #, kde-format
 msgid "Directory path where the project will be build"
-msgstr ""
+msgstr "Cesta k adresáru, kde sa bude zostavovať projekt"
 
 #: views/widgets/ProjectConfigDialog.qml:131
 #, kde-format
@@ -299,7 +301,7 @@ msgstr "Projekt"
 #: views/widgets/ProjectConfigDialog.qml:132
 #, kde-format
 msgid "Select the target project"
-msgstr ""
+msgstr "Vybrať cieľový projekt"
 
 #: views/widgets/ProjectConfigDialog.qml:184
 #, kde-format
@@ -316,7 +318,7 @@ msgstr "Editor"
 #, kde-format
 msgid ""
 "Configure the look and feel of the editor. The settings are applied globally"
-msgstr ""
+msgstr "Nastaviť vzhľad editora. Nastavenia sa používajú globálne"
 
 #: views/widgets/SettingsDialog.qml:28
 #, kde-format
@@ -326,7 +328,7 @@ msgstr "Automatické ukladanie"
 #: views/widgets/SettingsDialog.qml:29
 #, kde-format
 msgid "Auto saves your file every 5 seconds."
-msgstr ""
+msgstr "Automaticky uloží váš súbor každých 5 sekúnd."
 
 #: views/widgets/SettingsDialog.qml:41
 #, kde-format
@@ -341,7 +343,7 @@ msgstr "Čísla riadkov"
 #: views/widgets/SettingsDialog.qml:53
 #, kde-format
 msgid "Display the line numbers on the left side"
-msgstr ""
+msgstr "Zobraziť čísla riadkov na ľavej strane"
 
 #: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
 #: views/widgets/SettingsDialog.qml:188
@@ -355,6 +357,8 @@ msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
+"Nastaviť štýl zvýrazňovania syntaxe. Táto konfigurácia sa nepoužíva pri "
+"úprave formátovaného textu."
 
 #: views/widgets/SettingsDialog.qml:72
 #, kde-format
@@ -369,7 +373,7 @@ msgstr "Písmo"
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr ""
+msgstr "Nastaviť rodinu a štýl písma."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -379,12 +383,12 @@ msgstr "Farby"
 #: views/widgets/SettingsDialog.qml:98
 #, kde-format
 msgid "Configure the color scheme of the syntax highlighting."
-msgstr ""
+msgstr "Nastaviť farebnú schému zvýrazňovania syntaxe."
 
 #: views/widgets/SettingsDialog.qml:134
 #, kde-format
 msgid "Configure the look and feel of the text editor."
-msgstr ""
+msgstr "Nastaviť vzhľad textového editora."
 
 #: views/widgets/SettingsDialog.qml:145
 #, kde-format
@@ -394,7 +398,7 @@ msgstr "Zostavenie"
 #: views/widgets/SettingsDialog.qml:146
 #, kde-format
 msgid "Configure the build steps commands."
-msgstr ""
+msgstr "Nastaviť príkazy krokov zostavenia."
 
 #: views/widgets/SettingsDialog.qml:157
 #, kde-format
@@ -404,7 +408,7 @@ msgstr "Moduly"
 #: views/widgets/SettingsDialog.qml:158
 #, kde-format
 msgid "Toggle available plugins."
-msgstr ""
+msgstr "Prepnúť dostupné moduly."
 
 #: views/widgets/SettingsDialog.qml:169
 #, kde-format
@@ -414,7 +418,7 @@ msgstr "Nástroje"
 #: views/widgets/SettingsDialog.qml:170
 #, kde-format
 msgid "More tools."
-msgstr ""
+msgstr "Ďalšie nástroje."
 
 #: views/widgets/SettingsDialog.qml:189
 #, kde-format
@@ -422,6 +426,8 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
+"Nastaviť štýl zvýrazňovania syntaxe. Táto konfigurácia sa nepoužíva pri "
+"úprave formátovaného textu."
 
 #: views/widgets/SettingsDialog.qml:193
 #, kde-format
@@ -431,7 +437,7 @@ msgstr "Farba"
 #: views/widgets/SettingsDialog.qml:194
 #, kde-format
 msgid "Editor background color"
-msgstr ""
+msgstr "Farba pozadia editora"
 
 #: views/widgets/SettingsDialog.qml:224
 #, kde-format
@@ -441,7 +447,7 @@ msgstr "Téma"
 #: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
-msgstr ""
+msgstr "Štýl farebnej schémy editora"
 
 #~ msgid "© 2021-%1 Camilo Higuita"
 #~ msgstr "© 2021-%1 Camilo Higuita"
