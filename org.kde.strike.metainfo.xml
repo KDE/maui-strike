@@ -41,6 +41,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="ar">بيئة تطوير متكاملة بسيطة ومتكيفة</summary>
   <summary xml:lang="ca">IDE convergent i senzill</summary>
   <summary xml:lang="ca-valencia">IDE convergent i senzill</summary>
+  <summary xml:lang="cs">Jednoduché a konvergentní IDE</summary>
   <summary xml:lang="en-GB">Simple and convergent IDE</summary>
   <summary xml:lang="eo">Simpla kaj konverĝa IDE</summary>
   <summary xml:lang="es">IDE sencillo y convergente</summary>
@@ -74,6 +75,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="ar">سدد عبارة عن بيئة تطوير متكاملة بسيطة وشاملة تعمل على الحواسيب المكتبية والمحمولة التي تعمل بنظام لينكس.</p>
     <p xml:lang="ca">L'Strike és un IDE senzill i convergent que funciona a l'escriptori Linux i als ordinadors mòbils.</p>
     <p xml:lang="ca-valencia">L'Strike és un IDE senzill i convergent que funciona en l'escriptori Linux i en els ordinadors mòbils.</p>
+    <p xml:lang="cs">Strike je jednoduché a konvergentní IDE, které funguje na stolních počítačích i mobilních zařízeních s operačním systémem Linux.</p>
     <p xml:lang="en-GB">Strike is a simple and convergent IDE that works on Linux desktop and mobile computers.</p>
     <p xml:lang="eo">Strike estas simpla kaj konverĝa IDE kiu funkcias sur Linux-labortabloj kaj porteblaj komputiloj.</p>
     <p xml:lang="es">Strike es un IDE sencillo y convergente que funciona en el escritorio Linux y en computadoras móviles.</p>
