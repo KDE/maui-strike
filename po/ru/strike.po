@@ -1,0 +1,454 @@
+# Translation of strike into Russian.
+# This file is distributed under the same license as the maui-strike package.
+# Alexander Yavorsky <kekcuha@gmail.com>, 2026.
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: strike\n"
+"Report-Msgid-Bugs-To: https://bugs.kde.org\n"
+"POT-Creation-Date: 2025-11-17 11:51+0000\n"
+"PO-Revision-Date: 2026-10-10 12:48+0200\n"
+"Last-Translator: Alexander Yavorsky <kekcuha@gmail.com>\n"
+"Language-Team: Russian <kde-russian@lists.kde.ru>\n"
+"Language: ru\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=4; plural=n==1 ? 3 : n%10==1 && n%100!=11 ? 0 : n"
+"%10>=2 && n%10<=4 && (n%100<10 || n%100>=20) ? 1 : 2;\n"
+
+#, kde-format
+msgctxt "NAME OF TRANSLATORS"
+msgid "Your names"
+msgstr "Александр Яворский"
+
+#, kde-format
+msgctxt "EMAIL OF TRANSLATORS"
+msgid "Your emails"
+msgstr "kekcuha@gmail.com"
+
+#: main.cpp:42
+#, kde-format
+msgid "Build and run code."
+msgstr "Сборка и запуск кода."
+
+#: main.cpp:47
+#, kde-format
+msgid "Developer"
+msgstr "Разработчик"
+
+#: main.qml:112
+#, kde-format
+msgid "Open Project"
+msgstr "Открыть проект"
+
+#: main.qml:121
+#, kde-format
+msgid "Clone Project"
+msgstr "Клонировать проект"
+
+#: main.qml:134
+#, kde-format
+msgid "Open File"
+msgstr "Открыть файл"
+
+#: main.qml:161
+#, kde-format
+msgid "Clone"
+msgstr "Клонировать"
+
+#: main.qml:162
+#, kde-format
+msgid "Enter the project Git URL"
+msgstr "Введите URL-адрес проекта Git"
+
+#: main.qml:180
+#, kde-format
+msgid "Unsaved files"
+msgstr "Несохранённые файлы"
+
+#: main.qml:181
+#, kde-format
+msgid ""
+"You have unsaved files. Do you want to go back and save them or discard all "
+"changes and exit?"
+msgstr ""
+"Есть несохранённые файлы. Вернуться и сохранить их или отменить все "
+"изменения и выйти?"
+
+#: main.qml:294
+#, kde-format
+msgid "Toogle SideBar"
+msgstr "Показать или скрыть боковую панель"
+
+#: main.qml:307
+#, kde-format
+msgid "Create New Project"
+msgstr "Создать новый проект"
+
+#: main.qml:333
+#, kde-format
+msgid "New Template Source File"
+msgstr "Новый исходный файл по шаблону"
+
+#: main.qml:344
+#, kde-format
+msgid "Settings"
+msgstr "Параметры"
+
+#: main.qml:355
+#, kde-format
+msgid "About"
+msgstr "О программе"
+
+#: views/editor/Editor.qml:90
+#, kde-format
+msgid "Open here"
+msgstr "Открыть здесь"
+
+#: views/editor/Editor.qml:100
+#, kde-format
+msgid "Open in new tab"
+msgstr "Открыть в новой вкладке"
+
+#: views/editor/Editor.qml:111
+#, kde-format
+msgid "Open in new split"
+msgstr "Открыть в новом разделённом окне"
+
+#: views/editor/Editor.qml:123
+#, kde-format
+msgid "Cancel"
+msgstr "Отмена"
+
+#: views/editor/EditorView.qml:44
+#, kde-format
+msgid "Split"
+msgstr "Разделить"
+
+#: views/editor/EditorView.qml:63
+#, kde-format
+msgid "Missing Project"
+msgstr "Проект не открыт"
+
+#: views/editor/EditorView.qml:64
+#, kde-format
+msgid "Create or open a new project."
+msgstr "Создайте или откройте проект."
+
+#: views/editor/EditorView.qml:160
+#, kde-format
+msgid "Find and Replace"
+msgstr "Поиск и замена"
+
+#: views/editor/EditorView.qml:173
+#, kde-format
+msgid "Line/Word Counter"
+msgstr "Счётчик строк и слов"
+
+#: views/PlacesSidebar.qml:69
+#, kde-format
+msgid "Project Sources"
+msgstr "Исходные файлы проекта"
+
+#: views/PlacesSidebar.qml:70
+#, kde-format
+msgid "Source files will be listed in here."
+msgstr "Здесь будут перечислены исходные файлы."
+
+#: views/PlacesSidebar.qml:115
+#, kde-format
+msgid "Previous"
+msgstr "Назад"
+
+#: views/PlacesSidebar.qml:122
+#, kde-format
+msgid "Up"
+msgstr "Вверх"
+
+#: views/PlacesSidebar.qml:130
+#, kde-format
+msgid "Next"
+msgstr "Вперёд"
+
+#: views/PlacesSidebar.qml:154
+#, kde-format
+msgid "Show Folders First"
+msgstr "Показывать папки первыми"
+
+#: views/PlacesSidebar.qml:164
+#, kde-format
+msgid "Type"
+msgstr "Тип"
+
+#: views/PlacesSidebar.qml:173
+#, kde-format
+msgid "Date"
+msgstr "Дата"
+
+#: views/PlacesSidebar.qml:182
+#, kde-format
+msgid "Modified"
+msgstr "Дата изменения"
+
+#: views/PlacesSidebar.qml:191
+#, kde-format
+msgid "Size"
+msgstr "Размер"
+
+#: views/PlacesSidebar.qml:200
+#, kde-format
+msgid "Name"
+msgstr "Название"
+
+#: views/PlacesSidebar.qml:212
+#, kde-format
+msgid "Group"
+msgstr "Группировать"
+
+#: views/widgets/BuildBar.qml:52 views/widgets/BuildBar.qml:164
+#, kde-format
+msgid "Targets"
+msgstr "Цели"
+
+#: views/widgets/BuildBar.qml:105 views/widgets/BuildBar.qml:196
+#: views/widgets/ProjectConfigDialog.qml:12
+#: views/widgets/ProjectConfigDialog.qml:74
+#: views/widgets/ProjectConfigDialog.qml:183
+#, kde-format
+msgid "Configure"
+msgstr "Настроить"
+
+#: views/widgets/BuildBar.qml:112
+#, kde-format
+msgid "Build"
+msgstr "Собрать"
+
+#: views/widgets/BuildBar.qml:119
+#, kde-format
+msgid "Run"
+msgstr "Запустить"
+
+#: views/widgets/BuildBar.qml:126
+#, kde-format
+msgid "Install"
+msgstr "Установить"
+
+#: views/widgets/BuildBar.qml:183
+#, kde-format
+msgid "Clear CMake"
+msgstr "Очистить CMake"
+
+#: views/widgets/BuildBar.qml:191
+#, kde-format
+msgid "Open directory"
+msgstr "Открыть папку"
+
+#: views/widgets/BuildBar.qml:201
+#, kde-format
+msgid "Close"
+msgstr "Закрыть"
+
+#: views/widgets/OutputPanel.qml:42
+#, kde-format
+msgid "Terminal"
+msgstr "Терминал"
+
+#: views/widgets/OutputPanel.qml:49
+#, kde-format
+msgid "Output"
+msgstr "Вывод"
+
+#: views/widgets/OutputPanel.qml:56
+#, kde-format
+msgid "Git"
+msgstr "Git"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Go back"
+msgstr "Назад"
+
+#: views/widgets/ProjectConfigDialog.qml:20
+#, kde-format
+msgid "Abort"
+msgstr "Прервать"
+
+#: views/widgets/ProjectConfigDialog.qml:75
+#, kde-format
+msgid "Set the preferences to start hacking!"
+msgstr "Настройте параметры и приступайте к работе."
+
+#: views/widgets/ProjectConfigDialog.qml:85
+#: views/widgets/ProjectConfigDialog.qml:93
+#, kde-format
+msgid "Build Directory"
+msgstr "Папка сборки"
+
+#: views/widgets/ProjectConfigDialog.qml:86
+#, kde-format
+msgid "Pick a build directory or keep the default one"
+msgstr "Выберите папку сборки или оставьте папку по умолчанию"
+
+#: views/widgets/ProjectConfigDialog.qml:94
+#, kde-format
+msgid "Directory path where the project will be build"
+msgstr "Путь к папке, в которой будет собран проект"
+
+#: views/widgets/ProjectConfigDialog.qml:131
+#, kde-format
+msgid "Project"
+msgstr "Проект"
+
+#: views/widgets/ProjectConfigDialog.qml:132
+#, kde-format
+msgid "Select the target project"
+msgstr "Выберите целевой проект"
+
+#: views/widgets/ProjectConfigDialog.qml:184
+#, kde-format
+msgid "Finish"
+msgstr "Готово"
+
+#: views/widgets/SettingsDialog.qml:19 views/widgets/SettingsDialog.qml:22
+#: views/widgets/SettingsDialog.qml:133
+#, kde-format
+msgid "Editor"
+msgstr "Редактор"
+
+#: views/widgets/SettingsDialog.qml:23
+#, kde-format
+msgid ""
+"Configure the look and feel of the editor. The settings are applied globally"
+msgstr ""
+"Настройка внешнего вида и поведения редактора. Параметры применяются "
+"глобально"
+
+#: views/widgets/SettingsDialog.qml:28
+#, kde-format
+msgid "Auto Save"
+msgstr "Автосохранение"
+
+#: views/widgets/SettingsDialog.qml:29
+#, kde-format
+msgid "Auto saves your file every 5 seconds."
+msgstr "Автоматически сохранять файл каждые 5 секунд."
+
+#: views/widgets/SettingsDialog.qml:41
+#, kde-format
+msgid "Syntax Highlighting"
+msgstr "Подсветка синтаксиса"
+
+#: views/widgets/SettingsDialog.qml:52
+#, kde-format
+msgid "Line Numbers"
+msgstr "Номера строк"
+
+#: views/widgets/SettingsDialog.qml:53
+#, kde-format
+msgid "Display the line numbers on the left side"
+msgstr "Показывать номера строк слева"
+
+#: views/widgets/SettingsDialog.qml:66 views/widgets/SettingsDialog.qml:184
+#: views/widgets/SettingsDialog.qml:188
+#, kde-format
+msgid "Style"
+msgstr "Стиль"
+
+#: views/widgets/SettingsDialog.qml:67
+#, kde-format
+msgid ""
+"Configure the style of the syntax highlighting. This configuration is not "
+"applied for rich text formats"
+msgstr ""
+"Настройка стиля подсветки синтаксиса. Не применяется к форматированному "
+"тексту"
+
+#: views/widgets/SettingsDialog.qml:72
+#, kde-format
+msgid "Tab Spacing"
+msgstr "Ширина табуляции"
+
+#: views/widgets/SettingsDialog.qml:84 views/widgets/SettingsDialog.qml:117
+#, kde-format
+msgid "Fonts"
+msgstr "Шрифты"
+
+#: views/widgets/SettingsDialog.qml:85
+#, kde-format
+msgid "Configure the fonts family and style."
+msgstr "Настройка гарнитуры и начертания шрифтов."
+
+#: views/widgets/SettingsDialog.qml:97
+#, kde-format
+msgid "Colors"
+msgstr "Цвета"
+
+#: views/widgets/SettingsDialog.qml:98
+#, kde-format
+msgid "Configure the color scheme of the syntax highlighting."
+msgstr "Настройка цветовой схемы подсветки синтаксиса."
+
+#: views/widgets/SettingsDialog.qml:134
+#, kde-format
+msgid "Configure the look and feel of the text editor."
+msgstr "Настройка внешнего вида текстового редактора."
+
+#: views/widgets/SettingsDialog.qml:145
+#, kde-format
+msgid "Builder"
+msgstr "Сборщик"
+
+#: views/widgets/SettingsDialog.qml:146
+#, kde-format
+msgid "Configure the build steps commands."
+msgstr "Настройка команд этапов сборки."
+
+#: views/widgets/SettingsDialog.qml:157
+#, kde-format
+msgid "Plugins"
+msgstr "Модули"
+
+#: views/widgets/SettingsDialog.qml:158
+#, kde-format
+msgid "Toggle available plugins."
+msgstr "Включение и отключение доступных модулей."
+
+#: views/widgets/SettingsDialog.qml:169
+#, kde-format
+msgid "Tools"
+msgstr "Сервис"
+
+#: views/widgets/SettingsDialog.qml:170
+#, kde-format
+msgid "More tools."
+msgstr "Дополнительные инструменты."
+
+#: views/widgets/SettingsDialog.qml:189
+#, kde-format
+msgid ""
+"Configure the style of the syntax highliting. This configuration is not "
+"applied for rich text formats"
+msgstr ""
+"Настройка стиля подсветки синтаксиса. Не применяется к форматированному "
+"тексту"
+
+#: views/widgets/SettingsDialog.qml:193
+#, kde-format
+msgid "Color"
+msgstr "Цвет"
+
+#: views/widgets/SettingsDialog.qml:194
+#, kde-format
+msgid "Editor background color"
+msgstr "Цвет фона редактора"
+
+#: views/widgets/SettingsDialog.qml:224
+#, kde-format
+msgid "Theme"
+msgstr "Тема"
+
+#: views/widgets/SettingsDialog.qml:225
+#, kde-format
+msgid "Editor color scheme style"
+msgstr "Цветовая схема редактора"
