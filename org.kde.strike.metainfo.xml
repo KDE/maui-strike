@@ -29,6 +29,7 @@ SPDX-License-Identifier: CC0-1.0
   <name xml:lang="pl">Strike</name>
   <name xml:lang="pt">Strike</name>
   <name xml:lang="pt-BR">Strike</name>
+  <name xml:lang="ru">Strike</name>
   <name xml:lang="sa">ताड़्यति</name>
   <name xml:lang="sk">Strike</name>
   <name xml:lang="sl">Strike</name>
@@ -58,6 +59,7 @@ SPDX-License-Identifier: CC0-1.0
   <summary xml:lang="pl">Prosty i dostosowujący się IDE</summary>
   <summary xml:lang="pt">IDE convergente e simples</summary>
   <summary xml:lang="pt-BR">IDE simples e convergente</summary>
+  <summary xml:lang="ru">Простая и адаптивная среда разработки</summary>
   <summary xml:lang="sa">सरलं अभिसरणीयं च IDE</summary>
   <summary xml:lang="sk">Jednoduché a konvergentné IDE</summary>
   <summary xml:lang="sl">Enostavno in konvergentno interaktivno razvojno okolje</summary>
@@ -93,6 +95,7 @@ SPDX-License-Identifier: CC0-1.0
     <p xml:lang="pl">Strike to prosty i dostosowujący się IDE, który działa na pulpicie Linuksa, a także na urządzeniach przenośnych.</p>
     <p xml:lang="pt">O Strike é um IDE convergente e simples que funciona nos computadores de Linux e nos dispositivos móveis.</p>
     <p xml:lang="pt-BR">Strike é uma IDE simples e convergente que funciona em áreas de trabalho Linux e computadores móveis.</p>
+    <p xml:lang="ru">Strike — простая адаптивная среда разработки для настольных и мобильных компьютеров под управлением Linux.</p>
     <p xml:lang="sa">Strike इति सरलं कवरजेण्ट् च IDE अस्ति यत् Linux डेस्कटॉप् तथा मोबाईल् सङ्गणकेषु कार्यं करोति ।</p>
     <p xml:lang="sk">Strike je jednoduché a konvergentné IDE, ktoré funguje na linuxových stolných a mobilných počítačoch.</p>
     <p xml:lang="sl">Strike je enostavno in konvergentno interaktivno razvojno okolje, ki deluje na Linuxu in prenosnih računalnikih.</p>
@@ -130,6 +133,7 @@ SPDX-License-Identifier: CC0-1.0
       <caption xml:lang="pl">Strike</caption>
       <caption xml:lang="pt">Strike</caption>
       <caption xml:lang="pt-BR">Strike</caption>
+      <caption xml:lang="ru">Strike</caption>
       <caption xml:lang="sa">ताड़्यति</caption>
       <caption xml:lang="sk">Strike</caption>
       <caption xml:lang="sl">Strike</caption>
