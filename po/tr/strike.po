@@ -1,13 +1,13 @@
 # Copyright (C) 2024 This file is copyright:
 # This file is distributed under the same license as the maui-strike package.
 #
-# SPDX-FileCopyrightText: 2022, 2023, 2024, 2025, 2026 Emir SARI <emir_sari@icloud.com>
+# SPDX-FileCopyrightText: 2022-2026 Emir SARI <emir_sari@icloud.com>
 msgid ""
 msgstr ""
 "Project-Id-Version: maui-strike\n"
 "Report-Msgid-Bugs-To: https://bugs.kde.org\n"
 "POT-Creation-Date: 2025-11-17 11:51+0000\n"
-"PO-Revision-Date: 2026-03-09 21:11+0300\n"
+"PO-Revision-Date: 2026-11-10 21:39+0300\n"
 "Last-Translator: Emir SARI <emir_sari@icloud.com>\n"
 "Language-Team: Turkish <kde-l10n-tr@kde.org>\n"
 "Language: tr\n"
@@ -15,7 +15,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
 "Plural-Forms: nplurals=2; plural=(n > 1);\n"
-"X-Generator: Lokalize 25.12.2\n"
+"X-Generator: Lokalize 26.08.2\n"
 
 #, kde-format
 msgctxt "NAME OF TRANSLATORS"
@@ -353,7 +353,7 @@ msgstr "Sol tarafta satır numaralarını görüntüle"
 #: views/widgets/SettingsDialog.qml:188
 #, kde-format
 msgid "Style"
-msgstr "Biçem"
+msgstr "Stil"
 
 #: views/widgets/SettingsDialog.qml:67
 #, kde-format
@@ -361,7 +361,7 @@ msgid ""
 "Configure the style of the syntax highlighting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
-"Sözdizim vurgulamanın biçemini yapılandır; bu yapılandırma zengin metin "
+"Sözdizim vurgulamanın stilini yapılandır; bu yapılandırma zengin metin "
 "biçimlerine uygulanmaz"
 
 #: views/widgets/SettingsDialog.qml:72
@@ -377,7 +377,7 @@ msgstr "Yazıtipleri"
 #: views/widgets/SettingsDialog.qml:85
 #, kde-format
 msgid "Configure the fonts family and style."
-msgstr "Yazıtipi ailelerini ve biçemlerini yapılandırın."
+msgstr "Yazıtipi ailelerini ve stillerini yapılandırın."
 
 #: views/widgets/SettingsDialog.qml:97
 #, kde-format
@@ -430,7 +430,7 @@ msgid ""
 "Configure the style of the syntax highliting. This configuration is not "
 "applied for rich text formats"
 msgstr ""
-"Sözdizim vurgulamanın biçemini yapılandır; bu yapılandırma zengn metin "
+"Sözdizim vurgulamanın stilini yapılandır; bu yapılandırma zengn metin "
 "biçimine uygulanmaz"
 
 #: views/widgets/SettingsDialog.qml:193
@@ -451,7 +451,7 @@ msgstr "Tema"
 #: views/widgets/SettingsDialog.qml:225
 #, kde-format
 msgid "Editor color scheme style"
-msgstr "Düzenleyici renk şeması biçemi"
+msgstr "Düzenleyici renk şeması stili"
 
 #~ msgid "Build directory path"
 #~ msgstr "Yapı dizini yolu"
